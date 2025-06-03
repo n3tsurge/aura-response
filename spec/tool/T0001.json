@@ -4,6 +4,7 @@
     "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
     "capability": [
         "C2001",
+        "C2002",
         "C2501"
     ],
     "category": [

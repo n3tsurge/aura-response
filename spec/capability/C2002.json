@@ -1,0 +1,32 @@
+{
+    "id": "C2002",
+    "ref": "capability:identify:list-host-vulnerabilities",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves the ability to identify and list vulnerabilities present on hosts within a network. It includes scanning for known vulnerabilities, assessing their severity, and compiling a report of findings to inform remediation efforts.",
+    "friendly_name": "list-host-vulnerabilities",
+    "title": "List host vulnerabilities",
+    "unique_id": "cfbf308d-acc9-40ed-a2a3-bd540e664015",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "commander",
+        "security-analyst",
+        "incident-responder",
+        "scribe"
+    ],
+    "actors": [
+        "incident-responder",
+        "security-analyst"
+    ],
+    "frameworks": {
+        "F0003": [
+            "PR.IP-8",
+            "DE.CM-8"
+        ],
+        "F0002": [
+            "A.12.6.1",
+            "A.12.6.2"
+        ]
+    }
+}
