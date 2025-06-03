@@ -12,8 +12,8 @@ def convert_schema_to_markdown(schema_path: Path) -> str:
     with open(schema_path, 'r', encoding='utf-8') as file:
         schema = json.load(file)
 
-    markdown_content = f"# {schema.get('name', 'Schema')}\n\n"
-    markdown_content += f"## Description\n{schema.get('description', 'No description available.')}\n\n"
+    markdown_content = f"# {schema.get('title', 'Title')}\n\n"
+    markdown_content += f"## Overview\n\n{schema.get('description', 'No description available.')}\n\n"
 
     if 'fields' in schema:
         markdown_content += "## Fields\n"
@@ -24,14 +24,41 @@ def convert_schema_to_markdown(schema_path: Path) -> str:
 
 def main():
     """Main function to convert all schema JSON files in the current directory."""
-    current_dir = Path(__file__).parent
-    schema_files = list(current_dir.glob('*.json'))
+    
+    OUTPUT_DIR = Path('build')
+    
+    # Create the output directory if it doesn't exist
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    
+    # Locate the current working directory of python
+    current_dir = Path(os.getcwd())
+    print(f"Current directory: {current_dir}")
+
+    # Locate all the schema files nested under the spec directory
+    schema_files = list(current_dir.rglob('spec/**/*.json'))
+    print(f"Found {len(schema_files)} schema files to convert.")
 
     for schema_file in schema_files:
+        
+        # Determine the folder structure for the markdown file about to be created
+        relative_path = schema_file.relative_to(current_dir)
+        
+        # Remove the 'spec' part of the path
+        relative_path = relative_path.relative_to('spec')
+        
+        # Replace the file extension with .md
+        relative_path = relative_path.with_suffix('.md')
+        
+        # Create the folder structure in the output directory
+        # if it does not exist
+        output_file_path = OUTPUT_DIR / relative_path
+        output_file_path.parent.mkdir(parents=True, exist_ok=True)
+        
+        # Convert the schema to markdown
         markdown_content = convert_schema_to_markdown(schema_file)
         markdown_file = schema_file.with_suffix('.md')
         
-        with open(markdown_file, 'w', encoding='utf-8') as md_file:
+        with open(output_file_path, 'w', encoding='utf-8') as md_file:
             md_file.write(markdown_content)
         
         print(f"Converted {schema_file.name} to {markdown_file.name}")
