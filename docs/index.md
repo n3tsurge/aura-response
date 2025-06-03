@@ -11,3 +11,10 @@ The AURA project aims to create a unified structure for mapping security detecti
 - **Adaptive Response**: The framework adapts to different security scenarios, providing tailored responses based on the context of the incident.
 - **Standardized Mapping**: A structured approach to map security detections and responses across different platforms and frameworks.
 - **Documentation and Examples**: Detailed documentation and examples to guide users in implementing the framework effectively.
+
+# Components
+
+- **[Response Playbooks](response_playbooks.md)**: Structured guides for managing security incidents, ensuring a consistent and effective approach to remediation.
+- **[Response Capability](response_capability.md)**: A set of capabilities that every security team should have to effectively detect, analyze, and respond to security threats.
+- **[Response Tools](response_tools.md)**: A comprehensive set of utilities and frameworks designed to enhance the efficiency and effectiveness of security incident response.
+- **[Response Phases](response_phases.md)**: A structured approach to incident response, including preparation, detection, analysis, containment, eradication, recovery, and post-incident review.
