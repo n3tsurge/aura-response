@@ -1,0 +1,9 @@
+{
+    "title": "SentinelOne",
+    "friendly_name": "sentinelone",
+    "ref": "tool:sentinelone",
+    "id": "RT-00001",
+    "unique_id": "5576c048-6b93-48eb-a1a6-d6970123e1ca",
+    "description": "SentinelOne is an advanced endpoint protection platform that uses AI to detect, prevent, and respond to cyber threats in real-time. It provides comprehensive security for endpoints, including threat intelligence, automated response capabilities, and detailed analytics to help organizations protect their systems from sophisticated attacks.",
+    "capabilities": []
+}
