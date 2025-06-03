@@ -22,7 +22,7 @@ Every component in the AURA Response framework is assigned a unique identifier b
 - `T0001`: Cyber Security Tools
 - `F0001`: IT, CyberSecurity, or Compliance Frameworks
 - `P0001`: Incident Response Phases
-- `S0001`: Incident Resposne Stakeholders for actionable tasks or reporting
+- `S0001`: Incident Response Stakeholders for actionable tasks or reporting
 
 ## Components
 
