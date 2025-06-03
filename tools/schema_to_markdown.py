@@ -5,16 +5,22 @@ additional information."""
 
 import json
 import os
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, PrivateAttr
 from pathlib import Path
 
+class ExternalReference(BaseModel):
+    """Model representing an external reference with a name and URL."""
+    name: str = Field(..., description="The name of the external reference.")
+    url: str = Field(..., description="The URL of the external reference.")
+    type: str = Field(default='website', description="The type of the external reference.", validators=[lambda v: v in ['website', 'document', 'other']])
+    
+    def __str__(self):
+        return f"{self.name} ({self.url})"
 
 class Framework(BaseModel):
     """Model representing a framework with its title and external references."""
-    id: str = Field(...,
-                     description="The unique identifier for the framework.")
-    ref: str = Field(...,
-                      description="The reference identifier for the framework.")
+    id: str = Field(default=None, description="The unique identifier for the framework.")
+    ref: str = Field(default=None, description="A reference to the framework.")
     author: str = Field(..., description="The author of the framework.")
     category: list[str] = Field(
         default_factory=list, description="Categories associated with the framework.")
@@ -23,7 +29,7 @@ class Framework(BaseModel):
     description: str = Field(...,
                              description="A brief description of the framework.")
     title: str = Field(..., description="The title of the framework.")
-    external_references: list[dict] = Field(
+    external_references: list[ExternalReference] = Field(
         default_factory=list,
         description="A list of external references related to the framework."
     )
@@ -41,18 +47,16 @@ class Framework(BaseModel):
     )
     
     @property
-    def _id(self) -> str:
+    def get_id(self) -> str:
         """Returns the unique identifier for the framework."""
-        return self.id
-    
-    @property
-    def _ref(self) -> str:
-        """Returns the reference identifier for the framework."""
-        return self.ref
+        return self._id
     
     def self_url(self) -> str:
         """Returns the URL to the framework's self-reference."""
         return f"frameworks/{self._id}.md"
+    
+    class Config:
+        underscore_attrs_are_private = False
 
 
 def load_frameworks() -> dict:
@@ -61,7 +65,7 @@ def load_frameworks() -> dict:
 
     # Load from the spec/frameworks directory
     frameworks_dir = current_dir / 'spec' / 'frameworks'
-    frameworks = {}
+    frameworks = []
 
     if not frameworks_dir.exists():
         print(f"Frameworks directory '{frameworks_dir}' does not exist.")
@@ -72,8 +76,8 @@ def load_frameworks() -> dict:
         with open(f, 'r', encoding='utf-8') as file:
             try:
                 framework_data = json.load(file)
-                framework = Framework(**framework_data)
-                frameworks[framework._id] = framework.model_dump()
+                framework = Framework(**framework_data).model_dump()
+                frameworks.append(framework)
             except json.JSONDecodeError as e:
                 print(f"Error decoding JSON from {f}: {e}")
             except Exception as e:
@@ -96,9 +100,8 @@ def convert_schema_to_markdown(schema_path: Path) -> str:
 
         if schema['_ref'].startswith('capability:'):
 
-            _frameworks = load_frameworks()
-            print(_frameworks)
-            return
+            loaded_frameworks = load_frameworks()
+            print(loaded_frameworks)
 
             # Add the framework information
             frameworks = schema.get('frameworks', [])
@@ -107,16 +110,18 @@ def convert_schema_to_markdown(schema_path: Path) -> str:
 
                 for framework in frameworks:
                     framework_name = "Unknown Framework"
-                    reference = []
-                    # Lookup the name of the framework in the loaded frameworks by
-                    # searching the friendly name
-                    if framework in _frameworks.keys():
-                        framework_name = _frameworks[framework].get(
-                            'title', framework)
-                        references = _frameworks[framework].get(
-                            'external_references', [])
-
-                    controls = frameworks[framework]
+                    references = []
+                    
+                    # Get the framework from the list of loaded frameworks using the _id
+                    
+                    framework_data = next((f for f in loaded_frameworks if f._id == framework), None)
+                    print(framework_data)
+                    
+                    if framework_data:
+                        framework_name = framework_data.title
+                        references = framework_data.external_references
+#
+                    controls = framework_data.external_references if framework_data else []
                     markdown_content += f"### {framework_name}\n\n#### Controls\n\n"
                     for control in controls:
                         markdown_content += f"- **{control}**: \n"

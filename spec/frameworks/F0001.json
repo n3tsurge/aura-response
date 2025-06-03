@@ -1,6 +1,6 @@
 {
-    "_id": "F0001",
-    "_ref": "framework:mitre-attack",
+    "id": "F0001",
+    "ref": "framework:mitre-attack",
     "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
     "category": [
         "cybersecurity",

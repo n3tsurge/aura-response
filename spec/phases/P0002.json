@@ -1,6 +1,6 @@
 {
-    "_id": "P0002",
-    "_ref": "phase:identify",
+    "id": "P0002",
+    "ref": "phase:identify",
     "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
     "created_on": "2025-06-03",
     "description": "This phase focuses on identifying the scope and impact of the situation. It involves gathering relevant data, assessing the situation, and determining the necessary actions to take. This phase is crucial for understanding the context and preparing for subsequent phases.",

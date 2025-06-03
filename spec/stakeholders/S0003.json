@@ -1,6 +1,6 @@
 {
-    "_id": "S0003",
-    "_ref": "stakeholder:scribe",
+    "id": "S0003",
+    "ref": "stakeholder:scribe",
     "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
     "created_on": "2025-06-03",
     "description": "The Incident Scribe is responsible for documenting all actions, decisions, and communications during the incident response process. They ensure that a detailed record is maintained, which is crucial for post-incident analysis and reporting. Their meticulous documentation helps in understanding the incident's progression and the effectiveness of the response efforts.",

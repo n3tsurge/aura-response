@@ -1,6 +1,6 @@
 {
-    "_id": "C2501",
-    "_ref": "capability:identify:list-registry-key-modification",
+    "id": "C2501",
+    "ref": "capability:identify:list-registry-key-modification",
     "actors": [
         "incident-responder",
         "security-analyst"

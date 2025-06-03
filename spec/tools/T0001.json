@@ -1,6 +1,6 @@
 {
-    "_id": "T0001",
-    "_ref": "tool:sentinelone",
+    "id": "T0001",
+    "ref": "tool:sentinelone",
     "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
     "capability": [
         "C2001",

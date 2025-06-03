@@ -1,6 +1,6 @@
 {
-    "_id": "P0004",
-    "_ref": "phase:eradication",
+    "id": "P0004",
+    "ref": "phase:eradication",
     "author": "n3tsurge (brian.carroll@holman.com)",
     "created_on": "2025-06-03",
     "description": "This phase focuses on eliminating the root cause of the situation to prevent recurrence. It involves thorough investigation and implementation of measures to address the underlying issues.",

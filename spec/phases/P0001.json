@@ -1,6 +1,6 @@
 {
-    "_id": "P0001",
-    "_ref": "phase:preparation",
+    "id": "P0001",
+    "ref": "phase:preparation",
     "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
     "created_on": "2025-06-03",
     "description": "This phase involves gathering all necessary resources and information to ensure a smooth execution of the project.",

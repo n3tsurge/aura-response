@@ -39,13 +39,13 @@ An actor is a specific role within the incident response process, responsible fo
 
 ## Schema Fields
 
-- `_id`: Unique identifier for the response capability.
+- `id`: Unique identifier for the response capability.
 - `unique_id`: Universally unique identifier (UUID) for the capability, ensuring uniqueness across the entire AURA Response framework.
 - `friendly_name`: Human-readable name for the capability.
 - `description`: Detailed description of the capability, outlining its purpose and integration with other components.
 - `author`: The individual or team responsible for creating the capability.
 - `created_on`: Timestamp indicating when the capability was created.
-- `_ref`: Reference to the capability in the AURA Response framework, linking it to other components such as phases, playbooks, tools, and frameworks.
+- `ref`: Reference to the capability in the AURA Response framework, linking it to other components such as phases, playbooks, tools, and frameworks.
 - `title`: Title of the capability, providing a concise summary of its purpose.
 - `stakeholders`: List of stakeholders involved in the incident response process, categorized by their roles and responsibilities.
 - `actors`: List of actors responsible for executing tasks related to the capability, categorized by their expertise and responsibilities.
@@ -55,8 +55,8 @@ An actor is a specific role within the incident response process, responsible fo
 
 ```json
 {
-    "_id": "C2001",
-    "_ref": "capability:identify:list-alert-victims",
+    "id": "C2001",
+    "ref": "capability:identify:list-alert-victims",
     "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
     "created_on": "2025-06-03",
     "description": "This capability allows for stakeholders to list all victims affected by the incident. It provides a comprehensive overview of those impacted, enabling better resource allocation and response planning.",
