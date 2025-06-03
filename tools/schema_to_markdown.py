@@ -8,18 +8,22 @@ import os
 from pydantic import BaseModel, Field, PrivateAttr
 from pathlib import Path
 
+
 class ExternalReference(BaseModel):
     """Model representing an external reference with a name and URL."""
     name: str = Field(..., description="The name of the external reference.")
     url: str = Field(..., description="The URL of the external reference.")
-    type: str = Field(default='website', description="The type of the external reference.", validators=[lambda v: v in ['website', 'document', 'other']])
-    
+    type: str = Field(default='website', description="The type of the external reference.", validators=[
+                      lambda v: v in ['website', 'document', 'other']])
+
     def __str__(self):
         return f"{self.name} ({self.url})"
 
+
 class Framework(BaseModel):
     """Model representing a framework with its title and external references."""
-    id: str = Field(default=None, description="The unique identifier for the framework.")
+    id: str = Field(
+        default=None, description="The unique identifier for the framework.")
     ref: str = Field(default=None, description="A reference to the framework.")
     author: str = Field(..., description="The author of the framework.")
     category: list[str] = Field(
@@ -45,44 +49,47 @@ class Framework(BaseModel):
         default=None,
         description="A unique identifier for the framework, if applicable."
     )
-    
-    @property
-    def get_id(self) -> str:
-        """Returns the unique identifier for the framework."""
-        return self._id
-    
-    def self_url(self) -> str:
-        """Returns the URL to the framework's self-reference."""
-        return f"frameworks/{self._id}.md"
-    
+
     class Config:
         underscore_attrs_are_private = False
+
+    def self_url(self, base_dir: str = None) -> str:
+        """Returns the URL to the framework's self-reference."""
+        if base_dir is None:
+            return f"../frameworks/{self.id}.md"
+        return f"{base_dir}/frameworks/{self.id}.md"
+
+    @classmethod
+    def load(cls) -> dict['Framework', str]:
+        """Loads all frameworks from the JSON files in the 'frameworks' directory."""
+        current_dir = Path(os.getcwd())
+
+        # Load from the spec/frameworks directory
+        frameworks_dir = current_dir / 'spec' / 'frameworks'
+        frameworks = []
+
+        if not frameworks_dir.exists():
+            print(f"Frameworks directory '{frameworks_dir}' does not exist.")
+            return frameworks
+
+        # Convert each JSON file in the frameworks directory to a Framework model
+        for f in frameworks_dir.glob('*.json'):
+            with open(f, 'r', encoding='utf-8') as file:
+                try:
+                    framework_data = json.load(file)
+                    framework = cls(**framework_data)
+                    frameworks.append(framework)
+                except json.JSONDecodeError as e:
+                    print(f"Error decoding JSON from {f}: {e}")
+                except Exception as e:
+                    print(f"Error processing {f}: {e}")
+
+        return frameworks
 
 
 def load_frameworks() -> dict:
     """Loads all the frameworks from the JSON files in the 'frameworks' directory."""
-    current_dir = Path(os.getcwd())
 
-    # Load from the spec/frameworks directory
-    frameworks_dir = current_dir / 'spec' / 'frameworks'
-    frameworks = []
-
-    if not frameworks_dir.exists():
-        print(f"Frameworks directory '{frameworks_dir}' does not exist.")
-        return frameworks
-            
-    # Convert each JSON file in the frameworks directory to a Framework model
-    for f in frameworks_dir.glob('*.json'):
-        with open(f, 'r', encoding='utf-8') as file:
-            try:
-                framework_data = json.load(file)
-                framework = Framework(**framework_data).model_dump()
-                frameworks.append(framework)
-            except json.JSONDecodeError as e:
-                print(f"Error decoding JSON from {f}: {e}")
-            except Exception as e:
-                print(f"Error processing {f}: {e}")
-        
     return frameworks
 
 
@@ -96,12 +103,11 @@ def convert_schema_to_markdown(schema_path: Path) -> str:
 
     # If this is a capability schema, add additional information
     # this can be determined by looking at the _ref field
-    if '_ref' in schema:
+    if 'ref' in schema:
 
-        if schema['_ref'].startswith('capability:'):
+        if schema['ref'].startswith('capability:'):
 
-            loaded_frameworks = load_frameworks()
-            print(loaded_frameworks)
+            loaded_frameworks = Framework.load()
 
             # Add the framework information
             frameworks = schema.get('frameworks', [])
@@ -111,18 +117,18 @@ def convert_schema_to_markdown(schema_path: Path) -> str:
                 for framework in frameworks:
                     framework_name = "Unknown Framework"
                     references = []
-                    
+
                     # Get the framework from the list of loaded frameworks using the _id
-                    
-                    framework_data = next((f for f in loaded_frameworks if f._id == framework), None)
-                    print(framework_data)
-                    
+
+                    framework_data = next(
+                        (f for f in loaded_frameworks if f.id == framework), None)
+
                     if framework_data:
                         framework_name = framework_data.title
                         references = framework_data.external_references
-#
-                    controls = framework_data.external_references if framework_data else []
-                    markdown_content += f"### {framework_name}\n\n#### Controls\n\n"
+
+                    controls = schema.get('frameworks', {}).get(framework, [])
+                    markdown_content += f"### [{framework_name}]({framework_data.self_url()})\n\n#### Controls\n\n"
                     for control in controls:
                         markdown_content += f"- **{control}**: \n"
                     markdown_content += "\n"
@@ -130,8 +136,8 @@ def convert_schema_to_markdown(schema_path: Path) -> str:
                     if references:
                         markdown_content += "#### References\n\n"
                         for reference in references:
-                            if reference['type'] == 'website':
-                                markdown_content += f"- [{reference['name']}]({reference['url']})\n"
+                            if reference.type == 'website':
+                                markdown_content += f"- [{reference.name}]({reference.url})\n"
                             else:
                                 markdown_content += f"- {reference}\n"
                         markdown_content += "\n"
