@@ -1,19 +1,11 @@
 from typing import Optional
-from pydantic import BaseModel, Field
+from pydantic import Field
 from schema.external_reference import ExternalReference
 from schema.framework import Framework
+from schema.base import BaseComponent
 
 
-class Capability(BaseModel):
-    id: str = Field(
-        default=None, description="The unique identifier for the capability.")
-    ref: str = Field(
-        default=None, description="A reference to the capability.")
-    author: str = Field(..., description="The author of the capability.")
-    created_on: str = Field(...,
-                            description="The date when the capability was created.")
-    description: str = Field(...,
-                             description="A brief description of the capability.")
+class Capability(BaseComponent):
     frameworks: dict = Field(
         default_factory=list,
         description="A list of frameworks associated with the capability."
@@ -21,10 +13,6 @@ class Capability(BaseModel):
     external_references: Optional[list[ExternalReference]] = Field(
         default_factory=list,
         description="A list of external references related to the capability."
-    )
-    friendly_name: Optional[str] = Field(
-        default=None,
-        description="A user-friendly name for the capability, if applicable."
     )
     phase: Optional[str] = Field(
         default=None,
@@ -38,20 +26,11 @@ class Capability(BaseModel):
         default_factory=list,
         description="A list of actors associated with the capability."
     )
-    title: Optional[str] = Field(
-        default=None,
-        description="The title of the capability, if applicable."
-    )
-    unique_id: Optional[str] = Field(
-        default=None,
-        description="A unique identifier for the capability, if applicable."
-    )
-
-    def self_url(self, base_dir: str = None) -> str:
-        """Returns the URL to the capability's self-reference."""
-        if base_dir is None:
-            return f"../capability/{self.id}.md"
-        return f"{base_dir}/capability/{self.id}.md"
+    
+    @classmethod
+    def load(cls) -> dict['Capability', str]:
+        """Loads all capabilities from the JSON files in the 'capabilities' directory."""
+        return super().load()
 
     def generate_markdown(self) -> str:
         """Generates a Markdown representation of the capability."""
@@ -85,7 +64,6 @@ class Capability(BaseModel):
 
             # Get the framework from the list of loaded frameworks using the _id
             for framework in self.frameworks:
-                
 
                 framework_data = next(
                     (f for f in _frameworks if f.id == framework), None)
@@ -109,8 +87,6 @@ class Capability(BaseModel):
                         markdown_content += f"- {reference}\n"
                 markdown_content += "\n"
 
-            
-
             markdown_content += "\n"
 
         if self.external_references:
@@ -119,20 +95,3 @@ class Capability(BaseModel):
                 markdown_content += f"- [{ref.name}]({ref.url})\n"
 
         return markdown_content.strip()
-
-    @classmethod
-    def load(cls, base_dir: str = None) -> list['Capability']:
-        """Loads all tools from the specified directory."""
-        import json
-        from pathlib import Path
-
-        tools = []
-        if base_dir is None:
-            base_dir = Path(__file__).parent / 'capability'
-
-        for tool_file in Path(base_dir).glob('*.json'):
-            with open(tool_file, 'r', encoding='utf-8') as file:
-                tool_data = json.load(file)
-                tools.append(cls(**tool_data))
-
-        return tools
