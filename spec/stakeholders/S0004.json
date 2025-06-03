@@ -1,7 +1,7 @@
 {
     "_id": "S0004",
     "_ref": "stakeholder:security-analyst",
-    "author": "n3tsurge (brian.carroll@holman.com)",
+    "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
     "created_on": "2025-06-03",
     "description": "The Security Analyst is responsible for analyzing security incidents, identifying vulnerabilities, and recommending measures to enhance the organization's security posture. They play a crucial role in incident response and threat intelligence.",
     "friendly_name": "security-analyst",

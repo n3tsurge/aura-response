@@ -1,7 +1,7 @@
 {
     "_id": "F0002",
     "_ref": "framework:iso27001-2022",
-    "author": "n3tsurge (brian.carroll@holman.com)",
+    "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
     "created_on": "2025-06-03",
     "description": "ISO/IEC 27001:2022 is an international standard for information security management systems (ISMS). It provides a systematic approach to managing sensitive company information, ensuring its confidentiality, integrity, and availability. The standard outlines requirements for establishing, implementing, maintaining, and continually improving an ISMS.",
     "friendly_name": "iso27001-2022",

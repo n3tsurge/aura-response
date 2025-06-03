@@ -1,7 +1,7 @@
 {
     "_id": "T0001",
     "_ref": "tool:sentinelone",
-    "author": "n3tsurge (brian.carroll@holman.com)",
+    "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
     "capability": [],
     "category": [
         "EDR",

@@ -1,7 +1,7 @@
 {
     "_id": "F0001",
     "_ref": "framework:mitre-attack",
-    "author": "n3tsurge (brian.carroll@holman.com)",
+    "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
     "category": [
         "cybersecurity",
         "threat intelligence",
