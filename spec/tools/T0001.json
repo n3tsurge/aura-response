@@ -2,7 +2,10 @@
     "_id": "T0001",
     "_ref": "tool:sentinelone",
     "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
-    "capability": [],
+    "capability": [
+        "C2001",
+        "C2501"
+    ],
     "category": [
         "EDR",
         "EPP",
