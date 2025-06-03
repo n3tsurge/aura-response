@@ -3,7 +3,7 @@
     "ref": "capability:preparation:access-external-http-logs",
     "author": "n3tsurge",
     "created_on": "2025-06-03",
-    "description": "This capability involves accessing and reviewing external HTTP logs to gather information about web traffic, identify potential threats, and analyze user behavior. It is essential for understanding the context of web-based incidents and for proactive monitoring of web applications.",
+    "description": "This capability involves accessing and reviewing external HTTP logs to gather information about web traffic, identify potential threats, and analyze user behavior. It is essential for understanding the context of web-based incidents and for proactive monitoring of web applications.  \n\n## Important Data Elements\n- **HTTP Request Method**: The method used in the HTTP request (e.g., GET, POST, PUT, DELETE).\n- **URL**: The full URL of the request, including query parameters.\n- **Response Status Code**: The HTTP status code returned by the server (e.g., 200, 404, 500).\n- **User Agent**: Information about the client software making the request.\n- **IP Address**: The IP address of the client making the request.\n- **Timestamp**: The date and time when the request was made.\n\n## Enrichment Opportunities\n- **Geolocation**: Enriching the IP address with geolocation data to understand the origin of the request.\n- **Threat Intelligence**: Integrating threat intelligence feeds to identify known malicious IP addresses or user agents.\n- **User Context**: Correlating the request with user profiles to understand user behavior and potential insider threats.",
     "friendly_name": "access-external-http-logs",
     "title": "Access External HTTP Logs",
     "unique_id": "f17d742f-87cf-4e94-a4a0-413f78eac6e7",
