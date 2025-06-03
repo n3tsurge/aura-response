@@ -5,7 +5,7 @@
         "incident-responder",
         "security-analyst"
     ],
-    "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
+    "author": "n3tsurge",
     "created_on": "2025-06-03",
     "description": "This capability allows for stakeholders to list all victims affected by the incident. It provides a comprehensive overview of those impacted, enabling better resource allocation and response planning.",
     "frameworks": {

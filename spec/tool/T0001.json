@@ -1,7 +1,7 @@
 {
     "id": "T0001",
     "ref": "tool:sentinelone",
-    "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
+    "author": "n3tsurge",
     "capability": [
         "C2001",
         "C2002",

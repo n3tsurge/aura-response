@@ -1,7 +1,7 @@
 {
     "id": "F0001",
     "ref": "framework:mitre-attack",
-    "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
+    "author": "n3tsurge",
     "category": [
         "cybersecurity",
         "threat intelligence",

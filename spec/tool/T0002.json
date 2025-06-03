@@ -1,0 +1,21 @@
+{
+    "id": "T0002",
+    "ref": "tool:zscaler-zia",
+    "author": "n3tsurge",
+    "capability": [
+
+    ],
+    "category": [
+        "SaaS",
+        "Web Security",
+        "Cloud Security"
+    ],
+    "created_on": "2025-06-03",
+    "description": "Zscaler Internet Access (ZIA) is a cloud-based security platform that provides secure internet access for users, regardless of their location. It offers comprehensive protection against web threats, data loss, and malicious content by inspecting all traffic in real-time. ZIA enables organizations to enforce security policies, control access to applications, and ensure compliance with regulatory requirements, all while delivering a seamless user experience.",
+    "external_references": [
+       
+    ],
+    "friendly_name": "zscaler-zia",
+    "title": "Zscaler Internet Access (ZIA)",
+    "unique_id": "de42ddc1-7f51-4dd2-a405-98fef482be17"
+}

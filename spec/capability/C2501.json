@@ -5,7 +5,7 @@
         "incident-responder",
         "security-analyst"
     ],
-    "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
+    "author": "n3tsurge",
     "created_on": "2025-06-03",
     "description": "This capability allows the incident responder and security analyst to list modifications made to registry keys. This is crucial for identifying unauthorized changes that may indicate malicious activity or system misconfiguration. The capability provides a means to track changes over time, aiding in forensic analysis and incident response.",
     "frameworks": {

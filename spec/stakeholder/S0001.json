@@ -1,7 +1,7 @@
 {
     "id": "S0001",
     "ref": "stakeholder:commander",
-    "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
+    "author": "n3tsurge",
     "created_on": "2025-06-03",
     "description": "The Incident Commander is responsible for overseeing the entire incident response process. They coordinate all activities, make critical decisions, and ensure that the response team is effectively managing the situation. Their leadership is crucial for the success of the incident response efforts.",
     "friendly_name": "commander",
