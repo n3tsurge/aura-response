@@ -1,10 +1,10 @@
 {
-    "title": "Preparation",
-    "friendly_name": "preparation",
-    "ref": "phase:preparation",
-    "unique_id": "c60f19e0-246f-4d66-9c56-c75ee12780e0",
-    "id": "RP-00001",
+    "_id": "RP-00001",
+    "_ref": "phase:preparation",
     "author": "n3tsurge (brian.carroll@holman.com)",
     "created_on": "2025-06-03",
-    "description": "This phase involves gathering all necessary resources and information to ensure a smooth execution of the project."
+    "description": "This phase involves gathering all necessary resources and information to ensure a smooth execution of the project.",
+    "friendly_name": "preparation",
+    "title": "Preparation",
+    "unique_id": "c60f19e0-246f-4d66-9c56-c75ee12780e0"
 }

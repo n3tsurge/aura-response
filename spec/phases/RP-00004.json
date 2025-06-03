@@ -1,10 +1,10 @@
 {
-    "title": "Eradication",
-    "friendly_name": "eradicate",
-    "ref": "phase:eradication",
-    "unique_id": "952cbd5c-60ca-4faf-8670-60294a7669f4",
-    "id": "RP-00004",
+    "_id": "RP-00004",
+    "_ref": "phase:eradication",
     "author": "n3tsurge (brian.carroll@holman.com)",
     "created_on": "2025-06-03",
-    "description": "This phase focuses on eliminating the root cause of the situation to prevent recurrence. It involves thorough investigation and implementation of measures to address the underlying issues."
+    "description": "This phase focuses on eliminating the root cause of the situation to prevent recurrence. It involves thorough investigation and implementation of measures to address the underlying issues.",
+    "friendly_name": "eradicate",
+    "title": "Eradication",
+    "unique_id": "952cbd5c-60ca-4faf-8670-60294a7669f4"
 }
