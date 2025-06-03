@@ -1,0 +1,20 @@
+{
+    "id": "C1104",
+    "ref": "capability:preparation:access-external-http-logs",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves accessing and reviewing external HTTP logs to gather information about web traffic, identify potential threats, and analyze user behavior. It is essential for understanding the context of web-based incidents and for proactive monitoring of web applications.",
+    "friendly_name": "access-external-http-logs",
+    "title": "Access External HTTP Logs",
+    "unique_id": "f17d742f-87cf-4e94-a4a0-413f78eac6e7",
+    "phase": "P0001",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+        "F0002": [
+            "A.8.15"
+        ]
+    }
+}
