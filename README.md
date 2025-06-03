@@ -7,3 +7,11 @@ The AURA project aims to create a unified structure for mapping security detecti
 ## Documentation
 
 Full documentation here: [AURA Response Documentation](./docs/index.md)
+
+## Building the Documentation
+
+```bash
+pip install poetry
+poetry install
+poetry run python tools/schema_to_markdown.py
+```
