@@ -31,6 +31,7 @@
     },
     "friendly_name": "list-alert-victims",
     "phase": "P0002",
+    "phase_friendly_name": "identification",
     "stakeholders": [
         "commander",
         "security-analyst",

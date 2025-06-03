@@ -18,6 +18,10 @@ class Capability(BaseComponent):
         default=None,
         description="The phase of the capability, if applicable."
     )
+    phase_friendly_name: Optional[str] = Field(
+        default=None,
+        description="A user-friendly name for the phase of the capability, if applicable."
+    )
     stakeholders: Optional[list[str]] = Field(
         default_factory=list,
         description="A list of stakeholders associated with the capability."

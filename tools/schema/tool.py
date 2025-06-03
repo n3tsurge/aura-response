@@ -20,25 +20,26 @@ class Tool(BaseComponent):
         markdown_content += f"## Overview\n\n{self.description}\n\n"
 
         _capabilities = Capability.load()
+        
+        if self.category:
+            markdown_content += "## Categories\n\n"
+            for cat in self.category:
+                markdown_content += f"- {cat}\n"
+            markdown_content += "\n"
 
         if self.capability:
             markdown_content += "## Capabilities\n\n"
+            
+            markdown_content += "| Capability | ID | Phase | Description |\n"
+            markdown_content += "|------------|----|-------|-------------|\n"
+            
             for cap in self.capability:
                 capability = next((
                     c for c in _capabilities if c.id == cap), None)
 
                 if capability:
-                    markdown_content += f"### {capability.title}\n\n"
-                    markdown_content += f"{capability.description}\n\n"
-                    if capability.self_url():
-                        markdown_content += f"[More details]({capability.self_url()})\n\n"
+                    markdown_content += f"| [{capability.title}]({capability.self_url()}) | {capability.id} | {capability.phase_friendly_name.capitalize()} | {capability.description} |\n"
 
-            markdown_content += "\n"
-
-        if self.category:
-            markdown_content += "## Categories\n\n"
-            for cat in self.category:
-                markdown_content += f"- {cat}\n"
             markdown_content += "\n"
 
         if self.external_references:

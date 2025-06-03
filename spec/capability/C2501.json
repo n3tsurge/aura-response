@@ -25,6 +25,7 @@
     },
     "friendly_name": "list-registry-key-modification",
     "phase": "P0002",
+    "phase_friendly_name": "identification",
     "stakeholders": [
         "commander",
         "security-analyst",
