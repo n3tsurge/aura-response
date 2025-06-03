@@ -23,6 +23,7 @@ Every component in the AURA Response framework is assigned a unique identifier b
 - `rt-00001`: Response Tool for Endpoint Detection and Response (EDR)
 - `rf-00001`: Response Framework for Incident Management
 - `rp-00001`: Response Phase for Containment and Eradication
+- `rs-00001`: Response Stakeholder for actionable tasks or reporting
 
 # Components
 

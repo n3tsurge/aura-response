@@ -1,5 +1,6 @@
 {
     "title": "Containment",
+    "friendly_name": "contain",
     "id": "RP-00003",
     "description": "This phase focuses on containing the situation to prevent further escalation and mitigate any potential risks. It involves implementing immediate measures to control the situation and protect resources."
 }
