@@ -9,7 +9,7 @@
     "created_on": "2025-06-03",
     "description": "This capability allows for stakeholders to list all victims affected by the incident. It provides a comprehensive overview of those impacted, enabling better resource allocation and response planning.",
     "frameworks": {
-        "iso27001-2022": [
+        "F0002": [
             "A.5.30",
             "A.5.23",
             "A.5.34",
@@ -18,7 +18,7 @@
             "A.8.1",
             "A.8.9"
         ],
-        "nist-csf": [
+        "F0003": [
             "DE.AE-1",
             "DE.AE-2",
             "DE.AE-3",

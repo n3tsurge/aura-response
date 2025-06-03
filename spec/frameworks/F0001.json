@@ -11,17 +11,17 @@
     "description": "The MITRE ATT&CK framework is a comprehensive knowledge base of adversary tactics and techniques based on real-world observations. It provides a common language for describing the actions of cyber adversaries, helping organizations to understand and improve their cybersecurity posture.",
     "external_references": [
         {
-            "title": "MITRE ATT&CK Official Website",
+            "name": "MITRE ATT&CK Official Website",
             "type": "website",
             "url": "https://attack.mitre.org/"
         },
         {
-            "title": "MITRE ATT&CK Documentation",
-            "type": "documentation",
+            "name": "MITRE ATT&CK Documentation",
+            "type": "website",
             "url": "https://attack.mitre.org/docs/"
         },
         {
-            "title": "MITRE ATT&CK Community",
+            "name": "MITRE ATT&CK Community",
             "type": "website",
             "url": "https://mitre-attack.slack.com/"
         }

@@ -15,10 +15,12 @@
     "external_references": [
         {
             "name": "ISO/IEC 27001:2022",
+            "type": "website",
             "url": "https://www.iso.org/standard/82875.html"
         },
         {
             "name": "ISO/IEC 27001:2022 Overview",
+            "type": "website",
             "url": "https://www.iso.org/isoiec-27001-information-security.html"
         }
     ]

@@ -15,10 +15,12 @@
     "external_references": [
         {
             "name": "NIST Cybersecurity Framework",
+            "type": "website",
             "url": "https://www.nist.gov/cyberframework"
         },
         {
             "name": "NIST CSF Overview",
+            "type": "website",
             "url": "https://www.nist.gov/cyberframework/overview"
         }
     ]
