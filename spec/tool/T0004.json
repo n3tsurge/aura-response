@@ -1,0 +1,19 @@
+{
+    "id": "T0004",
+    "ref": "tool:rapid7-insightvm",
+    "author": "n3tsurge",
+    "capability": [
+        "C2002"
+    ],
+    "category": [
+
+    ],
+    "created_on": "2025-06-03",
+    "description": "Rapid7 InsightVM is a vulnerability management solution that provides near real-time visibility into the security posture of an organization's IT environment. It helps identify, prioritize, and remediate vulnerabilities across networks, endpoints, and cloud environments. InsightVM offers advanced analytics, reporting capabilities, and integration with other security tools to enhance an organization's overall security strategy. Its continuous monitoring and assessment features enable proactive risk management and compliance with industry standards.",
+    "external_references": [
+       
+    ],
+    "friendly_name": "rapid7-insightvm",
+    "title": "Rapid7 InsightVM",
+    "unique_id": "d744c048-4037-4880-b893-ac9f87acc70a"
+}
