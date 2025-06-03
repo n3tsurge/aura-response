@@ -2,6 +2,11 @@
     "_id": "F0001",
     "_ref": "framework:mitre-attack",
     "author": "n3tsurge (brian.carroll@holman.com)",
+    "category": [
+        "cybersecurity",
+        "threat intelligence",
+        "adversary behavior"
+    ],
     "created_on": "2025-06-03",
     "description": "The MITRE ATT&CK framework is a comprehensive knowledge base of adversary tactics and techniques based on real-world observations. It provides a common language for describing the actions of cyber adversaries, helping organizations to understand and improve their cybersecurity posture.",
     "external_references": [
