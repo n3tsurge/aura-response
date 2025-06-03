@@ -49,3 +49,49 @@ An actor is a specific role within the incident response process, responsible fo
 - `stakeholders`: List of stakeholders involved in the incident response process, categorized by their roles and responsibilities.
 - `actors`: List of actors responsible for executing tasks related to the capability, categorized by their expertise and responsibilities.
 - `frameworks`: List of frameworks and standards that the capability aligns with, ensuring compliance and best practices in incident management.
+
+## Example
+
+```json
+{
+    "_id": "C2001",
+    "_ref": "capability:identification:list-alert-victims",
+    "author": "n3tsurge (brian.carroll@holman.com)",
+    "created_on": "2025-06-03",
+    "description": "This capability allows for stakeholders to list all victims affected by the incident. It provides a comprehensive overview of those impacted, enabling better resource allocation and response planning.",
+    "friendly_name": "list-alert-victims",
+    "title": "List Alert Victims",
+    "unique_id": "a7043822-b221-4b89-a3c0-775f162158a3",
+    "stakeholders": [
+        "commander",
+        "security-analyst",
+        "incident-responder",
+        "scribe"
+    ],
+    "actors": [
+        "incident-responder",
+        "security-analyst"
+    ],
+    "frameworks": {
+        "iso27001-2022": [
+            "A.5.30",
+            "A.5.23",
+            "A.5.34",
+            "A.6.1",
+            "A.5.27",
+            "A.8.1",
+            "A.8.9"
+        ],
+        "nist-csfs": [
+            "DE.AE-1",
+            "DE.AE-2",
+            "DE.AE-3",
+            "DE.AE-5",
+            "RS.AN-1",
+            "RS.AN-2",
+            "RS.AN-3",
+            "RS.AN-4"
+        ]
+    }
+}
+```
