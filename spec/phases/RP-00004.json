@@ -1,6 +1,8 @@
 {
     "title": "Eradication",
     "friendly_name": "eradicate",
+    "ref": "phase:eradication",
+    "unique_id": "952cbd5c-60ca-4faf-8670-60294a7669f4",
     "id": "RP-00004",
     "description": "This phase focuses on eliminating the root cause of the situation to prevent recurrence. It involves thorough investigation and implementation of measures to address the underlying issues."
 }

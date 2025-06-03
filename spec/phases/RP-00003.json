@@ -1,6 +1,8 @@
 {
     "title": "Containment",
     "friendly_name": "contain",
+    "ref": "phase:contain",
+    "unique_id": "3b026f33-4dff-465e-82b0-ced24d3553a0",
     "id": "RP-00003",
     "description": "This phase focuses on containing the situation to prevent further escalation and mitigate any potential risks. It involves implementing immediate measures to control the situation and protect resources."
 }
