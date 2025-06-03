@@ -52,7 +52,7 @@ def convert_schema_to_markdown(schema_path: Path) -> str:
 def main():
     """Main function to convert all schema JSON files in the current directory."""
 
-    OUTPUT_DIR = Path('build')
+    OUTPUT_DIR = Path('docs')
 
     # Create the output directory if it doesn't exist
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

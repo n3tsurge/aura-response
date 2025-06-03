@@ -76,7 +76,7 @@ class Capability(BaseComponent):
                     framework_name = framework_data.title
                     references = framework_data.external_references
 
-                controls = self.frameworks
+                controls = self.frameworks[framework]
                 markdown_content += f"### [{framework_name}]({framework_data.self_url()})\n\n#### Controls\n\n"
                 for control in controls:
                     markdown_content += f"- **{control}** \n"
