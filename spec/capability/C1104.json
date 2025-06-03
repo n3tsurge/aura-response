@@ -11,12 +11,12 @@
     "phase_friendly_name": "preparation",
     "stakeholders": [
         "commander",
-        "security_analyst",
-        "incident_responder"
+        "security-analyst",
+        "incident-responder"
     ],
     "actors": [
-        "security_analyst",
-        "incident_responder"
+        "security-analyst",
+        "incident-responder"
     ],
     "frameworks": {
         "F0002": [
