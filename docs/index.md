@@ -1,4 +1,4 @@
-# Adaptive Unified Response Architecture Project: Response Documentation
+# Adaptive Unified Response Architecture: Response
 
 ## Overview
 
