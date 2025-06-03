@@ -21,6 +21,11 @@
             "type": "documentation",
             "url": "https://www.sentinelone.com/resources/",
             "title": "SentinelOne Resources"
+        },
+        {
+            "type": "website",
+            "url": "https://community.sentinelone.com/s",
+            "title": "SentinelOne Community"
         }
     ]
 }
