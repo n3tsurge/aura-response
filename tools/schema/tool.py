@@ -38,7 +38,7 @@ class Tool(BaseComponent):
                     c for c in _capabilities if c.id == cap), None)
 
                 if capability:
-                    markdown_content += f"| [{capability.title}]({capability.self_url()}) | {capability.id} | {capability.phase_friendly_name.capitalize()} | {capability.description} |\n"
+                    markdown_content += f"| [{capability.title}]({self.id}/{capability.id}.md) | [{capability.id}]({capability.self_url()}) | {capability.phase_friendly_name.capitalize()} | {capability.description} |\n"
 
             markdown_content += "\n"
 
