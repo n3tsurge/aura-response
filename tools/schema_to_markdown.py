@@ -58,6 +58,26 @@ class Framework(BaseModel):
         if base_dir is None:
             return f"../frameworks/{self.id}.md"
         return f"{base_dir}/frameworks/{self.id}.md"
+    
+    def generate_markdown(self) -> str:
+        """Generates a Markdown representation of the framework."""
+        markdown_content = f"# {self.title}\n\n"
+        markdown_content += f"**Author:** {self.author}\n"
+        markdown_content += f"**Created On:** {self.created_on}\n\n"
+        markdown_content += f"## Overview\n\n{self.description}\n\n"
+        
+
+        if self.category:
+            markdown_content += "## Categories\n"
+            for cat in self.category:
+                markdown_content += f"- {cat}\n"
+
+        if self.external_references:
+            markdown_content += "## External References\n"
+            for ref in self.external_references:
+                markdown_content += f"- [{ref.name}]({ref.url})\n"
+
+        return markdown_content.strip()
 
     @classmethod
     def load(cls) -> dict['Framework', str]:
@@ -91,12 +111,20 @@ def convert_schema_to_markdown(schema_path: Path) -> str:
     with open(schema_path, 'r', encoding='utf-8') as file:
         schema = json.load(file)
 
-    markdown_content = f"# {schema.get('title', 'Title')}\n\n"
-    markdown_content += f"## Overview\n\n{schema.get('description', 'No description available.')}\n\n"
+    markdown_content = ""
 
     # If this is a capability schema, add additional information
     # this can be determined by looking at the _ref field
     if 'ref' in schema:
+        
+        if schema['ref'].startswith('framework:'):
+            framework = Framework(**schema)
+            markdown_content += framework.generate_markdown()
+            return markdown_content
+        
+        markdown_content = f"# {schema.get('title', 'Title')}\n\n"
+        markdown_content += f"## Overview\n\n{schema.get('description', 'No description available.')}\n\n"
+            
 
         if schema['ref'].startswith('capability:'):
 
