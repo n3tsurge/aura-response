@@ -10,8 +10,13 @@
     "phase": "P0001",
     "phase_friendly_name": "preparation",
     "stakeholders": [
+        "commander",
+        "security_analyst",
+        "incident_responder"
     ],
     "actors": [
+        "security_analyst",
+        "incident_responder"
     ],
     "frameworks": {
         "F0002": [
