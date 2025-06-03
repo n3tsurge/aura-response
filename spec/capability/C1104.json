@@ -8,6 +8,7 @@
     "title": "Access External HTTP Logs",
     "unique_id": "f17d742f-87cf-4e94-a4a0-413f78eac6e7",
     "phase": "P0001",
+    "phase_friendly_name": "preparation",
     "stakeholders": [
     ],
     "actors": [
