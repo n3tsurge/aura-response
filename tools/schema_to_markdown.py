@@ -86,13 +86,6 @@ class Framework(BaseModel):
 
         return frameworks
 
-
-def load_frameworks() -> dict:
-    """Loads all the frameworks from the JSON files in the 'frameworks' directory."""
-
-    return frameworks
-
-
 def convert_schema_to_markdown(schema_path: Path) -> str:
     """Converts a schema JSON file to Markdown format."""
     with open(schema_path, 'r', encoding='utf-8') as file:
