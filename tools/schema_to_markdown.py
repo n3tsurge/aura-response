@@ -58,14 +58,13 @@ class Framework(BaseModel):
         if base_dir is None:
             return f"../frameworks/{self.id}.md"
         return f"{base_dir}/frameworks/{self.id}.md"
-    
+
     def generate_markdown(self) -> str:
         """Generates a Markdown representation of the framework."""
         markdown_content = f"# {self.title}\n\n"
         markdown_content += f"**Author:** {self.author}\n"
         markdown_content += f"**Created On:** {self.created_on}\n\n"
         markdown_content += f"## Overview\n\n{self.description}\n\n"
-        
 
         if self.category:
             markdown_content += "## Categories\n"
@@ -106,6 +105,7 @@ class Framework(BaseModel):
 
         return frameworks
 
+
 def convert_schema_to_markdown(schema_path: Path) -> str:
     """Converts a schema JSON file to Markdown format."""
     with open(schema_path, 'r', encoding='utf-8') as file:
@@ -116,15 +116,14 @@ def convert_schema_to_markdown(schema_path: Path) -> str:
     # If this is a capability schema, add additional information
     # this can be determined by looking at the _ref field
     if 'ref' in schema:
-        
+
         if schema['ref'].startswith('framework:'):
             framework = Framework(**schema)
             markdown_content += framework.generate_markdown()
             return markdown_content
-        
+
         markdown_content = f"# {schema.get('title', 'Title')}\n\n"
         markdown_content += f"## Overview\n\n{schema.get('description', 'No description available.')}\n\n"
-            
 
         if schema['ref'].startswith('capability:'):
 
