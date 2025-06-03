@@ -12,6 +12,18 @@ The AURA project aims to create a unified structure for mapping security detecti
 - **Standardized Mapping**: A structured approach to map security detections and responses across different platforms and frameworks.
 - **Documentation and Examples**: Detailed documentation and examples to guide users in implementing the framework effectively.
 
+# Component ID Taxonomy
+
+Every component in the AURA Response framework is assigned a unique identifier based on its type and function. This taxonomy ensures consistency and clarity in referencing components across the documentation and implementation. As well as a friendly name and identifier for each component, a UUID is also assigned to each component to ensure uniqueness across the entire framework. This allows for easy tracking and management of components within the AURA Response ecosystem.
+
+## Examples
+
+- `rb-00001`: Response Playbook for Phishing Incident
+- `rc-00001`: Response Capability for Threat Detection or Log Analysis
+- `rt-00001`: Response Tool for Endpoint Detection and Response (EDR)
+- `rf-00001`: Response Framework for Incident Management
+- `rp-00001`: Response Phase for Containment and Eradication
+
 # Components
 
 - **[Response Playbooks](playbooks.md)**: Structured guides for managing security incidents, ensuring a consistent and effective approach to remediation.
