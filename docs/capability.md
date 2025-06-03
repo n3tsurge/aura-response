@@ -55,7 +55,7 @@ An actor is a specific role within the incident response process, responsible fo
 ```json
 {
     "_id": "C2001",
-    "_ref": "capability:identification:list-alert-victims",
+    "_ref": "capability:identify:list-alert-victims",
     "author": "n3tsurge (brian.carroll@holman.com)",
     "created_on": "2025-06-03",
     "description": "This capability allows for stakeholders to list all victims affected by the incident. It provides a comprehensive overview of those impacted, enabling better resource allocation and response planning.",
