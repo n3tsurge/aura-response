@@ -1,0 +1,17 @@
+{
+    "_id": "C0000",
+    "_ref": "capability:identify:template",
+    "author": "n3tsurge (bcarroll@zeroonesecurity.com)",
+    "created_on": "2025-06-03",
+    "description": "This is a template for capabilities that can be used to define specific actions or processes within a phase. It serves as a starting point for creating detailed capability specifications.",
+    "friendly_name": "template",
+    "title": "Template",
+    "unique_id": "00000000-0000-0000-0000-000000000000",
+    "phase": "P0000",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    }
+}
