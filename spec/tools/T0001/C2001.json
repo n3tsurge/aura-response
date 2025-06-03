@@ -1,0 +1,10 @@
+{
+    "_id": "T0001.C2001",
+    "_ref": "tool:sentinelone:identification:list-alert-victims",
+    "author": "n3tsurge (brian.carroll@holman.com)",
+    "created_on": "2025-06-03",
+    "description": "This tool capability allows stakeholders to list all victims affected by the incident using SentinelOne. It provides a comprehensive overview of those impacted, enabling better resource allocation and response planning.\n\n### How to List Alert Victims via SentinelOne Console (GUI)\n\n1. **Log into the SentinelOne Management Console.**\n2. Navigate to the **'Incidents'** or **'Threats'** tab depending on how your console is configured.\n3. Apply relevant **filters** such as date range, threat type, severity, or site.\n4. Click on an individual incident or alert to open its detail view.\n5. Within the detail pane, locate the **'Affected Endpoints'**, **'Agent'**, or **'User'** sections. These contain victim information:\n   - `Machine Name`\n   - `Username`\n   - `Group Name` or `Site`\n6. Use the **'Export'** button (top-right) to download the full victim list as a CSV if needed.\n7. Optionally, use the **'Comment'** or **'Tag'** features to track and annotate victim systems.\n\nThis method enables quick identification of affected assets directly within the SentinelOne UI.",
+    "friendly_name": "sentinelone-list-alert-victims",
+    "title": "SentinelOne - List Alert Victims",
+    "unique_id": "613fbcd4-5035-4a9f-85e3-834395f6b06c"
+}
