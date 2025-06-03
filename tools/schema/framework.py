@@ -44,8 +44,6 @@ class Framework(BaseModel):
     def generate_markdown(self) -> str:
         """Generates a Markdown representation of the framework."""
         markdown_content = f"# {self.title}\n\n"
-        markdown_content += f"**Author:** {self.author}\n"
-        markdown_content += f"**Created On:** {self.created_on}\n\n"
         markdown_content += f"## Overview\n\n{self.description}\n\n"
 
         if self.category:

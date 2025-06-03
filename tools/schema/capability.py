@@ -39,10 +39,11 @@ class Capability(BaseComponent):
     def generate_markdown(self) -> str:
         """Generates a Markdown representation of the capability."""
         markdown_content = f"# {self.title}\n\n"
-        markdown_content += f"## Overview\n\n{self.description}\n\n"
-
+    
         if self.phase:
-            markdown_content += f"**Phase:** {self.phase}\n\n"
+            markdown_content += f"![](https://img.shields.io/badge/{self.phase}-{self.phase_friendly_name}-white)\n\n"
+            
+        markdown_content += f"## Overview\n\n{self.description}\n\n"
 
         if self.stakeholders:
             markdown_content += "## Stakeholders\n"
