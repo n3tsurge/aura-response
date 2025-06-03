@@ -3,6 +3,8 @@
     "friendly_name": "commander",
     "ref": "stakeholder:commander",
     "id": "RS-00001",
+    "author": "n3tsurge (brian.carroll@holman.com)",
+    "created_on": "2025-06-03",
     "unique_id": "e9bbff01-4e0b-49d8-8d99-bd2f3d631d03",
     "description": "The Incident Commander is responsible for overseeing the entire incident response process. They coordinate all activities, make critical decisions, and ensure that the response team is effectively managing the situation. Their leadership is crucial for the success of the incident response efforts."
 }

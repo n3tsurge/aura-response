@@ -4,5 +4,7 @@
     "ref": "phase:learn",
     "unique_id": "716dab09-3979-4017-ba3e-6e54cd3f9b93",
     "id": "RP-00006",
+    "author": "n3tsurge (brian.carroll@holman.com)",
+    "created_on": "2025-06-03",
     "description": "This phase involves reviewing the entire project to identify successes and areas for improvement. It includes documenting lessons learned to enhance future projects and prevent similar issues."
 }
