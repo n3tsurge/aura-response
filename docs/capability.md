@@ -40,6 +40,7 @@ An actor is a specific role within the incident response process, responsible fo
 ## Schema Fields
 
 - `_id`: Unique identifier for the response capability.
+- `unique_id`: Universally unique identifier (UUID) for the capability, ensuring uniqueness across the entire AURA Response framework.
 - `friendly_name`: Human-readable name for the capability.
 - `description`: Detailed description of the capability, outlining its purpose and integration with other components.
 - `author`: The individual or team responsible for creating the capability.
