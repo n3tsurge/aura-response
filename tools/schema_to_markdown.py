@@ -5,7 +5,7 @@ additional information."""
 
 import json
 import os
-from schema import Framework, ExternalReference
+from schema import Framework, ExternalReference, Tool, Capability
 
 from pathlib import Path
 
@@ -25,46 +25,21 @@ def convert_schema_to_markdown(schema_path: Path) -> str:
             framework = Framework(**schema)
             markdown_content += framework.generate_markdown()
             return markdown_content
+        
+        if schema['ref'].startswith('tool:'):
+            tool = Tool(**schema)
+            markdown_content += tool.generate_markdown()
+            return markdown_content
+        
+        if schema['ref'].startswith('capability:'):
+            # Generate the markdown content for the capability
+            capability = Capability(**schema)
+            markdown_content += capability.generate_markdown()
+            return markdown_content
 
         markdown_content = f"# {schema.get('title', 'Title')}\n\n"
         markdown_content += f"## Overview\n\n{schema.get('description', 'No description available.')}\n\n"
-
-        if schema['ref'].startswith('capability:'):
-
-            loaded_frameworks = Framework.load()
-
-            # Add the framework information
-            frameworks = schema.get('frameworks', [])
-            if len(frameworks) > 0:
-                markdown_content += "## Frameworks\n"
-
-                for framework in frameworks:
-                    framework_name = "Unknown Framework"
-                    references = []
-
-                    # Get the framework from the list of loaded frameworks using the _id
-
-                    framework_data = next(
-                        (f for f in loaded_frameworks if f.id == framework), None)
-
-                    if framework_data:
-                        framework_name = framework_data.title
-                        references = framework_data.external_references
-
-                    controls = schema.get('frameworks', {}).get(framework, [])
-                    markdown_content += f"### [{framework_name}]({framework_data.self_url()})\n\n#### Controls\n\n"
-                    for control in controls:
-                        markdown_content += f"- **{control}**: \n"
-                    markdown_content += "\n"
-
-                    if references:
-                        markdown_content += "#### References\n\n"
-                        for reference in references:
-                            if reference.type == 'website':
-                                markdown_content += f"- [{reference.name}]({reference.url})\n"
-                            else:
-                                markdown_content += f"- {reference}\n"
-                        markdown_content += "\n"
+                    
 
     if 'fields' in schema:
         markdown_content += "## Fields\n"

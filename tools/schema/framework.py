@@ -35,9 +35,6 @@ class Framework(BaseModel):
         description="A unique identifier for the framework, if applicable."
     )
 
-    class Config:
-        underscore_attrs_are_private = False
-
     def self_url(self, base_dir: str = None) -> str:
         """Returns the URL to the framework's self-reference."""
         if base_dir is None:
