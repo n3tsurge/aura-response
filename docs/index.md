@@ -14,7 +14,8 @@ The AURA project aims to create a unified structure for mapping security detecti
 
 # Components
 
-- **[Response Playbooks](response_playbooks.md)**: Structured guides for managing security incidents, ensuring a consistent and effective approach to remediation.
-- **[Response Capability](response_capability.md)**: A set of capabilities that every security team should have to effectively detect, analyze, and respond to security threats.
-- **[Response Tools](response_tools.md)**: A comprehensive set of utilities and frameworks designed to enhance the efficiency and effectiveness of security incident response.
-- **[Response Phases](response_phases.md)**: A structured approach to incident response, including preparation, detection, analysis, containment, eradication, recovery, and post-incident review.
+- **[Response Playbooks](playbooks.md)**: Structured guides for managing security incidents, ensuring a consistent and effective approach to remediation.
+- **[Response Capability](capability.md)**: A set of capabilities that every security team should have to effectively detect, analyze, and respond to security threats.
+- **[Response Tools](tools.md)**: A comprehensive set of utilities and frameworks designed to enhance the efficiency and effectiveness of security incident response.
+- **[Response Phases](phases.md)**: A structured approach to incident response, including preparation, detection, analysis, containment, eradication, recovery, and post-incident review.
+- **[Response Frameworks](frameworks.md)**: Integration with established security frameworks and standards to ensure compliance and best practices in incident management.
