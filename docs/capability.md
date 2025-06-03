@@ -8,10 +8,11 @@ The response capability in the AURA project is designed to enhance the effective
 
 Response capabilities are linked to other AURA Response components, such as:
 
-- Phases: Each response capability is associated with specific phases of incident management, ensuring a structured approach to handling security incidents.
-- Playbooks: Response capabilities are integrated into playbooks, providing detailed guidance on how to implement specific response actions based on the context of the incident.
-- Tools: The framework incorporates various security tools and platforms, allowing for a seamless response to incidents across different environments.
-- Frameworks: Response capabilities are aligned with established security frameworks and standards, ensuring compliance and best practices in incident management.
+- **Phases**: Each response capability is associated with specific phases of incident management, ensuring a structured approach to handling security incidents.
+- **Playbooks**: Response capabilities are integrated into playbooks, providing detailed guidance on how to implement specific response actions based on the context of the incident.
+- **Tools**: The framework incorporates various security tools and platforms, allowing for a seamless response to incidents across different environments.
+- **Frameworks**: Response capabilities are aligned with established security frameworks and standards, ensuring compliance and best practices in incident management.
+- **Stakeholders/Actors**: The framework identifies key stakeholders involved in the incident response process, ensuring a coordinated effort in managing security incidents.
 
 ## Schema
 
