@@ -17,12 +17,12 @@ Every component in the AURA Response framework is assigned a unique identifier b
 
 ### Examples
 
-- `PB0001`: Response Playbook for Phishing Incident
-- `C0001`: Response Capability for Threat Detection or Log Analysis
-- `T0001`: Response Tool for Endpoint Detection and Response (EDR)
-- `F0001`: Response Framework for Incident Management
-- `P0001`: Response Phase for Containment and Eradication
-- `S0001`: Response Stakeholder for actionable tasks or reporting
+- `PB0001`: Response Playbook
+- `C0001`: Response Capability
+- `T0001`: Cyber Security Tools
+- `F0001`: IT, CyberSecurity, or Compliance Frameworks
+- `P0001`: Incident Response Phases
+- `S0001`: Incident Resposne Stakeholders for actionable tasks or reporting
 
 ## Components
 
