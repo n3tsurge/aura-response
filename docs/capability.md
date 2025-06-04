@@ -68,9 +68,9 @@ An actor is a specific role within the incident response process, responsible fo
                 "description": "Geolocate victims based on their IP addresses to understand their geographical distribution.",
             }
         ],
-        "hunting": [...],
-        "fields": [...],
-        "automation": [...]
+        "hunting": [],
+        "fields": [],
+        "automation": []
     },
     "friendly_name": "list-alert-victims",
     "title": "List Alert Victims",
