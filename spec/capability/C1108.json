@@ -1,0 +1,45 @@
+{
+    "id": "C1108",
+    "ref": "capability:preparation:access-dhcp-logs",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves accessing and reviewing DHCP logs to identify any anomalies or unauthorized activities related to IP address assignments. It is crucial for understanding network behavior and detecting potential security incidents.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "friendly_name": "access-dhcp-logs",
+    "title": "Access DHCP Logs",
+    "unique_id": "696c694a-4af8-4eb1-ac22-0427d31b348d",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+        "security-analyst"
+    ],
+    "actors": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0003": [
+            "ID.AM-1",
+            "ID.AM-2",
+            "PR.PT-1",
+            "PR.AC-3",
+            "DE.CM-1",
+            "DE.CM-7"
+        ],
+        "F0002": [
+            "A.5.9",
+            "A.5.10",
+            "A.5.23",
+            "A.5.30",
+            "A.5.28"
+        ]
+    },
+    "references": [
+
+    ]
+}
