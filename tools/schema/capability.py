@@ -55,9 +55,16 @@ class Capability(BaseComponent):
     )
 
     @classmethod
-    def generate_index_md(cls, items: list[Any]) -> str:
-        """Generates a Table of Contents for the component"""
-        raise NotImplementedError
+    def generate_index_md(cls, items: list['Capability']) -> str:
+        """Generates a Table of Contents for the tools."""
+        toc = "# Capabilities\n\n"
+        toc += "| Capability | ID | Description |\n"
+        toc += "|------|----|-------------|\n"
+        
+        for capability in items:
+            toc += f"| [{capability.title}]({capability.self_url()}) | {capability.id} | {capability.description} |\n"
+        
+        return toc.strip()
 
     @classmethod
     def generate_framework_matrix(cls, items: list[Any]) -> str:

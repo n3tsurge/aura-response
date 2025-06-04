@@ -62,7 +62,7 @@ def main():
     # Generate index pages
     registry = {}
     registry['tool'] = Tool.load()
-    #registry['capability'] = Capability.load()
+    registry['capability'] = Capability.load()
     #registry['framework'] = Framework.load()
     
     # Generate the framework coverage matrix
