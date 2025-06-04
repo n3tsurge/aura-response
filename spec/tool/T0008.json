@@ -1,0 +1,24 @@
+{
+    "id": "T0008",
+    "ref": "tool:palo-alto-fw",
+    "author": "n3tsurge",
+    "capability": [
+        "C1101",
+        "C1102",
+        "C1103",
+        "C1104",
+        "C1105",
+        "C1106"
+    ],
+    "category": [
+        "network firewall"
+    ],
+    "created_on": "2025-06-03",
+    "description": "Palo Alto Firewall is a next-generation firewall that provides advanced security features to protect networks from cyber threats. It offers capabilities such as application visibility and control, intrusion prevention, and threat intelligence integration. Palo Alto Firewalls are designed to secure both on-premises and cloud environments, making them a versatile solution for organizations looking to enhance their network security posture.",
+    "external_references": [
+       
+    ],
+    "friendly_name": "palo-alto-fw",
+    "title": "Palo Alto Firewall",
+    "unique_id": "0aa2ab43-2843-432a-91b0-7b62bb7ba633"
+}

@@ -1,0 +1,24 @@
+{
+    "id": "T0007",
+    "ref": "tool:cisco-fw",
+    "author": "n3tsurge",
+    "capability": [
+        "C1101",
+        "C1102",
+        "C1103",
+        "C1104",
+        "C1105",
+        "C1106"
+    ],
+    "category": [
+        "network monitoring"
+    ],
+    "created_on": "2025-06-03",
+    "description": "Cisco Firewall (ASA/NGFW) is a family of network security devices that provide advanced threat protection and secure access control. It is designed to protect networks from unauthorized access, malware, and other cyber threats. The firewall offers features such as stateful inspection, VPN support, intrusion prevention, and application visibility, making it an essential tool for maintaining network security and compliance.",
+    "external_references": [
+       
+    ],
+    "friendly_name": "cisco-fw",
+    "title": "Cisco Firewall (ASA/NGFW)",
+    "unique_id": "2c00be23-7ccf-4e4e-993c-ac268db7412c"
+}
