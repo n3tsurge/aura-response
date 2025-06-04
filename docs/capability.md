@@ -65,7 +65,7 @@ An actor is a specific role within the incident response process, responsible fo
         "enrichment": [
             {
                 "title": "Geolocation",
-                "description": "Geolocate victims based on their IP addresses to understand their geographical distribution.",
+                "description": "Geolocate victims based on their IP addresses to understand their geographical distribution."
             }
         ],
         "hunting": [],
