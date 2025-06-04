@@ -1,0 +1,19 @@
+{
+    "id": "T0006",
+    "ref": "tool:stateseeker",
+    "author": "n3tsurge",
+    "capability": [
+        "C1101"
+    ],
+    "category": [
+        "network monitoring"
+    ],
+    "created_on": "2025-06-03",
+    "description": "Statseeker is a network monitoring tool that provides real-time visibility into network performance and health. It helps organizations to monitor their network infrastructure, identify issues, and optimize performance. Statseeker's capabilities include network traffic analysis, device monitoring, and alerting, making it a valuable tool for maintaining network reliability and efficiency.",
+    "external_references": [
+       
+    ],
+    "friendly_name": "stateseeker",
+    "title": "Statseeker",
+    "unique_id": "8eccb1a3-3dae-4e42-930c-57f86a0a6f2e"
+}

@@ -1,6 +1,6 @@
 {
     "id": "S0002",
-    "ref": "stakeholder:responder",
+    "ref": "stakeholder:incident-responder",
     "author": "n3tsurge",
     "created_on": "2025-06-03",
     "description": "The Incident Responder is responsible for executing the incident response plan. They carry out the tasks necessary to address the incident, including containment, eradication, and recovery efforts. Their role is critical in ensuring that the incident is managed effectively and efficiently.",

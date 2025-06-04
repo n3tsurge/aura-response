@@ -14,6 +14,7 @@
     "title": "Template",
     "unique_id": "00000000-0000-0000-0000-000000000000",
     "phase": "P0000",
+    "phase_friendly_name": "template-phase",
     "stakeholders": [
     ],
     "actors": [

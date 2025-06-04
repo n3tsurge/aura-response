@@ -5,20 +5,88 @@
     "created_on": "2025-06-03",
     "description": "This capability involves accessing external flow logs to gather information about network traffic and communications. It is essential for understanding the context of incidents and identifying potential threats or anomalies in the network.",
     "documentation": {
-        "enrichment": [],
-        "hunting": [],
-        "fields": [],
+        "enrichment": [
+            {
+                "title": "Geolocation",
+                "type": "list-item",
+                "description": "Enrich the IP addresses with geolocation data to understand the origin of the traffic."
+            },
+            {
+                "title": "Threat Intelligence",
+                "type": "list-item",
+                "description": "Integrate threat intelligence feeds to identify known malicious IP addresses or patterns."
+            },
+            {
+                "title": "User Context",
+                "type": "list-item",
+                "description": "Correlate flow logs with user profiles to understand user behavior and potential insider threats."
+            }
+        ],
+        "hunting": [
+
+        ],
+        "fields": [
+            {
+                "title": "Source IP",
+                "type": "list-item",
+                "description": "The IP address of the source of the traffic."
+            },
+            {
+                "title": "Destination IP",
+                "type": "list-item",
+                "description": "The IP address of the destination of the traffic."
+            },
+            {
+                "title": "Protocol",
+                "type": "list-item",
+                "description": "The protocol used for the communication (e.g., TCP, UDP)."
+            },
+            {
+                "title": "Port Numbers",
+                "type": "list-item",
+                "description": "The source and destination port numbers involved in the communication."
+            },
+            {
+                "title": "Bytes Transferred",
+                "type": "list-item",
+                "description": "The amount of data transferred during the communication."
+            },
+            {
+                "title": "Timestamp",
+                "type": "list-item",
+                "description": "The timestamp of when the flow was recorded."
+            }
+        ],
         "automation": []
     },
-    "friendly_name": "template",
-    "title": "Template",
-    "unique_id": "00000000-0000-0000-0000-000000000000",
-    "phase": "P0000",
+    "friendly_name": "access-external-flow-logs",
+    "title": "Access External Flow Logs",
+    "unique_id": "fe73107d-86bc-490c-bf2c-8f1b194227ad",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
     "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "incident-responder"
     ],
     "actors": [
+        "security-analyst",
+        "incident-responder"
     ],
     "frameworks": {
+        "F0003": [
+            "DE.CM-1",
+            "DE.CM-7",
+            "DE.AE-1",
+            "PR.PT-1"
+        ],
+        "F0002": [
+            "A.5.7",
+            "A.8.16",
+            "A.5.23",
+            "A.5.28",
+            "A.5.30"
+        ]
     },
     "references": [
         {
