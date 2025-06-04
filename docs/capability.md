@@ -62,10 +62,15 @@ An actor is a specific role within the incident response process, responsible fo
     "created_on": "2025-06-03",
     "description": "This capability allows for stakeholders to list all victims affected by the incident. It provides a comprehensive overview of those impacted, enabling better resource allocation and response planning.",
     "documentation": {
-        "enrichment": [],
-        "hunting": [],
-        "fields": [],
-        "automation": []
+        "enrichment": [
+            {
+                "title": "Geolocation",
+                "description": "Geolocate victims based on their IP addresses to understand their geographical distribution.",
+            }
+        ],
+        "hunting": [...],
+        "fields": [...],
+        "automation": [...]
     },
     "friendly_name": "list-alert-victims",
     "title": "List Alert Victims",
