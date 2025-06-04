@@ -49,6 +49,11 @@ class Capability(BaseComponent):
         default_factory=list,
         description="A list of actors associated with the capability."
     )
+    references: Optional[list[ExternalReference]] = Field(
+        default_factory=list,
+        description="A list of references related to the capability."
+    )
+    
     
     @classmethod
     def generate_index_md(cls, tools: list[Any]) -> str:
@@ -94,6 +99,16 @@ class Capability(BaseComponent):
                         else:
                             markdown_content += f"### {item.title}\n\n{item.description}\n\n"
                     markdown_content += "\n"
+                    
+        if self.references:
+            if len(self.references) > 0:
+                markdown_content += "## References\n\n"
+                for reference in self.references:
+                    if reference.type == 'website':
+                        if reference.name:
+                            markdown_content += f"- [{reference.name}]({reference.url})\n"
+                        else:
+                            markdown_content += f"- [{reference.url}]({reference.url})\n"
 
         if self.frameworks:
             markdown_content += "## Frameworks\n"

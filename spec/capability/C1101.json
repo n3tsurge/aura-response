@@ -1,9 +1,9 @@
 {
-    "id": "C0000",
-    "ref": "capability:identify:template",
+    "id": "C1101",
+    "ref": "capability:preparation:access-external-flow-logs",
     "author": "n3tsurge",
     "created_on": "2025-06-03",
-    "description": "This is a template for capabilities that can be used to define specific actions or processes within a phase. It serves as a starting point for creating detailed capability specifications.",
+    "description": "This capability involves accessing external flow logs to gather information about network traffic and communications. It is essential for understanding the context of incidents and identifying potential threats or anomalies in the network.",
     "documentation": {
         "enrichment": [],
         "hunting": [],
@@ -23,7 +23,7 @@
     "references": [
         {
             "type": "website",
-            "url": "https://example.com/template-documentation"
+            "url": "https://en.wikipedia.org/wiki/NetFlow"
         }
     ]
 }
