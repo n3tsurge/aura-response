@@ -3,7 +3,7 @@
     "ref": "capability:preparation:access-vulnerability-management-logs",
     "author": "n3tsurge",
     "created_on": "2025-06-03",
-    "description": "This is a template for capabilities that can be used to define specific actions or processes within a phase. It serves as a starting point for creating detailed capability specifications.",
+    "description": "This capability involves accessing and reviewing logs from the vulnerability management system to identify any anomalies or unauthorized activities related to vulnerability assessments and remediation efforts. It is crucial for understanding the security posture of the organization and detecting potential security incidents.",
     "documentation": {
         "enrichment": [],
         "hunting": [],

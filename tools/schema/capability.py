@@ -58,11 +58,11 @@ class Capability(BaseComponent):
     def generate_index_md(cls, items: list['Capability']) -> str:
         """Generates a Table of Contents for the tools."""
         toc = "# Capabilities\n\n"
-        toc += "| Capability | ID | Description |\n"
-        toc += "|------|----|-------------|\n"
+        toc += "| Capability | ID | Phase | Description |\n"
+        toc += "|------------|----|-------|-------------|\n"
         
         for capability in items:
-            toc += f"| [{capability.title}]({capability.self_url()}) | {capability.id} | {capability.description} |\n"
+            toc += f"| [{capability.title}]({capability.self_url()}) | {capability.id} | {capability.phase_friendly_name} | {capability.description} |\n"
         
         return toc.strip()
 
