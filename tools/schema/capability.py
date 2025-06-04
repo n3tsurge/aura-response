@@ -1,11 +1,30 @@
 from typing import Optional,Any
-from pydantic import Field
+from pydantic import BaseModel, Field
 from schema.external_reference import ExternalReference
 from schema.framework import Framework
 from schema.base import BaseComponent
 
 
+class DocumentationElement(BaseModel):
+    title: str = Field(
+        ...,
+        description="The name of the documentation element."
+    )
+    type: str = Field(
+        ...,
+        description="The type of the documentation element, e.g., 'list-item', 'section', etc."
+    )
+    description: str = Field(
+        ...,
+        description="A brief description of the documentation element."
+    )
+
+
 class Capability(BaseComponent):
+    documentation: Optional[dict[str, list[DocumentationElement]]] = Field(
+        default_factory=dict,
+        description="A dictionary containing documentation elements categorized by their type."
+    )
     frameworks: dict = Field(
         default_factory=list,
         description="A list of frameworks associated with the capability."
@@ -63,6 +82,17 @@ class Capability(BaseComponent):
             for actor in self.actors:
                 markdown_content += f"- {actor}\n"
             markdown_content += "\n"
+            
+        if self.documentation:
+            for key in self.documentation.keys():
+                markdown_content += f"## {key.title().capitalize()}\n\n"
+                doc_part = self.documentation[key]
+                for item in doc_part:
+                    if item.type == "list-item":
+                        markdown_content += f"- **{item.title}**: {item.description}\n"
+                    else:
+                        markdown_content += f"### {item.title}\n\n{item.description}\n\n"
+                markdown_content += "\n"
 
         if self.frameworks:
             markdown_content += "## Frameworks\n"
