@@ -6,7 +6,8 @@
 
     ],
     "category": [
-
+        "microsegmentation",
+        "network security"
     ],
     "created_on": "2025-06-03",
     "description": "Guardicore is a micro-segmentation and data center security solution that provides visibility and control over network traffic. It helps organizations to protect their critical assets by segmenting their networks, monitoring traffic patterns, and enforcing security policies. Guardicore's advanced threat detection capabilities enable rapid response to potential threats, ensuring that sensitive data remains secure while maintaining operational efficiency.",

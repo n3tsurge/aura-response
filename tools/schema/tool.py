@@ -13,6 +13,18 @@ class Tool(BaseComponent):
         default_factory=list,
         description="A list of external references related to the tool."
     )
+    
+    @classmethod
+    def generate_index_md(cls, tools: list['Tool']) -> str:
+        """Generates a Table of Contents for the tools."""
+        toc = "# Tools\n\n"
+        toc += "| Tool | Category | ID | Description |\n"
+        toc += "|------|----------|----|-------------|\n"
+        
+        for tool in tools:
+            toc += f"| [{tool.title}]({tool.self_url()}) | {', '.join(tool.category)} | {tool.id} | {tool.description} |\n"
+        
+        return toc.strip()
 
     def generate_markdown(self) -> str:
         """Generates a Markdown representation of the tool."""

@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional,Any
 from pydantic import Field
 from schema.external_reference import ExternalReference
 from schema.framework import Framework
@@ -30,6 +30,11 @@ class Capability(BaseComponent):
         default_factory=list,
         description="A list of actors associated with the capability."
     )
+    
+    @classmethod
+    def generate_index_md(cls, tools: list[Any]) -> str:
+        """Generates a Table of Contents for the component"""
+        raise NotImplementedError
     
     @classmethod
     def load(cls) -> dict['Capability', str]:

@@ -1,0 +1,21 @@
+{
+    "id": "T0005",
+    "ref": "tool:wiz",
+    "author": "n3tsurge",
+    "capability": [
+
+    ],
+    "category": [
+        "cloud security",
+        "vulnerability management",
+        "compliance"
+    ],
+    "created_on": "2025-06-03",
+    "description": "Wiz.io is a cloud security platform that provides comprehensive visibility and security for cloud environments. It helps organizations to identify and remediate vulnerabilities, misconfigurations, and compliance issues across their cloud infrastructure. Wiz.io's advanced threat detection capabilities enable proactive security measures, ensuring that cloud resources are protected against potential threats while maintaining operational efficiency.",
+    "external_references": [
+       
+    ],
+    "friendly_name": "wiz",
+    "title": "Wiz.io",
+    "unique_id": "dbae7d16-c4e6-46f0-926a-a0933e921283"
+}
