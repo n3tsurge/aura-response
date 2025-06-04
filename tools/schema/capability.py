@@ -85,14 +85,15 @@ class Capability(BaseComponent):
             
         if self.documentation:
             for key in self.documentation.keys():
-                markdown_content += f"## {key.title().capitalize()}\n\n"
                 doc_part = self.documentation[key]
-                for item in doc_part:
-                    if item.type == "list-item":
-                        markdown_content += f"- **{item.title}**: {item.description}\n"
-                    else:
-                        markdown_content += f"### {item.title}\n\n{item.description}\n\n"
-                markdown_content += "\n"
+                if len(doc_part) > 0:
+                    markdown_content += f"## {key.title().capitalize()}\n\n"
+                    for item in doc_part:
+                        if item.type == "list-item":
+                            markdown_content += f"- **{item.title}**: {item.description}\n"
+                        else:
+                            markdown_content += f"### {item.title}\n\n{item.description}\n\n"
+                    markdown_content += "\n"
 
         if self.frameworks:
             markdown_content += "## Frameworks\n"
