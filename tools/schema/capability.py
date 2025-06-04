@@ -68,7 +68,7 @@ class Capability(BaseComponent):
         markdown_content = "# Framework Coverage Matrix\n\n"
         markdown_content += "This matrix shows the coverage of capabilities across different frameworks.\n\n"
         markdown_content += "| Capability | " + " | ".join(f"[{f.title}]({f.self_url()})" for f in Framework.load()) + " |\n"
-        markdown_content += "| --- | " + " | ".join("---" for _ in Framework.load()) + " |\n"
+        markdown_content += "| :--- | " + " | ".join(":---" for _ in Framework.load()) + " |\n"
         
         for capability in items:
             markdown_content += f"| {capability.title} | "
