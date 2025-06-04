@@ -3,7 +3,7 @@
     "ref": "stakeholder:scribe",
     "author": "n3tsurge",
     "created_on": "2025-06-03",
-    "description": "The Incident Scribe is responsible for documenting all actions, decisions, and communications during the incident response process. They ensure that a detailed record is maintained, which is crucial for post-incident analysis and reporting. Their meticulous documentation helps in understanding the incident's progression and the effectiveness of the response efforts.",
+    "description": "The Incident Scribe is responsible for documenting all actions, decisions, and communications during the incident response process. They ensure that a detailed record is maintained, which is crucial for post-incident analysis and reporting. Their meticulous documentation helps in understanding the incident's progression and the effectiveness of the response efforts.\n\n## Responsibilities:\n- Document all actions taken during the incident response.\n- Record decisions made by the Incident Commander and other stakeholders.\n- Maintain a timeline of events to assist in post-incident reviews.\n- Ensure that all communications are accurately captured and archived.\n- Collaborate with the Incident Commander and other team members to gather necessary information.\n- Provide a comprehensive report at the conclusion of the incident response.",
     "friendly_name": "scribe",
     "title": "Incident Scribe",
     "unique_id": "43632997-6030-41af-a60c-30515ac2f18a"
