@@ -3,7 +3,8 @@
     "ref": "tool:sentinelone",
     "author": "n3tsurge",
     "capability": [
-        "C1103",        
+        "C1013",
+        "C1103",
         "C1104",
         "C1105",
         "C2001",

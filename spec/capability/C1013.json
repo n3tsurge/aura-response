@@ -1,0 +1,48 @@
+{
+    "id": "C1013",
+    "ref": "capability:preparation:access-vulnerability-management-logs",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This is a template for capabilities that can be used to define specific actions or processes within a phase. It serves as a starting point for creating detailed capability specifications.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "friendly_name": "access-vulnerability-management-logs",
+    "title": "Access Vulnerability Management System Logs",
+    "unique_id": "e202b765-f852-403c-8fc2-ae848c009f9f",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "incident-responder"
+    ],
+    "actors": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0003": [
+            "ID.RA-1",
+            "ID.RA-2",
+            "ID.RA-5",
+            "PR.IP-12",
+            "PR.MA-1",
+            "DE.CM-8",
+            "RS.IM-1"
+        ],
+        "F0002": [
+            "A.5.10",
+            "A.5.12",
+            "A.5.14",
+            "A.5.23",
+            "A.5.30",
+            "A.8.8"
+        ]
+    },
+    "references": [
+    ]
+}
