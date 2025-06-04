@@ -27,6 +27,6 @@
         }
     ],
     "friendly_name": "mitre-attack",
-    "title": "MITRE ATT&CK Framework",
+    "title": "MITRE ATT&CK",
     "unique_id": "f8cd892d-817d-43fc-8bd9-e4ad0b45d10a"
 }
