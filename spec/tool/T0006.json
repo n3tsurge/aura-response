@@ -1,9 +1,10 @@
 {
     "id": "T0006",
-    "ref": "tool:stateseeker",
+    "ref": "tool:statseeker",
     "author": "n3tsurge",
     "capability": [
-        "C1101"
+        "C1101",
+        "C1102"
     ],
     "category": [
         "network monitoring"
@@ -13,7 +14,7 @@
     "external_references": [
        
     ],
-    "friendly_name": "stateseeker",
+    "friendly_name": "statseeker",
     "title": "Statseeker",
     "unique_id": "8eccb1a3-3dae-4e42-930c-57f86a0a6f2e"
 }

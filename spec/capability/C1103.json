@@ -1,0 +1,105 @@
+{
+    "id": "C1103",
+    "ref": "capability:preparation:access-internal-http-logs",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves accessing and reviewing internal HTTP logs to gather information about web traffic, identify potential threats, and analyze user behavior. It is essential for understanding the context of web-based incidents and for proactive monitoring of web applications.",
+    "documentation": {
+        "enrichment": [
+            {
+                "title": "Threat Intelligence",
+                "type": "list-item",
+                "description": "Integrate threat intelligence feeds to identify known malicious IP addresses or user agents."
+            },
+            {
+                "title": "User Context",
+                "type": "list-item",
+                "description": "Correlate the request with user profiles to understand user behavior and potential insider threats."
+            }
+        ],
+        "hunting": [
+            {
+                "title": "Anomalous Behavior Detection",
+                "type": "list-item",
+                "description": "Identify unusual patterns in HTTP requests, such as spikes in traffic from a specific IP address or unusual request methods."
+            },
+            {
+                "title": "Phishing Detection",
+                "type": "list-item",
+                "description": "Analyze URLs for signs of phishing attempts, such as suspicious domains or query parameters."
+            },
+            {
+                "title": "Data Exfiltration Monitoring",
+                "type": "list-item",
+                "description": "Monitor for large data transfers or unusual access patterns that may indicate data exfiltration attempts."
+            },
+            {
+                "title": "Malware Distribution",
+                "type": "list-item",
+                "description": "Identify requests that may be serving malware or malicious content based on known indicators of compromise (IOCs)."
+            }
+        ],
+        "fields": [
+            {
+                "title": "HTTP Request Method",
+                "type": "list-item",
+                "description": "The method used in the HTTP request (e.g., GET, POST, PUT, DELETE)."
+            },
+            {
+                "title": "URL",
+                "type": "list-item",
+                "description": "The full URL of the request, including query parameters."
+            },
+            {
+                "title": "Response Status Code",
+                "type": "list-item",
+                "description": "The HTTP status code returned by the server (e.g., 200, 404, 500)."
+            },
+            {
+                "title": "User Agent",
+                "type": "list-item",
+                "description": "Information about the client software making the request."
+            },
+            {
+                "title": "Device Name",
+                "type": "list-item",
+                "description": "The Device Name from which the web activity originated."
+            },
+            {
+                "title": "Source User",
+                "type": "list-item",
+                "description": "The user that initiated the web traffic."
+            },
+            {
+                "title": "IP Address",
+                "type": "list-item",
+                "description": "The IP address of the client making the request."
+            },
+            {
+                "title": "Timestamp",
+                "type": "list-item",
+                "description": "The date and time when the request was made."
+            }
+        ],
+        "automation": []
+    },
+    "friendly_name": "access-internal-http-logs",
+    "title": "Access internal HTTP Logs",
+    "unique_id": "4845b3e2-11e8-4380-af55-3b64908681e9",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+        "commander",
+        "security-analyst",
+        "incident-responder"
+    ],
+    "actors": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0002": [
+            "A.8.15"
+        ]
+    }
+}
