@@ -66,7 +66,7 @@ An actor is a specific role within the incident response process, responsible fo
         "hunting": [],
         "fields": [],
         "automation": []
-    }
+    },
     "friendly_name": "list-alert-victims",
     "title": "List Alert Victims",
     "unique_id": "a7043822-b221-4b89-a3c0-775f162158a3",
