@@ -176,7 +176,7 @@ class Capability(BaseComponent):
                 controls = self.frameworks[framework]
                 markdown_content += f"### [{framework_name}]({framework_data.self_url()})\n\n#### Controls\n\n"
                 for control in controls:
-                    markdown_content += f"- **{control}** \n"
+                    markdown_content += f"- {control} \n"
                 markdown_content += "\n"
 
             if references:
