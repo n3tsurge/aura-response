@@ -1,0 +1,115 @@
+{
+    "id": "C1106",
+    "ref": "capability:preparation:access-external-dns-logs",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability allows security teams to access external DNS logs, which are crucial for monitoring and analyzing domain name system activities within the network. By examining these logs, teams can identify potential security threats, track user activities, and understand the context of events that may indicate a security breach. External DNS logs differ from internal DNS logs as they capture communication from internal systems to external domains, providing insights into outbound traffic and potential data exfiltration attempts.",
+    "documentation": {
+        "enrichment": [
+            {
+                "title": "Geolocation",
+                "type": "list-item",
+                "description": "Enrich the IP address with geolocation data to understand the origin of the request."
+            },
+            {
+                "title": "Threat Intelligence",
+                "type": "list-item",
+                "description": "Integrate threat intelligence feeds to identify known malicious domains or IP addresses."
+            },
+            {
+                "title": "User Context",
+                "type": "list-item",
+                "description": "Correlate the DNS query with user profiles to understand user behavior and potential insider threats."
+            }
+        ],
+        "hunting": [
+            {
+                "title": "Domain Generation Algorithms (DGA)",
+                "type": "list-item",
+                "description": "Identify patterns in DNS queries that may indicate the use of domain generation algorithms, often used by malware to communicate with command and control servers."
+            },
+            {
+                "title": "Anomalous Query Patterns",
+                "type": "list-item",
+                "description": "Detect unusual patterns in DNS queries, such as a high volume of requests to a specific domain or unusual query types."
+            },
+            {
+                "title": "Data Exfiltration Detection",
+                "type": "list-item",
+                "description": "Monitor for DNS queries that may indicate data exfiltration attempts, such as queries to domains that are not typically accessed by the organization."
+            },
+            {
+                "title": "Malicious Domain Detection",
+                "type": "list-item",
+                "description": "Identify queries to known malicious domains or domains associated with phishing attacks."
+            }
+        ],
+        "fields": [
+            {
+                "title": "Query Type",
+                "type": "list-item",
+                "description": "The type of DNS query (e.g., A, AAAA, CNAME, MX)."
+            },
+            {
+                "title": "Domain Name",
+                "type": "list-item",
+                "description": "The domain name being queried."
+            },
+            {
+                "title": "Response Code",
+                "type": "list-item",
+                "description": "The response code returned by the DNS server (e.g., NOERROR, NXDOMAIN)."
+            },
+            {
+                "title": "Query Answer",
+                "type": "list-item",
+                "description": "The answer provided by the DNS server, which may include IP addresses or other relevant information."
+            },
+            {
+                "title": "Client IP Address",
+                "type": "list-item",
+                "description": "The IP address of the client making the DNS request."
+            },
+            {
+                "title": "Timestamp",
+                "type": "list-item",
+                "description": "The timestamp of when the DNS query was made."
+            }
+        ],
+        "automation": []
+    },
+    "friendly_name": "access-external-dns-logs",
+    "title": "Access External DNS Logs",
+    "unique_id": "0d2bc2c7-d1be-414f-b495-63c371d887cc",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "incident-responder"
+    ],
+    "actors": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0003": [
+            "DE.CM-1",
+            "DE.CM-3",
+            "PR.PT-1",
+            "RS.AN-1"
+        ],
+        "F0002": [
+            "A.5.7",
+            "A.5.23",
+            "A.5.30",
+            "A.5.28"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://heimdalsecurity.com/blog/dns-logging-what-it-is-and-how-can-it-help-in-preventing-dns-attacks/"
+        }
+    ]
+}
