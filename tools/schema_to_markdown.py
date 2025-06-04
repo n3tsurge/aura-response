@@ -65,6 +65,12 @@ def main():
     #registry['capability'] = Capability.load()
     #registry['framework'] = Framework.load()
     
+    # Generate the framework coverage matrix
+    output_file_path = current_dir / OUTPUT_DIR / "capability" / "framework_coverage.md"
+    output_file_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_file_path, 'w', encoding='utf-8') as md_file:
+        md_file.write(Capability.generate_framework_matrix(Capability.load()))
+    
     # Generate the index.md file for each component type
     for k in registry.keys():
         items = registry[k]
