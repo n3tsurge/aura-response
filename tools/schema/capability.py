@@ -71,7 +71,7 @@ class Capability(BaseComponent):
         markdown_content += "| :--- | " + " | ".join(":---" for _ in Framework.load()) + " |\n"
         
         for capability in items:
-            markdown_content += f"| {capability.title} | "
+            markdown_content += f"| [{capability.title}]({capability.self_url()}) | "
             framework_coverage = []
             for framework in Framework.load():
                 if framework.id in capability.frameworks:
