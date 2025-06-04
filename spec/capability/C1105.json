@@ -1,0 +1,47 @@
+{
+    "id": "C1105",
+    "ref": "capability:preparation:access-internal-dns-logs",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability allows security teams to access internal DNS logs, which are crucial for monitoring and analyzing domain name system activities within the network. By examining these logs, teams can identify potential security threats, track user activities, and understand the context of events that may indicate a security breach.\n\n## Workflow\n\nInternal DNS logs can be accessed through the SentinelOne Event Search page in the user interface. The following steps outline the process:\n\n1. **Navigate to the Event Search Page**: Open the SentinelOne console and go to the Event Search section.\n2. **Search for Events**: Use the search functionality to filter events based on criteria such as `dns.query.name` or `dns.response.code`.\n3. **Review Results**: Analyze the search results to identify relevant DNS queries and responses that may indicate security incidents or unusual activities.\n4. **Export Data**: If necessary, export the search results for further analysis or reporting.\n\nThis capability is essential for security analysts and incident responders to monitor and investigate DNS-related activities within the network.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "friendly_name": "access-internal-dns-logs",
+    "title": "Access Internal DNS Logs",
+    "unique_id": "30144509-09c5-48c4-abe6-9c222ad60bd0",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "incident-responder"
+    ],
+    "actors": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0003": [
+            "DE.CM-1",
+            "DE.CM-3",
+            "PR.PT-1",
+            "RS.AN-1"
+        ],
+        "F0002": [
+            "A.5.7",
+            "A.5.23",
+            "A.5.30",
+            "A.5.28"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://heimdalsecurity.com/blog/dns-logging-what-it-is-and-how-can-it-help-in-preventing-dns-attacks/"
+        }
+    ]
+}

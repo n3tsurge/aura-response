@@ -8,6 +8,7 @@ This matrix shows the coverage of capabilities across different frameworks.
 | [Access Internal Flow Logs (C1102)](../capability/C1102.md) |  | A.5.7, A.8.16, A.5.23, A.5.28, A.5.30 | DE.CM-1, DE.CM-7, DE.AE-1, PR.PT-1 |
 | [Access internal HTTP Logs (C1103)](../capability/C1103.md) |  | A.8.15 |  |
 | [Access External HTTP Logs (C1104)](../capability/C1104.md) |  | A.8.15 |  |
+| [Access Internal DNS Logs (C1105)](../capability/C1105.md) |  | A.5.7, A.5.23, A.5.30, A.5.28 | DE.CM-1, DE.CM-3, PR.PT-1, RS.AN-1 |
 | [List Alert Victims (C2001)](../capability/C2001.md) |  | A.5.30, A.5.23, A.5.34, A.6.1, A.5.27, A.8.1, A.8.9 | DE.AE-1, DE.AE-2, DE.AE-3, DE.AE-5, RS.AN-1, RS.AN-2, RS.AN-3, RS.AN-4 |
 | [List host vulnerabilities (C2002)](../capability/C2002.md) |  | A.12.6.1, A.12.6.2 | PR.IP-8, DE.CM-8 |
 | [List Registry Key Modifications (C2501)](../capability/C2501.md) |  | A.5.27, A.8.7, A.8.9, A.5.32, A.8.16 | DE.CM-1, DE.CM-7, RS.AN-1, RS.AN-2 |

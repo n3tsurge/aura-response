@@ -3,7 +3,8 @@
     "ref": "tool:zscaler-zia",
     "author": "n3tsurge",
     "capability": [
-        "C1104"
+        "C1104",
+        "C1105"
     ],
     "category": [
         "SaaS",
