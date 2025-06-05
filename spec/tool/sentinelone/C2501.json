@@ -5,6 +5,6 @@
     "created_on": "2025-06-03",
     "description": "This tool capability enables security analysts and incident responders to identify registry key modifications using SentinelOne. Registry changes are common indicators of persistence, privilege escalation, or configuration tampering. # Workflow\n\n## Searching within SentinelOne EDR/XDR\n\nThe below query will identify all registry key modifictions per host and source process. When it is necessary, filtering the logs for a specific host is possible by adding `| filter endpoint.name == \"HOSTNAMEHERE\"` before the `group` clause.\n\n```php\n\nevent.type in ('Registry Value Modified')\n\n| group count=count() by endpoint.name,registry.keyPath,src.process.image.path\n\n```\n\n",
     "friendly_name": "sentinelone-list-registry-key-modifications",
-    "title": "SentinelOne - List Registry Key Modifications",
+    "title": "List Registry Key Modifications",
     "unique_id": "f0baf3c2-6db1-4c70-89fb-8c3d093f174e"
 }

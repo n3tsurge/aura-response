@@ -1,16 +1,16 @@
-Capability,Phase,Cisco Firewall (ASA/NGFW),Guardicore,Palo Alto Firewall,Rapid7 InsightVM,SentinelOne - Access External HTTP Logs,SentinelOne - List Alert Victims,SentinelOne - List Registry Key Modifications,SentinelOne,Statseeker,Wiz.io,Zscaler Internet Access (ZIA)
-Access Vulnerability Management System Logs (C1013),Preparation,,,,x,,,,x,,,
-Access External Flow Logs (C1101),Preparation,x,,x,,,,,,x,,
-Access Internal Flow Logs (C1102),Preparation,x,,x,,,,,,x,,
-Access Internal HTTP Logs (C1103),Preparation,x,,x,,,,,x,,,
-Access External HTTP Logs (C1104),Preparation,x,,x,,,,,x,,,x
-Access Internal DNS Logs (C1105),Preparation,x,,x,,,,,x,,,x
-Access External DNS Logs (C1106),Preparation,x,,x,,,,,x,,,x
-Access VPN Logs (C1107),Preparation,,,,,,,,,,,
-Access DHCP Logs (C1108),Preparation,,,,,,,,,,,
-Access Internal Packet Capture Data (C1109),Preparation,x,,x,,,,,,,,
-Access External Packet Capture Data (C1109),Preparation,x,,x,,,,,,,,
-List Alert Victims (C2001),Identification,,,,,,,,x,,,
-List Host Vulnerabilities (C2002),Identification,,,,x,,,,x,,,
-List Registry Key Modifications (C2501),Identification,,,,,,,,x,,,
-Template (C0000),Template-phase,,,,,,,,,,,
+Capability,Phase,Cisco Firewall (ASA/NGFW),Guardicore,Palo Alto Firewall,Rapid7 InsightVM,SentinelOne,Wiz.io,Zscaler Internet Access (ZIA)
+Access Vulnerability Management System Logs (C1013),Preparation,,,,x,x,,
+Access External Flow Logs (C1101),Preparation,x,,x,,,,
+Access Internal Flow Logs (C1102),Preparation,x,,x,,,,
+Access Internal HTTP Logs (C1103),Preparation,x,,x,,x,,
+Access External HTTP Logs (C1104),Preparation,x,,x,,x,,x
+Access Internal DNS Logs (C1105),Preparation,x,,x,,x,,
+Access External DNS Logs (C1106),Preparation,x,,x,,x,,x
+Access VPN Logs (C1107),Preparation,,,,,,,
+Access DHCP Logs (C1108),Preparation,,,,,,,
+Access Internal Packet Capture Data (C1109),Preparation,x,,x,,,,
+Access External Packet Capture Data (C1109),Preparation,x,,x,,,,
+List Alert Victims (C2001),Identification,,,,,x,,
+List Host Vulnerabilities (C2002),Identification,,,,x,x,,
+List Registry Key Modifications (C2501),Identification,,,,,x,,
+Template (C0000),Template-phase,,,,,,,
