@@ -15,3 +15,9 @@ pip install poetry
 poetry install
 poetry run python tools/schema_to_markdown.py
 ```
+
+## Serving the Documentation
+
+```bash
+poetry run mkdocs serve
+```
