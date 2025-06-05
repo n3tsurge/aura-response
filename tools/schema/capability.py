@@ -62,9 +62,37 @@ class Capability(BaseComponent):
         toc += "|------------|----|-------|-------------|\n"
         
         for capability in items:
-            toc += f"| [{capability.title}]({capability.self_url()}) | {capability.id} | {capability.phase_friendly_name} | {capability.description} |\n"
+            toc += f"| [{capability.title}]({capability.self_url()}) | {capability.id} | {capability.phase_friendly_name.capitalize()} | {capability.description} |\n"
         
         return toc.strip()
+    
+    @classmethod
+    def generate_tool_matrix(cls) -> str:
+        """Generates a Markdown table of all capabilities and their associated tools with
+        each tool as a column and the associated capabilities as rows with the covered
+        controls listed in the cells."""
+        from schema.tool import Tool
+        tools = Tool.load()
+        
+        markdown_content = "# Tool Coverage Matrix\n\n"
+        markdown_content += "This matrix shows the coverage of capabilities across different tools.\n\n"
+        markdown_content += "| Capability | Phase | " + " | ".join(f"[{t.title}]({t.self_url()})" for t in tools) + " |\n"
+        markdown_content += "| :--- | : --- | " + " | ".join(":---" for _ in tools) + " |\n"
+            
+        for capability in cls.load():
+            markdown_content += f"| [{capability.title} ({capability.id})]({capability.self_url()}) | {capability.phase_friendly_name.capitalize()} | "
+            tool_coverage = []
+            for tool in tools:
+                if capability.id in tool.capability:
+                    tool_coverage.append(":white_check_mark:")
+                else:
+                    tool_coverage.append("")
+
+            markdown_content += " | ".join(tool_coverage) + " |\n"
+            
+        markdown_content += "\n"
+        return markdown_content.strip()
+       
 
     @classmethod
     def generate_framework_matrix(cls, items: list[Any]) -> str:
