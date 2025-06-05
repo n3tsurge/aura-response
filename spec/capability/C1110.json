@@ -1,0 +1,26 @@
+{
+    "id": "C1109",
+    "ref": "capability:preparation:access-external-packet-capture",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process for accessing external packet capture data, which is crucial for analyzing network traffic and identifying potential security incidents.  External packet data highlights traffic flowing from internal assets to external destinations and vice versa. It serves as a guide for incident response teams to effectively gather and utilize external packet capture data during the preparation phase of incident response.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "friendly_name": "access-external-packet-capture",
+    "title": "Access External Packet Capture Data",
+    "unique_id": "11628f83-6a87-414d-a3f3-669d32af53a5",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

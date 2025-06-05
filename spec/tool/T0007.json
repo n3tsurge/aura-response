@@ -8,7 +8,9 @@
         "C1103",
         "C1104",
         "C1105",
-        "C1106"
+        "C1106",
+        "C1109",
+        "C1110"
     ],
     "category": [
         "network monitoring"

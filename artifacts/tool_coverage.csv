@@ -8,6 +8,8 @@ Access Internal DNS Logs (C1105),Preparation,x,x,,,,,x,x
 Access External DNS Logs (C1106),Preparation,x,x,,,,,x,x
 Access VPN Logs (C1107),Preparation,,,,,,,,
 Access DHCP Logs (C1108),Preparation,,,,,,,,
+Access Internal Packet Capture Data (C1109),Preparation,,,,,,,x,x
+Access External Packet Capture Data (C1109),Preparation,,,,,,,x,x
 List Alert Victims (C2001),Identification,x,,,,,,,
 List Host Vulnerabilities (C2002),Identification,x,,,x,,,,
 List Registry Key Modifications (C2501),Identification,x,,,,,,,

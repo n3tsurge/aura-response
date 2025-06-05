@@ -13,6 +13,8 @@ This matrix shows the coverage of capabilities across different tools.
 | [Access External DNS Logs (C1106)](../capability/C1106.md) | Preparation | :white_check_mark: | :white_check_mark: |  |  |  |  | :white_check_mark: | :white_check_mark: |
 | [Access VPN Logs (C1107)](../capability/C1107.md) | Preparation |  |  |  |  |  |  |  |  |
 | [Access DHCP Logs (C1108)](../capability/C1108.md) | Preparation |  |  |  |  |  |  |  |  |
+| [Access Internal Packet Capture Data (C1109)](../capability/C1109.md) | Preparation |  |  |  |  |  |  | :white_check_mark: | :white_check_mark: |
+| [Access External Packet Capture Data (C1109)](../capability/C1109.md) | Preparation |  |  |  |  |  |  | :white_check_mark: | :white_check_mark: |
 | [List Alert Victims (C2001)](../capability/C2001.md) | Identification | :white_check_mark: |  |  |  |  |  |  |  |
 | [List Host Vulnerabilities (C2002)](../capability/C2002.md) | Identification | :white_check_mark: |  |  | :white_check_mark: |  |  |  |  |
 | [List Registry Key Modifications (C2501)](../capability/C2501.md) | Identification | :white_check_mark: |  |  |  |  |  |  |  |
