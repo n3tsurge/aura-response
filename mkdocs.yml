@@ -3,7 +3,7 @@ site_name: "Adaptive Unified Response Architecture"
 theme:
   name: material
   palette:
-    - scheme: holman
+    - scheme: default
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
