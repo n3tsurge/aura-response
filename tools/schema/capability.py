@@ -168,7 +168,7 @@ class Capability(BaseComponent):
         markdown_content = f"# {self.title}\n\n"
 
         if self.phase:
-            markdown_content += f"![](https://img.shields.io/badge/Phase-{self.phase_friendly_name.capitalize()}_%28{self.phase}%29-white)&nbsp;![](https://img.shields.io/badge/Category-{self.category.capitalize()}-white)\n\n"
+            markdown_content += f"![](https://img.shields.io/badge/Phase-{self.phase_friendly_name.capitalize()}_%28{self.phase}%29-blue)&nbsp;![](https://img.shields.io/badge/Category-{self.category.capitalize()}-blue)\n"
 
         markdown_content += f"## Overview\n\n{self.description}\n\n"
 
