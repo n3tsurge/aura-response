@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Framework Coverage Matrix
 
 This matrix shows the coverage of capabilities across different frameworks.
