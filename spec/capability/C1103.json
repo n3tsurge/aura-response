@@ -83,6 +83,7 @@
         ],
         "automation": []
     },
+    "category": "network",
     "friendly_name": "access-internal-http-logs",
     "title": "Access Internal HTTP Logs",
     "unique_id": "4845b3e2-11e8-4380-af55-3b64908681e9",

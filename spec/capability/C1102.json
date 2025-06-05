@@ -54,6 +54,7 @@
         ],
         "automation": []
     },
+    "category": "network",
     "friendly_name": "access-internal-flow-logs",
     "title": "Access Internal Flow Logs",
     "unique_id": "35b8b4d3-2c2c-4b7f-9b3c-00ddb68b490b",

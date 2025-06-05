@@ -78,6 +78,7 @@
         ],
         "automation": []
     },
+    "category": "network",
     "friendly_name": "access-external-dns-logs",
     "title": "Access External DNS Logs",
     "unique_id": "0d2bc2c7-d1be-414f-b495-63c371d887cc",

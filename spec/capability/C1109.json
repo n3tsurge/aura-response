@@ -10,6 +10,7 @@
         "fields": [],
         "automation": []
     },
+    "category": "network",
     "friendly_name": "access-internal-packet-capture",
     "title": "Access Internal Packet Capture Data",
     "unique_id": "a550d9d8-bc18-4b85-809b-572cb7c96699",

@@ -88,6 +88,7 @@
         ],
         "automation": []
     },
+    "category": "network",
     "friendly_name": "access-external-http-logs",
     "title": "Access External HTTP Logs",
     "unique_id": "f17d742f-87cf-4e94-a4a0-413f78eac6e7",

@@ -59,6 +59,7 @@
         ],
         "automation": []
     },
+    "category": "network",
     "friendly_name": "access-external-flow-logs",
     "title": "Access External Flow Logs",
     "unique_id": "fe73107d-86bc-490c-bf2c-8f1b194227ad",

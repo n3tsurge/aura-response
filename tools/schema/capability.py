@@ -33,6 +33,10 @@ class Capability(BaseComponent):
         default_factory=list,
         description="A list of external references related to the capability."
     )
+    category: str = Field(
+        default="",
+        description="The category of the capability, e.g., 'Security', 'Compliance', etc."
+    )
     phase: Optional[str] = Field(
         default=None,
         description="The phase of the capability, if applicable."
@@ -152,7 +156,7 @@ class Capability(BaseComponent):
         markdown_content = f"# {self.title}\n\n"
 
         if self.phase:
-            markdown_content += f"![](https://img.shields.io/badge/{self.phase}-{self.phase_friendly_name}-white)\n\n"
+            markdown_content += f"![](https://img.shields.io/badge/{self.phase}-{self.phase_friendly_name}-white)&nbsp;![](https://img.shields.io/badge/Category-{self.category.capitalize()}-white)\n\n"
 
         markdown_content += f"## Overview\n\n{self.description}\n\n"
 

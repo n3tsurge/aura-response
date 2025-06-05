@@ -23,6 +23,7 @@
             "RS.AN-2"
         ]
     },
+    "category": "configuration",
     "friendly_name": "list-registry-key-modification",
     "phase": "P0002",
     "phase_friendly_name": "identification",

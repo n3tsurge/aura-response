@@ -10,6 +10,7 @@
         "fields": [],
         "automation": []
     },
+    "category": "network",
     "friendly_name": "access-external-packet-capture",
     "title": "Access External Packet Capture Data",
     "unique_id": "11628f83-6a87-414d-a3f3-669d32af53a5",

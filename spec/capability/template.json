@@ -10,6 +10,7 @@
         "fields": [],
         "automation": []
     },
+    "category": "general",
     "friendly_name": "template",
     "title": "Template",
     "unique_id": "00000000-0000-0000-0000-000000000000",

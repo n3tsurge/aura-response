@@ -10,6 +10,7 @@
         "fields": [],
         "automation": []
     },
+    "category": "network",
     "friendly_name": "access-internal-dns-logs",
     "title": "Access Internal DNS Logs",
     "unique_id": "30144509-09c5-48c4-abe6-9c222ad60bd0",

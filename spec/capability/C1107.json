@@ -10,6 +10,7 @@
         "fields": [],
         "automation": []
     },
+    "category": "network",
     "friendly_name": "access-vpn-logs",
     "title": "Access VPN Logs",
     "unique_id": "696c694a-4af8-4eb1-ac22-0427d31b348d",

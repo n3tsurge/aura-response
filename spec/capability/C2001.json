@@ -29,6 +29,7 @@
             "RS.AN-4"
         ]
     },
+    "category": "general",
     "friendly_name": "list-alert-victims",
     "phase": "P0002",
     "phase_friendly_name": "identification",
