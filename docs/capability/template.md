@@ -1,6 +1,6 @@
 # Template
 
-![](https://img.shields.io/badge/P0000-template-phase-white)&nbsp;![](https://img.shields.io/badge/Category-General-white)
+![](https://img.shields.io/badge/Phase-Template-phase_%28P0000%29-white)&nbsp;![](https://img.shields.io/badge/Category-General-white)
 
 ## Overview
 
