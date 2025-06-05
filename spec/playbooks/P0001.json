@@ -1,0 +1,31 @@
+{
+    "id": "P0001",
+    "ref": "playbook:phishing-email",
+    "author": "n3tsurge",
+    "capability": [
+        "C1104",
+        "C1106"
+    ],
+    "category": [
+        "phishing",
+        "email security",
+        "incident response"
+    ],
+    "created_on": "2025-06-03",
+    "description": "This playbook outlines the steps to respond to a phishing email incident. It includes identification, containment, eradication, and recovery procedures to mitigate the impact of phishing attacks on the organization.",
+    "external_references": [
+        {
+            "name": "Phishing Email Response Guide",
+            "type": "documentation",
+            "url": "https://www.example.com/phishing-email-response-guide"
+        },
+        {
+            "name": "Phishing Awareness Training",
+            "type": "training",
+            "url": "https://www.example.com/phishing-awareness-training"
+        }
+    ],
+    "friendly_name": "phishing-email",
+    "title": "Phishing Email Response",
+    "unique_id": "e4d92c61-b8d2-4cea-b939-333e2df4626f"
+}
