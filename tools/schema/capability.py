@@ -92,6 +92,26 @@ class Capability(BaseComponent):
             
         markdown_content += "\n"
         return markdown_content.strip()
+    
+    @classmethod
+    def generate_tool_matrix_csv(cls) -> str:
+        """Generates a CSV representation of the tool coverage matrix."""
+        from schema.tool import Tool
+        tools = Tool.load()
+        
+        csv_content = "Capability,Phase," + ",".join(t.title for t in tools) + "\n"
+        
+        for capability in cls.load():
+            csv_content += f"{capability.title} ({capability.id}),{capability.phase_friendly_name.capitalize()},"
+            tool_coverage = []
+            for tool in tools:
+                if capability.id in tool.capability:
+                    tool_coverage.append("x")
+                else:
+                    tool_coverage.append("")
+            csv_content += ",".join(tool_coverage) + "\n"
+        
+        return csv_content.strip()
        
 
     @classmethod

@@ -52,6 +52,7 @@ def main():
     """Main function to convert all schema JSON files in the current directory."""
 
     OUTPUT_DIR = Path('docs')
+    FILES_DIR = Path('artifacts')
 
     # Create the output directory if it doesn't exist
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -71,10 +72,17 @@ def main():
     with open(output_file_path, 'w', encoding='utf-8') as md_file:
         md_file.write(Capability.generate_framework_matrix(Capability.load()))
         
+    # Generate the tool coverage matrix for capabilities
     output_file_path = current_dir / OUTPUT_DIR / "capability" / "tool_coverage.md"
     output_file_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_file_path, 'w', encoding='utf-8') as md_file:
         md_file.write(Capability.generate_tool_matrix())
+        
+    # Generate the tool coverage matrix for capabilities as a CSV file
+    output_file_path = current_dir / FILES_DIR / "tool_coverage.csv"
+    output_file_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_file_path, 'w', encoding='utf-8') as csv_file:
+        csv_file.write(Capability.generate_tool_matrix_csv())
     
     # Generate the index.md file for each component type
     for k in registry.keys():
