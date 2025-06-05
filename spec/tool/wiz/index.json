@@ -3,7 +3,7 @@
     "ref": "tool:wiz",
     "author": "n3tsurge",
     "capability": [
-
+        "C2002"
     ],
     "category": [
         "cloud security",
