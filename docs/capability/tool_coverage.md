@@ -3,7 +3,7 @@
 This matrix shows the coverage of capabilities across different tools.
 
 | Capability | Phase | [SentinelOne](../tool/T0001.md) | [Zscaler Internet Access (ZIA)](../tool/T0002.md) | [Guardicore](../tool/T0003.md) | [Rapid7 InsightVM](../tool/T0004.md) | [Wiz.io](../tool/T0005.md) | [Statseeker](../tool/T0006.md) | [Cisco Firewall (ASA/NGFW)](../tool/T0007.md) | [Palo Alto Firewall](../tool/T0008.md) |
-| :--- | : --- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [Access Vulnerability Management System Logs (C1013)](../capability/C1013.md) | Preparation | :white_check_mark: |  |  | :white_check_mark: |  |  |  |  |
 | [Access External Flow Logs (C1101)](../capability/C1101.md) | Preparation |  |  |  |  |  | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | [Access Internal Flow Logs (C1102)](../capability/C1102.md) | Preparation |  |  |  |  |  | :white_check_mark: | :white_check_mark: | :white_check_mark: |

@@ -77,7 +77,7 @@ class Capability(BaseComponent):
         markdown_content = "# Tool Coverage Matrix\n\n"
         markdown_content += "This matrix shows the coverage of capabilities across different tools.\n\n"
         markdown_content += "| Capability | Phase | " + " | ".join(f"[{t.title}]({t.self_url()})" for t in tools) + " |\n"
-        markdown_content += "| :--- | : --- | " + " | ".join(":---" for _ in tools) + " |\n"
+        markdown_content += "| :--- | :--- | " + " | ".join(":---:" for _ in tools) + " |\n"
             
         for capability in cls.load():
             markdown_content += f"| [{capability.title} ({capability.id})]({capability.self_url()}) | {capability.phase_friendly_name.capitalize()} | "
