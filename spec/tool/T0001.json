@@ -17,6 +17,18 @@
         "EPP",
         "XDR"
     ],
+    "mitre_attack_datasources": [
+        "Process: Process Creation",
+        "Process: Process Termination",
+        "File: File Creation",
+        "File: File Modification",
+        "File: File Deletion",
+        "Network: Network Connection Creation",
+        "Network: Network Traffic Flow",
+        "Logon: Logon Session Creation",
+        "Domain Name: Active DNS",
+        "Command: Command Execution"
+    ],
     "created_on": "2025-06-03",
     "description": "SentinelOne is an advanced endpoint protection platform that uses AI to detect, prevent, and respond to cyber threats in real-time. It provides comprehensive security for endpoints, including threat intelligence, automated response capabilities, and detailed analytics to help organizations protect their systems from sophisticated attacks.",
     "external_references": [

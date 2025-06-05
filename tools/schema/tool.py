@@ -1,3 +1,4 @@
+from typing import Optional
 from pydantic import Field
 from schema.external_reference import ExternalReference
 from schema.capability import Capability
@@ -12,6 +13,10 @@ class Tool(BaseComponent):
     external_references: list[ExternalReference] = Field(
         default_factory=list,
         description="A list of external references related to the tool."
+    )
+    mitre_attack_datasources: Optional[list[str]] = Field(
+        default_factory=list,
+        description="A list of MITRE ATT&CK data sources related to the tool."
     )
     
     @classmethod
@@ -52,6 +57,13 @@ class Tool(BaseComponent):
                 if capability:
                     markdown_content += f"| [{capability.title}]({self.id}/{capability.id}.md) | [{capability.id}]({capability.self_url()}) | {capability.phase_friendly_name.capitalize()} | {capability.description} |\n"
 
+            markdown_content += "\n"
+            
+        if self.mitre_attack_datasources:
+            markdown_content += "## MITRE ATT&CK Data Sources\n\n"
+            for datasource in self.mitre_attack_datasources:
+                markdown_content += f"- {datasource}\n"
+                
             markdown_content += "\n"
 
         if self.external_references:
