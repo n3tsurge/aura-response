@@ -22,7 +22,7 @@ class Tool(BaseComponent):
     @classmethod
     def generate_index_md(cls, tools: list['Tool']) -> str:
         """Generates a Table of Contents for the tools."""
-        toc = "# Tools\n\n"
+        toc = "# Tool\n\n"
         toc += "| Tool | Category | ID | Description |\n"
         toc += "|------|----------|----|-------------|\n"
         
@@ -55,7 +55,7 @@ class Tool(BaseComponent):
                     c for c in _capabilities if c.id == cap), None)
 
                 if capability:
-                    markdown_content += f"| [{capability.title}]({self.id}/{capability.id}.md) | [{capability.id}]({capability.self_url()}) | {capability.phase_friendly_name.capitalize()} | {capability.description} |\n"
+                    markdown_content += f"| [{capability.title}]({capability.id}.md) | [{capability.id}](../{capability.self_url()}) | {capability.phase_friendly_name.capitalize()} | {capability.description} |\n"
 
             markdown_content += "\n"
             

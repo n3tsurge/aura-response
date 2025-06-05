@@ -65,7 +65,11 @@ class BaseComponent(BaseModel):
             return items
 
         # Convert each JSON file in the capabilities directory to a Framework model
-        for f in dir.glob('*.json'):
+        glob_pattern = '*.json'
+        # If this is a tool class set the glob pattern as **/*.json to include all subdirectories
+        if cls.__name__ == 'Tool':
+            glob_pattern = '**/*.json'
+        for f in dir.glob(glob_pattern):
             with open(f, 'r', encoding='utf-8') as file:
                 try:
                     data = json.load(file)

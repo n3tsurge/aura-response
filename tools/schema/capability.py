@@ -61,7 +61,7 @@ class Capability(BaseComponent):
     @classmethod
     def generate_index_md(cls, items: list['Capability']) -> str:
         """Generates a Table of Contents for the tools."""
-        toc = "# Capabilities\n\n"
+        toc = "# Capability\n\n"
         toc += "| Capability | ID | Phase | Description |\n"
         toc += "|------------|----|-------|-------------|\n"
         
@@ -211,7 +211,7 @@ class Capability(BaseComponent):
             markdown_content += "## Tools\n"
             markdown_content += "The following tools provide this capability:\n\n"
             for tool in tools_using_capability:
-                markdown_content += f"- [{tool.title}](../tool/{tool.id}/{self.id}.md)\n"
+                markdown_content += f"- [{tool.title}](../tool/{tool.friendly_name}/{self.id}.md)\n"
             markdown_content += "\n"
 
         if self.frameworks:

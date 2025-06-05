@@ -1,4 +1,4 @@
-# Capabilities
+# Capability
 
 | Capability | ID | Phase | Description |
 |------------|----|-------|-------------|

@@ -52,7 +52,7 @@ def main():
     """Main function to convert all schema JSON files in the current directory."""
 
     OUTPUT_DIR = Path('docs')
-    FILES_DIR = Path('artifacts')
+    FILES_DIR = Path('docs/files')
 
     # Create the output directory if it doesn't exist
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -87,6 +87,7 @@ def main():
     # Generate the index.md file for each component type
     for k in registry.keys():
         items = registry[k]
+        print(f"Generating index for {k} with {len(items)} items.")
         _cls = items[0].__class__
         
         # Add index.md to the output directory

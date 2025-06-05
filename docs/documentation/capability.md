@@ -1,4 +1,4 @@
-# Response Capability
+# Capability
 
 ## Overview
 
