@@ -1,4 +1,8 @@
-# Capability
+# Capabilities
+
+This document provides an overview of all capabilities broken down by response phase.
+
+## Preparation Phase
 
 | Capability | ID | Phase | Description |
 |------------|----|-------|-------------|
@@ -13,7 +17,11 @@
 | [Access DHCP Logs](../capability/C1108.md) | C1108 | Preparation | This capability involves accessing and reviewing DHCP logs to identify any anomalies or unauthorized activities related to IP address assignments. It is crucial for understanding network behavior and detecting potential security incidents. |
 | [Access Internal Packet Capture Data](../capability/C1109.md) | C1109 | Preparation | This capability outlines the process for accessing internal packet capture data, which is crucial for analyzing network traffic and identifying potential security incidents.  Internal packet data highlights traffic flowing from internal assets to internal destinations. It serves as a guide for incident response teams to effectively gather and utilize internal packet capture data during the preparation phase of incident response. |
 | [Access External Packet Capture Data](../capability/C1109.md) | C1109 | Preparation | This capability outlines the process for accessing external packet capture data, which is crucial for analyzing network traffic and identifying potential security incidents.  External packet data highlights traffic flowing from internal assets to external destinations and vice versa. It serves as a guide for incident response teams to effectively gather and utilize external packet capture data during the preparation phase of incident response. |
+
+## Identification Phase
+
+| Capability | ID | Phase | Description |
+|------------|----|-------|-------------|
 | [List Alert Victims](../capability/C2001.md) | C2001 | Identification | This capability allows for stakeholders to list all victims affected by the incident. It provides a comprehensive overview of those impacted, enabling better resource allocation and response planning. |
 | [List Host Vulnerabilities](../capability/C2002.md) | C2002 | Identification | This capability involves the ability to identify and list vulnerabilities present on hosts within a network. It includes scanning for known vulnerabilities, assessing their severity, and compiling a report of findings to inform remediation efforts. |
 | [List Registry Key Modifications](../capability/C2501.md) | C2501 | Identification | This capability allows the incident responder and security analyst to list modifications made to registry keys. This is crucial for identifying unauthorized changes that may indicate malicious activity or system misconfiguration. The capability provides a means to track changes over time, aiding in forensic analysis and incident response. |
-| [Template](../capability/C0000.md) | C0000 | Template-phase | This is a template for capabilities that can be used to define specific actions or processes within a phase. It serves as a starting point for creating detailed capability specifications. |

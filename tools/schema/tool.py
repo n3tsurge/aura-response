@@ -22,7 +22,7 @@ class Tool(BaseComponent):
     @classmethod
     def generate_index_md(cls, tools: list['Tool']) -> str:
         """Generates a Table of Contents for the tools."""
-        toc = "# Tool\n\n"
+        toc = "# Tools\n\n"
         toc += "| Tool | Category | ID | Description |\n"
         toc += "|------|----------|----|-------------|\n"
         

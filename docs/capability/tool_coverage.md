@@ -18,4 +18,3 @@ This matrix shows the coverage of capabilities across different tools.
 | [List Alert Victims (C2001)](../capability/C2001.md) | Identification |  |  |  |  | :white_check_mark: |  |  |
 | [List Host Vulnerabilities (C2002)](../capability/C2002.md) | Identification |  |  |  | :white_check_mark: | :white_check_mark: |  |  |
 | [List Registry Key Modifications (C2501)](../capability/C2501.md) | Identification |  |  |  |  | :white_check_mark: |  |  |
-| [Template (C0000)](../capability/C0000.md) | Template-phase |  |  |  |  |  |  |  |

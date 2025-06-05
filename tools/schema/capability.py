@@ -61,12 +61,24 @@ class Capability(BaseComponent):
     @classmethod
     def generate_index_md(cls, items: list['Capability']) -> str:
         """Generates a Table of Contents for the tools."""
-        toc = "# Capability\n\n"
-        toc += "| Capability | ID | Phase | Description |\n"
-        toc += "|------------|----|-------|-------------|\n"
+        toc = "# Capabilities\n\n"
+        toc += "This document provides an overview of all capabilities broken down by response phase.\n\n"
         
+        phases = {}
         for capability in items:
-            toc += f"| [{capability.title}]({capability.self_url()}) | {capability.id} | {capability.phase_friendly_name.capitalize()} | {capability.description} |\n"
+            phase = capability.phase_friendly_name if capability.phase_friendly_name else "Unknown"
+            if phase not in phases:
+                phases[phase] = []
+            phases[phase].append(capability)
+        for phase, capabilities in phases.items():
+            toc += f"## {phase.capitalize()} Phase\n\n"
+            toc += "| Capability | ID | Phase | Description |\n"
+            toc += "|------------|----|-------|-------------|\n"
+            for capability in capabilities:
+                toc += f"| [{capability.title}]({capability.self_url()}) | {capability.id} | {capability.phase_friendly_name.capitalize()} | {capability.description} |\n"
+            toc += "\n"
+            
+            
         
         return toc.strip()
     

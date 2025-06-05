@@ -1,4 +1,4 @@
-# Tool
+# Tools
 
 | Tool | Category | ID | Description |
 |------|----------|----|-------------|
