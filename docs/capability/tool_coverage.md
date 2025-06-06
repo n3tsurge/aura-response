@@ -24,8 +24,8 @@ This matrix shows the coverage of capabilities across different tools.
 | [Remove File (C4301)](C4301.md) | Eradication |  |  |  |  |  |  |  |  |
 | [Remove Registry Key (C4501)](C4501.md) | Eradication |  |  |  |  |  |  |  |  |
 | [Remove Service (C4502)](C4502.md) | Eradication |  |  |  |  |  |  |  |  |
-| [Revoke Authentication Credentials (C4601)](C4601.md) | Eradication |  |  |  |  |  |  |  |  |
-| [Remove User Account (C4602)](C4602.md) | Eradication |  |  |  |  |  |  |  |  |
+| [Revoke Authentication Credentials (C4601)](C4601.md) | Eradication |  |  | [:white_check_mark:](../tool/okta/C4601.md) |  |  |  |  |  |
+| [Remove User Account (C4602)](C4602.md) | Eradication |  |  | [:white_check_mark:](../tool/okta/C4602.md) |  |  |  |  |  |
 | [Reinstall Host from Golden Image (C5001)](C5001.md) | Recovery |  |  |  |  |  |  |  |  |
 | [Restore Data from Backup (C5002)](C5002.md) | Recovery |  |  |  |  |  |  |  |  |
 | [Unblock Blocked IP (C5101)](C5101.md) | Recovery |  |  |  |  |  |  |  |  |
@@ -39,4 +39,4 @@ This matrix shows the coverage of capabilities across different tools.
 | [Restore Quarantined File (C5203)](C5203.md) | Recovery |  |  |  |  |  |  |  |  |
 | [Unblock Blocked Process (C5401)](C5401.md) | Recovery |  |  |  |  |  |  |  |  |
 | [Enable Disabled Service (C5501)](C5501.md) | Recovery |  |  |  |  |  |  |  |  |
-| [Unlock Locked User Account (C5601)](C5601.md) | Recovery |  |  |  |  |  |  |  |  |
+| [Unlock Locked User Account (C5601)](C5601.md) | Recovery |  |  | [:white_check_mark:](../tool/okta/C5601.md) |  |  |  |  |  |

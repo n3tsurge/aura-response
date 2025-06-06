@@ -3,7 +3,9 @@
     "ref": "tool:okta",
     "author": "n3tsurge",
     "capability": [
-
+        "C4601",
+        "C4602",
+        "C5601"
     ],
     "category": [
         "identity and access management",
