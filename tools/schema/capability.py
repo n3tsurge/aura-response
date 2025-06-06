@@ -172,24 +172,35 @@ class Capability(BaseComponent):
         each framework as a column and the associated capabilities as rows with the covered
         controls listed in the cells."""
         markdown_content = "# Framework Coverage Matrix\n\n"
-        markdown_content += "This matrix shows the coverage of capabilities across different frameworks.\n\n"
-        markdown_content += "| Capability | " + \
-            " | ".join(
-                f"[{f.title}]({f.self_url()})" for f in Framework.load()) + " |\n"
-        markdown_content += "| :--- | " + \
-            " | ".join(":---" for _ in Framework.load()) + " |\n"
-
+        markdown_content += "This matrix shows the coverage of capabilities across different frameworks by phases.\n\n"
+        
+        _phases = {}
         for capability in items:
-            markdown_content += f"| [{capability.title} ({capability.id})]({capability.phase_friendly_name}/{capability.id}.md) | "
-            framework_coverage = []
-            for framework in Framework.load():
-                if framework.id in capability.frameworks:
-                    controls = capability.frameworks[framework.id]
-                    framework_coverage.append(", ".join(controls))
-                else:
-                    framework_coverage.append("")
+            phase = capability.phase_friendly_name if capability.phase_friendly_name else "Unknown"
+            if phase not in _phases:
+                _phases[phase] = []
+            _phases[phase].append(capability)
+            
+        for phase, capabilities in _phases.items():
+            markdown_content += f"## {phase.capitalize()} Phase\n\n"
+            markdown_content += "| Capability | " + \
+                " | ".join(f"[{f.title}]({f.self_url()})" for f in Framework.load()) + " |\n"
+            markdown_content += "| :--- | " + \
+                " | ".join(":---" for _ in Framework.load()) + " |\n"
 
-            markdown_content += " | ".join(framework_coverage) + " |\n"
+            for capability in capabilities:
+                markdown_content += f"| [{capability.title} ({capability.id})]({capability.phase_friendly_name}/{capability.id}.md) | "
+                framework_coverage = []
+                for framework in Framework.load():
+                    if framework.id in capability.frameworks:
+                        controls = capability.frameworks[framework.id]
+                        framework_coverage.append(", ".join(controls))
+                    else:
+                        framework_coverage.append("")
+
+                markdown_content += " | ".join(framework_coverage) + " |\n"
+            markdown_content += "\n"
+            
         markdown_content += "\n"
 
         return markdown_content.strip()
