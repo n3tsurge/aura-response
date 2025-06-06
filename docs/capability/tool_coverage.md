@@ -24,6 +24,8 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [List Alert Victims (C2001)](identification/C2001.md) | Identification |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2001.md) |  |  |
 | [List Host Vulnerabilities (C2002)](identification/C2002.md) | Identification |  |  |  |  |  | [:white_check_mark:](../tool/rapid7-insightvm/C2002.md) | [:white_check_mark:](../tool/sentinelone/C2002.md) | [:white_check_mark:](../tool/wiz/C2002.md) |  |
 | [List Registry Key Modifications (C2501)](identification/C2501.md) | Identification |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2501.md) |  |  |
+| [Develop Incident Report (C6001)](lessons learned/C6001.md) | Lessons learned |  |  |  |  |  |  |  |  |  |
+| [Conduct Lessons Learned Exercise (C6002)](lessons learned/C6002.md) | Lessons learned |  |  |  |  |  |  |  |  |  |
 | [Access Vulnerability Management System Logs (C1013)](preparation/C1013.md) | Preparation |  |  |  |  |  | [:white_check_mark:](../tool/rapid7-insightvm/C1013.md) | [:white_check_mark:](../tool/sentinelone/C1013.md) |  |  |
 | [Access External Flow Logs (C1101)](preparation/C1101.md) | Preparation | [:white_check_mark:](../tool/cisco-fw/C1101.md) |  |  | [:white_check_mark:](../tool/palo-alto-fw/C1101.md) |  |  |  |  |  |
 | [Access Internal Flow Logs (C1102)](preparation/C1102.md) | Preparation | [:white_check_mark:](../tool/cisco-fw/C1102.md) |  |  | [:white_check_mark:](../tool/palo-alto-fw/C1102.md) |  |  |  |  |  |

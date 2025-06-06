@@ -1,0 +1,17 @@
+nav:
+  - index.md
+  - "Framework Coverage": framework_coverage.md
+  - "Phase Matrx": phase_matrix.md
+  - "Tool Coverage": tool_coverage.md
+  - Preparation:
+    - preparation/*.md
+  - Identification:
+    - identification/*.md
+  - Containment:
+    - containment/*.md
+  - Eradication:
+    - eradication/*.md
+  - Recovery:
+    - recovery/*.md
+  - "Lessons Learned":
+    - lessons-learned/*.md
