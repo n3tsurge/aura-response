@@ -1,0 +1,33 @@
+{
+    "id": "C6001",
+    "ref": "capability:learn:develop-incident-report",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves creating a detailed incident report that summarizes the incident, actions taken, and lessons learned. The report serves as a reference for future incidents and helps improve the incident response process. It should include timelines, impact assessments, and recommendations for future prevention.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "develop-incident-report",
+    "title": "Develop Incident Report",
+    "unique_id": "0bfc5942-37ae-4ecc-98fb-5daac2578d49",
+    "phase": "P0006",
+    "phase_friendly_name": "lessons learned",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "incident-responder"
+    ],
+    "actors": [
+        "scribe",
+        "incident-commander"
+    ],
+    "frameworks": {
+    },
+    "references": [
+
+    ]
+}

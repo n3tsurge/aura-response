@@ -37,6 +37,13 @@ This document provides an overview of all capabilities broken down by response p
 | [List Host Vulnerabilities](C2002.md) | C2002 | Identification | This capability involves the ability to identify and list vulnerabilities present on hosts within a network. It includes scanning for known vulnerabilities, assessing their severity, and compiling a report of findings to inform remediation efforts. |
 | [List Registry Key Modifications](C2501.md) | C2501 | Identification | This capability allows the incident responder and security analyst to list modifications made to registry keys. This is crucial for identifying unauthorized changes that may indicate malicious activity or system misconfiguration. The capability provides a means to track changes over time, aiding in forensic analysis and incident response. |
 
+## Lessons learned Phase
+
+| Capability | ID | Phase | Description |
+|------------|----|-------|-------------|
+| [Develop Incident Report](C6001.md) | C6001 | Lessons learned | This capability involves creating a detailed incident report that summarizes the incident, actions taken, and lessons learned. The report serves as a reference for future incidents and helps improve the incident response process. It should include timelines, impact assessments, and recommendations for future prevention. |
+| [Conduct Lessons Learned Exercise](C6002.md) | C6002 | Lessons learned | This capability involves organizing and conducting a lessons learned exercise to review the incident response process. The exercise aims to gather feedback from all stakeholders, identify what worked well, what didn't, and how future responses can be improved. It should include discussions, documentation of findings, and actionable recommendations for future incidents. |
+
 ## Preparation Phase
 
 | Capability | ID | Phase | Description |
