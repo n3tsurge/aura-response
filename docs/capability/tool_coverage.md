@@ -1,6 +1,6 @@
 # Tool Coverage Matrix
 
-This matrix shows the coverage of capabilities across different tools.
+This matrix shows the coverage of capabilities across different tools.A CSV representation of this matrix can be found here [tool_coverage.csv](../../files/tool_coverage.csv).
 
 | Capability | Phase | [Cisco Firewall (ASA/NGFW)](../tool/cisco-fw/index.md) | [Guardicore](../tool/guardicore/index.md) | [Okta](../tool/okta/index.md) | [Palo Alto Firewall](../tool/palo-alto-fw/index.md) | [Proofpoint](../tool/proofpoint/index.md) | [Rapid7 InsightVM](../tool/rapid7-insightvm/index.md) | [SentinelOne](../tool/sentinelone/index.md) | [Wiz.io](../tool/wiz/index.md) | [Zscaler Internet Access (ZIA)](../tool/zscaler-zia/index.md) |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |

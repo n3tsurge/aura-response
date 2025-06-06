@@ -122,7 +122,8 @@ class Capability(BaseComponent):
         tools = Tool.load()
         
         markdown_content = "# Tool Coverage Matrix\n\n"
-        markdown_content += "This matrix shows the coverage of capabilities across different tools.\n\n"
+        markdown_content += "This matrix shows the coverage of capabilities across different tools."
+        markdown_content += "A CSV representation of this matrix can be found here [tool_coverage.csv](../../files/tool_coverage.csv).\n\n"
         markdown_content += "| Capability | Phase | " + " | ".join(f"[{t.title}]({t.self_url()})" for t in tools) + " |\n"
         markdown_content += "| :--- | :--- | " + " | ".join(":---:" for _ in tools) + " |\n"
             
