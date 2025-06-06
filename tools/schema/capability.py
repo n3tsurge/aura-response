@@ -131,7 +131,7 @@ class Capability(BaseComponent):
             tool_coverage = []
             for tool in tools:
                 if capability.id in tool.capability:
-                    tool_coverage.append(":white_check_mark:")
+                    tool_coverage.append(f"[:white_check_mark:](../tool/{tool.friendly_name}/{capability.id}.md)")
                 else:
                     tool_coverage.append("")
 
