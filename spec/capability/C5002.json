@@ -1,0 +1,28 @@
+{
+    "id": "C5002",
+    "ref": "capability:recover:restore-data-from-backup",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of restoring data from backups. It includes steps for verifying backup integrity, selecting the appropriate backup set, and executing the restoration process to ensure that data is recovered accurately and efficiently.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "restore-data-from-backup",
+    "title": "Restore Data from Backup",
+    "unique_id": "9fcfd7fc-7e92-42a0-96e8-2944ac636e71",
+    "phase": "P0005",
+    "phase_friendly_name": "recovery",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+
+    ]
+}

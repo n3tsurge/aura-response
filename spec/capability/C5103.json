@@ -1,0 +1,28 @@
+{
+    "id": "C5103",
+    "ref": "capability:recover:unblock-blocked-url",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of unblocking a URL that has been previously blocked due to security concerns. It includes steps for verifying the legitimacy of the unblock request, ensuring that the URL is no longer a threat, and updating web filtering or security rules accordingly.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "unblock-blocked-url",
+    "title": "Unblock Blocked URL",
+    "unique_id": "adb6310d-fd71-43ab-9749-feed17bcc1c1",
+    "phase": "P0005",
+    "phase_friendly_name": "recovery",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+
+    ]
+}

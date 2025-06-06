@@ -83,6 +83,37 @@ class Capability(BaseComponent):
         return toc.strip()
     
     @classmethod
+    def generate_phase_matrix(cls) -> str:
+        """Generates an HTML table of all the capabilities grouped by their
+        phase which each phase as a column and the associated capabilities as rows. 
+        When a phase cell is empty the cell show have no bottom border."""
+        markdown_content = "# Capability Phase Matrix\n\n"
+        markdown_content += "This matrix shows the capabilities grouped by their response phase.\n\n"
+        
+        _phases = {}
+        for capability in cls.load():
+            phase = capability.phase_friendly_name if capability.phase_friendly_name else "Unknown"
+            if phase not in _phases:
+                _phases[phase] = []
+            _phases[phase].append(capability)
+            
+        markdown_content += " | ".join([p.capitalize() for p in _phases.keys()]) + " |\n"
+        markdown_content += "| :--- " * len(_phases) + "|\n"
+        max_length = max(len(capabilities) for capabilities in _phases.values())
+        for i in range(max_length):
+            row = []
+            for phase, capabilities in _phases.items():
+                if i < len(capabilities):
+                    capability = capabilities[i]
+                    row.append(f"[{capability.title} ({capability.id})]({capability.id}.md)")
+                else:
+                    row.append("")
+            markdown_content += "| " + " | ".join(row) + " |\n"
+        markdown_content += "\n"
+        
+        return markdown_content.strip()
+    
+    @classmethod
     def generate_tool_matrix(cls) -> str:
         """Generates a Markdown table of all capabilities and their associated tools with
         each tool as a column and the associated capabilities as rows with the covered
@@ -96,7 +127,7 @@ class Capability(BaseComponent):
         markdown_content += "| :--- | :--- | " + " | ".join(":---:" for _ in tools) + " |\n"
             
         for capability in cls.load():
-            markdown_content += f"| [{capability.title} ({capability.id})]({capability.self_url()}) | {capability.phase_friendly_name.capitalize()} | "
+            markdown_content += f"| [{capability.title} ({capability.id})]({capability.id}.md) | {capability.phase_friendly_name.capitalize()} | "
             tool_coverage = []
             for tool in tools:
                 if capability.id in tool.capability:
@@ -144,7 +175,7 @@ class Capability(BaseComponent):
             " | ".join(":---" for _ in Framework.load()) + " |\n"
 
         for capability in items:
-            markdown_content += f"| [{capability.title} ({capability.id})]({capability.self_url()}) | "
+            markdown_content += f"| [{capability.title} ({capability.id})]({capability.id}.md) | "
             framework_coverage = []
             for framework in Framework.load():
                 if framework.id in capability.frameworks:

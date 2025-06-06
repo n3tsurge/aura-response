@@ -1,0 +1,28 @@
+{
+    "id": "C5102",
+    "ref": "capability:recover:unblock-blocked-domain",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of unblocking a domain that has been previously blocked due to security concerns. It includes steps for verifying the legitimacy of the unblock request, ensuring that the domain is no longer a threat, and updating DNS or security rules accordingly.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "unblock-blocked-domain",
+    "title": "Unblock Blocked Domain",
+    "unique_id": "177f0271-154a-42f6-9867-6f885b6c9e43",
+    "phase": "P0005",
+    "phase_friendly_name": "recovery",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+
+    ]
+}

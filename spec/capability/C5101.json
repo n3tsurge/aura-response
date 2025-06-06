@@ -1,0 +1,28 @@
+{
+    "id": "C5101",
+    "ref": "capability:recover:unblock-blocked-ip",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of unblocking an IP address that has been previously blocked due to security concerns. It includes steps for verifying the legitimacy of the unblock request, ensuring that the IP is no longer a threat, and updating firewall or security rules accordingly.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "unblock-blocked-ip",
+    "title": "Unblock Blocked IP",
+    "unique_id": "d89e33ab-36b2-41b3-b888-f6ac8ff88c89",
+    "phase": "P0005",
+    "phase_friendly_name": "recovery",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+
+    ]
+}

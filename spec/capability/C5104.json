@@ -1,0 +1,28 @@
+{
+    "id": "C5104",
+    "ref": "capability:recover:unblock-blocked-port",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of unblocking a port that has been previously blocked due to security concerns. It includes steps for verifying the legitimacy of the unblock request, ensuring that the port is no longer a threat, and updating firewall or security rules accordingly.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "unblock-blocked-port",
+    "title": "Unblock Blocked Port",
+    "unique_id": "8a4067d6-2c2f-44f8-a167-0ea17d549b21",
+    "phase": "P0005",
+    "phase_friendly_name": "recovery",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+
+    ]
+}

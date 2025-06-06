@@ -1,0 +1,28 @@
+{
+    "id": "C5001",
+    "ref": "capability:recover:reinstall-host-from-golden-image",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of reinstalling a host from a golden image. It includes steps for preparation, execution, and verification to ensure that the host is restored to a known good state using a pre-configured image.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "reinstall-host-from-golden-image",
+    "title": "Reinstall Host from Golden Image",
+    "unique_id": "ab95f70a-52ee-434a-a830-479ed8c8510d",
+    "phase": "P0005",
+    "phase_friendly_name": "recovery",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+
+    ]
+}

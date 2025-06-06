@@ -45,8 +45,8 @@ class BaseComponent(BaseModel):
     def self_url(self, base_dir: str = None) -> str:
         """Returns the URL to the component's self-reference."""
         if base_dir is None:
-            return f"../{self.__class__.__name__.lower()}/{self.id}.md"
-        return f"{base_dir}/{self.__class__.__name__.lower()}/{self.id}.md"
+            return f"../{self.__class__.__name__.lower()}/{self.friendly_name}/index.md"
+        return f"{base_dir}/{self.__class__.__name__.lower()}/{self.friendly_name}/index.md"
 
     def generate_markdown(self) -> str:
         return ""

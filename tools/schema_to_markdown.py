@@ -72,6 +72,12 @@ def main():
     with open(output_file_path, 'w', encoding='utf-8') as md_file:
         md_file.write(Capability.generate_framework_matrix(Capability.load()))
         
+    # Generate the phase matrix for capabilities
+    output_file_path = current_dir / OUTPUT_DIR / "capability" / "phase_matrix.md"
+    output_file_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_file_path, 'w', encoding='utf-8') as md_file:
+        md_file.write(Capability.generate_phase_matrix())
+        
     # Generate the tool coverage matrix for capabilities
     output_file_path = current_dir / OUTPUT_DIR / "capability" / "tool_coverage.md"
     output_file_path.parent.mkdir(parents=True, exist_ok=True)
@@ -120,6 +126,7 @@ def main():
         output_file_path.parent.mkdir(parents=True, exist_ok=True)
 
         # Convert the schema to markdown
+        print(f"Converting {schema_file.name} to {output_file_path.name}")
         markdown_content = convert_schema_to_markdown(schema_file)
         markdown_file = schema_file.with_suffix('.md')
 
