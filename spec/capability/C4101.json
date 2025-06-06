@@ -1,0 +1,28 @@
+{
+    "id": "C4101",
+    "ref": "capability:eradicate:remove-rogue-network-device",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of removing a rogue network device from the network. It includes steps for identifying the rogue device, isolating it from the network, and ensuring that it is securely removed to prevent any potential security threats. This capability is essential for maintaining network integrity and security during incident response.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "remove-rogue-network-device",
+    "title": "Remove Rogue Network Device",
+    "unique_id": "7f370dd3-6805-4d2a-8137-7bf70ce2285f",
+    "phase": "P0004",
+    "phase_friendly_name": "eradication",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+
+    ]
+}

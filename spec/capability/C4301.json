@@ -1,0 +1,28 @@
+{
+    "id": "C4301",
+    "ref": "capability:eradicate:remove-file",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of removing a file from a system. It includes steps for identifying the file to be removed, ensuring that it is safe to delete, and executing the removal in a manner that maintains system integrity. This capability is essential for managing files during incident response, particularly when dealing with malicious or unnecessary files.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "remove-file",
+    "title": "Remove File",
+    "unique_id": "b47343fd-8537-46f6-b4bd-b84f1060f246",
+    "phase": "P0004",
+    "phase_friendly_name": "eradication",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+
+    ]
+}

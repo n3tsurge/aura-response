@@ -18,6 +18,14 @@ This matrix shows the coverage of capabilities across different tools.
 | [List Alert Victims (C2001)](C2001.md) | Identification |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2001.md) |  |  |
 | [List Host Vulnerabilities (C2002)](C2002.md) | Identification |  |  |  | [:white_check_mark:](../tool/rapid7-insightvm/C2002.md) | [:white_check_mark:](../tool/sentinelone/C2002.md) | [:white_check_mark:](../tool/wiz/C2002.md) |  |
 | [List Registry Key Modifications (C2501)](C2501.md) | Identification |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2501.md) |  |  |
+| [Report Incident to External Entity (C4001)](C4001.md) | Eradication |  |  |  |  |  |  |  |
+| [Remove Rogue Network Device (C4101)](C4101.md) | Eradication |  |  |  |  |  |  |  |
+| [Delete Email Message (C4201)](C4201.md) | Eradication |  |  |  |  |  |  |  |
+| [Remove File (C4301)](C4301.md) | Eradication |  |  |  |  |  |  |  |
+| [Remove Registry Key (C4501)](C4501.md) | Eradication |  |  |  |  |  |  |  |
+| [Remove Service (C4502)](C4502.md) | Eradication |  |  |  |  |  |  |  |
+| [Revoke Authentication Credentials (C4601)](C4601.md) | Eradication |  |  |  |  |  |  |  |
+| [Remove User Account (C4602)](C4602.md) | Eradication |  |  |  |  |  |  |  |
 | [Reinstall Host from Golden Image (C5001)](C5001.md) | Recovery |  |  |  |  |  |  |  |
 | [Restore Data from Backup (C5002)](C5002.md) | Recovery |  |  |  |  |  |  |  |
 | [Unblock Blocked IP (C5101)](C5101.md) | Recovery |  |  |  |  |  |  |  |

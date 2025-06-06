@@ -1,0 +1,28 @@
+{
+    "id": "C4502",
+    "ref": "capability:eradicate:remove-service",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of removing a service from a system. It includes steps for identifying the service to be removed, ensuring that it is safe to delete, and executing the removal in a manner that maintains system integrity. This capability is essential for managing services during incident response, particularly when dealing with malicious or unnecessary services.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "configuration",
+    "friendly_name": "remove-service",
+    "title": "Remove Service",
+    "unique_id": "5f33eda9-f907-4329-9993-ef7930ed4adf",
+    "phase": "P0004",
+    "phase_friendly_name": "eradication",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+
+    ]
+}
