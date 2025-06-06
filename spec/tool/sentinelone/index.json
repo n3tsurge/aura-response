@@ -23,11 +23,17 @@
         "File: File Creation",
         "File: File Modification",
         "File: File Deletion",
+        "Driver: Driver Load",
+        "Driver: Driver Metadata",
         "Network: Network Connection Creation",
         "Network: Network Traffic Flow",
         "Logon: Logon Session Creation",
         "Domain Name: Active DNS",
-        "Command: Command Execution"
+        "Command: Command Execution",
+        "Windows Registery: Windows Registry Key Creation",
+        "Windows Registery: Windows Registry Key Modification",
+        "Windows Registery: Windows Registry Key Deletion",
+        "User Account: User Account Authentication"
     ],
     "created_on": "2025-06-03",
     "description": "SentinelOne is an advanced endpoint protection platform that uses AI to detect, prevent, and respond to cyber threats in real-time. It provides comprehensive security for endpoints, including threat intelligence, automated response capabilities, and detailed analytics to help organizations protect their systems from sophisticated attacks.",

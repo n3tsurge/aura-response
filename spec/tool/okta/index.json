@@ -7,6 +7,13 @@
         "C4602",
         "C5601"
     ],
+    "mitre_attack_datasources": [
+        "User Account: User Account Creation",
+        "User Account: User Account Modification",
+        "User Account: User Account Deletion",
+        "User Account: User Account Authentication",
+        "User Account: User Account Metadata"
+    ],
     "category": [
         "identity and access management",
         "single sign-on",
