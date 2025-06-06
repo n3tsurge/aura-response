@@ -25,3 +25,10 @@ This matrix shows the coverage of capabilities across different frameworks.
 | [Unblock Blocked URL (C5103)](C5103.md) |  |  |  |
 | [Unblock Blocked Port (C5104)](C5104.md) |  |  |  |
 | [Unblock Blocked Port (C5105)](C5105.md) |  |  |  |
+| [Unblock Domain on Email (C5201)](C5201.md) |  |  |  |
+| [Unblock Sender on Email (C5202)](C5202.md) |  |  |  |
+| [Restore Quarantined Email Message (C5203)](C5203.md) |  |  |  |
+| [Restore Quarantined File (C5203)](C5203.md) |  |  |  |
+| [Unblock Blocked Process (C5401)](C5401.md) |  |  |  |
+| [Enable Disabled Service (C5501)](C5501.md) |  |  |  |
+| [Unlock Locked User Account (C5601)](C5601.md) |  |  |  |

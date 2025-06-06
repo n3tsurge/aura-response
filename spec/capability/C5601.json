@@ -1,0 +1,23 @@
+{
+    "id": "C5601",
+    "ref": "capability:recover:unlock-locked-user-account",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of unlocking a user account that has been locked due to security policies or multiple failed login attempts. It includes steps for verifying the user's identity, ensuring the account is safe to unlock, and executing the unlock process.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "identity",
+    "friendly_name": "unlock-locked-user-account",
+    "title": "Unlock Locked User Account",
+    "unique_id": "f24e1df9-d257-4155-8dc0-d3611d6ea89b",
+    "phase": "P0005",
+    "phase_friendly_name": "recovery",
+    "stakeholders": [],
+    "actors": [],
+    "frameworks": {},
+    "references": []
+}

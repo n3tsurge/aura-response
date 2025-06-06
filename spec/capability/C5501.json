@@ -1,0 +1,23 @@
+{
+    "id": "C5501",
+    "ref": "capability:recover:enable-disabled-service",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of enabling a service that has been previously disabled due to security concerns. It includes steps for verifying the legitimacy of the enable request, ensuring that the service is safe to run, and updating system or security rules accordingly.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "configuration",
+    "friendly_name": "enable-disabled-service",
+    "title": "Enable Disabled Service",
+    "unique_id": "c02ebc7b-4d07-4d49-add7-7bf0a780c883",
+    "phase": "P0005",
+    "phase_friendly_name": "recovery",
+    "stakeholders": [],
+    "actors": [],
+    "frameworks": {},
+    "references": []
+}

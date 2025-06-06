@@ -1,0 +1,23 @@
+{
+    "id": "C5401",
+    "ref": "capability:recover:unblock-blocked-process",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of unblocking a process that has been previously blocked due to security concerns. It includes steps for verifying the legitimacy of the unblock request, ensuring that the process is no longer a threat, and updating system or security rules accordingly.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "process",
+    "friendly_name": "unblock-blocked-process",
+    "title": "Unblock Blocked Process",
+    "unique_id": "83f67678-7d84-4a91-802f-62a59d63d913",
+    "phase": "P0005",
+    "phase_friendly_name": "recovery",
+    "stakeholders": [],
+    "actors": [],
+    "frameworks": {},
+    "references": []
+}

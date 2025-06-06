@@ -11,7 +11,10 @@ Preparation | Identification | Recovery |
 | [Access External HTTP Logs (C1104)](C1104.md) |  | [Unblock Blocked URL (C5103)](C5103.md) |
 | [Access Internal DNS Logs (C1105)](C1105.md) |  | [Unblock Blocked Port (C5104)](C5104.md) |
 | [Access External DNS Logs (C1106)](C1106.md) |  | [Unblock Blocked Port (C5105)](C5105.md) |
-| [Access VPN Logs (C1107)](C1107.md) |  |  |
-| [Access DHCP Logs (C1108)](C1108.md) |  |  |
-| [Access Internal Packet Capture Data (C1109)](C1109.md) |  |  |
-| [Access External Packet Capture Data (C1109)](C1109.md) |  |  |
+| [Access VPN Logs (C1107)](C1107.md) |  | [Unblock Domain on Email (C5201)](C5201.md) |
+| [Access DHCP Logs (C1108)](C1108.md) |  | [Unblock Sender on Email (C5202)](C5202.md) |
+| [Access Internal Packet Capture Data (C1109)](C1109.md) |  | [Restore Quarantined Email Message (C5203)](C5203.md) |
+| [Access External Packet Capture Data (C1109)](C1109.md) |  | [Restore Quarantined File (C5203)](C5203.md) |
+|  |  | [Unblock Blocked Process (C5401)](C5401.md) |
+|  |  | [Enable Disabled Service (C5501)](C5501.md) |
+|  |  | [Unlock Locked User Account (C5601)](C5601.md) |

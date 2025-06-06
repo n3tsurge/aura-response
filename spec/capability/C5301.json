@@ -1,0 +1,23 @@
+{
+    "id": "C5203",
+    "ref": "capability:recover:restore-quarantined-file",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of restoring a quarantined file. It includes steps for verifying the file's safety, ensuring it does not pose a security risk, and executing the restoration process to allow the user to access the file.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "restore-quarantined-file",
+    "title": "Restore Quarantined File",
+    "unique_id": "02ee6792-fd2b-4c20-9572-6316ce71b779",
+    "phase": "P0005",
+    "phase_friendly_name": "recovery",
+    "stakeholders": [],
+    "actors": [],
+    "frameworks": {},
+    "references": []
+}

@@ -1,0 +1,23 @@
+{
+    "id": "C5203",
+    "ref": "capability:recover:restore-quarantined-email-message",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of restoring a quarantined email message. It includes steps for verifying the legitimacy of the email, ensuring it does not pose a security risk, and executing the restoration process to allow the user to access the message.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "email",
+    "friendly_name": "restore-quarantined-email-message",
+    "title": "Restore Quarantined Email Message",
+    "unique_id": "523e29d7-1a7f-4b17-ad50-d4db76a4c71c",
+    "phase": "P0005",
+    "phase_friendly_name": "recovery",
+    "stakeholders": [],
+    "actors": [],
+    "frameworks": {},
+    "references": []
+}
