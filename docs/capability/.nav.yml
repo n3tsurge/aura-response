@@ -1,7 +1,7 @@
 nav:
   - index.md
   - "Framework Coverage": framework_coverage.md
-  - "Phase Matrx": phase_matrix.md
+  - "Phase Matrix": phase_matrix.md
   - "Tool Coverage": tool_coverage.md
   - Preparation:
     - preparation/*.md
