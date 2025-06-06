@@ -15,7 +15,7 @@
     "title": "Conduct Lessons Learned Exercise",
     "unique_id": "9abb5ee7-91c5-4a86-a998-1b9eeae685fb",
     "phase": "P0006",
-    "phase_friendly_name": "lessons learned",
+    "phase_friendly_name": "lessons-learned",
     "stakeholders": [
         "incident-commander",
         "security-analyst",

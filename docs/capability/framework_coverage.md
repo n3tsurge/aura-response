@@ -50,12 +50,12 @@ This matrix shows the coverage of capabilities across different frameworks by ph
 | [List Hosts Communicating with External Domain (C2113)](identification/C2113.md) |  |  |  |
 | [List Registry Key Modifications (C2501)](identification/C2501.md) |  | A.5.27, A.8.7, A.8.9, A.5.32, A.8.16 | DE.CM-1, DE.CM-7, RS.AN-1, RS.AN-2 |
 
-## Lessons learned Phase
+## Lessons-learned Phase
 
 | Capability | [MITRE ATT&CK](../frameworks/F0001.md) | [ISO/IEC 27001:2022](../frameworks/F0002.md) | [NIST CSF](../frameworks/F0003.md) |
 | :--- | :--- | :--- | :--- |
-| [Develop Incident Report (C6001)](lessons learned/C6001.md) |  |  |  |
-| [Conduct Lessons Learned Exercise (C6002)](lessons learned/C6002.md) |  |  |  |
+| [Develop Incident Report (C6001)](lessons-learned/C6001.md) |  |  |  |
+| [Conduct Lessons Learned Exercise (C6002)](lessons-learned/C6002.md) |  |  |  |
 
 ## Preparation Phase
 
