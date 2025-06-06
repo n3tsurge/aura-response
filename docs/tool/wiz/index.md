@@ -14,4 +14,4 @@ Wiz.io is a cloud security platform that provides comprehensive visibility and s
 
 | Capability | ID | Phase | Description |
 |------------|----|-------|-------------|
-| [List Host Vulnerabilities](C2002.md) | [C2002](../../capability/list-host-vulnerabilities/index.md) | Identification | This capability involves the ability to identify and list vulnerabilities present on hosts within a network. It includes scanning for known vulnerabilities, assessing their severity, and compiling a report of findings to inform remediation efforts. |
+| [List Host Vulnerabilities](C2002.md) | [C2002](../../capability/identification/C2002.md) | Identification | This capability involves the ability to identify and list vulnerabilities present on hosts within a network. It includes scanning for known vulnerabilities, assessing their severity, and compiling a report of findings to inform remediation efforts. |

@@ -1,4 +1,6 @@
 site_name: "Adaptive Unified Response Architecture"
+repo_url: https://github.com/n3tsurge/aura-response
+repo_name: n3tsurge/aura-response
 
 theme:
   name: material
@@ -16,7 +18,7 @@ theme:
     - navigation.indexes
     - navigation.instant
     #- navigation.sections
-    #- navigation.top
+    - navigation.top
 
 extra_css:
   - 'css/style.css'
