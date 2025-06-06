@@ -1,0 +1,27 @@
+{
+    "id": "C3108",
+    "ref": "capability:contain:block-port-internal-communication",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves blocking internal communication on specific ports that are identified as malicious or suspicious. It is a proactive measure to prevent unauthorized access and mitigate potential threats from within the network. This capability can be implemented through firewall rules, intrusion prevention systems, or other network security tools to ensure that traffic on these ports is denied.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "block-port-internal-communication",
+    "title": "Block Port Internal Communication",
+    "unique_id": "9bb72641-e5ba-4ad2-b87b-d6c71af8d023",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

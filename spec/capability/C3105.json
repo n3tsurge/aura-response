@@ -1,0 +1,27 @@
+{
+    "id": "C3105",
+    "ref": "capability:contain:block-external-url",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves blocking external URLs that are identified as malicious or suspicious. It is a proactive measure to prevent unauthorized access and mitigate potential threats from external sources. This capability can be implemented through web filtering, firewall rules, or other network security tools to ensure that traffic to these URLs is denied.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "block-external-url",
+    "title": "Block External URL",
+    "unique_id": "fdcb86c1-5317-4ec8-826d-765468fce0c0",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

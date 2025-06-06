@@ -1,0 +1,27 @@
+{
+    "id": "C3104",
+    "ref": "capability:contain:block-internal-domain",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves blocking internal domains that are identified as malicious or suspicious. It is a proactive measure to prevent unauthorized access and mitigate potential threats from within the network. This capability can be implemented through DNS filtering, firewall rules, or other network security tools to ensure that traffic to these internal domains is denied.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "block-internal-domain",
+    "title": "Block Internal Domain",
+    "unique_id": "38fafa0a-ce8b-4e71-ac84-cd93caba6705",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

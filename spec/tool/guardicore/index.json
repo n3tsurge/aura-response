@@ -3,7 +3,10 @@
     "ref": "tool:guardicore",
     "author": "n3tsurge",
     "capability": [
-
+        "C3101",
+        "C3102",
+        "C3107",
+        "C3108"
     ],
     "category": [
         "microsegmentation",

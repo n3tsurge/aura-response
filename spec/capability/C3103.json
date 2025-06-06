@@ -1,0 +1,27 @@
+{
+    "id": "C3103",
+    "ref": "capability:contain:block-external-domain",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves blocking external domains that are identified as malicious or suspicious. It is a proactive measure to prevent unauthorized access and mitigate potential threats from external sources. This capability can be implemented through DNS filtering, firewall rules, or other network security tools to ensure that traffic to these domains is denied.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "block-external-domain",
+    "title": "Block External Domain",
+    "unique_id": "89f79071-348b-4b44-816d-f890ac4e59cb",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": "C3107",
+    "ref": "capability:contain:block-port-external-communication",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves blocking external communication on specific ports that are identified as malicious or suspicious. It is a proactive measure to prevent unauthorized access and mitigate potential threats from external sources. This capability can be implemented through firewall rules, intrusion prevention systems, or other network security tools to ensure that traffic on these ports is denied.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "block-port-external-communication",
+    "title": "Block Port External Communication",
+    "unique_id": "87abf443-6b77-4488-bb32-6b8d0cf56d1c",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

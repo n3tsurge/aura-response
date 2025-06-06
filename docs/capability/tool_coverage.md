@@ -18,6 +18,15 @@ This matrix shows the coverage of capabilities across different tools.A CSV repr
 | [List Alert Victims (C2001)](C2001.md) | Identification |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2001.md) |  |  |
 | [List Host Vulnerabilities (C2002)](C2002.md) | Identification |  |  |  |  |  | [:white_check_mark:](../tool/rapid7-insightvm/C2002.md) | [:white_check_mark:](../tool/sentinelone/C2002.md) | [:white_check_mark:](../tool/wiz/C2002.md) |  |
 | [List Registry Key Modifications (C2501)](C2501.md) | Identification |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2501.md) |  |  |
+| [Patch Vulnerability (C3001)](C3001.md) | Containment |  |  |  |  |  |  |  |  |  |
+| [Block External IP Address (C3101)](C3101.md) | Containment | [:white_check_mark:](../tool/cisco-fw/C3101.md) | [:white_check_mark:](../tool/guardicore/C3101.md) |  | [:white_check_mark:](../tool/palo-alto-fw/C3101.md) |  |  | [:white_check_mark:](../tool/sentinelone/C3101.md) |  | [:white_check_mark:](../tool/zscaler-zia/C3101.md) |
+| [Block Internal IP Address (C3102)](C3102.md) | Containment | [:white_check_mark:](../tool/cisco-fw/C3102.md) | [:white_check_mark:](../tool/guardicore/C3102.md) |  | [:white_check_mark:](../tool/palo-alto-fw/C3102.md) |  |  | [:white_check_mark:](../tool/sentinelone/C3102.md) |  |  |
+| [Block External Domain (C3103)](C3103.md) | Containment |  |  |  |  |  |  |  |  |  |
+| [Block Internal Domain (C3104)](C3104.md) | Containment |  |  |  |  |  |  |  |  |  |
+| [Block External URL (C3105)](C3105.md) | Containment |  |  |  |  |  |  |  |  |  |
+| [Block Internal URL (C3106)](C3106.md) | Containment |  |  |  |  |  |  |  |  |  |
+| [Block Port External Communication (C3107)](C3107.md) | Containment | [:white_check_mark:](../tool/cisco-fw/C3107.md) | [:white_check_mark:](../tool/guardicore/C3107.md) |  | [:white_check_mark:](../tool/palo-alto-fw/C3107.md) |  |  | [:white_check_mark:](../tool/sentinelone/C3107.md) |  | [:white_check_mark:](../tool/zscaler-zia/C3107.md) |
+| [Block Port Internal Communication (C3108)](C3108.md) | Containment | [:white_check_mark:](../tool/cisco-fw/C3108.md) | [:white_check_mark:](../tool/guardicore/C3108.md) |  | [:white_check_mark:](../tool/palo-alto-fw/C3108.md) |  |  | [:white_check_mark:](../tool/sentinelone/C3108.md) |  |  |
 | [Report Incident to External Entity (C4001)](C4001.md) | Eradication |  |  |  |  |  |  |  |  |  |
 | [Remove Rogue Network Device (C4101)](C4101.md) | Eradication |  |  |  |  |  |  |  |  |  |
 | [Delete Email Message (C4201)](C4201.md) | Eradication |  |  |  |  |  |  |  |  |  |
