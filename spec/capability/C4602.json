@@ -1,0 +1,28 @@
+{
+    "id": "C4602",
+    "ref": "capability:eradicate:remove-user-account",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of removing a user account from a system. It includes steps for identifying the user account to be removed, ensuring that it is safe to delete, and executing the removal in a manner that maintains system integrity. This capability is essential for managing user accounts during incident response, particularly when dealing with compromised or unnecessary accounts.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "identity",
+    "friendly_name": "remove-user-account",
+    "title": "Remove User Account",
+    "unique_id": "c0f11bff-ba85-4433-9685-d0f70db11e12",
+    "phase": "P0004",
+    "phase_friendly_name": "eradication",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+
+    ]
+}

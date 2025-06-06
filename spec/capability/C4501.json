@@ -1,0 +1,28 @@
+{
+    "id": "C4501",
+    "ref": "capability:eradicate:remove-registry-key",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of removing a registry key from a system. It includes steps for identifying the registry key to be removed, ensuring that it is safe to delete, and executing the removal in a manner that maintains system integrity. This capability is essential for managing system configurations during incident response, particularly when dealing with malicious or unnecessary registry entries.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "configuration",
+    "friendly_name": "remove-registry-key",
+    "title": "Remove Registry Key",
+    "unique_id": "85231c1f-05ef-4774-a046-27b6075dd9a3",
+    "phase": "P0004",
+    "phase_friendly_name": "eradication",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+
+    ]
+}

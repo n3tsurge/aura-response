@@ -1,0 +1,10 @@
+{
+    "id": "S0006",
+    "ref": "stakeholder:legal-liaison",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "The Legal Liaison is responsible for ensuring that all incident response activities comply with legal and regulatory requirements. They provide guidance on legal implications, manage any legal risks, and coordinate with external legal counsel as necessary. Their role is crucial in protecting the organization from potential legal liabilities during and after an incident.",
+    "friendly_name": "legal-liaison",
+    "title": "Legal Liaison",
+    "unique_id": "04957ff9-670d-4c1a-8417-4af7f6a25ea8"
+}

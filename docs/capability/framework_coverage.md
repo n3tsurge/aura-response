@@ -18,6 +18,14 @@ This matrix shows the coverage of capabilities across different frameworks.
 | [List Alert Victims (C2001)](C2001.md) |  | A.5.30, A.5.23, A.5.34, A.6.1, A.5.27, A.8.1, A.8.9 | DE.AE-1, DE.AE-2, DE.AE-3, DE.AE-5, RS.AN-1, RS.AN-2, RS.AN-3, RS.AN-4 |
 | [List Host Vulnerabilities (C2002)](C2002.md) |  | A.12.6.1, A.12.6.2 | PR.IP-8, DE.CM-8 |
 | [List Registry Key Modifications (C2501)](C2501.md) |  | A.5.27, A.8.7, A.8.9, A.5.32, A.8.16 | DE.CM-1, DE.CM-7, RS.AN-1, RS.AN-2 |
+| [Report Incident to External Entity (C4001)](C4001.md) |  |  |  |
+| [Remove Rogue Network Device (C4101)](C4101.md) |  |  |  |
+| [Delete Email Message (C4201)](C4201.md) |  |  |  |
+| [Remove File (C4301)](C4301.md) |  |  |  |
+| [Remove Registry Key (C4501)](C4501.md) |  |  |  |
+| [Remove Service (C4502)](C4502.md) |  |  |  |
+| [Revoke Authentication Credentials (C4601)](C4601.md) |  |  |  |
+| [Remove User Account (C4602)](C4602.md) |  |  |  |
 | [Reinstall Host from Golden Image (C5001)](C5001.md) |  |  |  |
 | [Restore Data from Backup (C5002)](C5002.md) |  |  |  |
 | [Unblock Blocked IP (C5101)](C5101.md) |  |  |  |

@@ -6,6 +6,10 @@
         "C2002",
         "C1013"
     ],
+    "mitre_attack_datasources": [
+        "Asset: Asset Inventory",
+        "Asset: Software"
+    ],
     "category": [
         "vulnerability management"
     ],

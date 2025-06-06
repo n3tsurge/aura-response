@@ -1,0 +1,28 @@
+{
+    "id": "C4201",
+    "ref": "capability:eradicate:delete-email-message",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of deleting an email message from the system. It includes steps for identifying the email to be deleted, ensuring that it is no longer needed for any ongoing investigations or communications, and securely removing it from the email server to prevent any potential security threats. This capability is essential for maintaining email integrity and security during incident response.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "email",
+    "friendly_name": "delete-email-message",
+    "title": "Delete Email Message",
+    "unique_id": "dca96149-37ea-4c39-a636-0e7fe71c5660",
+    "phase": "P0004",
+    "phase_friendly_name": "eradication",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+
+    ]
+}

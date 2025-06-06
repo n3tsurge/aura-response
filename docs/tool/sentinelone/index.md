@@ -30,11 +30,17 @@ SentinelOne is an advanced endpoint protection platform that uses AI to detect, 
 - File: File Creation
 - File: File Modification
 - File: File Deletion
+- Driver: Driver Load
+- Driver: Driver Metadata
 - Network: Network Connection Creation
 - Network: Network Traffic Flow
 - Logon: Logon Session Creation
 - Domain Name: Active DNS
 - Command: Command Execution
+- Windows Registery: Windows Registry Key Creation
+- Windows Registery: Windows Registry Key Modification
+- Windows Registery: Windows Registry Key Deletion
+- User Account: User Account Authentication
 
 ## External References
 

@@ -1,0 +1,10 @@
+{
+    "id": "S0005",
+    "ref": "stakeholder:marketing-liaison",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "The Marketing Liaison is responsible for communicating with external stakeholders, including customers and partners, to ensure that they are informed about the incident response process. They play a key role in managing public relations and maintaining the organization's reputation during and after an incident.",
+    "friendly_name": "marketing-liaison",
+    "title": "Marketing Liaison",
+    "unique_id": "c237d1fc-b2f5-4cbc-a46f-dbfa15f5294a"
+}

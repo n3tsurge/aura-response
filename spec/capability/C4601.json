@@ -1,0 +1,28 @@
+{
+    "id": "C4601",
+    "ref": "capability:eradicate:revoke-authentication-credentials",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of revoking authentication credentials for users or systems that are no longer authorized to access resources. It includes steps for identifying the credentials to be revoked, executing the revocation, and ensuring that access is effectively terminated to prevent unauthorized use. This capability is essential for maintaining security and compliance during incident response.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "identity",
+    "friendly_name": "revoke-authentication-credentials",
+    "title": "Revoke Authentication Credentials",
+    "unique_id": "249a9bad-ee00-424b-a286-1c8f1e9929b8",
+    "phase": "P0004",
+    "phase_friendly_name": "eradication",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+
+    ]
+}

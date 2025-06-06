@@ -1,0 +1,30 @@
+{
+    "id": "C4001",
+    "ref": "capability:eradicate:report-incident-to-external",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability outlines the process of reporting an incident to an external entity. It includes steps for documenting the incident, identifying the appropriate external contacts, and ensuring that all necessary information is communicated effectively. This capability is essential for maintaining transparency and compliance with regulatory requirements during incident response.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "report-incident-to-external",
+    "title": "Report Incident to External Entity",
+    "unique_id": "cd2b3dcc-48f1-4815-b76c-4a1f4fe2f23b",
+    "phase": "P0004",
+    "phase_friendly_name": "eradication",
+    "stakeholders": [
+    ],
+    "actors": [
+        "marketing-liason",
+        "legal-liason",
+        "incident-commander"
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}
