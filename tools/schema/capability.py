@@ -63,7 +63,7 @@ class Capability(BaseComponent):
         """Generates a Table of Contents for the tools."""
         toc = "# Capabilities\n\n"
         toc += "This document provides an overview of all capabilities broken down by response phase.\n\n"
-        
+
         phases = {}
         for capability in items:
             phase = capability.phase_friendly_name if capability.phase_friendly_name else "Unknown"
@@ -77,11 +77,9 @@ class Capability(BaseComponent):
             for capability in capabilities:
                 toc += f"| [{capability.title}]({capability.id}.md) | {capability.id} | {capability.phase_friendly_name.capitalize()} | {capability.description} |\n"
             toc += "\n"
-            
-            
-        
+
         return toc.strip()
-    
+
     @classmethod
     def generate_phase_matrix(cls) -> str:
         """Generates an HTML table of all the capabilities grouped by their
@@ -89,30 +87,33 @@ class Capability(BaseComponent):
         When a phase cell is empty the cell show have no bottom border."""
         markdown_content = "# Capability Phase Matrix\n\n"
         markdown_content += "This matrix shows the capabilities grouped by their response phase.\n\n"
-        
+
         _phases = {}
         for capability in cls.load():
             phase = capability.phase_friendly_name if capability.phase_friendly_name else "Unknown"
             if phase not in _phases:
                 _phases[phase] = []
             _phases[phase].append(capability)
-            
-        markdown_content += " | ".join([p.capitalize() for p in _phases.keys()]) + " |\n"
+
+        markdown_content += " | ".join([p.capitalize()
+                                       for p in _phases.keys()]) + " |\n"
         markdown_content += "| :--- " * len(_phases) + "|\n"
-        max_length = max(len(capabilities) for capabilities in _phases.values())
+        max_length = max(len(capabilities)
+                         for capabilities in _phases.values())
         for i in range(max_length):
             row = []
             for phase, capabilities in _phases.items():
                 if i < len(capabilities):
                     capability = capabilities[i]
-                    row.append(f"[{capability.title} ({capability.id})]({capability.id}.md)")
+                    row.append(
+                        f"[{capability.title} ({capability.id})]({capability.id}.md)")
                 else:
                     row.append("")
             markdown_content += "| " + " | ".join(row) + " |\n"
         markdown_content += "\n"
-        
+
         return markdown_content.strip()
-    
+
     @classmethod
     def generate_tool_matrix(cls) -> str:
         """Generates a Markdown table of all capabilities and their associated tools with
@@ -120,35 +121,39 @@ class Capability(BaseComponent):
         controls listed in the cells."""
         from schema.tool import Tool
         tools = Tool.load()
-        
+
         markdown_content = "# Tool Coverage Matrix\n\n"
         markdown_content += "This matrix shows the coverage of capabilities across different tools."
         markdown_content += "A CSV representation of this matrix can be found here [tool_coverage.csv](../../files/tool_coverage.csv).\n\n"
-        markdown_content += "| Capability | Phase | " + " | ".join(f"[{t.title}]({t.self_url()})" for t in tools) + " |\n"
-        markdown_content += "| :--- | :--- | " + " | ".join(":---:" for _ in tools) + " |\n"
-            
+        markdown_content += "| Capability | Phase | " + \
+            " | ".join(f"[{t.title}]({t.self_url()})" for t in tools) + " |\n"
+        markdown_content += "| :--- | :--- | " + \
+            " | ".join(":---:" for _ in tools) + " |\n"
+
         for capability in cls.load():
             markdown_content += f"| [{capability.title} ({capability.id})]({capability.id}.md) | {capability.phase_friendly_name.capitalize()} | "
             tool_coverage = []
             for tool in tools:
                 if capability.id in tool.capability:
-                    tool_coverage.append(f"[:white_check_mark:](../tool/{tool.friendly_name}/{capability.id}.md)")
+                    tool_coverage.append(
+                        f"[:white_check_mark:](../tool/{tool.friendly_name}/{capability.id}.md)")
                 else:
                     tool_coverage.append("")
 
             markdown_content += " | ".join(tool_coverage) + " |\n"
-            
+
         markdown_content += "\n"
         return markdown_content.strip()
-    
+
     @classmethod
     def generate_tool_matrix_csv(cls) -> str:
         """Generates a CSV representation of the tool coverage matrix."""
         from schema.tool import Tool
         tools = Tool.load()
-        
-        csv_content = "Capability,Phase," + ",".join(t.title for t in tools) + "\n"
-        
+
+        csv_content = "Capability,Phase," + \
+            ",".join(t.title for t in tools) + "\n"
+
         for capability in cls.load():
             csv_content += f"{capability.title} ({capability.id}),{capability.phase_friendly_name.capitalize()},"
             tool_coverage = []
@@ -158,9 +163,8 @@ class Capability(BaseComponent):
                 else:
                     tool_coverage.append("")
             csv_content += ",".join(tool_coverage) + "\n"
-        
+
         return csv_content.strip()
-       
 
     @classmethod
     def generate_framework_matrix(cls, items: list[Any]) -> str:

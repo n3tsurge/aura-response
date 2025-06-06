@@ -18,17 +18,17 @@ class Tool(BaseComponent):
         default_factory=list,
         description="A list of MITRE ATT&CK data sources related to the tool."
     )
-    
+
     @classmethod
     def generate_index_md(cls, tools: list['Tool']) -> str:
         """Generates a Table of Contents for the tools."""
         toc = "# Tools\n\n"
         toc += "| Tool | Category | ID | Description |\n"
         toc += "|------|----------|----|-------------|\n"
-        
+
         for tool in tools:
             toc += f"| [{tool.title}]({tool.self_url()}) | {', '.join(tool.category)} | {tool.id} | {tool.description} |\n"
-        
+
         return toc.strip()
 
     def generate_markdown(self) -> str:
@@ -37,7 +37,7 @@ class Tool(BaseComponent):
         markdown_content += f"## Overview\n\n{self.description}\n\n"
 
         _capabilities = Capability.load()
-        
+
         if self.category:
             markdown_content += "## Categories\n\n"
             for cat in self.category:
@@ -46,10 +46,10 @@ class Tool(BaseComponent):
 
         if self.capability:
             markdown_content += "## Capabilities\n\n"
-            
+
             markdown_content += "| Capability | ID | Phase | Description |\n"
             markdown_content += "|------------|----|-------|-------------|\n"
-            
+
             for cap in self.capability:
                 capability = next((
                     c for c in _capabilities if c.id == cap), None)
@@ -58,12 +58,12 @@ class Tool(BaseComponent):
                     markdown_content += f"| [{capability.title}]({capability.id}.md) | [{capability.id}](../{capability.self_url()}) | {capability.phase_friendly_name.capitalize()} | {capability.description} |\n"
 
             markdown_content += "\n"
-            
+
         if self.mitre_attack_datasources:
             markdown_content += "## MITRE ATT&CK Data Sources\n\n"
             for datasource in self.mitre_attack_datasources:
                 markdown_content += f"- {datasource}\n"
-                
+
             markdown_content += "\n"
 
         if self.external_references:
