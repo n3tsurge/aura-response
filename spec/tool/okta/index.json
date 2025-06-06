@@ -1,0 +1,21 @@
+{
+    "id": "T0009",
+    "ref": "tool:okta",
+    "author": "n3tsurge",
+    "capability": [
+
+    ],
+    "category": [
+        "identity and access management",
+        "single sign-on",
+        "multi-factor authentication"
+    ],
+    "created_on": "2025-06-03",
+    "description": "Okta is a leading identity and access management platform that provides secure authentication and authorization services for applications and users. It enables organizations to manage user identities, implement single sign-on (SSO), and enforce multi-factor authentication (MFA) across their digital environments. Okta's robust features help enhance security, streamline user access, and improve compliance with industry standards.",
+    "external_references": [
+       
+    ],
+    "friendly_name": "okta",
+    "title": "Okta",
+    "unique_id": "046da48f-0ed7-4f57-9b01-c89c5a94d04b"
+}
