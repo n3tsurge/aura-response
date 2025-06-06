@@ -106,7 +106,7 @@ class Capability(BaseComponent):
                 if i < len(capabilities):
                     capability = capabilities[i]
                     row.append(
-                        f"[{capability.title} ({capability.id})]({capability.id}.md)")
+                        f"[{capability.title} ({capability.id})]({phase}/{capability.id}.md)")
                 else:
                     row.append("")
             markdown_content += "| " + " | ".join(row) + " |\n"
@@ -123,7 +123,7 @@ class Capability(BaseComponent):
         tools = Tool.load()
 
         markdown_content = "# Tool Coverage Matrix\n\n"
-        markdown_content += "This matrix shows the coverage of capabilities across different tools."
+        markdown_content += "This matrix shows the coverage of capabilities across different tools. "
         markdown_content += "A CSV representation of this matrix can be found here [tool_coverage.csv](../../files/tool_coverage.csv).\n\n"
         markdown_content += "| Capability | Phase | " + \
             " | ".join(f"[{t.title}]({t.self_url()})" for t in tools) + " |\n"
@@ -131,7 +131,7 @@ class Capability(BaseComponent):
             " | ".join(":---:" for _ in tools) + " |\n"
 
         for capability in cls.load():
-            markdown_content += f"| [{capability.title} ({capability.id})]({capability.id}.md) | {capability.phase_friendly_name.capitalize()} | "
+            markdown_content += f"| [{capability.title} ({capability.id})]({capability.phase_friendly_name}/{capability.id}.md) | {capability.phase_friendly_name.capitalize()} | "
             tool_coverage = []
             for tool in tools:
                 if capability.id in tool.capability:
@@ -180,7 +180,7 @@ class Capability(BaseComponent):
             " | ".join(":---" for _ in Framework.load()) + " |\n"
 
         for capability in items:
-            markdown_content += f"| [{capability.title} ({capability.id})]({capability.id}.md) | "
+            markdown_content += f"| [{capability.title} ({capability.id})]({capability.phase_friendly_name}/{capability.id}.md) | "
             framework_coverage = []
             for framework in Framework.load():
                 if framework.id in capability.frameworks:
@@ -198,6 +198,12 @@ class Capability(BaseComponent):
     def load(cls) -> dict['Capability', str]:
         """Loads all capabilities from the JSON files in the 'capabilities' directory."""
         return super().load()
+    
+    def self_url(self, base_dir: str = None) -> str:
+        """Returns the URL to the component's self-reference."""
+        if base_dir is None:
+            return f"../{self.__class__.__name__.lower()}/{self.phase_friendly_name}/{self.id}.md"
+        return f"{base_dir}/{self.__class__.__name__.lower()}/{self.phase_friendly_name}/{self.id}.md"
 
     def generate_markdown(self) -> str:
         """Generates a Markdown representation of the capability."""

@@ -69,6 +69,8 @@ class BaseComponent(BaseModel):
         # If this is a tool class set the glob pattern as **/*.json to include all subdirectories
         if cls.__name__ == 'Tool':
             glob_pattern = '**/index.json'
+        if cls.__name__ == 'Capability':
+            glob_pattern = '**/**/*.json'
         for f in dir.glob(glob_pattern):
             with open(f, 'r', encoding='utf-8') as file:
                 try:
