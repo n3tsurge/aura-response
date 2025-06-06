@@ -1,0 +1,28 @@
+{
+    "id": "T0010",
+    "ref": "tool:proofpoint",
+    "author": "n3tsurge",
+    "capability": [
+        "C5203",
+        "C5202",
+        "C5201"
+    ],
+    "category": [
+        "email security",
+        "threat intelligence",
+        "phishing protection"
+    ],
+    "created_on": "2025-06-03",
+    "description": "Proofpoint is a leading cybersecurity company specializing in email security, threat intelligence, and phishing protection. It provides advanced solutions to protect organizations from email-based threats, including phishing attacks, malware, and spam. Proofpoint's platform leverages machine learning and threat intelligence to detect and block malicious emails, ensuring the security of sensitive information and enhancing overall cybersecurity posture. Its comprehensive approach helps organizations mitigate risks associated with email communications.",
+    "external_references": [
+        {
+            "name": "Proofpoint Official Website",
+            "type": "website",
+            "url": "https://www.proofpoint.com/"
+        }
+       
+    ],
+    "friendly_name": "proofpoint",
+    "title": "Proofpoint",
+    "unique_id": "046da48f-0ed7-4f57-9b01-c89c5a94d04b"
+}
