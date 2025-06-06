@@ -1,0 +1,47 @@
+{
+    "id": "C2104",
+    "ref": "capability:identify:analyze-domain-name",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves analyzing a domain name to gather information about its ownership, registration details, and associated IP addresses. This analysis is crucial for understanding the context of the domain, identifying potential threats, and assessing the legitimacy of the domain in relation to security incidents. The process may include querying WHOIS databases, DNS records, and other relevant sources to compile a comprehensive profile of the domain.",
+    "documentation": {
+        "enrichment": [
+            {
+                "title": "WHOIS Lookup",
+                "description": "Perform a WHOIS lookup to gather registration details of the domain, including the registrant's contact information, registration dates, and domain status.",
+                "type": "list-item"
+            },
+            {
+                "title": "DNS Record Analysis",
+                "description": "Analyze DNS records associated with the domain to identify IP addresses, mail servers, and other relevant information.",
+                "type": "list-item"
+            },
+            {
+                "title": "Certificate Transparency Logs",
+                "description": "Check certificate transparency logs to find SSL/TLS certificates issued for the domain, which can provide insights into its usage and ownership.",
+                "type": "list-item"
+            }
+        ],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "analyze-domain-name",
+    "title": "Analyze Domain Name",
+    "unique_id": "d34d6817-db58-4fd8-a35c-4c60dee429c7",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "commander",
+        "security-analyst",
+        "incident-responder",
+        "scribe"
+    ],
+    "actors": [
+        "incident-responder",
+        "security-analyst"
+    ],
+    "frameworks": {
+    }
+}

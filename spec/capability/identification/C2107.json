@@ -1,0 +1,31 @@
+{
+    "id": "C2107",
+    "ref": "capability:identify:list-hosts-communicating-by-port",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves identifying and listing hosts that are communicating over a specific port. It is essential for understanding network traffic patterns, detecting potential security threats, and ensuring that only authorized hosts are interacting with critical services. This capability can be implemented through network monitoring tools, logs analysis, or other methods to track communication flows within the network.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "list-hosts-communicating-by-port",
+    "title": "List Hosts Communicating by Port",
+    "unique_id": "b1ab3c7a-1dd9-4792-8225-46882e91ff1b",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "commander",
+        "security-analyst",
+        "incident-responder",
+        "scribe"
+    ],
+    "actors": [
+        "incident-responder",
+        "security-analyst"
+    ],
+    "frameworks": {
+    }
+}

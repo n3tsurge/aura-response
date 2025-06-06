@@ -1,0 +1,25 @@
+{
+    "id": "C2003",
+    "ref": "capability:identify:place-compromised-accounts-on-watchlist",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves identifying compromised accounts and placing them on a watchlist for further monitoring. The process includes analyzing account activity, detecting anomalies, and ensuring that compromised accounts are flagged for investigation and remediation. This helps in preventing further unauthorized access and securing the network.",
+    "category": "general",
+    "friendly_name": "place-compromised-accounts-on-watchlist",
+    "title": "Place Compromised Accounts on Watchlist",
+    "unique_id": "b0b0c761-6cb0-45d2-a1c0-271ba7c715b1",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "commander",
+        "security-analyst",
+        "incident-responder",
+        "scribe"
+    ],
+    "actors": [
+        "incident-responder",
+        "security-analyst"
+    ],
+    "frameworks": {
+    }
+}
