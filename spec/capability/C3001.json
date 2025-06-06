@@ -1,0 +1,27 @@
+{
+    "id": "C3001",
+    "ref": "capability:contain:patch-vulnerability",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves applying patches to systems and applications to remediate identified vulnerabilities. It ensures that all software is up-to-date with the latest security fixes, thereby reducing the risk of exploitation by adversaries. This process includes identifying vulnerable components, testing patches in a controlled environment, and deploying them across the affected systems.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "patch-vulnerability",
+    "title": "Patch Vulnerability",
+    "unique_id": "77d0800d-ad0d-4fad-a99a-f52ce5e1d5ca",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

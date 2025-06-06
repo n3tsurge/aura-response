@@ -4,7 +4,9 @@
     "author": "n3tsurge",
     "capability": [
         "C1104",
-        "C1106"
+        "C1106",
+        "C3101",
+        "C3107"
     ],
     "category": [
         "SaaS",

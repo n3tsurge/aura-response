@@ -18,6 +18,15 @@ This matrix shows the coverage of capabilities across different frameworks.
 | [List Alert Victims (C2001)](C2001.md) |  | A.5.30, A.5.23, A.5.34, A.6.1, A.5.27, A.8.1, A.8.9 | DE.AE-1, DE.AE-2, DE.AE-3, DE.AE-5, RS.AN-1, RS.AN-2, RS.AN-3, RS.AN-4 |
 | [List Host Vulnerabilities (C2002)](C2002.md) |  | A.12.6.1, A.12.6.2 | PR.IP-8, DE.CM-8 |
 | [List Registry Key Modifications (C2501)](C2501.md) |  | A.5.27, A.8.7, A.8.9, A.5.32, A.8.16 | DE.CM-1, DE.CM-7, RS.AN-1, RS.AN-2 |
+| [Patch Vulnerability (C3001)](C3001.md) |  |  |  |
+| [Block External IP Address (C3101)](C3101.md) |  |  |  |
+| [Block Internal IP Address (C3102)](C3102.md) |  |  |  |
+| [Block External Domain (C3103)](C3103.md) |  |  |  |
+| [Block Internal Domain (C3104)](C3104.md) |  |  |  |
+| [Block External URL (C3105)](C3105.md) |  |  |  |
+| [Block Internal URL (C3106)](C3106.md) |  |  |  |
+| [Block Port External Communication (C3107)](C3107.md) |  |  |  |
+| [Block Port Internal Communication (C3108)](C3108.md) |  |  |  |
 | [Report Incident to External Entity (C4001)](C4001.md) |  |  |  |
 | [Remove Rogue Network Device (C4101)](C4101.md) |  |  |  |
 | [Delete Email Message (C4201)](C4201.md) |  |  |  |
