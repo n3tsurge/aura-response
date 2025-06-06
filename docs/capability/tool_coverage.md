@@ -23,6 +23,19 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [Remove User Account (C4602)](eradication/C4602.md) | Eradication |  |  | [:white_check_mark:](../tool/okta/C4602.md) |  |  |  |  |  |  |
 | [List Alert Victims (C2001)](identification/C2001.md) | Identification |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2001.md) |  |  |
 | [List Host Vulnerabilities (C2002)](identification/C2002.md) | Identification |  |  |  |  |  | [:white_check_mark:](../tool/rapid7-insightvm/C2002.md) | [:white_check_mark:](../tool/sentinelone/C2002.md) | [:white_check_mark:](../tool/wiz/C2002.md) |  |
+| [Place Compromised Accounts on Watchlist (C2003)](identification/C2003.md) | Identification |  |  |  |  |  |  |  |  |  |
+| [List Hosts Communicating with Internal Domain (C2101)](identification/C2101.md) | Identification |  |  |  |  |  |  |  |  |  |
+| [List Hosts Communicating with Internal IP (C2102)](identification/C2102.md) | Identification |  |  |  |  |  |  |  |  |  |
+| [List Hosts Communicating with Internal URL (C2103)](identification/C2103.md) | Identification |  |  |  |  |  |  |  |  |  |
+| [Analyze Domain Name (C2104)](identification/C2104.md) | Identification |  |  |  |  |  |  |  |  |  |
+| [Analyze IP Communication (C2105)](identification/C2105.md) | Identification |  |  |  |  |  |  |  |  |  |
+| [Analyze URI Communication (C2106)](identification/C2106.md) | Identification |  |  |  |  |  |  |  |  |  |
+| [List Hosts Communicating by Port (C2107)](identification/C2107.md) | Identification |  |  |  |  |  |  |  |  |  |
+| [List Hosts Connected to VPN (C2108)](identification/C2108.md) | Identification |  |  |  |  |  |  |  |  |  |
+| [List Hosts Connected to Intranet (C2109)](identification/C2109.md) | Identification |  |  |  |  |  |  |  |  |  |
+| [List Data Transferred (C2110)](identification/C2110.md) | Identification |  |  |  |  |  |  |  |  |  |
+| [Collect Transferred Data (C2111)](identification/C2111.md) | Identification |  |  |  |  |  |  |  |  |  |
+| [List Hosts Communicating with External Domain (C2113)](identification/C2113.md) | Identification |  |  |  |  |  |  |  |  |  |
 | [List Registry Key Modifications (C2501)](identification/C2501.md) | Identification |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2501.md) |  |  |
 | [Develop Incident Report (C6001)](lessons learned/C6001.md) | Lessons learned |  |  |  |  |  |  |  |  |  |
 | [Conduct Lessons Learned Exercise (C6002)](lessons learned/C6002.md) | Lessons learned |  |  |  |  |  |  |  |  |  |

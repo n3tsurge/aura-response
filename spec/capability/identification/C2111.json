@@ -1,0 +1,31 @@
+{
+    "id": "C2111",
+    "ref": "capability:identify:collect-transfered-data",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves collecting and analyzing data that has been transferred within a network. It is essential for monitoring data flow, ensuring compliance with data handling policies, and detecting unauthorized data transfers. This capability can be implemented through network monitoring tools, log analysis, or other methods to track and analyze data transfers within the network.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "collect-transfered-data",
+    "title": "Collect Transferred Data",
+    "unique_id": "aeceb325-ee36-4409-8c86-c4f6bfb3944f",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "commander",
+        "security-analyst",
+        "incident-responder",
+        "scribe"
+    ],
+    "actors": [
+        "incident-responder",
+        "security-analyst"
+    ],
+    "frameworks": {
+    }
+}

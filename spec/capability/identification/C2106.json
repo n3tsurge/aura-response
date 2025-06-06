@@ -1,0 +1,31 @@
+{
+    "id": "C2106",
+    "ref": "capability:identify:analyze-uri",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves analyzing URI (Uniform Resource Identifier) communication to identify potential security threats, unauthorized access, or malicious activities. It includes examining the structure of URIs, the protocols used, and the data transmitted to detect anomalies or suspicious patterns. This analysis is crucial for understanding how resources are accessed and ensuring that only legitimate traffic is allowed within the network.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "analyze-uri",
+    "title": "Analyze URI Communication",
+    "unique_id": "eb14bfce-8ce7-46ae-88fe-c5db66770ec3",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "commander",
+        "security-analyst",
+        "incident-responder",
+        "scribe"
+    ],
+    "actors": [
+        "incident-responder",
+        "security-analyst"
+    ],
+    "frameworks": {
+    }
+}

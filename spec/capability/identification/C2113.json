@@ -1,0 +1,25 @@
+{
+    "id": "C2113",
+    "ref": "capability:identify:list-hosts-communicating-with-external-domain",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves identifying and listing hosts that are communicating with a specific external domain. It is essential for understanding network traffic patterns, detecting potential security threats, and ensuring that only authorized hosts are interacting with external resources. This capability can be implemented through network monitoring tools, logs analysis, or other methods to track communication flows within the network.",
+    "category": "general",
+    "friendly_name": "list-hosts-communicating-with-external-domain",
+    "title": "List Hosts Communicating with External Domain",
+    "unique_id": "97fd3280-0d41-437c-91d8-98caa141b790",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "commander",
+        "security-analyst",
+        "incident-responder",
+        "scribe"
+    ],
+    "actors": [
+        "incident-responder",
+        "security-analyst"
+    ],
+    "frameworks": {
+    }
+}

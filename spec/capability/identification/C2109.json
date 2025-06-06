@@ -1,0 +1,31 @@
+{
+    "id": "C2109",
+    "ref": "capability:identify:list-hosts-connected-to-intranet",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves identifying and listing hosts that are connected to an intranet. It is essential for monitoring network security, ensuring compliance with access policies, and detecting unauthorized access. This capability can be implemented through network monitoring tools, logs analysis, or other methods to track intranet connections within the network.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "list-hosts-connected-to-intranet",
+    "title": "List Hosts Connected to Intranet",
+    "unique_id": "382f75c1-c85d-444b-966f-18299ff67287",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "commander",
+        "security-analyst",
+        "incident-responder",
+        "scribe"
+    ],
+    "actors": [
+        "incident-responder",
+        "security-analyst"
+    ],
+    "frameworks": {
+    }
+}

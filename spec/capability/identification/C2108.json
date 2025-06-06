@@ -1,0 +1,31 @@
+{
+    "id": "C2108",
+    "ref": "capability:identify:list-hosts-connected-to-vpn",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves identifying and listing hosts that are connected to a VPN (Virtual Private Network). It is essential for monitoring network security, ensuring compliance with access policies, and detecting unauthorized access. This capability can be implemented through network monitoring tools, VPN logs analysis, or other methods to track VPN connections within the network.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "list-hosts-connected-to-vpn",
+    "title": "List Hosts Connected to VPN",
+    "unique_id": "30c8064b-5d70-49fe-9584-f6332cbe377e",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "commander",
+        "security-analyst",
+        "incident-responder",
+        "scribe"
+    ],
+    "actors": [
+        "incident-responder",
+        "security-analyst"
+    ],
+    "frameworks": {
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "id": "C2105",
+    "ref": "capability:identify:analyze-ip",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves identifying and listing hosts that are communicating with a specific internal URL. It is essential for understanding network traffic patterns, detecting potential security threats, and ensuring that only authorized hosts are interacting with critical internal resources. This capability can be implemented through network monitoring tools, logs analysis, or other methods to track communication flows within the network.",
+    "documentation": {
+        "enrichment": [
+            {
+                "title": "Reverse IP Lookup",
+                "description": "Use a reverse IP lookup service to find all domains associated with a specific IP address. This can help identify other potential targets or related entities.",
+                "type": "list-item"
+            }
+        ],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "analyze-ip",
+    "title": "Analyze IP Communication",
+    "unique_id": "2f4aceec-9ad6-4989-ac8c-bccb25eb930e",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "commander",
+        "security-analyst",
+        "incident-responder",
+        "scribe"
+    ],
+    "actors": [
+        "incident-responder",
+        "security-analyst"
+    ],
+    "frameworks": {
+    }
+}

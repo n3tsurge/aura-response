@@ -35,6 +35,19 @@ This matrix shows the coverage of capabilities across different frameworks by ph
 | :--- | :--- | :--- | :--- |
 | [List Alert Victims (C2001)](identification/C2001.md) |  | A.5.30, A.5.23, A.5.34, A.6.1, A.5.27, A.8.1, A.8.9 | DE.AE-1, DE.AE-2, DE.AE-3, DE.AE-5, RS.AN-1, RS.AN-2, RS.AN-3, RS.AN-4 |
 | [List Host Vulnerabilities (C2002)](identification/C2002.md) |  | A.12.6.1, A.12.6.2 | PR.IP-8, DE.CM-8 |
+| [Place Compromised Accounts on Watchlist (C2003)](identification/C2003.md) |  |  |  |
+| [List Hosts Communicating with Internal Domain (C2101)](identification/C2101.md) |  |  |  |
+| [List Hosts Communicating with Internal IP (C2102)](identification/C2102.md) |  |  |  |
+| [List Hosts Communicating with Internal URL (C2103)](identification/C2103.md) |  |  |  |
+| [Analyze Domain Name (C2104)](identification/C2104.md) |  |  |  |
+| [Analyze IP Communication (C2105)](identification/C2105.md) |  |  |  |
+| [Analyze URI Communication (C2106)](identification/C2106.md) |  |  |  |
+| [List Hosts Communicating by Port (C2107)](identification/C2107.md) |  |  |  |
+| [List Hosts Connected to VPN (C2108)](identification/C2108.md) |  |  |  |
+| [List Hosts Connected to Intranet (C2109)](identification/C2109.md) |  |  |  |
+| [List Data Transferred (C2110)](identification/C2110.md) |  |  |  |
+| [Collect Transferred Data (C2111)](identification/C2111.md) |  |  |  |
+| [List Hosts Communicating with External Domain (C2113)](identification/C2113.md) |  |  |  |
 | [List Registry Key Modifications (C2501)](identification/C2501.md) |  | A.5.27, A.8.7, A.8.9, A.5.32, A.8.16 | DE.CM-1, DE.CM-7, RS.AN-1, RS.AN-2 |
 
 ## Lessons learned Phase
