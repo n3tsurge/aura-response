@@ -1,0 +1,12 @@
+.md-grid {
+  max-width: initial;
+}
+
+[data-md-color-scheme="default"] {
+    --md-primary-fg-color: #003057;
+    --md-typeset-a-color: #0069A7;
+}
+
+code {
+  white-space : pre-wrap !important;
+}
