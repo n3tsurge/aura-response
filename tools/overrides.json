@@ -1,0 +1,14 @@
+{
+    "tools": {
+        "T0001": {
+            "maturity_score": {
+                "management": 4,
+                "deployment_scope": 5,
+                "functionality": 4,
+                "knowledge": 3,
+                "lifecycle": 4,
+                "vendor_risk": 4
+            }
+        }
+    }
+}

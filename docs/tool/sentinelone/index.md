@@ -10,6 +10,23 @@ SentinelOne is an advanced endpoint protection platform that uses AI to detect, 
 - Epp
 - Xdr
 
+## Maturity Score
+
+The maturity score is a measure of how well the organization has implemented and utilized the tool. It is based on several aspects, each scored from 1 to 5, where 1 is the lowest and 5 is the highest. The overall maturity score is calculated as the average of the individual scores. **Note that these values can be overridden when generating this documentation for internal use.**
+
+The following table summarizes the maturity score for the tool:
+
+| Aspect | Score | Description |
+|--------|-------|-----------|
+| Management | 4 | How well does the organization manage the tool.|
+| Deployment Scope | 5 | Does the organization have good penetration on target assets. |
+| Functionality | 4 | How well does the tool function. |
+| Knowledge | 3 | How well does the organization understand the tool. |
+| Lifecycle | 4 | Does the tool have a good lifecycle, e.g. enhancements track with technology and landscape changes. |
+| Vendor Risk | 4 | Does the vendor for the tool have any potential risk that would cause the tool to be unavailable. |
+| Overall | 4.0 | Overall maturity score for the tool. |
+
+
 ## Capabilities
 
 | Capability | ID | Phase | Description |

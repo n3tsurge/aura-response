@@ -36,6 +36,10 @@ poetry install
 poetry run python tools/schema_to_markdown.py
 ```
 
+### Overrides
+
+The `overrides.json` file is used to override the default behavior of the schema to markdown conversion. This allows for customization of how certain documentation is represented in the generated Markdown files. For example, an override can be defined to modify the maturity scoring of a tool in a specific environment.
+
 ## Serving the Documentation
 
 ```bash
