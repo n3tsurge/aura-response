@@ -41,7 +41,7 @@ class Tool(BaseComponent):
         if self.category:
             markdown_content += "## Categories\n\n"
             for cat in self.category:
-                markdown_content += f"- {cat}\n"
+                markdown_content += f"- {' '.join([p.capitalize() for p in cat.split(' ')])}\n"
             markdown_content += "\n"
 
         if self.capability:

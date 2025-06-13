@@ -1,0 +1,10 @@
+{
+    "id": "T0002C3101",
+    "ref": "tool:zscaler-zia:containment:block-external-ip-address",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability details how to block internal hosts communicating to external IP addresses leveraging the Zscaler Internet Access (ZIA) platform.  There are several methodologies for blocking IP traffic with Zscaler, varying by the type of threat.\n\n## Advanced Threat Protection\nTODO\n\n##Cloud Firewall\nThe Zscaler ZIA Cloud Firewall can be leveraged to block outbound communication to an external IP address using the following means:\n\n!!! warning \"Limited Blocking\"\n\tWhen an asset is leveraging Tunnel 1.0 only HTTP/HTTPS traffic to the IP address will be blocked.\n\n1. Locate the proper rule position in the rule order where the block rule should be ceated.\n2. Create a new block rule and enter the destination IP address that needs to be blocked.\n3.Scope the rule to the target locations, source networks, destination ports, etc.\n4. Save and Publish the changes to the Zscaler Cloud.\n\n",
+    "friendly_name": "zscaler-zia-block-external-ip-address",
+    "title": "Block External IP Address",
+    "unique_id": "409ce0f5-36d3-40b6-b5ff-1865ef952384"
+}

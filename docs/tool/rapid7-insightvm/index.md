@@ -6,7 +6,7 @@ Rapid7 InsightVM is a vulnerability management solution that provides near real-
 
 ## Categories
 
-- vulnerability management
+- Vulnerability Management
 
 ## Capabilities
 

@@ -6,7 +6,7 @@ Cisco Firewall (ASA/NGFW) is a family of network security devices that provide a
 
 ## Categories
 
-- network monitoring
+- Network Monitoring
 
 ## Capabilities
 

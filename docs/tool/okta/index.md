@@ -6,9 +6,9 @@ Okta is a leading identity and access management platform that provides secure a
 
 ## Categories
 
-- identity and access management
-- single sign-on
-- multi-factor authentication
+- Identity And Access Management
+- Single Sign-on
+- Multi-factor Authentication
 
 ## Capabilities
 

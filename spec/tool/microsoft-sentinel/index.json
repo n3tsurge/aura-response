@@ -1,0 +1,21 @@
+{
+    "id": "T0011",
+    "ref": "tool:ms-sentinel",
+    "author": "n3tsurge",
+    "capability": [
+    ],
+    "category": [
+        "security incident and event management",
+        "log collection"
+    ],
+    "mitre_attack_datasources": [
+    ],
+    "created_on": "2025-06-03",
+    "description": "",
+    "external_references": [
+       
+    ],
+    "friendly_name": "ms-sentinel",
+    "title": "Microsoft Sentinel",
+    "unique_id": "d4436ccf-4201-4d32-9215-131cafcb137a"
+}

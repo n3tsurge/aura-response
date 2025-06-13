@@ -1,0 +1,10 @@
+{
+    "id": "T0001.C2018",
+    "ref": "tool:sentinelone:identify:list-hosts-connected-to-vpn",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "TODO\n\n!!! note \"Configuration Required\"\n\tFor simpler identification, SentinelOne needs to be pre-configured with location detection criteria to properly determine if an asset is on the VPN; if not Event Search can be leveraged.\n\n",
+    "friendly_name": "sentinelone-list-hosts-connected-to-vpn",
+    "title": "List Registry Key Modifications",
+    "unique_id": "f0baf3c2-6db1-4c70-89fb-8c3d093f174e"
+}
