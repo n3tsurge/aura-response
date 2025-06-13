@@ -75,7 +75,7 @@ class Capability(BaseComponent):
             toc += "| Capability | ID | Phase | Description |\n"
             toc += "|------------|----|-------|-------------|\n"
             for capability in capabilities:
-                toc += f"| [{capability.title}]({capability.id}.md) | {capability.id} | {capability.phase_friendly_name.capitalize()} | {capability.description} |\n"
+                toc += f"| [{capability.title}]({capability.phase_friendly_name}/{capability.id}.md) | {capability.id} | {capability.phase_friendly_name.capitalize()} | {capability.description} |\n"
             toc += "\n"
 
         return toc.strip()
