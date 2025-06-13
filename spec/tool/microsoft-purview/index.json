@@ -1,0 +1,24 @@
+{
+    "id": "T0014",
+    "ref": "tool:ms-purview",
+    "author": "n3tsurge",
+    "capability": [
+    ],
+    "category": [
+        "cloud",
+        "data stewarship",
+        "data classification",
+        "data loss prevention",
+        "legal hold"
+    ],
+    "mitre_attack_datasources": [
+    ],
+    "created_on": "2025-06-03",
+    "description": "",
+    "external_references": [
+       
+    ],
+    "friendly_name": "ms-purview",
+    "title": "Microsoft Purview",
+    "unique_id": "a205397f-19df-46cd-921c-9b740b86dcbe"
+}

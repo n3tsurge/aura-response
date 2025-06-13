@@ -15,7 +15,7 @@
     "title": "Develop Incident Report",
     "unique_id": "0bfc5942-37ae-4ecc-98fb-5daac2578d49",
     "phase": "P0006",
-    "phase_friendly_name": "lessons learned",
+    "phase_friendly_name": "lessons-learned",
     "stakeholders": [
         "incident-commander",
         "security-analyst",

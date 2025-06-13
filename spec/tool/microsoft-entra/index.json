@@ -1,0 +1,22 @@
+{
+    "id": "T0013",
+    "ref": "tool:ms-entra",
+    "author": "n3tsurge",
+    "capability": [
+    ],
+    "category": [
+        "cloud",
+        "identity and access management",
+        "single sign-on"
+    ],
+    "mitre_attack_datasources": [
+    ],
+    "created_on": "2025-06-03",
+    "description": "",
+    "external_references": [
+       
+    ],
+    "friendly_name": "ms-entra",
+    "title": "Microsoft Entra",
+    "unique_id": "a700b588-93dd-430f-885a-ffba1207e12a"
+}

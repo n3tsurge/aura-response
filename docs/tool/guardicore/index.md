@@ -6,8 +6,8 @@ Guardicore is a micro-segmentation and data center security solution that provid
 
 ## Categories
 
-- microsegmentation
-- network security
+- Microsegmentation
+- Network Security
 
 ## Capabilities
 

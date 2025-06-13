@@ -50,12 +50,12 @@ This document provides an overview of all capabilities broken down by response p
 | [List Hosts Communicating with External Domain](C2113.md) | C2113 | Identification | This capability involves identifying and listing hosts that are communicating with a specific external domain. It is essential for understanding network traffic patterns, detecting potential security threats, and ensuring that only authorized hosts are interacting with external resources. This capability can be implemented through network monitoring tools, logs analysis, or other methods to track communication flows within the network. |
 | [List Registry Key Modifications](C2501.md) | C2501 | Identification | This capability allows the incident responder and security analyst to list modifications made to registry keys. This is crucial for identifying unauthorized changes that may indicate malicious activity or system misconfiguration. The capability provides a means to track changes over time, aiding in forensic analysis and incident response. |
 
-## Lessons learned Phase
+## Lessons-learned Phase
 
 | Capability | ID | Phase | Description |
 |------------|----|-------|-------------|
-| [Develop Incident Report](C6001.md) | C6001 | Lessons learned | This capability involves creating a detailed incident report that summarizes the incident, actions taken, and lessons learned. The report serves as a reference for future incidents and helps improve the incident response process. It should include timelines, impact assessments, and recommendations for future prevention. |
-| [Conduct Lessons Learned Exercise](C6002.md) | C6002 | Lessons learned | This capability involves organizing and conducting a lessons learned exercise to review the incident response process. The exercise aims to gather feedback from all stakeholders, identify what worked well, what didn't, and how future responses can be improved. It should include discussions, documentation of findings, and actionable recommendations for future incidents. |
+| [Develop Incident Report](C6001.md) | C6001 | Lessons-learned | This capability involves creating a detailed incident report that summarizes the incident, actions taken, and lessons learned. The report serves as a reference for future incidents and helps improve the incident response process. It should include timelines, impact assessments, and recommendations for future prevention. |
+| [Conduct Lessons Learned Exercise](C6002.md) | C6002 | Lessons-learned | This capability involves organizing and conducting a lessons learned exercise to review the incident response process. The exercise aims to gather feedback from all stakeholders, identify what worked well, what didn't, and how future responses can be improved. It should include discussions, documentation of findings, and actionable recommendations for future incidents. |
 
 ## Preparation Phase
 

@@ -6,9 +6,9 @@ Proofpoint is a leading cybersecurity company specializing in email security, th
 
 ## Categories
 
-- email security
-- threat intelligence
-- phishing protection
+- Email Security
+- Threat Intelligence
+- Phishing Protection
 
 ## Capabilities
 

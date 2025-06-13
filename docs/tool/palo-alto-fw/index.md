@@ -6,7 +6,7 @@ Palo Alto Firewall is a next-generation firewall that provides advanced security
 
 ## Categories
 
-- network firewall
+- Network Firewall
 
 ## Capabilities
 

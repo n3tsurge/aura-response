@@ -6,9 +6,9 @@ Wiz.io is a cloud security platform that provides comprehensive visibility and s
 
 ## Categories
 
-- cloud security
-- vulnerability management
-- compliance
+- Cloud Security
+- Vulnerability Management
+- Compliance
 
 ## Capabilities
 

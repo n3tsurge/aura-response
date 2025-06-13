@@ -1,0 +1,21 @@
+{
+    "id": "T0012",
+    "ref": "tool:ms-dns",
+    "author": "n3tsurge",
+    "capability": [
+    ],
+    "category": [
+        "network",
+        "log source"
+    ],
+    "mitre_attack_datasources": [
+    ],
+    "created_on": "2025-06-03",
+    "description": "",
+    "external_references": [
+       
+    ],
+    "friendly_name": "ms-dns",
+    "title": "Microsoft DNS",
+    "unique_id": "3ce05eeb-aeba-4131-9b9a-8c58803f3254"
+}
