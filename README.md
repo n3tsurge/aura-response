@@ -33,7 +33,7 @@ Full documentation here: [AURA Response Documentation](./docs/index.md)
 ```bash
 pip install poetry
 poetry install
-poetry run python tools/schema_to_markdown.py
+poetry run python tools/aura.py
 ```
 
 ### Overrides
