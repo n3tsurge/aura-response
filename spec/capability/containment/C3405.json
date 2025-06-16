@@ -1,0 +1,27 @@
+{
+    "id": "C3405",
+    "ref": "capability:contain:block-process-by-content-pattern",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves blocking processes from executing based on specific content patterns within their code or behavior. This is a critical containment measure to prevent the execution of potentially malicious software that may have been identified during an incident. By blocking processes based on content patterns, organizations can stop the spread of malware and protect their systems from further compromise. This can be implemented through endpoint security solutions, application control policies, or other security measures that monitor and restrict process execution.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "process",
+    "friendly_name": "block-process-by-content-pattern",
+    "title": "Block Process by Content Pattern",
+    "unique_id": "bcc2923a-d2ee-4cab-9f9d-c7f56be92cf4",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

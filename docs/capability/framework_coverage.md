@@ -15,6 +15,22 @@ This matrix shows the coverage of capabilities across different frameworks by ph
 | [Block Internal URL (C3106)](containment/C3106.md) |  |  |  |
 | [Block Port External Communication (C3107)](containment/C3107.md) |  |  |  |
 | [Block Port Internal Communication (C3108)](containment/C3108.md) |  |  |  |
+| [Block User External Communication (C3109)](containment/C3109.md) |  |  |  |
+| [Block User Internal Communication (C3110)](containment/C3110.md) |  |  |  |
+| [Block Data Transfer by Content Pattern (C3111)](containment/C3111.md) |  |  |  |
+| [Block Email Domain (C3201)](containment/C3201.md) |  |  |  |
+| [Block Email Sender (C3202)](containment/C3202.md) |  |  |  |
+| [Block Email Sender (C3203)](containment/C3203.md) |  |  |  |
+| [Quarantine File by Format (C3301)](containment/C3301.md) |  |  |  |
+| [Quarantine File by Hash (C3302)](containment/C3302.md) |  |  |  |
+| [Quarantine File by Path (C3303)](containment/C3303.md) |  |  |  |
+| [Quarantine File by Content Pattern (C3304)](containment/C3304.md) |  |  |  |
+| [Block Process by Path (C3401)](containment/C3401.md) |  |  |  |
+| [Block Process by Metadata (C3402)](containment/C3402.md) |  |  |  |
+| [Block Process by Hash (C3404)](containment/C3404.md) |  |  |  |
+| [Block Process by Content Pattern (C3405)](containment/C3405.md) |  |  |  |
+| [Disable System Service (C3501)](containment/C3501.md) |  |  |  |
+| [Lock User Account (C3601)](containment/C3601.md) |  |  |  |
 
 ## Eradication Phase
 

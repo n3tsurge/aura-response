@@ -1,0 +1,27 @@
+{
+    "id": "C3301",
+    "ref": "capability:contain:quarantine-file-by-format",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves quarantining files based on their format to prevent the execution of potentially harmful files. Quarantining files by format is a containment measure that helps mitigate risks associated with file-based threats, such as malware or ransomware. This can be implemented through security solutions that automatically detect and isolate files with specific formats deemed suspicious or unsafe, allowing for further analysis or safe handling.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "quarantine-file-by-format",
+    "title": "Quarantine File by Format",
+    "unique_id": "ec6809c4-4366-4c5f-80f2-54895786a1bc",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

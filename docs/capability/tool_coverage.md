@@ -13,6 +13,22 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [Block Internal URL (C3106)](containment/C3106.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Block Port External Communication (C3107)](containment/C3107.md) | Containment | [:white_check_mark:](../tool/cisco-fw/C3107.md) | [:white_check_mark:](../tool/guardicore/C3107.md) |  |  |  |  |  | [:white_check_mark:](../tool/palo-alto-fw/C3107.md) |  |  | [:white_check_mark:](../tool/sentinelone/C3107.md) |  | [:white_check_mark:](../tool/zscaler-zia/C3107.md) |
 | [Block Port Internal Communication (C3108)](containment/C3108.md) | Containment | [:white_check_mark:](../tool/cisco-fw/C3108.md) | [:white_check_mark:](../tool/guardicore/C3108.md) |  |  |  |  |  | [:white_check_mark:](../tool/palo-alto-fw/C3108.md) |  |  | [:white_check_mark:](../tool/sentinelone/C3108.md) |  |  |
+| [Block User External Communication (C3109)](containment/C3109.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block User Internal Communication (C3110)](containment/C3110.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block Data Transfer by Content Pattern (C3111)](containment/C3111.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block Email Domain (C3201)](containment/C3201.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block Email Sender (C3202)](containment/C3202.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block Email Sender (C3203)](containment/C3203.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Quarantine File by Format (C3301)](containment/C3301.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Quarantine File by Hash (C3302)](containment/C3302.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Quarantine File by Path (C3303)](containment/C3303.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Quarantine File by Content Pattern (C3304)](containment/C3304.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block Process by Path (C3401)](containment/C3401.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block Process by Metadata (C3402)](containment/C3402.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block Process by Hash (C3404)](containment/C3404.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block Process by Content Pattern (C3405)](containment/C3405.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Disable System Service (C3501)](containment/C3501.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Lock User Account (C3601)](containment/C3601.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Report Incident to External Entity (C4001)](eradication/C4001.md) | Eradication |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Remove Rogue Network Device (C4101)](eradication/C4101.md) | Eradication |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Delete Email Message (C4201)](eradication/C4201.md) | Eradication |  |  |  |  |  |  |  |  |  |  |  |  |  |

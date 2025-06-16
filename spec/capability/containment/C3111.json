@@ -1,0 +1,27 @@
+{
+    "id": "C3111",
+    "ref": "capability:contain:block-data-transfer-pattern",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves blocking data transfers based on specific content patterns that are identified as sensitive or potentially harmful. This is a critical containment measure to prevent the exfiltration of sensitive data and to stop further malicious activities. It can be implemented through network security measures such as data loss prevention (DLP) systems, firewalls, or intrusion prevention systems (IPS) that inspect data traffic and block transfers that match predefined patterns.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "block-data-transfer-pattern",
+    "title": "Block Data Transfer by Content Pattern",
+    "unique_id": "803c5c6e-0927-4dec-91ea-a17e995b0904",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

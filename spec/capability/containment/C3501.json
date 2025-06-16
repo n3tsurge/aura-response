@@ -1,0 +1,27 @@
+{
+    "id": "C3501",
+    "ref": "capability:contain:disable-system-service",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves disabling a system service that is deemed unnecessary or potentially harmful to the security posture of the organization. Disabling such services can help reduce the attack surface and prevent exploitation by threat actors. This capability is essential for maintaining a secure and efficient IT environment.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "configuration",
+    "friendly_name": "disable-system-service",
+    "title": "Disable System Service",
+    "unique_id": "d564ea7d-2062-4555-84e4-c189b52cbc7c",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

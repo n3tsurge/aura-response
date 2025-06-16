@@ -1,0 +1,27 @@
+{
+    "id": "C3601",
+    "ref": "capability:contain:lock-user-account",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves locking a user account to prevent further access to systems and data. This action is typically taken in response to suspicious activity or when a user account is compromised. Locking the account helps to contain the incident and prevent potential damage while further investigation is conducted. It is an essential step in the incident response process to protect sensitive information and maintain security.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "identity",
+    "friendly_name": "lock-user-account",
+    "title": "Lock User Account",
+    "unique_id": "5f3377ff-05c0-4177-b864-b4ac9f440684",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}
