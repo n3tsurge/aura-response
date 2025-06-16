@@ -1,0 +1,29 @@
+{
+    "id": "C1124",
+    "ref": "capability:preparation:establish-ability-to-collect-data-transferred",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to collect data that has been transferred across networks or systems. This includes implementing mechanisms to capture and store data transfers, ensuring that all transferred data can be retrieved and analyzed when necessary. It is essential for maintaining data integrity, compliance with regulations, and enhancing overall security posture by providing visibility into data movement within the organization.",
+    "documentation": {
+        "requirements":[],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "establish-ability-to-collect-data-transferred",
+    "title": "Establish Ability to Collect Data Transferred",
+    "unique_id": "13d2e104-c17f-43dd-b44e-353335bff8c8",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ],
+    "cmmc_level": "advanced"
+}
