@@ -38,3 +38,4 @@ Preparation | Identification | Containment | Eradication | Recovery | Lessons-le
 | [Establish Ability to Block Internal Ports (C1118)](preparation/C1118.md) |  |  |  |  |  |  |
 | [Establish Ability to Block User External Communication (C1119)](preparation/C1119.md) |  |  |  |  |  |  |
 | [Establish Ability to Block User Internal Communication (C1120)](preparation/C1120.md) |  |  |  |  |  |  |
+| [Establish Ability to Find Transferred Data by Content Pattern (C1121)](preparation/C1121.md) |  |  |  |  |  |  |

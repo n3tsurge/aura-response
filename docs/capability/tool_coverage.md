@@ -93,6 +93,7 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [Establish Ability to Block Internal Ports (C1118)](preparation/C1118.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Establish Ability to Block User External Communication (C1119)](preparation/C1119.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Establish Ability to Block User Internal Communication (C1120)](preparation/C1120.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Find Transferred Data by Content Pattern (C1121)](preparation/C1121.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Reinstall Host from Golden Image (C5001)](recovery/C5001.md) | Recovery |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Restore Data from Backup (C5002)](recovery/C5002.md) | Recovery |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Unblock Blocked IP (C5101)](recovery/C5101.md) | Recovery |  |  |  |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/zscaler-zia/C5101.md) |

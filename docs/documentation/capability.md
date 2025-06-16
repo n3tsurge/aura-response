@@ -81,7 +81,7 @@ An actor is a specific role within the incident response process, responsible fo
         "incident-responder",
         "scribe"
     ],
-    "actors": [
+    "staff": [
         "incident-responder",
         "security-analyst"
     ],

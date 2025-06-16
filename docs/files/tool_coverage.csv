@@ -88,6 +88,7 @@ Establish Ability to Block External Ports (C1117),Preparation,,,,,,,,,,,,,
 Establish Ability to Block Internal Ports (C1118),Preparation,,,,,,,,,,,,,
 Establish Ability to Block User External Communication (C1119),Preparation,,,,,,,,,,,,,
 Establish Ability to Block User Internal Communication (C1120),Preparation,,,,,,,,,,,,,
+Establish Ability to Find Transferred Data by Content Pattern (C1121),Preparation,,,,,,,,,,,,,
 Reinstall Host from Golden Image (C5001),Recovery,,,,,,,,,,,,,
 Restore Data from Backup (C5002),Recovery,,,,,,,,,,,,,
 Unblock Blocked IP (C5101),Recovery,,,,,,,,,,,,,x
