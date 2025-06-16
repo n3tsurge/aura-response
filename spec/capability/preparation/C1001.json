@@ -1,0 +1,27 @@
+{
+    "id": "C1001",
+    "ref": "capability:preparation:practice",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves practicing and refining incident response procedures to ensure that the team is prepared for real-world incidents. It includes conducting tabletop exercises, simulations, and drills to test the effectiveness of the incident response plan and improve team coordination and communication during an actual incident.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "practice",
+    "title": "Practice",
+    "unique_id": "a561bf51-2070-4921-9ece-6fe5a9028dee",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

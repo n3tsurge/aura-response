@@ -1,0 +1,27 @@
+{
+    "id": "C3401",
+    "ref": "capability:contain:block-process-by-path",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves blocking processes from executing based on their file path. This is a critical containment measure to prevent the execution of potentially malicious software that may have been identified during an incident. By blocking specific paths, organizations can stop the spread of malware and protect their systems from further compromise. This can be implemented through endpoint security solutions, application control policies, or other security measures that monitor and restrict process execution.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "process",
+    "friendly_name": "block-process-by-path",
+    "title": "Block Process by Path",
+    "unique_id": "e4447b7f-6a4a-4f92-8db2-44b0fc2f8e51",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

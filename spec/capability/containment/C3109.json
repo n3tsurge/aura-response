@@ -1,0 +1,27 @@
+{
+    "id": "C3109",
+    "ref": "capability:contain:block-user-external-communication",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves blocking external communication for specific users who are identified as potential threats or who have been compromised. This is a critical containment measure to prevent the exfiltration of sensitive data and to stop further malicious activities from these users. It can be implemented through user account restrictions, firewall rules, or other network security measures to ensure that these users cannot communicate with external networks.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "block-user-external-communication",
+    "title": "Block User External Communication",
+    "unique_id": "14698258-5cd0-41cf-a801-5f0a77b048c4",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

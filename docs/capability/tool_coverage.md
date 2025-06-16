@@ -13,6 +13,22 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [Block Internal URL (C3106)](containment/C3106.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Block Port External Communication (C3107)](containment/C3107.md) | Containment | [:white_check_mark:](../tool/cisco-fw/C3107.md) | [:white_check_mark:](../tool/guardicore/C3107.md) |  |  |  |  |  | [:white_check_mark:](../tool/palo-alto-fw/C3107.md) |  |  | [:white_check_mark:](../tool/sentinelone/C3107.md) |  | [:white_check_mark:](../tool/zscaler-zia/C3107.md) |
 | [Block Port Internal Communication (C3108)](containment/C3108.md) | Containment | [:white_check_mark:](../tool/cisco-fw/C3108.md) | [:white_check_mark:](../tool/guardicore/C3108.md) |  |  |  |  |  | [:white_check_mark:](../tool/palo-alto-fw/C3108.md) |  |  | [:white_check_mark:](../tool/sentinelone/C3108.md) |  |  |
+| [Block User External Communication (C3109)](containment/C3109.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block User Internal Communication (C3110)](containment/C3110.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block Data Transfer by Content Pattern (C3111)](containment/C3111.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block Email Domain (C3201)](containment/C3201.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block Email Sender (C3202)](containment/C3202.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block Email Sender (C3203)](containment/C3203.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Quarantine File by Format (C3301)](containment/C3301.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Quarantine File by Hash (C3302)](containment/C3302.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Quarantine File by Path (C3303)](containment/C3303.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Quarantine File by Content Pattern (C3304)](containment/C3304.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block Process by Path (C3401)](containment/C3401.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block Process by Metadata (C3402)](containment/C3402.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block Process by Hash (C3404)](containment/C3404.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block Process by Content Pattern (C3405)](containment/C3405.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Disable System Service (C3501)](containment/C3501.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Lock User Account (C3601)](containment/C3601.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Report Incident to External Entity (C4001)](eradication/C4001.md) | Eradication |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Remove Rogue Network Device (C4101)](eradication/C4101.md) | Eradication |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Delete Email Message (C4201)](eradication/C4201.md) | Eradication |  |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -39,7 +55,20 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [List Registry Key Modifications (C2501)](identification/C2501.md) | Identification |  |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2501.md) |  |  |
 | [Develop Incident Report (C6001)](lessons-learned/C6001.md) | Lessons-learned |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Conduct Lessons Learned Exercise (C6002)](lessons-learned/C6002.md) | Lessons-learned |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Practice (C1001)](preparation/C1001.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Training (C1002)](preparation/C1002.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Personnel Awareness (C1003)](preparation/C1003.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Personnel Reporting of Suspicious Activity (C1004)](preparation/C1004.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Relevant Data Collection (C1005)](preparation/C1005.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Centralized Long-term Log Storage (C1006)](preparation/C1006.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish a Communication Map (C1007)](preparation/C1007.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Ensure Backup Integrity (C1008)](preparation/C1008.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Access to Network/Architecture Diagrams (C1009)](preparation/C1009.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Access to Access Control Matrices (C1010)](preparation/C1010.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish an Asset Knowledge Base (C1011)](preparation/C1011.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Validate Analyst Toolset (C1012)](preparation/C1012.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Access Vulnerability Management System Logs (C1013)](preparation/C1013.md) | Preparation |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/rapid7-insightvm/C1013.md) | [:white_check_mark:](../tool/sentinelone/C1013.md) |  |  |
+| [Connect with Trusted Communities (C1014)](preparation/C1014.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Access External Flow Logs (C1101)](preparation/C1101.md) | Preparation | [:white_check_mark:](../tool/cisco-fw/C1101.md) |  |  |  |  |  |  | [:white_check_mark:](../tool/palo-alto-fw/C1101.md) |  |  |  |  |  |
 | [Access Internal Flow Logs (C1102)](preparation/C1102.md) | Preparation | [:white_check_mark:](../tool/cisco-fw/C1102.md) |  |  |  |  |  |  | [:white_check_mark:](../tool/palo-alto-fw/C1102.md) |  |  |  |  |  |
 | [Access Internal HTTP Logs (C1103)](preparation/C1103.md) | Preparation | [:white_check_mark:](../tool/cisco-fw/C1103.md) |  |  |  |  |  |  | [:white_check_mark:](../tool/palo-alto-fw/C1103.md) |  |  | [:white_check_mark:](../tool/sentinelone/C1103.md) |  |  |
@@ -60,7 +89,7 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [Unblock Domain on Email (C5201)](recovery/C5201.md) | Recovery |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/proofpoint/C5201.md) |  |  |  |  |
 | [Unblock Sender on Email (C5202)](recovery/C5202.md) | Recovery |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/proofpoint/C5202.md) |  |  |  |  |
 | [Restore Quarantined Email Message (C5203)](recovery/C5203.md) | Recovery |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/proofpoint/C5203.md) |  |  |  |  |
-| [Restore Quarantined File (C5203)](recovery/C5203.md) | Recovery |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/proofpoint/C5203.md) |  |  |  |  |
+| [Restore Quarantined File (C5301)](recovery/C5301.md) | Recovery |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Unblock Blocked Process (C5401)](recovery/C5401.md) | Recovery |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Enable Disabled Service (C5501)](recovery/C5501.md) | Recovery |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Unlock Locked User Account (C5601)](recovery/C5601.md) | Recovery |  |  |  |  |  |  | [:white_check_mark:](../tool/okta/C5601.md) |  |  |  |  |  |  |

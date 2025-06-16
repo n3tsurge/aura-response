@@ -4,6 +4,8 @@ from schema.external_reference import ExternalReference
 from schema.framework import Framework
 from schema.base import BaseComponent
 
+phase_order = [
+            "preparation", "identification", "containment", "eradication", "recovery", "lessons-learned"]
 
 class DocumentationElement(BaseModel):
     title: str = Field(
@@ -70,12 +72,16 @@ class Capability(BaseComponent):
             if phase not in phases:
                 phases[phase] = []
             phases[phase].append(capability)
+            
+        # Sort the phases by the predefined order
+        phases = {phase: phases[phase] for phase in phase_order if phase in phases}
+        
         for phase, capabilities in phases.items():
             toc += f"## {phase.capitalize()} Phase\n\n"
             toc += "| Capability | ID | Phase | Description |\n"
             toc += "|------------|----|-------|-------------|\n"
             for capability in capabilities:
-                toc += f"| [{capability.title}]({capability.id}.md) | {capability.id} | {capability.phase_friendly_name.capitalize()} | {capability.description} |\n"
+                toc += f"| [{capability.title}]({capability.phase_friendly_name}/{capability.id}.md) | {capability.id} | {capability.phase_friendly_name.capitalize()} | {capability.description} |\n"
             toc += "\n"
 
         return toc.strip()
@@ -87,6 +93,8 @@ class Capability(BaseComponent):
         When a phase cell is empty the cell show have no bottom border."""
         markdown_content = "# Capability Phase Matrix\n\n"
         markdown_content += "This matrix shows the capabilities grouped by their response phase.\n\n"
+        
+        
 
         _phases = {}
         for capability in cls.load():
@@ -94,6 +102,9 @@ class Capability(BaseComponent):
             if phase not in _phases:
                 _phases[phase] = []
             _phases[phase].append(capability)
+            
+        # Sort the phases by the predefined order
+        _phases = {phase: _phases[phase] for phase in phase_order if phase in _phases}
 
         markdown_content += " | ".join([p.capitalize()
                                        for p in _phases.keys()]) + " |\n"
@@ -218,12 +229,12 @@ class Capability(BaseComponent):
 
     def generate_markdown(self) -> str:
         """Generates a Markdown representation of the capability."""
-        markdown_content = f"# {self.title}\n\n"
+        markdown_content = f"# {self.title}\n"
 
         if self.phase:
             markdown_content += f"![](https://img.shields.io/badge/Phase-{self.phase_friendly_name.capitalize().replace('-','%20')}_%28{self.phase}%29-blue)&nbsp;![](https://img.shields.io/badge/Category-{self.category.capitalize()}-blue)\n"
 
-        markdown_content += f"## Overview\n\n{self.description}\n\n"
+        markdown_content += f"## Overview\n{self.description}\n\n"
 
         if self.stakeholders:
             markdown_content += "## Stakeholders\n"

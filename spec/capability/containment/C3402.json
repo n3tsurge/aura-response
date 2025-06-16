@@ -1,0 +1,27 @@
+{
+    "id": "C3402",
+    "ref": "capability:contain:block-process-by-metadata",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves blocking processes from executing based on their metadata, such as digital signatures, file attributes, or other identifying characteristics. This is a critical containment measure to prevent the execution of potentially malicious software that may have been identified during an incident. By blocking processes based on metadata, organizations can stop the spread of malware and protect their systems from further compromise. This can be implemented through endpoint security solutions, application control policies, or other security measures that monitor and restrict process execution.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "process",
+    "friendly_name": "block-process-by-metadata",
+    "title": "Block Process by Metadata",
+    "unique_id": "6d25f3af-4cf3-4153-a740-eb3e35ef8902",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

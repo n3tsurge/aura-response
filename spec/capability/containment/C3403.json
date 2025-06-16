@@ -1,0 +1,27 @@
+{
+    "id": "C3404",
+    "ref": "capability:contain:block-process-by-hash",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves blocking processes from executing based on their cryptographic hash values. This is a critical containment measure to prevent the execution of potentially malicious software that may have been identified during an incident. By blocking processes based on their hash, organizations can stop the spread of malware and protect their systems from further compromise. This can be implemented through endpoint security solutions, application control policies, or other security measures that monitor and restrict process execution.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "process",
+    "friendly_name": "block-process-by-hash",
+    "title": "Block Process by Hash",
+    "unique_id": "6fe1f074-6675-4910-ac39-03c6c013fdbc",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

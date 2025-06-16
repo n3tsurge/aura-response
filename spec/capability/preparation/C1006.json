@@ -1,0 +1,27 @@
+{
+    "id": "C1006",
+    "ref": "capability:preparation:log-storage",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing a centralized and long-term log storage solution to ensure that all relevant logs are collected, stored, and retained for future analysis and compliance purposes. This includes implementing a logging infrastructure that can handle large volumes of data, ensuring the integrity and security of the logs, and providing mechanisms for easy retrieval and analysis of logs when needed.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "log-storage",
+    "title": "Establish Centralized Long-term Log Storage",
+    "unique_id": "8ab79101-a91f-4fc8-8cc6-23e87f1eb71f",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

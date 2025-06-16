@@ -1,0 +1,27 @@
+{
+    "id": "C1014",
+    "ref": "capability:preparation:trusted-communities",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves connecting with trusted communities to share information, resources, and best practices related to incident response and cybersecurity. Engaging with trusted communities can enhance the organization's ability to respond to incidents by leveraging collective knowledge and experiences. This includes participating in forums, sharing threat intelligence, and collaborating on incident response strategies with other organizations and experts in the field.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "trusted-communities",
+    "title": "Connect with Trusted Communities",
+    "unique_id": "71804b0b-f9a6-44ad-8904-616ae5cd3845",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

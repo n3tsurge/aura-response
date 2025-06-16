@@ -1,0 +1,27 @@
+{
+    "id": "C1003",
+    "ref": "capability:preparation:awareness",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves raising awareness among personnel about security best practices, potential threats, and the importance of adhering to security policies. It includes conducting awareness campaigns, providing educational resources, and fostering a culture of security within the organization to ensure that all employees understand their role in maintaining security.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "awareness",
+    "title": "Personnel Awareness",
+    "unique_id": "30d09ea4-2063-42c0-8ab1-6869e98a2d67",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

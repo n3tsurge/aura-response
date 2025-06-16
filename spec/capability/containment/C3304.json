@@ -1,0 +1,27 @@
+{
+    "id": "C3304",
+    "ref": "capability:contain:quarantine-file-by-content-pattern",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves quarantining files based on specific content patterns to prevent the execution of potentially harmful files. Quarantining files by content pattern is a containment measure that helps mitigate risks associated with file-based threats, such as malware or ransomware. This can be implemented through security solutions that automatically detect and isolate files containing certain patterns or signatures deemed suspicious or unsafe, allowing for further analysis or safe handling.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "quarantine-file-by-content-pattern",
+    "title": "Quarantine File by Content Pattern",
+    "unique_id": "84d44e68-c64f-4e8c-8a22-40155bdbef07",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

@@ -15,6 +15,22 @@ This matrix shows the coverage of capabilities across different frameworks by ph
 | [Block Internal URL (C3106)](containment/C3106.md) |  |  |  |
 | [Block Port External Communication (C3107)](containment/C3107.md) |  |  |  |
 | [Block Port Internal Communication (C3108)](containment/C3108.md) |  |  |  |
+| [Block User External Communication (C3109)](containment/C3109.md) |  |  |  |
+| [Block User Internal Communication (C3110)](containment/C3110.md) |  |  |  |
+| [Block Data Transfer by Content Pattern (C3111)](containment/C3111.md) |  |  |  |
+| [Block Email Domain (C3201)](containment/C3201.md) |  |  |  |
+| [Block Email Sender (C3202)](containment/C3202.md) |  |  |  |
+| [Block Email Sender (C3203)](containment/C3203.md) |  |  |  |
+| [Quarantine File by Format (C3301)](containment/C3301.md) |  |  |  |
+| [Quarantine File by Hash (C3302)](containment/C3302.md) |  |  |  |
+| [Quarantine File by Path (C3303)](containment/C3303.md) |  |  |  |
+| [Quarantine File by Content Pattern (C3304)](containment/C3304.md) |  |  |  |
+| [Block Process by Path (C3401)](containment/C3401.md) |  |  |  |
+| [Block Process by Metadata (C3402)](containment/C3402.md) |  |  |  |
+| [Block Process by Hash (C3404)](containment/C3404.md) |  |  |  |
+| [Block Process by Content Pattern (C3405)](containment/C3405.md) |  |  |  |
+| [Disable System Service (C3501)](containment/C3501.md) |  |  |  |
+| [Lock User Account (C3601)](containment/C3601.md) |  |  |  |
 
 ## Eradication Phase
 
@@ -61,7 +77,20 @@ This matrix shows the coverage of capabilities across different frameworks by ph
 
 | Capability | [MITRE ATT&CK](../frameworks/F0001.md) | [ISO/IEC 27001:2022](../frameworks/F0002.md) | [NIST CSF](../frameworks/F0003.md) |
 | :--- | :--- | :--- | :--- |
+| [Practice (C1001)](preparation/C1001.md) |  |  |  |
+| [Training (C1002)](preparation/C1002.md) |  |  |  |
+| [Personnel Awareness (C1003)](preparation/C1003.md) |  |  |  |
+| [Personnel Reporting of Suspicious Activity (C1004)](preparation/C1004.md) |  |  |  |
+| [Establish Relevant Data Collection (C1005)](preparation/C1005.md) |  |  |  |
+| [Establish Centralized Long-term Log Storage (C1006)](preparation/C1006.md) |  |  |  |
+| [Establish a Communication Map (C1007)](preparation/C1007.md) |  |  |  |
+| [Ensure Backup Integrity (C1008)](preparation/C1008.md) |  |  |  |
+| [Establish Access to Network/Architecture Diagrams (C1009)](preparation/C1009.md) |  |  |  |
+| [Establish Access to Access Control Matrices (C1010)](preparation/C1010.md) |  |  |  |
+| [Establish an Asset Knowledge Base (C1011)](preparation/C1011.md) |  |  |  |
+| [Validate Analyst Toolset (C1012)](preparation/C1012.md) |  |  |  |
 | [Access Vulnerability Management System Logs (C1013)](preparation/C1013.md) |  | A.5.10, A.5.12, A.5.14, A.5.23, A.5.30, A.8.8 | ID.RA-1, ID.RA-2, ID.RA-5, PR.IP-12, PR.MA-1, DE.CM-8, RS.IM-1 |
+| [Connect with Trusted Communities (C1014)](preparation/C1014.md) |  |  |  |
 | [Access External Flow Logs (C1101)](preparation/C1101.md) |  | A.5.7, A.8.16, A.5.23, A.5.28, A.5.30 | DE.CM-1, DE.CM-7, DE.AE-1, PR.PT-1 |
 | [Access Internal Flow Logs (C1102)](preparation/C1102.md) |  | A.5.7, A.8.16, A.5.23, A.5.28, A.5.30 | DE.CM-1, DE.CM-7, DE.AE-1, PR.PT-1 |
 | [Access Internal HTTP Logs (C1103)](preparation/C1103.md) |  | A.8.15 |  |
@@ -87,7 +116,7 @@ This matrix shows the coverage of capabilities across different frameworks by ph
 | [Unblock Domain on Email (C5201)](recovery/C5201.md) |  |  |  |
 | [Unblock Sender on Email (C5202)](recovery/C5202.md) |  |  |  |
 | [Restore Quarantined Email Message (C5203)](recovery/C5203.md) |  |  |  |
-| [Restore Quarantined File (C5203)](recovery/C5203.md) |  |  |  |
+| [Restore Quarantined File (C5301)](recovery/C5301.md) |  |  |  |
 | [Unblock Blocked Process (C5401)](recovery/C5401.md) |  |  |  |
 | [Enable Disabled Service (C5501)](recovery/C5501.md) |  |  |  |
 | [Unlock Locked User Account (C5601)](recovery/C5601.md) |  |  |  |
