@@ -140,18 +140,32 @@ class Capability(BaseComponent):
             " | ".join(f"[{t.title}]({t.self_url()})" for t in tools) + " |\n"
         markdown_content += "| :--- | :--- | " + \
             " | ".join(":---:" for _ in tools) + " |\n"
-
+            
+        _phases = {}
+        
         for capability in cls.load():
-            markdown_content += f"| [{capability.title} ({capability.id})]({capability.phase_friendly_name}/{capability.id}.md) | {capability.phase_friendly_name.capitalize()} | "
-            tool_coverage = []
-            for tool in tools:
-                if capability.id in tool.capability:
-                    tool_coverage.append(
-                        f"[:white_check_mark:](../tool/{tool.friendly_name}/{capability.id}.md)")
-                else:
-                    tool_coverage.append("")
+            # Group capabilities by their phase
+            phase = capability.phase_friendly_name if capability.phase_friendly_name else "Unknown"
+            if phase not in _phases:
+                _phases[phase] = []
+            _phases[phase].append(capability)
+            
+        # Sort the phases by the predefined order
+        _phases = {phase: _phases[phase] for phase in phase_order if phase in _phases}
+        
+        for phase, capabilities in _phases.items():
 
-            markdown_content += " | ".join(tool_coverage) + " |\n"
+            for capability in capabilities:
+                markdown_content += f"| [{capability.title} ({capability.id})]({capability.phase_friendly_name}/{capability.id}.md) | {capability.phase_friendly_name.capitalize()} | "
+                tool_coverage = []
+                for tool in tools:
+                    if capability.id in tool.capability:
+                        tool_coverage.append(
+                            f"[:white_check_mark:](../tool/{tool.friendly_name}/{capability.id}.md)")
+                    else:
+                        tool_coverage.append("")
+
+                markdown_content += " | ".join(tool_coverage) + " |\n"
 
         markdown_content += "\n"
         return markdown_content.strip()
@@ -164,16 +178,29 @@ class Capability(BaseComponent):
 
         csv_content = "Capability,Phase," + \
             ",".join(t.title for t in tools) + "\n"
-
+            
+        _phases = {}
+        
         for capability in cls.load():
-            csv_content += f"{capability.title} ({capability.id}),{capability.phase_friendly_name.capitalize()},"
-            tool_coverage = []
-            for tool in tools:
-                if capability.id in tool.capability:
-                    tool_coverage.append("x")
-                else:
-                    tool_coverage.append("")
-            csv_content += ",".join(tool_coverage) + "\n"
+            # Group capabilities by their phase
+            phase = capability.phase_friendly_name if capability.phase_friendly_name else "Unknown"
+            if phase not in _phases:
+                _phases[phase] = []
+            _phases[phase].append(capability)
+            
+        # Sort the phases by the predefined order
+        _phases = {phase: _phases[phase] for phase in phase_order if phase in _phases}
+        
+        for phase, capabilities in _phases.items():
+            for capability in capabilities:           
+                csv_content += f"{capability.title} ({capability.id}),{capability.phase_friendly_name.capitalize()},"
+                tool_coverage = []
+                for tool in tools:
+                    if capability.id in tool.capability:
+                        tool_coverage.append("x")
+                    else:
+                        tool_coverage.append("")
+                csv_content += ",".join(tool_coverage) + "\n"
 
         return csv_content.strip()
 
