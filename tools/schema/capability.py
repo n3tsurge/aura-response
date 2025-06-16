@@ -87,6 +87,9 @@ class Capability(BaseComponent):
         When a phase cell is empty the cell show have no bottom border."""
         markdown_content = "# Capability Phase Matrix\n\n"
         markdown_content += "This matrix shows the capabilities grouped by their response phase.\n\n"
+        
+        phase_order = [
+            "preparation", "identification", "containment", "eradication", "recovery", "lessons-learned"]
 
         _phases = {}
         for capability in cls.load():
@@ -94,6 +97,9 @@ class Capability(BaseComponent):
             if phase not in _phases:
                 _phases[phase] = []
             _phases[phase].append(capability)
+            
+        # Sort the phases by the predefined order
+        _phases = {phase: _phases[phase] for phase in phase_order if phase in _phases}
 
         markdown_content += " | ".join([p.capitalize()
                                        for p in _phases.keys()]) + " |\n"
