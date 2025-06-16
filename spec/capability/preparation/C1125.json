@@ -1,0 +1,82 @@
+{
+    "id": "C1125",
+    "ref": "capability:preparation:establish-ability-to-identify-data-transferred",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to identify data that has been transferred across networks or systems. This includes implementing mechanisms to recognize and classify transferred data, ensuring that all data can be accurately identified and monitored. It is essential for maintaining data integrity, compliance with regulations, and enhancing overall security posture by providing visibility into data movement within the organization.",
+    "documentation": {
+        "requirements":[
+            {
+                "id": "req-1",
+                "description": "Knowledge of the data types and formats that are commonly transferred within the organization.",
+                "type": "knowledge"
+            },
+            {
+                "id": "req-2",
+                "description": "Implementation of data classification mechanisms to categorize transferred data based on sensitivity and importance.",
+                "type": "implementation"
+            }
+        ],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [
+            {
+                "title": "Data Type",
+                "description": "The type of data being transferred, such as personal information, financial records, or intellectual property.",
+                "type": "list-item"
+            },
+            {
+                "title": "Transfer Method",
+                "description": "The method used for data transfer, such as email, file sharing services, or direct network transfers.",
+                "type": "list-item"
+            },
+            {
+                "title": "Timestamp",
+                "description": "The date and time when the data transfer occurred.",
+                "type": "list-item"
+            },
+            {
+                "title": "Source and Destination",
+                "description": "The systems or networks involved in the data transfer.",
+                "type": "list-item"
+            },
+            {
+                "title": "Data Classification",
+                "description": "The classification of the data based on its sensitivity and importance.",
+                "type": "list-item"
+            },
+            {
+                "title": "Transfer Size",
+                "description": "The size of the data being transferred, which can help in identifying large data movements.",
+                "type": "list-item"
+            }
+        ],
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automated tools to scan and identify transferred data based on predefined criteria.",
+                "type": "automation"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integration with data loss prevention (DLP) systems to monitor and classify transferred data in real-time.",
+                "type": "automation"
+            }
+        ]
+    },
+    "category": "network",
+    "friendly_name": "establish-ability-to-identify-data-transferred",
+    "title": "Establish Ability to Identify Data Transferred",
+    "unique_id": "7db1eb05-1449-4868-859d-555fe79f38f2",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ],
+    "cmmc_level": "advanced"
+}
