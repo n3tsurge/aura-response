@@ -116,7 +116,7 @@ This matrix shows the coverage of capabilities across different frameworks by ph
 | [Unblock Domain on Email (C5201)](recovery/C5201.md) |  |  |  |
 | [Unblock Sender on Email (C5202)](recovery/C5202.md) |  |  |  |
 | [Restore Quarantined Email Message (C5203)](recovery/C5203.md) |  |  |  |
-| [Restore Quarantined File (C5203)](recovery/C5203.md) |  |  |  |
+| [Restore Quarantined File (C5301)](recovery/C5301.md) |  |  |  |
 | [Unblock Blocked Process (C5401)](recovery/C5401.md) |  |  |  |
 | [Enable Disabled Service (C5501)](recovery/C5501.md) |  |  |  |
 | [Unlock Locked User Account (C5601)](recovery/C5601.md) |  |  |  |

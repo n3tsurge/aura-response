@@ -89,7 +89,7 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [Unblock Domain on Email (C5201)](recovery/C5201.md) | Recovery |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/proofpoint/C5201.md) |  |  |  |  |
 | [Unblock Sender on Email (C5202)](recovery/C5202.md) | Recovery |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/proofpoint/C5202.md) |  |  |  |  |
 | [Restore Quarantined Email Message (C5203)](recovery/C5203.md) | Recovery |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/proofpoint/C5203.md) |  |  |  |  |
-| [Restore Quarantined File (C5203)](recovery/C5203.md) | Recovery |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/proofpoint/C5203.md) |  |  |  |  |
+| [Restore Quarantined File (C5301)](recovery/C5301.md) | Recovery |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Unblock Blocked Process (C5401)](recovery/C5401.md) | Recovery |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Enable Disabled Service (C5501)](recovery/C5501.md) | Recovery |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Unlock Locked User Account (C5601)](recovery/C5601.md) | Recovery |  |  |  |  |  |  | [:white_check_mark:](../tool/okta/C5601.md) |  |  |  |  |  |  |
