@@ -1,0 +1,27 @@
+{
+    "id": "C7003",
+    "ref": "capability:operations:team-knowledge-base",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves maintaining a knowledge base for the security operations and incident response teams. A team knowledge base is essential for documenting lessons learned, best practices, and procedures that can be referenced during security operations and response activities. This capability helps ensure that the team has access to critical information that can improve response times and effectiveness during incidents.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "team-knowledge-base",
+    "title": "Maintain a Team Knowledge Base",
+    "unique_id": "43367ccd-bdfb-4457-ad25-565d7a16f743",
+    "phase": "P0007",
+    "phase_friendly_name": "operations",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

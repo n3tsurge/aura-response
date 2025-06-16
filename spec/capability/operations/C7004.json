@@ -1,0 +1,27 @@
+{
+    "id": "C7004",
+    "ref": "capability:operations:leadership-reporting",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves maintaining regular reporting and awareness for leadership regarding the status of security operations and incident response activities. This includes providing updates on ongoing incidents, metrics on response times, and overall security posture. Effective leadership reporting is crucial for ensuring that decision-makers are informed about the security landscape and can allocate resources appropriately.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "leadership-reporting",
+    "title": "Maintain Leadership Reporting and Awareness",
+    "unique_id": "cd2063b1-20c5-43b9-bb4b-94526f74d02d",
+    "phase": "P0007",
+    "phase_friendly_name": "operations",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}
