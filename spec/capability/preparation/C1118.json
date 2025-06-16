@@ -1,0 +1,27 @@
+{
+    "id": "C1118",
+    "ref": "capability:preparation:establish-ability-to-block-internal-port",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to block external ports that are deemed malicious or pose a threat to the organization's network. This includes configuring firewalls, intrusion prevention systems, and other security appliances to effectively block traffic on these ports. It is essential for preventing unauthorized access and mitigating potential attacks from external sources.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "establish-ability-to-block-internal-port",
+    "title": "Establish Ability to Block Internal Ports",
+    "unique_id": "b7abd989-e1fc-4841-bab6-b8cefa488081",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

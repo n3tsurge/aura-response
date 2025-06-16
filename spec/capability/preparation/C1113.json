@@ -1,0 +1,27 @@
+{
+    "id": "C1113",
+    "ref": "capability:preparation:establish-ability-to-block-external-domain",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to block external domain names that are deemed malicious or pose a threat to the organization's network. This includes configuring DNS filtering, firewalls, and other security appliances to effectively block access to these domains. It is essential for preventing unauthorized access and mitigating potential attacks from external sources.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "establish-ability-to-block-external-domain",
+    "title": "Establish Ability to Block External Domains",
+    "unique_id": "8578d8b2-ad7c-49d3-b216-6fe630ab1de0",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}
