@@ -5,7 +5,7 @@ from schema.framework import Framework
 from schema.base import BaseComponent
 
 phase_order = [
-            "preparation", "identification", "containment", "eradication", "recovery", "lessons-learned"]
+            "preparation", "identification", "containment", "eradication", "recovery", "lessons-learned", "operations"]
 
 class DocumentationElement(BaseModel):
     title: str = Field(
