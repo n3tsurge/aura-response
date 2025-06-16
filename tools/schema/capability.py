@@ -4,6 +4,8 @@ from schema.external_reference import ExternalReference
 from schema.framework import Framework
 from schema.base import BaseComponent
 
+phase_order = [
+            "preparation", "identification", "containment", "eradication", "recovery", "lessons-learned"]
 
 class DocumentationElement(BaseModel):
     title: str = Field(
@@ -70,6 +72,10 @@ class Capability(BaseComponent):
             if phase not in phases:
                 phases[phase] = []
             phases[phase].append(capability)
+            
+        # Sort the phases by the predefined order
+        phases = {phase: phases[phase] for phase in phase_order if phase in phases}
+        
         for phase, capabilities in phases.items():
             toc += f"## {phase.capitalize()} Phase\n\n"
             toc += "| Capability | ID | Phase | Description |\n"
@@ -88,8 +94,7 @@ class Capability(BaseComponent):
         markdown_content = "# Capability Phase Matrix\n\n"
         markdown_content += "This matrix shows the capabilities grouped by their response phase.\n\n"
         
-        phase_order = [
-            "preparation", "identification", "containment", "eradication", "recovery", "lessons-learned"]
+        
 
         _phases = {}
         for capability in cls.load():
