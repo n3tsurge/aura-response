@@ -5,10 +5,48 @@
     "created_on": "2025-06-03",
     "description": "This capability involves blocking external IP addresses that are identified as malicious or suspicious. It is a proactive measure to prevent unauthorized access and mitigate potential threats from external sources. This capability can be implemented through firewall rules, intrusion prevention systems, or other network security tools to ensure that traffic from these IP addresses is denied.",
     "documentation": {
+        "requirements": [
+            {
+                "id": "req-1",
+                "description": "Access to network security tools such as firewalls or intrusion prevention systems to implement IP blocking.",
+                "type": "system"
+            },
+            {
+                "id": "req-2",
+                "description": "Knowledge of the specific external IP addresses that need to be blocked, which may come from threat intelligence feeds or incident reports.",
+                "type": "knowledge"
+            },
+            {
+                "id": "req-3",
+                "description": "Procedures for verifying the legitimacy of the IP addresses before blocking to avoid false positives.",
+                "type": "procedure"
+            },
+            {
+                "id": "req-4",
+                "description": "Monitoring tools to track the effectiveness of the IP blocking and to identify any potential bypass attempts.",
+                "type": "system"
+            }
+        ],
         "enrichment": [],
         "hunting": [],
         "fields": [],
-        "automation": []
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automated scripts or tools to block IP addresses based on predefined criteria or alerts from threat intelligence sources.",
+                "type": "script"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integration with threat intelligence platforms to automatically update firewall rules with newly identified malicious IP addresses.",
+                "type": "integration"
+            },
+            {
+                "id": "aut-3",
+                "description": "Infrastructure as Code (IaC) tools to manage and deploy firewall configurations that include blocked IP addresses.",
+                "type": "infrastructure"
+            }
+        ]
     },
     "category": "network",
     "friendly_name": "block-external-ip-address",
