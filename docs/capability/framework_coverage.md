@@ -110,6 +110,17 @@ This matrix shows the coverage of capabilities across different frameworks by ph
 | [Access DHCP Logs (C1108)](preparation/C1108.md) |  | A.5.9, A.5.10, A.5.23, A.5.30, A.5.28 | ID.AM-1, ID.AM-2, PR.PT-1, PR.AC-3, DE.CM-1, DE.CM-7 |
 | [Access Internal Packet Capture Data (C1109)](preparation/C1109.md) |  |  |  |
 | [Access External Packet Capture Data (C1109)](preparation/C1109.md) |  |  |  |
+| [Establish Ability to Block External IP Addresses (C1111)](preparation/C1111.md) |  |  |  |
+| [Establish Ability to Block Internal IP Addresses (C1112)](preparation/C1112.md) |  |  |  |
+| [Establish Ability to Block External Domains (C1113)](preparation/C1113.md) |  |  |  |
+| [Establish Ability to Block Internal Domains (C1114)](preparation/C1114.md) |  |  |  |
+| [Establish Ability to Block External URLs (C1115)](preparation/C1115.md) |  |  |  |
+| [Establish Ability to Block Internal URLs (C1116)](preparation/C1116.md) |  |  |  |
+| [Establish Ability to Block External Ports (C1117)](preparation/C1117.md) |  |  |  |
+| [Establish Ability to Block Internal Ports (C1118)](preparation/C1118.md) |  |  |  |
+| [Establish Ability to Block User External Communication (C1119)](preparation/C1119.md) |  |  |  |
+| [Establish Ability to Block User Internal Communication (C1120)](preparation/C1120.md) |  |  |  |
+| [Establish Ability to Find Transferred Data by Content Pattern (C1121)](preparation/C1121.md) |  |  |  |
 
 ## Recovery Phase
 

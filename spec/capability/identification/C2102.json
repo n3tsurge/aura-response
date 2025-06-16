@@ -16,7 +16,7 @@
         "incident-responder",
         "scribe"
     ],
-    "actors": [
+    "staff": [
         "incident-responder",
         "security-analyst"
     ],

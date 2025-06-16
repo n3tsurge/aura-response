@@ -1,0 +1,27 @@
+{
+    "id": "C1112",
+    "ref": "capability:preparation:establish-ability-to-block-internal-ip",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to block internal IP addresses that are deemed malicious or pose a threat to the organization's network. This includes configuring firewalls, intrusion prevention systems, and other security appliances to effectively block traffic from these internal IP addresses. It is essential for preventing unauthorized access and mitigating potential attacks from within the organization.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "establish-ability-to-block-internal-ip",
+    "title": "Establish Ability to Block Internal IP Addresses",
+    "unique_id": "d3f62339-174a-480f-92b5-73a1192355b4",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

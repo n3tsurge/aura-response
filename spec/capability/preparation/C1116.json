@@ -1,0 +1,27 @@
+{
+    "id": "C1116",
+    "ref": "capability:preparation:establish-ability-to-block-internal-url",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to block internal URLs that are deemed malicious or pose a threat to the organization's network. This includes configuring web filtering, firewalls, and other security appliances to effectively block access to these URLs. It is essential for preventing unauthorized access and mitigating potential attacks from within the organization.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "establish-ability-to-block-internal-url",
+    "title": "Establish Ability to Block Internal URLs",
+    "unique_id": "94b94bdd-f3a4-44fe-88e6-cd99cdc7c206",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

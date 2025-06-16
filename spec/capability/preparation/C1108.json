@@ -19,7 +19,7 @@
     "stakeholders": [
         "security-analyst"
     ],
-    "actors": [
+    "staff": [
         "security-analyst",
         "incident-responder"
     ],

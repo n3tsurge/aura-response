@@ -1,7 +1,7 @@
 {
     "id": "C2001",
     "ref": "capability:identify:list-alert-victims",
-    "actors": [
+    "staff": [
         "incident-responder",
         "security-analyst"
     ],

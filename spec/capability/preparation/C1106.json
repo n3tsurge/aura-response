@@ -89,7 +89,7 @@
         "security-analyst",
         "incident-responder"
     ],
-    "actors": [
+    "staff": [
         "security-analyst",
         "incident-responder"
     ],

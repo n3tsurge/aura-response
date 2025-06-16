@@ -51,9 +51,9 @@ class Capability(BaseComponent):
         default_factory=list,
         description="A list of stakeholders associated with the capability."
     )
-    actors: Optional[list[str]] = Field(
+    staff: Optional[list[str]] = Field(
         default_factory=list,
-        description="A list of actors associated with the capability."
+        description="A list of staff associated with the capability."
     )
     references: Optional[list[ExternalReference]] = Field(
         default_factory=list,
@@ -243,11 +243,11 @@ class Capability(BaseComponent):
                 markdown_content += f"- {stakeholder}\n"
             markdown_content += "\n"
 
-        if self.actors:
-            markdown_content += "## Actors\n"
-            markdown_content += "Actors are individuals or systems that interact with the capability.\n\n"
-            for actor in self.actors:
-                markdown_content += f"- {actor}\n"
+        if self.staff:
+            markdown_content += "## Staff\n"
+            markdown_content += "Staff are individuals or systems that interact with and execute a capability.\n\n"
+            for staff in self.staff:
+                markdown_content += f"- {staff}\n"
             markdown_content += "\n"
 
         if self.documentation:

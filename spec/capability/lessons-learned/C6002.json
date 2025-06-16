@@ -21,7 +21,7 @@
         "security-analyst",
         "incident-responder"
     ],
-    "actors": [
+    "staff": [
         "scribe",
         "incident-commander"
     ],

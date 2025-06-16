@@ -1,0 +1,27 @@
+{
+    "id": "C1111",
+    "ref": "capability:preparation:establish-ability-to-block-external-ip",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to block external IP addresses that are deemed malicious or pose a threat to the organization's network. This includes configuring firewalls, intrusion prevention systems, and other security appliances to effectively block traffic from these IP addresses. It is essential for preventing unauthorized access and mitigating potential attacks from external sources.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "establish-ability-to-block-external-ip",
+    "title": "Establish Ability to Block External IP Addresses",
+    "unique_id": "3700f359-92e2-49a2-8aa7-ba66ffc4942d",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "id": "C1121",
+    "ref": "capability:preparation:establish-ability-to-find-transferred-data-by-content-pattern",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to find transferred data by content pattern. This includes implementing systems and processes that can analyze and identify specific content patterns within data that has been transferred across networks or systems. It is essential for ensuring data integrity, compliance, and security by enabling the detection of unauthorized or sensitive data transfers based on predefined content patterns.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "establish-ability-to-find-transferred-data-by-content-pattern",
+    "title": "Establish Ability to Find Transferred Data by Content Pattern",
+    "unique_id": "ee697b02-5002-480f-a04a-55699a088535",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ],
+    "cmmc_level": "advanced"
+}

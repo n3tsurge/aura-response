@@ -83,6 +83,17 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [Access DHCP Logs (C1108)](preparation/C1108.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Access Internal Packet Capture Data (C1109)](preparation/C1109.md) | Preparation | [:white_check_mark:](../tool/cisco-fw/C1109.md) |  |  |  |  |  |  | [:white_check_mark:](../tool/palo-alto-fw/C1109.md) |  |  |  |  |  |
 | [Access External Packet Capture Data (C1109)](preparation/C1109.md) | Preparation | [:white_check_mark:](../tool/cisco-fw/C1109.md) |  |  |  |  |  |  | [:white_check_mark:](../tool/palo-alto-fw/C1109.md) |  |  |  |  |  |
+| [Establish Ability to Block External IP Addresses (C1111)](preparation/C1111.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Block Internal IP Addresses (C1112)](preparation/C1112.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Block External Domains (C1113)](preparation/C1113.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Block Internal Domains (C1114)](preparation/C1114.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Block External URLs (C1115)](preparation/C1115.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Block Internal URLs (C1116)](preparation/C1116.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Block External Ports (C1117)](preparation/C1117.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Block Internal Ports (C1118)](preparation/C1118.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Block User External Communication (C1119)](preparation/C1119.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Block User Internal Communication (C1120)](preparation/C1120.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Find Transferred Data by Content Pattern (C1121)](preparation/C1121.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Reinstall Host from Golden Image (C5001)](recovery/C5001.md) | Recovery |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Restore Data from Backup (C5002)](recovery/C5002.md) | Recovery |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Unblock Blocked IP (C5101)](recovery/C5101.md) | Recovery |  |  |  |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/zscaler-zia/C5101.md) |

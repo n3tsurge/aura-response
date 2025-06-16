@@ -1,0 +1,27 @@
+{
+    "id": "C1119",
+    "ref": "capability:preparation:establish-ability-to-block-user-external-communication",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to block user external communication that is deemed malicious or poses a threat to the organization's network. This includes configuring firewalls, intrusion prevention systems, and other security appliances to effectively block traffic from users to external entities. It is essential for preventing unauthorized access and mitigating potential attacks from external sources.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "establish-ability-to-block-user-external-communication",
+    "title": "Establish Ability to Block User External Communication",
+    "unique_id": "6dc97d37-1e58-427e-b88d-2d5a6b8024c2",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}
