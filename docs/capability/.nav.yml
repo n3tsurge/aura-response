@@ -15,3 +15,5 @@ nav:
     - recovery/*.md
   - "Lessons Learned":
     - lessons-learned/*.md
+  - Operations:
+    - operations/*.md

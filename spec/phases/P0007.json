@@ -1,0 +1,10 @@
+{
+    "id": "P0007",
+    "ref": "phase:operations",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "The operations phase involves the execution of daily operational activities, tasks, and processes that are essential for the ongoing functioning of the organization. This phase includes monitoring, maintenance, and management of systems and resources to ensure they operate efficiently and effectively. It is crucial for maintaining the stability and performance of organizational operations.  The Operations phase can include but is not limited to:\n\n- Daily monitoring of security tooling against key performance indicators (KPIs)\n- Incident response and management\n- System maintenance and updates\n- Resource allocation and management\n- Performance optimization\n- Compliance checks and audits\n- Communication and coordination among teams\n- Reporting and documentation of operational activities\n- Continuous improvement of operational processes\n- Training and development of personnel involved in operations\n\nThis phase is essential for ensuring that the organization can respond to incidents, maintain system integrity, and optimize performance in a dynamic environment.  Security leaders should ensure that the operations phase is well-defined, with clear roles and responsibilities, to facilitate effective execution and management of daily operations.",
+    "friendly_name": "operations",
+    "title": "Operations",
+    "unique_id": "c60f19e0-246f-4d66-9c56-c75ee12780e0"
+}

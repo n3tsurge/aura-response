@@ -55,6 +55,7 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [List Registry Key Modifications (C2501)](identification/C2501.md) | Identification |  |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2501.md) |  |  |
 | [Develop Incident Report (C6001)](lessons-learned/C6001.md) | Lessons-learned |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Conduct Lessons Learned Exercise (C6002)](lessons-learned/C6002.md) | Lessons-learned |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Define Key Performance Indicators (KPIs) (C7001)](operations/C7001.md) | Operations |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Practice (C1001)](preparation/C1001.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Training (C1002)](preparation/C1002.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Personnel Awareness (C1003)](preparation/C1003.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
