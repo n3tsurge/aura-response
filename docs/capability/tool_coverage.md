@@ -39,6 +39,9 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [Establish Ability to Block User External Communication (C1119)](preparation/C1119.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Establish Ability to Block User Internal Communication (C1120)](preparation/C1120.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Establish Ability to Find Transferred Data by Content Pattern (C1121)](preparation/C1121.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Block Transferred Data by Content Pattern (C1122)](preparation/C1122.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to List Data Transferred (C1123)](preparation/C1123.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Collect Data Transferred (C1124)](preparation/C1124.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [List Alert Victims (C2001)](identification/C2001.md) | Identification |  |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2001.md) |  |  |
 | [List Host Vulnerabilities (C2002)](identification/C2002.md) | Identification |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/rapid7-insightvm/C2002.md) | [:white_check_mark:](../tool/sentinelone/C2002.md) | [:white_check_mark:](../tool/wiz/C2002.md) |  |
 | [Place Compromised Accounts on Watchlist (C2003)](identification/C2003.md) | Identification |  |  |  |  |  |  |  |  |  |  |  |  |  |

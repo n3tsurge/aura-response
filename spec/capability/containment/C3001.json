@@ -5,10 +5,38 @@
     "created_on": "2025-06-03",
     "description": "This capability involves applying patches to systems and applications to remediate identified vulnerabilities. It ensures that all software is up-to-date with the latest security fixes, thereby reducing the risk of exploitation by adversaries. This process includes identifying vulnerable components, testing patches in a controlled environment, and deploying them across the affected systems.",
     "documentation": {
+        "requirements": [
+            {
+                "id": "req-1",
+                "description": "Access to vulnerability management tools and patch management systems is required to identify and apply patches.",
+                "type": "system"
+            },
+            {
+                "id": "req-2",
+                "description": "Knowledge of the specific vulnerabilities that need to be patched, including CVE identifiers and associated patches.",
+                "type": "knowledge"
+            },
+            {
+                "id": "req-3",
+                "description": "Testing environment to validate patches before deployment to production systems.",
+                "type": "environment"
+            }
+        ],
         "enrichment": [],
         "hunting": [],
         "fields": [],
-        "automation": []
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automated patch management tools to deploy patches across systems based on vulnerability scans.",
+                "type": "tool"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integration with vulnerability management systems to automatically trigger patch deployment for identified vulnerabilities.",
+                "type": "integration"
+            }
+        ]
     },
     "category": "general",
     "friendly_name": "patch-vulnerability",

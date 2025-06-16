@@ -1,0 +1,28 @@
+{
+    "id": "C1123",
+    "ref": "capability:preparation:establish-ability-to-list-data-transferred",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to list data that has been transferred across networks or systems. This includes implementing mechanisms to track and catalog data transfers, ensuring that all transferred data can be accounted for and monitored. It is essential for maintaining data integrity, compliance with regulations, and enhancing overall security posture by providing visibility into data movement within the organization.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "establish-ability-to-list-data-transferred",
+    "title": "Establish Ability to List Data Transferred",
+    "unique_id": "120fddc1-9750-415c-8784-e0e1c2a3e191",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ],
+    "cmmc_level": "advanced"
+}

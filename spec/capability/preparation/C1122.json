@@ -1,0 +1,28 @@
+{
+    "id": "C1122",
+    "ref": "capability:preparation:establish-ability-to-block-transferred-data-by-content-pattern",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to block transferred data based on specific content patterns. This is crucial for preventing the exfiltration of sensitive information and ensuring that data transfers comply with organizational policies and regulations. The capability includes implementing content inspection mechanisms, defining content patterns that trigger blocking actions, and ensuring that these mechanisms are integrated into data transfer processes.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "establish-ability-to-block-transferred-data-by-content-pattern",
+    "title": "Establish Ability to Block Transferred Data by Content Pattern",
+    "unique_id": "bff9f554-71b1-4422-8d7b-9766561ee804",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ],
+    "cmmc_level": "advanced"
+}
