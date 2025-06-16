@@ -1,0 +1,27 @@
+{
+    "id": "C1009",
+    "ref": "capability:preparation:network-diagram",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing access to network and architecture diagrams that provide a visual representation of the organization's network infrastructure. These diagrams are essential for understanding the layout of the network, identifying critical assets, and planning for incident response. They should include details such as network segments, devices, connections, and security controls in place.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "network-diagram",
+    "title": "Establish Access to Network/Architecture Diagrams",
+    "unique_id": "6a3dce3b-79d3-4dd8-bc1f-2ca06ef59f4b",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

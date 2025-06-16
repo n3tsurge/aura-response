@@ -39,7 +39,20 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [List Registry Key Modifications (C2501)](identification/C2501.md) | Identification |  |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2501.md) |  |  |
 | [Develop Incident Report (C6001)](lessons-learned/C6001.md) | Lessons-learned |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Conduct Lessons Learned Exercise (C6002)](lessons-learned/C6002.md) | Lessons-learned |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Practice (C1001)](preparation/C1001.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Training (C1002)](preparation/C1002.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Personnel Awareness (C1003)](preparation/C1003.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Personnel Reporting of Suspicious Activity (C1004)](preparation/C1004.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Relevant Data Collection (C1005)](preparation/C1005.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Centralized Long-term Log Storage (C1006)](preparation/C1006.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish a Communication Map (C1007)](preparation/C1007.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Ensure Backup Integrity (C1008)](preparation/C1008.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Access to Network/Architecture Diagrams (C1009)](preparation/C1009.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Access to Access Control Matrices (C1010)](preparation/C1010.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish an Asset Knowledge Base (C1011)](preparation/C1011.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Validate Analyst Toolset (C1012)](preparation/C1012.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Access Vulnerability Management System Logs (C1013)](preparation/C1013.md) | Preparation |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/rapid7-insightvm/C1013.md) | [:white_check_mark:](../tool/sentinelone/C1013.md) |  |  |
+| [Connect with Trusted Communities (C1014)](preparation/C1014.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Access External Flow Logs (C1101)](preparation/C1101.md) | Preparation | [:white_check_mark:](../tool/cisco-fw/C1101.md) |  |  |  |  |  |  | [:white_check_mark:](../tool/palo-alto-fw/C1101.md) |  |  |  |  |  |
 | [Access Internal Flow Logs (C1102)](preparation/C1102.md) | Preparation | [:white_check_mark:](../tool/cisco-fw/C1102.md) |  |  |  |  |  |  | [:white_check_mark:](../tool/palo-alto-fw/C1102.md) |  |  |  |  |  |
 | [Access Internal HTTP Logs (C1103)](preparation/C1103.md) | Preparation | [:white_check_mark:](../tool/cisco-fw/C1103.md) |  |  |  |  |  |  | [:white_check_mark:](../tool/palo-alto-fw/C1103.md) |  |  | [:white_check_mark:](../tool/sentinelone/C1103.md) |  |  |

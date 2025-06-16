@@ -1,0 +1,27 @@
+{
+    "id": "C1011",
+    "ref": "capability:preparation:asset-kb",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing a knowledge base for assets within the organization. An asset knowledge base is essential for understanding the inventory of hardware and software assets, their configurations, and their relationships. This capability helps in maintaining an up-to-date record of assets, which is crucial for effective incident response, vulnerability management, and overall security posture.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "asset-kb",
+    "title": "Establish an Asset Knowledge Base",
+    "unique_id": "6f416f6a-14a7-4412-b114-057a7450e3ef",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

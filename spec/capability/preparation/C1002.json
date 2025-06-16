@@ -1,0 +1,27 @@
+{
+    "id": "C1002",
+    "ref": "capability:preparation:training",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves providing training to the incident response team and other relevant stakeholders to ensure they are equipped with the necessary skills and knowledge to effectively respond to security incidents. This includes training on incident response procedures, tools, and techniques, as well as awareness of the latest threats and vulnerabilities.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "training",
+    "title": "Training",
+    "unique_id": "c300b98f-54b2-4b2b-99a2-8f6f093735a6",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": "C1008",
+    "ref": "capability:preparation:backup",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves ensuring the integrity of backups to protect against data loss and ensure business continuity. It includes implementing regular backup procedures, verifying the integrity of backup data, and ensuring that backups are stored securely and can be restored when needed. This is essential for maintaining the availability and reliability of critical systems and data in the event of an incident.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "backup",
+    "title": "Ensure Backup Integrity",
+    "unique_id": "e7541523-527c-4b01-8335-080dd64c1652",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

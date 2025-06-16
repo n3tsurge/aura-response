@@ -1,0 +1,27 @@
+{
+    "id": "C1005",
+    "ref": "capability:preparation:data-collection",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing a process for collecting relevant data that can be used for security monitoring, incident detection, and response. It includes identifying the types of data needed, implementing data collection mechanisms, ensuring data quality and integrity, and maintaining compliance with legal and regulatory requirements. This is essential for building a robust security posture and enabling effective threat detection and response.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "data-collection",
+    "title": "Establish Relevant Data Collection",
+    "unique_id": "63c1074d-cbee-4b6e-af46-a07ec21c0dec",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

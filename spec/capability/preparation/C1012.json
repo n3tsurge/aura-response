@@ -1,0 +1,27 @@
+{
+    "id": "C1012",
+    "ref": "capability:preparation:toolset-validation",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves validating the tools and technologies used by analysts to ensure they are functioning correctly and are up-to-date. This includes checking for software updates, verifying configurations, and ensuring that all necessary tools are available and operational. Validating the toolset is essential for effective incident response and analysis, as it ensures that analysts have the resources they need to perform their tasks efficiently.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "toolset-validation",
+    "title": "Validate Analyst Toolset",
+    "unique_id": "6f416f6a-14a7-4412-b114-057a7450e3ef",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

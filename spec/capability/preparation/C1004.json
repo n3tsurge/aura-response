@@ -1,0 +1,27 @@
+{
+    "id": "C1004",
+    "ref": "capability:preparation:reporting",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing a process for personnel to report suspicious activity or potential security incidents. It includes defining clear reporting channels, providing training on how to recognize and report suspicious behavior, and ensuring that all reports are documented and acted upon appropriately. This is crucial for early detection and response to security threats.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "reporting",
+    "title": "Personnel Reporting of Suspicious Activity",
+    "unique_id": "e2be771b-faa5-41bc-bcc1-9695997ab3c8",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

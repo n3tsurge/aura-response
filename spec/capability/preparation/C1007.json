@@ -1,0 +1,27 @@
+{
+    "id": "C1007",
+    "ref": "capability:preparation:communication-map",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing a communication map that outlines how information will be shared during an incident. It includes identifying key stakeholders, defining communication channels, and ensuring that all parties understand their roles in the communication process. This is essential for effective coordination and response during security incidents.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "communication-map",
+    "title": "Establish a Communication Map",
+    "unique_id": "cf58cdca-7591-4711-90b2-5269e728146f",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

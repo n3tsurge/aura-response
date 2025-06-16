@@ -1,0 +1,27 @@
+{
+    "id": "C1010",
+    "ref": "capability:preparation:access-control-matrix",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing access to access control matrices that define the permissions and roles within the organization. Access control matrices are essential for understanding who has access to what resources, ensuring that only authorized personnel can access sensitive information and systems. This capability is crucial for maintaining security and compliance within the organization.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "access-control-matrix",
+    "title": "Establish Access to Access Control Matrices",
+    "unique_id": "48af2020-cdb7-4f9e-9e42-0bd168799b0f",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}
