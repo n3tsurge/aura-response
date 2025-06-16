@@ -1,4 +1,4 @@
-from typing import Optional, Any
+from typing import Optional, Any, Union
 from pydantic import BaseModel, Field
 from schema.external_reference import ExternalReference
 from schema.framework import Framework
@@ -22,8 +22,22 @@ class DocumentationElement(BaseModel):
     )
 
 
+class Requirement(BaseModel):
+    id: str = Field(
+        ...,
+        description="The unique identifier for the requirement."
+    )
+    description: str = Field(
+        ...,
+        description="A detailed description of the requirement."
+    )
+    type: Optional[str] = Field(
+        default=None,
+        description="The category of the requirement, if applicable."
+    )
+
 class Capability(BaseComponent):
-    documentation: Optional[dict[str, list[DocumentationElement]]] = Field(
+    documentation: Optional[dict[str, list[Union[DocumentationElement,Requirement]]]] = Field(
         default_factory=dict,
         description="A dictionary containing documentation elements categorized by their type."
     )
@@ -259,7 +273,7 @@ class Capability(BaseComponent):
         markdown_content = f"# {self.title}\n"
 
         if self.phase:
-            markdown_content += f"![](https://img.shields.io/badge/Phase-{self.phase_friendly_name.capitalize().replace('-','%20')}_%28{self.phase}%29-blue)&nbsp;![](https://img.shields.io/badge/Category-{self.category.capitalize()}-blue)\n"
+            markdown_content += f"&nbsp;![](https://img.shields.io/badge/ID-{self.id}-blue)&nbsp;![](https://img.shields.io/badge/Phase-{self.phase_friendly_name.capitalize().replace('-','%20')}_%28{self.phase}%29-blue)&nbsp;![](https://img.shields.io/badge/Category-{self.category.capitalize()}-blue)\n"
 
         markdown_content += f"## Overview\n{self.description}\n\n"
 
@@ -281,12 +295,21 @@ class Capability(BaseComponent):
             for key in self.documentation.keys():
                 doc_part = self.documentation[key]
                 if len(doc_part) > 0:
-                    markdown_content += f"## {key.title().capitalize()}\n\n"
-                    for item in doc_part:
-                        if item.type == "list-item":
-                            markdown_content += f"- **{item.title}**: {item.description}\n"
-                        else:
-                            markdown_content += f"### {item.title}\n\n{item.description}\n\n"
+                    markdown_content += f"## {key.title().capitalize()}\n"
+                    markdown_content += "For a tool or system to implement this capability, the following requirements should be considered:\n\n"
+                    
+                    if key == "requirements":
+                        markdown_content += "| Requirement ID | Description | Type |\n"
+                        markdown_content += "| :--- | :--- | :--- |\n"
+                        for item in doc_part:
+                            markdown_content += f"| {item.id} | {item.description} | {item.type if item.type else 'N/A'} |\n"
+                    else:
+                        for item in doc_part:
+                            
+                            if item.type == "list-item":
+                                markdown_content += f"- **{item.title}**: {item.description}\n"
+                            else:
+                                markdown_content += f"### {item.title}\n\n{item.description}\n\n"
                     markdown_content += "\n"
 
         if self.references:
