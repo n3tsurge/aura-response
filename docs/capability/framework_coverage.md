@@ -127,6 +127,7 @@ This matrix shows the coverage of capabilities across different frameworks by ph
 | [Establish Ability to List Data Transferred (C1123)](preparation/C1123.md) |  |  |  |
 | [Establish Ability to Collect Data Transferred (C1124)](preparation/C1124.md) |  |  |  |
 | [Establish Ability to Identify Data Transferred (C1125)](preparation/C1125.md) |  |  |  |
+| [Establish Ability to Analyze User Agent (C1127)](preparation/C1127.md) |  |  |  |
 
 ## Recovery Phase
 

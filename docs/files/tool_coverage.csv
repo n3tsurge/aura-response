@@ -38,6 +38,7 @@ Establish Ability to Block Transferred Data by Content Pattern (C1122),Preparati
 Establish Ability to List Data Transferred (C1123),Preparation,,,,,,,,,,,,,
 Establish Ability to Collect Data Transferred (C1124),Preparation,,,,,,,,,,,,,
 Establish Ability to Identify Data Transferred (C1125),Preparation,,,,,,,,,,,,,
+Establish Ability to Analyze User Agent (C1127),Preparation,,,,,,,,,,,,,
 List Alert Victims (C2001),Identification,,,,,,,,,,,x,,
 List Host Vulnerabilities (C2002),Identification,,,,,,,,,,x,x,x,
 Place Compromised Accounts on Watchlist (C2003),Identification,,,,,,,,,,,,,
