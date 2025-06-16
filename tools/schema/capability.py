@@ -310,14 +310,14 @@ class Capability(BaseComponent):
                         # Sort the requirements by type
                         doc_part.sort(key=lambda x: (x.type or "N/A", x.id))
                         for item in doc_part:
-                            markdown_content += f"| {item.id} | {item.description} | {item.type.capitalize() }|\n"
+                            markdown_content += f"| {self.id}-{item.id.upper()} | {item.description} | {item.type.capitalize() }|\n"
                             
                     elif key == "automation":
                         markdown_content += "This section provides information on how the capability can be automated.\n\n"
                         markdown_content += "| Automation ID | Description | Type |\n"
                         markdown_content += "| :--- | :--- | :--- |\n"
                         for item in doc_part:
-                            markdown_content += f"| {item.id} | {item.description} | {item.type.capitalize() if item.type else 'N/A'} |\n"
+                            markdown_content += f"| {self.id}-{item.id.upper()} | {item.description} | {item.type.capitalize() if item.type else 'N/A'} |\n"
                     else:
                         for item in doc_part:
                             

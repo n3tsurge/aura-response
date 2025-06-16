@@ -7,27 +7,27 @@
     "documentation": {
         "requirements": [
             {
-                "id": "R3502-req-1",
+                "id": "req-1",
                 "description": "The system must restrict access to IO ports that are explicitly defined in the configuration.",
                 "type": "functional"
             },
             {
-                "id": "R3502-req-2",
+                "id": "req-2",
                 "description": "The system must log attempts to access restricted IO ports.",
                 "type": "non-functional"
             },
             {
-                "id": "R3502-req-3",
+                "id": "req-3",
                 "description": "The system must provide a mechanism to update the list of allowed IO ports.",
                 "type": "functional"
             },
             {
-                "id": "R3502-req-4",
+                "id": "req-4",
                 "description": "The system must notify administrators of any unauthorized access attempts to IO ports.",
                 "type": "non-functional"
             },
             {
-                "id": "R3502-req-5",
+                "id": "req-5",
                 "description": "The system must be able to revert to a previous configuration state if necessary.",
                 "type": "non-functional"
             }

@@ -7,12 +7,12 @@
     "documentation": {
         "requirements": [
             {
-                "id": "C3602-req-1",
+                "id": "req-1",
                 "description": "Access to the user management system or directory service where user permissions can be modified.",
                 "type": "access"
             },
             {
-                "id": "C3602-req-2",
+                "id": "req-2",
                 "description": "Knowledge of the specific permissions that need to be removed from the user account.",
                 "type": "knowledge"
             }
@@ -22,12 +22,12 @@
         "fields": [],
         "automation": [
             {
-                "id": "C3602-auto-1",
+                "id": "aut-1",
                 "description": "Automated scripts or tools to remove user permissions based on predefined criteria or alerts.",
                 "type": "script"
             },
             {
-                "id": "C3602-auto-2",
+                "id": "aut-2",
                 "description": "Integration with identity and access management (IAM) systems to streamline the permission removal process.  Considerations for SCIM (System for Cross-domain Identity Management) for automated user management.",
                 "type": "integration"
             }
