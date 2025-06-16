@@ -1,0 +1,27 @@
+{
+    "id": "C7002",
+    "ref": "capability:operations:risk-register",
+    "author": "n3tsurge",
+    "created_on": "2025-06-03",
+    "description": "This capability involves maintaining a risk register that documents identified risks, their potential impact, and the mitigation strategies in place. The risk register is a crucial tool for managing security risks within an organization, allowing teams to prioritize and address vulnerabilities effectively. It serves as a living document that is regularly updated to reflect the current risk landscape.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "general",
+    "friendly_name": "risk-register",
+    "title": "Maintain a Risk Register",
+    "unique_id": "6de6daef-d9b6-4cb2-9b54-4757819529f5",
+    "phase": "P0007",
+    "phase_friendly_name": "operations",
+    "stakeholders": [
+    ],
+    "actors": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

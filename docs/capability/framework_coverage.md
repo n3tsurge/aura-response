@@ -78,6 +78,9 @@ This matrix shows the coverage of capabilities across different frameworks by ph
 | Capability | [MITRE ATT&CK](../frameworks/F0001.md) | [ISO/IEC 27001:2022](../frameworks/F0002.md) | [NIST CSF](../frameworks/F0003.md) |
 | :--- | :--- | :--- | :--- |
 | [Define Key Performance Indicators (KPIs) (C7001)](operations/C7001.md) |  |  |  |
+| [Maintain a Risk Register (C7002)](operations/C7002.md) |  |  |  |
+| [Maintain a Team Knowledge Base (C7003)](operations/C7003.md) |  |  |  |
+| [Maintain Leadership Reporting and Awareness (C7004)](operations/C7004.md) |  |  |  |
 
 ## Preparation Phase
 
