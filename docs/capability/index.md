@@ -91,7 +91,9 @@ This document provides an overview of all capabilities broken down by response p
 | [Block Process by Hash](containment/C3404.md) | C3404 | Containment | This capability involves blocking processes from executing based on their cryptographic hash values. This is a critical containment measure to prevent the execution of potentially malicious software that may have been identified during an incident. By blocking processes based on their hash, organizations can stop the spread of malware and protect their systems from further compromise. This can be implemented through endpoint security solutions, application control policies, or other security measures that monitor and restrict process execution. |
 | [Block Process by Content Pattern](containment/C3405.md) | C3405 | Containment | This capability involves blocking processes from executing based on specific content patterns within their code or behavior. This is a critical containment measure to prevent the execution of potentially malicious software that may have been identified during an incident. By blocking processes based on content patterns, organizations can stop the spread of malware and protect their systems from further compromise. This can be implemented through endpoint security solutions, application control policies, or other security measures that monitor and restrict process execution. |
 | [Disable System Service](containment/C3501.md) | C3501 | Containment | This capability involves disabling a system service that is deemed unnecessary or potentially harmful to the security posture of the organization. Disabling such services can help reduce the attack surface and prevent exploitation by threat actors. This capability is essential for maintaining a secure and efficient IT environment. |
+| [Block Access to IO Port](containment/C3502.md) | C3502 | Containment | This capability ensures that the system does not allow access to IO ports that are not explicitly defined in the system's configuration. This is crucial for preventing unauthorized access and potential exploitation of system vulnerabilities through IO ports. |
 | [Lock User Account](containment/C3601.md) | C3601 | Containment | This capability involves locking a user account to prevent further access to systems and data. This action is typically taken in response to suspicious activity or when a user account is compromised. Locking the account helps to contain the incident and prevent potential damage while further investigation is conducted. It is an essential step in the incident response process to protect sensitive information and maintain security. |
+| [Remove User Permission](containment/C3602.md) | C3602 | Containment | This capability involves removing specific permissions from a user account to limit their access to systems and data. This action is typically taken in response to suspicious activity or when a user account is compromised. Removing permissions helps to contain the incident and prevent potential damage while further investigation is conducted. It is an essential step in the incident response process to protect sensitive information and maintain security. |
 
 ## Eradication Phase
 
@@ -136,24 +138,7 @@ This document provides an overview of all capabilities broken down by response p
 
 | Capability | ID | Phase | Description |
 |------------|----|-------|-------------|
-| [Define Key Performance Indicators (KPIs)](operations/C7001.md) | C7001 | Operations | This capability involves defining Key Performance Indicators (KPIs) to measure the effectiveness and efficiency of incident response operations. KPIs help in assessing the performance of the incident response team, identifying areas for improvement, and ensuring that the incident response process aligns with organizational goals. This capability is essential for continuous improvement and accountability in incident response operations.
-
-## Key Performance Indicators (KPIs)
-
-KPIs are quantifiable measures that are used to evaluate the success of an organization, employee, project, or process in meeting objectives for performance. In the context of incident response, KPIs can include metrics such as:
-
-- Time to detect incidents
-- Time to respond to incidents
-- Number of incidents resolved within a specific timeframe
-- Percentage of incidents escalated
-- Internal customer experience with security operations
-- Deployment coverage and effectiveness
-- Compliance with security policies and procedures
-- Cost of incident response operations
-- Number of repeat incidents
-- Training and awareness levels among staff
-
-Defining these KPIs helps organizations to monitor their incident response capabilities, identify trends, and make informed decisions to enhance their security posture. |
+| [Define Key Performance Indicators (KPIs)](operations/C7001.md) | C7001 | Operations | This capability involves defining Key Performance Indicators (KPIs) to measure the effectiveness and efficiency of incident response operations. KPIs help in assessing the performance of the incident response team, identifying areas for improvement, and ensuring that the incident response process aligns with organizational goals. This capability is essential for continuous improvement and accountability in incident response operations. |
 | [Maintain a Risk Register](operations/C7002.md) | C7002 | Operations | This capability involves maintaining a risk register that documents identified risks, their potential impact, and the mitigation strategies in place. The risk register is a crucial tool for managing security risks within an organization, allowing teams to prioritize and address vulnerabilities effectively. It serves as a living document that is regularly updated to reflect the current risk landscape. |
 | [Maintain a Team Knowledge Base](operations/C7003.md) | C7003 | Operations | This capability involves maintaining a knowledge base for the security operations and incident response teams. A team knowledge base is essential for documenting lessons learned, best practices, and procedures that can be referenced during security operations and response activities. This capability helps ensure that the team has access to critical information that can improve response times and effectiveness during incidents. |
 | [Maintain Leadership Reporting and Awareness](operations/C7004.md) | C7004 | Operations | This capability involves maintaining regular reporting and awareness for leadership regarding the status of security operations and incident response activities. This includes providing updates on ongoing incidents, metrics on response times, and overall security posture. Effective leadership reporting is crucial for ensuring that decision-makers are informed about the security landscape and can allocate resources appropriately. |

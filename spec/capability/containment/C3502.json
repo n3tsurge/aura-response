@@ -1,0 +1,51 @@
+{
+  "id": "C3502",
+  "ref": "capability:containment:block-access-to-io-port",
+  "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability ensures that the system does not allow access to IO ports that are not explicitly defined in the system's configuration. This is crucial for preventing unauthorized access and potential exploitation of system vulnerabilities through IO ports.",
+    "documentation": {
+        "requirements": [
+            {
+                "id": "req-1",
+                "description": "The system must restrict access to IO ports that are explicitly defined in the configuration.",
+                "type": "functional"
+            },
+            {
+                "id": "req-2",
+                "description": "The system must log attempts to access restricted IO ports.",
+                "type": "non-functional"
+            },
+            {
+                "id": "req-3",
+                "description": "The system must provide a mechanism to update the list of allowed IO ports.",
+                "type": "functional"
+            },
+            {
+                "id": "req-4",
+                "description": "The system must notify administrators of any unauthorized access attempts to IO ports.",
+                "type": "non-functional"
+            },
+            {
+                "id": "req-5",
+                "description": "The system must be able to revert to a previous configuration state if necessary.",
+                "type": "non-functional"
+            }
+        ],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "configuration",
+    "friendly_name": "block-access-to-io-port",
+    "title": "Block Access to IO Port",
+    "unique_id": "f23eaaa3-1874-4750-b754-9a7d08b6af9b",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": [],
+    "mitre_defend": "d3f:IOPortRestriction"
+}

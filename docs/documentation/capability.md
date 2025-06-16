@@ -30,9 +30,9 @@ A stakeholder is an individual or group involved in the incident response proces
 - Security Operations Center (SOC): The team that monitors and analyzes security events, providing real-time insights into potential threats.
 - IT Support: The team that assists in the technical aspects of incident response, such as system recovery and data restoration.
 
-### Actor
+### Staff
 
-An actor is a specific role within the incident response process, responsible for executing tasks and actions related to security incidents. Actors are defined based on their expertise and responsibilities, ensuring that the right individuals are assigned to the appropriate tasks. In the AURA Response framework, actors are categorized based on their roles, such as:
+Staff are a specific role within the incident response process, responsible for executing tasks and actions related to security incidents. Staff are defined based on their expertise and responsibilities, ensuring that the right individuals are assigned to the appropriate tasks. In the AURA Response framework, staff are categorized based on their roles, such as:
 - Incident Handler: The individual responsible for managing the incident response process, coordinating efforts among stakeholders.
 - Forensic Analyst: The expert responsible for analyzing digital evidence and identifying the root cause of security incidents.
 - Threat Intelligence Analyst: The individual responsible for gathering and analyzing threat intelligence to inform incident response actions.
@@ -62,6 +62,14 @@ An actor is a specific role within the incident response process, responsible fo
     "created_on": "2025-06-03",
     "description": "This capability allows for stakeholders to list all victims affected by the incident. It provides a comprehensive overview of those impacted, enabling better resource allocation and response planning.",
     "documentation": {
+        "requirements": [
+            {
+                "id": "req-1",
+                "description": "Access to the incident management system to retrieve alert data.",
+                "type": "system"
+
+            }
+        ],
         "enrichment": [
             {
                 "title": "Geolocation",
@@ -70,7 +78,13 @@ An actor is a specific role within the incident response process, responsible fo
         ],
         "hunting": [],
         "fields": [],
-        "automation": []
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automate the retrieval of victim data from the incident management system and enrich it with geolocation information.",
+                "type": "script"
+            }
+        ]
     },
     "friendly_name": "list-alert-victims",
     "title": "List Alert Victims",

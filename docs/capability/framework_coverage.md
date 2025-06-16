@@ -30,7 +30,9 @@ This matrix shows the coverage of capabilities across different frameworks by ph
 | [Block Process by Hash (C3404)](containment/C3404.md) |  |  |  |
 | [Block Process by Content Pattern (C3405)](containment/C3405.md) |  |  |  |
 | [Disable System Service (C3501)](containment/C3501.md) |  |  |  |
+| [Block Access to IO Port (C3502)](containment/C3502.md) |  |  |  |
 | [Lock User Account (C3601)](containment/C3601.md) |  |  |  |
+| [Remove User Permission (C3602)](containment/C3602.md) |  |  |  |
 
 ## Eradication Phase
 

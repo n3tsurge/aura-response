@@ -1,4 +1,4 @@
-from typing import Optional, Any
+from typing import Optional, Any, Union
 from pydantic import BaseModel, Field
 from schema.external_reference import ExternalReference
 from schema.framework import Framework
@@ -22,8 +22,22 @@ class DocumentationElement(BaseModel):
     )
 
 
+class Requirement(BaseModel):
+    id: str = Field(
+        ...,
+        description="The unique identifier for the requirement."
+    )
+    description: str = Field(
+        ...,
+        description="A detailed description of the requirement."
+    )
+    type: Optional[str] = Field(
+        default=None,
+        description="The category of the requirement, if applicable."
+    )
+
 class Capability(BaseComponent):
-    documentation: Optional[dict[str, list[DocumentationElement]]] = Field(
+    documentation: Optional[dict[str, list[Union[DocumentationElement,Requirement]]]] = Field(
         default_factory=dict,
         description="A dictionary containing documentation elements categorized by their type."
     )
@@ -58,6 +72,10 @@ class Capability(BaseComponent):
     references: Optional[list[ExternalReference]] = Field(
         default_factory=list,
         description="A list of references related to the capability."
+    )
+    mitre_defend: Optional[str] = Field(
+        default=None,
+        description="The MITRE defend tactic associated with the capability, if applicable."
     )
 
     @classmethod
@@ -140,18 +158,32 @@ class Capability(BaseComponent):
             " | ".join(f"[{t.title}]({t.self_url()})" for t in tools) + " |\n"
         markdown_content += "| :--- | :--- | " + \
             " | ".join(":---:" for _ in tools) + " |\n"
-
+            
+        _phases = {}
+        
         for capability in cls.load():
-            markdown_content += f"| [{capability.title} ({capability.id})]({capability.phase_friendly_name}/{capability.id}.md) | {capability.phase_friendly_name.capitalize()} | "
-            tool_coverage = []
-            for tool in tools:
-                if capability.id in tool.capability:
-                    tool_coverage.append(
-                        f"[:white_check_mark:](../tool/{tool.friendly_name}/{capability.id}.md)")
-                else:
-                    tool_coverage.append("")
+            # Group capabilities by their phase
+            phase = capability.phase_friendly_name if capability.phase_friendly_name else "Unknown"
+            if phase not in _phases:
+                _phases[phase] = []
+            _phases[phase].append(capability)
+            
+        # Sort the phases by the predefined order
+        _phases = {phase: _phases[phase] for phase in phase_order if phase in _phases}
+        
+        for phase, capabilities in _phases.items():
 
-            markdown_content += " | ".join(tool_coverage) + " |\n"
+            for capability in capabilities:
+                markdown_content += f"| [{capability.title} ({capability.id})]({capability.phase_friendly_name}/{capability.id}.md) | {capability.phase_friendly_name.capitalize()} | "
+                tool_coverage = []
+                for tool in tools:
+                    if capability.id in tool.capability:
+                        tool_coverage.append(
+                            f"[:white_check_mark:](../tool/{tool.friendly_name}/{capability.id}.md)")
+                    else:
+                        tool_coverage.append("")
+
+                markdown_content += " | ".join(tool_coverage) + " |\n"
 
         markdown_content += "\n"
         return markdown_content.strip()
@@ -164,16 +196,29 @@ class Capability(BaseComponent):
 
         csv_content = "Capability,Phase," + \
             ",".join(t.title for t in tools) + "\n"
-
+            
+        _phases = {}
+        
         for capability in cls.load():
-            csv_content += f"{capability.title} ({capability.id}),{capability.phase_friendly_name.capitalize()},"
-            tool_coverage = []
-            for tool in tools:
-                if capability.id in tool.capability:
-                    tool_coverage.append("x")
-                else:
-                    tool_coverage.append("")
-            csv_content += ",".join(tool_coverage) + "\n"
+            # Group capabilities by their phase
+            phase = capability.phase_friendly_name if capability.phase_friendly_name else "Unknown"
+            if phase not in _phases:
+                _phases[phase] = []
+            _phases[phase].append(capability)
+            
+        # Sort the phases by the predefined order
+        _phases = {phase: _phases[phase] for phase in phase_order if phase in _phases}
+        
+        for phase, capabilities in _phases.items():
+            for capability in capabilities:           
+                csv_content += f"{capability.title} ({capability.id}),{capability.phase_friendly_name.capitalize()},"
+                tool_coverage = []
+                for tool in tools:
+                    if capability.id in tool.capability:
+                        tool_coverage.append("x")
+                    else:
+                        tool_coverage.append("")
+                csv_content += ",".join(tool_coverage) + "\n"
 
         return csv_content.strip()
 
@@ -232,7 +277,7 @@ class Capability(BaseComponent):
         markdown_content = f"# {self.title}\n"
 
         if self.phase:
-            markdown_content += f"![](https://img.shields.io/badge/Phase-{self.phase_friendly_name.capitalize().replace('-','%20')}_%28{self.phase}%29-blue)&nbsp;![](https://img.shields.io/badge/Category-{self.category.capitalize()}-blue)\n"
+            markdown_content += f"&nbsp;![](https://img.shields.io/badge/ID-{self.id}-blue)&nbsp;![](https://img.shields.io/badge/Phase-{self.phase_friendly_name.capitalize().replace('-','%20')}_%28{self.phase}%29-blue)&nbsp;![](https://img.shields.io/badge/Category-{self.category.capitalize()}-blue)\n"
 
         markdown_content += f"## Overview\n{self.description}\n\n"
 
@@ -254,23 +299,45 @@ class Capability(BaseComponent):
             for key in self.documentation.keys():
                 doc_part = self.documentation[key]
                 if len(doc_part) > 0:
-                    markdown_content += f"## {key.title().capitalize()}\n\n"
-                    for item in doc_part:
-                        if item.type == "list-item":
-                            markdown_content += f"- **{item.title}**: {item.description}\n"
-                        else:
-                            markdown_content += f"### {item.title}\n\n{item.description}\n\n"
+                    markdown_content += f"## {key.title().capitalize()}\n"
+                    
+                    
+                    if key == "requirements":
+                        markdown_content += "For a tool or system to implement this capability, the following requirements should be considered:\n\n"
+                        markdown_content += "| Requirement ID | Description | Type |\n"
+                        markdown_content += "| :--- | :--- | :--- |\n"
+                        
+                        # Sort the requirements by type
+                        doc_part.sort(key=lambda x: (x.type or "N/A", x.id))
+                        for item in doc_part:
+                            markdown_content += f"| {self.id}-{item.id.upper()} | {item.description} | {item.type.capitalize() }|\n"
+                            
+                    elif key == "automation":
+                        markdown_content += "This section provides information on how the capability can be automated.\n\n"
+                        markdown_content += "| Automation ID | Description | Type |\n"
+                        markdown_content += "| :--- | :--- | :--- |\n"
+                        for item in doc_part:
+                            markdown_content += f"| {self.id}-{item.id.upper()} | {item.description} | {item.type.capitalize() if item.type else 'N/A'} |\n"
+                    else:
+                        for item in doc_part:
+                            
+                            if item.type == "list-item":
+                                markdown_content += f"- **{item.title}**: {item.description}\n"
+                            else:
+                                markdown_content += f"### {item.title}\n\n{item.description}\n\n"
                     markdown_content += "\n"
 
-        if self.references:
-            if len(self.references) > 0:
-                markdown_content += "## References\n\n"
-                for reference in self.references:
-                    if reference.type == 'website':
-                        if reference.name:
-                            markdown_content += f"- [{reference.name}]({reference.url})\n"
-                        else:
-                            markdown_content += f"- [{reference.url}]({reference.url})\n"
+        if self.references or self.mitre_defend:
+            markdown_content += "## References\n\n"
+            if self.mitre_defend:
+                markdown_content += f"- [MITRE D3FEND: {self.mitre_defend}](https://d3fend.mitre.org/technique/{self.mitre_defend}/)\n"
+                
+            for reference in self.references:
+                if reference.type == 'website':
+                    if reference.name:
+                        markdown_content += f"- [{reference.name}]({reference.url})\n"
+                    else:
+                        markdown_content += f"- [{reference.url}]({reference.url})\n"
 
         if self.external_references:
             markdown_content += "## External References\n"
@@ -314,7 +381,7 @@ class Capability(BaseComponent):
                     markdown_content += f"- {control} \n"
                 markdown_content += "\n"
 
-            if references:
+            if references or self.mitre_defend:
                 markdown_content += "#### References\n\n"
                 for reference in references:
                     if reference.type == 'website':

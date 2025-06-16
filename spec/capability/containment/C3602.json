@@ -1,0 +1,59 @@
+{
+    "id": "C3602",
+    "ref": "capability:contain:remove-user-permission",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves removing specific permissions from a user account to limit their access to systems and data. This action is typically taken in response to suspicious activity or when a user account is compromised. Removing permissions helps to contain the incident and prevent potential damage while further investigation is conducted. It is an essential step in the incident response process to protect sensitive information and maintain security.",
+    "documentation": {
+        "requirements": [
+            {
+                "id": "req-1",
+                "description": "Access to the user management system or directory service where user permissions can be modified.",
+                "type": "access"
+            },
+            {
+                "id": "req-2",
+                "description": "Knowledge of the specific permissions that need to be removed from the user account.",
+                "type": "knowledge"
+            }
+        ],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automated scripts or tools to remove user permissions based on predefined criteria or alerts.",
+                "type": "script"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integration with identity and access management (IAM) systems to streamline the permission removal process.  Considerations for SCIM (System for Cross-domain Identity Management) for automated user management.",
+                "type": "integration"
+            }
+        ]
+    },
+    "category": "identity",
+    "friendly_name": "remove-user-permission",
+    "title": "Remove User Permission",
+    "unique_id": "5f3377ff-05c0-4177-b864-b4ac9f440684",
+    "phase": "P0003",
+    "phase_friendly_name": "containment",
+    "stakeholders": [
+        "security-analyst",
+        "identity-administrator",
+        "incident-responder",
+        "scribe",
+        "incident-commander"
+    ],
+    "staff": [
+        "security-analyst",
+        "identity-administrator",
+        "incident-responder"
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ],
+    "mitre_defend": "d3f:UserAccountPermissions"
+}
