@@ -73,6 +73,12 @@ This matrix shows the coverage of capabilities across different frameworks by ph
 | [Develop Incident Report (C6001)](lessons-learned/C6001.md) |  |  |  |
 | [Conduct Lessons Learned Exercise (C6002)](lessons-learned/C6002.md) |  |  |  |
 
+## Operations Phase
+
+| Capability | [MITRE ATT&CK](../frameworks/F0001.md) | [ISO/IEC 27001:2022](../frameworks/F0002.md) | [NIST CSF](../frameworks/F0003.md) |
+| :--- | :--- | :--- | :--- |
+| [Define Key Performance Indicators (KPIs) (C7001)](operations/C7001.md) |  |  |  |
+
 ## Preparation Phase
 
 | Capability | [MITRE ATT&CK](../frameworks/F0001.md) | [ISO/IEC 27001:2022](../frameworks/F0002.md) | [NIST CSF](../frameworks/F0003.md) |

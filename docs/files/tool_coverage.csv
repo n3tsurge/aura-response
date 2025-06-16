@@ -50,6 +50,7 @@ List Hosts Communicating with External Domain (C2113),Identification,,,,,,,,,,,x
 List Registry Key Modifications (C2501),Identification,,,,,,,,,,,x,,
 Develop Incident Report (C6001),Lessons-learned,,,,,,,,,,,,,
 Conduct Lessons Learned Exercise (C6002),Lessons-learned,,,,,,,,,,,,,
+Define Key Performance Indicators (KPIs) (C7001),Operations,,,,,,,,,,,,,
 Practice (C1001),Preparation,,,,,,,,,,,,,
 Training (C1002),Preparation,,,,,,,,,,,,,
 Personnel Awareness (C1003),Preparation,,,,,,,,,,,,,

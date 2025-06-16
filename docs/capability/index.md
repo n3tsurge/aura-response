@@ -120,3 +120,26 @@ This document provides an overview of all capabilities broken down by response p
 |------------|----|-------|-------------|
 | [Develop Incident Report](lessons-learned/C6001.md) | C6001 | Lessons-learned | This capability involves creating a detailed incident report that summarizes the incident, actions taken, and lessons learned. The report serves as a reference for future incidents and helps improve the incident response process. It should include timelines, impact assessments, and recommendations for future prevention. |
 | [Conduct Lessons Learned Exercise](lessons-learned/C6002.md) | C6002 | Lessons-learned | This capability involves organizing and conducting a lessons learned exercise to review the incident response process. The exercise aims to gather feedback from all stakeholders, identify what worked well, what didn't, and how future responses can be improved. It should include discussions, documentation of findings, and actionable recommendations for future incidents. |
+
+## Operations Phase
+
+| Capability | ID | Phase | Description |
+|------------|----|-------|-------------|
+| [Define Key Performance Indicators (KPIs)](operations/C7001.md) | C7001 | Operations | This capability involves defining Key Performance Indicators (KPIs) to measure the effectiveness and efficiency of incident response operations. KPIs help in assessing the performance of the incident response team, identifying areas for improvement, and ensuring that the incident response process aligns with organizational goals. This capability is essential for continuous improvement and accountability in incident response operations.
+
+## Key Performance Indicators (KPIs)
+
+KPIs are quantifiable measures that are used to evaluate the success of an organization, employee, project, or process in meeting objectives for performance. In the context of incident response, KPIs can include metrics such as:
+
+- Time to detect incidents
+- Time to respond to incidents
+- Number of incidents resolved within a specific timeframe
+- Percentage of incidents escalated
+- Internal customer experience with security operations
+- Deployment coverage and effectiveness
+- Compliance with security policies and procedures
+- Cost of incident response operations
+- Number of repeat incidents
+- Training and awareness levels among staff
+
+Defining these KPIs helps organizations to monitor their incident response capabilities, identify trends, and make informed decisions to enhance their security posture. |
