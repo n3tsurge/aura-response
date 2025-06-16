@@ -5,6 +5,48 @@
     "created_on": "2025-06-16",
     "description": "This capability involves establishing a centralized and long-term log storage solution to ensure that all relevant logs are collected, stored, and retained for future analysis and compliance purposes. This includes implementing a logging infrastructure that can handle large volumes of data, ensuring the integrity and security of the logs, and providing mechanisms for easy retrieval and analysis of logs when needed.",
     "documentation": {
+        "requirements": [
+            {
+                "id": "req-1",
+                "description": "Enough storage capacity to retain logs for a specified period, typically 12 months or more, depending on regulatory requirements.",
+                "type": "functional"
+            },
+            {
+                "id": "req-2",
+                "description": "Secure access controls to ensure that only authorized personnel can view or manage the logs.",
+                "type": "security"
+            },
+            {
+                "id": "req-3",
+                "description": "Mechanisms for log integrity verification, such as checksums or digital signatures, or a system that provides immutability of logs to prevent tampering.",
+                "type": "security"
+            },
+            {
+                "id": "req-4",
+                "description": "Easy retrieval and analysis of logs, including search capabilities and filtering options.",
+                "type": "functional"
+            },
+            {
+                "id": "req-5",
+                "description": "Analytic representation of logs via dashboards or reports to facilitate monitoring and incident response.",
+                "type": "functional"
+            },
+            {
+                "id": "req-6",
+                "description": "Compliance with relevant regulations and standards, such as GDPR, HIPAA, or PCI-DSS, regarding log management and retention.",
+                "type": "compliance"
+            },
+            {
+                "id": "req-7",
+                "description": "A common schema or format for logs to ensure consistency and ease of analysis across different source systems.",
+                "type": "functional"
+            },
+            {
+                "id": "req-8",
+                "description": "High availability and redundancy to ensure that logs are not lost in case of system failures.",
+                "type": "operational"
+            }
+        ],
         "enrichment": [],
         "hunting": [],
         "fields": [],
