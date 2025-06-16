@@ -3,12 +3,40 @@
     "ref": "capability:operations:define-kpis",
     "author": "n3tsurge",
     "created_on": "2025-06-16",
-    "description": "This capability involves defining Key Performance Indicators (KPIs) to measure the effectiveness and efficiency of incident response operations. KPIs help in assessing the performance of the incident response team, identifying areas for improvement, and ensuring that the incident response process aligns with organizational goals. This capability is essential for continuous improvement and accountability in incident response operations.\n\n## Key Performance Indicators (KPIs)\n\nKPIs are quantifiable measures that are used to evaluate the success of an organization, employee, project, or process in meeting objectives for performance. In the context of incident response, KPIs can include metrics such as:\n\n- Time to detect incidents\n- Time to respond to incidents\n- Number of incidents resolved within a specific timeframe\n- Percentage of incidents escalated\n- Internal customer experience with security operations\n- Deployment coverage and effectiveness\n- Compliance with security policies and procedures\n- Cost of incident response operations\n- Number of repeat incidents\n- Training and awareness levels among staff\n\nDefining these KPIs helps organizations to monitor their incident response capabilities, identify trends, and make informed decisions to enhance their security posture.",
+    "description": "This capability involves defining Key Performance Indicators (KPIs) to measure the effectiveness and efficiency of incident response operations. KPIs help in assessing the performance of the incident response team, identifying areas for improvement, and ensuring that the incident response process aligns with organizational goals. This capability is essential for continuous improvement and accountability in incident response operations.",
     "documentation": {
+        "requirements": [
+            {
+                "id":"req-1",
+                "description": "Define specific, measurable KPIs that align with organizational goals and incident response objectives.",
+                "type": "functional"
+            },
+            {
+                "id":"req-2",
+                "description": "Ensure that KPIs are regularly reviewed and updated based on incident response performance and changing organizational needs.",
+                "type": "functional"
+            },
+            {
+                "id":"req-3",
+                "description": "Implement a process for tracking and reporting on KPIs to relevant stakeholders.",
+                "type": "functional"
+            }
+        ],
         "enrichment": [],
         "hunting": [],
         "fields": [],
-        "automation": []
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automate the collection and reporting of KPIs using incident response and other security operations management tools.",
+                "type": "integration"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integrate KPI tracking with existing security information and event management (SIEM) systems.",
+                "type": "integration"
+            }
+        ]
     },
     "category": "general",
     "friendly_name": "define-kpis",

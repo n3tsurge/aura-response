@@ -138,24 +138,7 @@ This document provides an overview of all capabilities broken down by response p
 
 | Capability | ID | Phase | Description |
 |------------|----|-------|-------------|
-| [Define Key Performance Indicators (KPIs)](operations/C7001.md) | C7001 | Operations | This capability involves defining Key Performance Indicators (KPIs) to measure the effectiveness and efficiency of incident response operations. KPIs help in assessing the performance of the incident response team, identifying areas for improvement, and ensuring that the incident response process aligns with organizational goals. This capability is essential for continuous improvement and accountability in incident response operations.
-
-## Key Performance Indicators (KPIs)
-
-KPIs are quantifiable measures that are used to evaluate the success of an organization, employee, project, or process in meeting objectives for performance. In the context of incident response, KPIs can include metrics such as:
-
-- Time to detect incidents
-- Time to respond to incidents
-- Number of incidents resolved within a specific timeframe
-- Percentage of incidents escalated
-- Internal customer experience with security operations
-- Deployment coverage and effectiveness
-- Compliance with security policies and procedures
-- Cost of incident response operations
-- Number of repeat incidents
-- Training and awareness levels among staff
-
-Defining these KPIs helps organizations to monitor their incident response capabilities, identify trends, and make informed decisions to enhance their security posture. |
+| [Define Key Performance Indicators (KPIs)](operations/C7001.md) | C7001 | Operations | This capability involves defining Key Performance Indicators (KPIs) to measure the effectiveness and efficiency of incident response operations. KPIs help in assessing the performance of the incident response team, identifying areas for improvement, and ensuring that the incident response process aligns with organizational goals. This capability is essential for continuous improvement and accountability in incident response operations. |
 | [Maintain a Risk Register](operations/C7002.md) | C7002 | Operations | This capability involves maintaining a risk register that documents identified risks, their potential impact, and the mitigation strategies in place. The risk register is a crucial tool for managing security risks within an organization, allowing teams to prioritize and address vulnerabilities effectively. It serves as a living document that is regularly updated to reflect the current risk landscape. |
 | [Maintain a Team Knowledge Base](operations/C7003.md) | C7003 | Operations | This capability involves maintaining a knowledge base for the security operations and incident response teams. A team knowledge base is essential for documenting lessons learned, best practices, and procedures that can be referenced during security operations and response activities. This capability helps ensure that the team has access to critical information that can improve response times and effectiveness during incidents. |
 | [Maintain Leadership Reporting and Awareness](operations/C7004.md) | C7004 | Operations | This capability involves maintaining regular reporting and awareness for leadership regarding the status of security operations and incident response activities. This includes providing updates on ongoing incidents, metrics on response times, and overall security posture. Effective leadership reporting is crucial for ensuring that decision-makers are informed about the security landscape and can allocate resources appropriately. |
