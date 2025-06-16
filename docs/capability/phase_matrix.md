@@ -28,9 +28,9 @@ Preparation | Identification | Containment | Eradication | Recovery | Lessons-le
 | [Access DHCP Logs (C1108)](preparation/C1108.md) |  | [Block Process by Hash (C3404)](containment/C3404.md) |  |  |  |  |
 | [Access Internal Packet Capture Data (C1109)](preparation/C1109.md) |  | [Block Process by Content Pattern (C3405)](containment/C3405.md) |  |  |  |  |
 | [Access External Packet Capture Data (C1109)](preparation/C1109.md) |  | [Disable System Service (C3501)](containment/C3501.md) |  |  |  |  |
-| [Establish Ability to Block External IP Addresses (C1111)](preparation/C1111.md) |  | [IO Port Restriction (C3502)](containment/C3502.md) |  |  |  |  |
+| [Establish Ability to Block External IP Addresses (C1111)](preparation/C1111.md) |  | [Block Access to IO Port (C3502)](containment/C3502.md) |  |  |  |  |
 | [Establish Ability to Block Internal IP Addresses (C1112)](preparation/C1112.md) |  | [Lock User Account (C3601)](containment/C3601.md) |  |  |  |  |
-| [Establish Ability to Block External Domains (C1113)](preparation/C1113.md) |  |  |  |  |  |  |
+| [Establish Ability to Block External Domains (C1113)](preparation/C1113.md) |  | [Remove User Permission (C3602)](containment/C3602.md) |  |  |  |  |
 | [Establish Ability to Block Internal Domains (C1114)](preparation/C1114.md) |  |  |  |  |  |  |
 | [Establish Ability to Block External URLs (C1115)](preparation/C1115.md) |  |  |  |  |  |  |
 | [Establish Ability to Block Internal URLs (C1116)](preparation/C1116.md) |  |  |  |  |  |  |

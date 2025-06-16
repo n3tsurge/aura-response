@@ -73,6 +73,10 @@ class Capability(BaseComponent):
         default_factory=list,
         description="A list of references related to the capability."
     )
+    mitre_defend: Optional[str] = Field(
+        default=None,
+        description="The MITRE defend tactic associated with the capability, if applicable."
+    )
 
     @classmethod
     def generate_index_md(cls, items: list['Capability']) -> str:
@@ -296,13 +300,24 @@ class Capability(BaseComponent):
                 doc_part = self.documentation[key]
                 if len(doc_part) > 0:
                     markdown_content += f"## {key.title().capitalize()}\n"
-                    markdown_content += "For a tool or system to implement this capability, the following requirements should be considered:\n\n"
+                    
                     
                     if key == "requirements":
+                        markdown_content += "For a tool or system to implement this capability, the following requirements should be considered:\n\n"
                         markdown_content += "| Requirement ID | Description | Type |\n"
                         markdown_content += "| :--- | :--- | :--- |\n"
+                        
+                        # Sort the requirements by type
+                        doc_part.sort(key=lambda x: (x.type or "N/A", x.id))
                         for item in doc_part:
-                            markdown_content += f"| {item.id} | {item.description} | {item.type if item.type else 'N/A'} |\n"
+                            markdown_content += f"| {item.id} | {item.description} | {item.type.capitalize() }|\n"
+                            
+                    elif key == "automation":
+                        markdown_content += "This section provides information on how the capability can be automated.\n\n"
+                        markdown_content += "| Automation ID | Description | Type |\n"
+                        markdown_content += "| :--- | :--- | :--- |\n"
+                        for item in doc_part:
+                            markdown_content += f"| {item.id} | {item.description} | {item.type.capitalize() if item.type else 'N/A'} |\n"
                     else:
                         for item in doc_part:
                             
@@ -312,15 +327,17 @@ class Capability(BaseComponent):
                                 markdown_content += f"### {item.title}\n\n{item.description}\n\n"
                     markdown_content += "\n"
 
-        if self.references:
-            if len(self.references) > 0:
-                markdown_content += "## References\n\n"
-                for reference in self.references:
-                    if reference.type == 'website':
-                        if reference.name:
-                            markdown_content += f"- [{reference.name}]({reference.url})\n"
-                        else:
-                            markdown_content += f"- [{reference.url}]({reference.url})\n"
+        if self.references or self.mitre_defend:
+            markdown_content += "## References\n\n"
+            if self.mitre_defend:
+                markdown_content += f"- [MITRE D3FEND: {self.mitre_defend}](https://d3fend.mitre.org/technique/{self.mitre_defend}/)\n"
+                
+            for reference in self.references:
+                if reference.type == 'website':
+                    if reference.name:
+                        markdown_content += f"- [{reference.name}]({reference.url})\n"
+                    else:
+                        markdown_content += f"- [{reference.url}]({reference.url})\n"
 
         if self.external_references:
             markdown_content += "## External References\n"
@@ -364,7 +381,7 @@ class Capability(BaseComponent):
                     markdown_content += f"- {control} \n"
                 markdown_content += "\n"
 
-            if references:
+            if references or self.mitre_defend:
                 markdown_content += "#### References\n\n"
                 for reference in references:
                     if reference.type == 'website':

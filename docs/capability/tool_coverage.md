@@ -79,8 +79,9 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [Block Process by Hash (C3404)](containment/C3404.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Block Process by Content Pattern (C3405)](containment/C3405.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Disable System Service (C3501)](containment/C3501.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| [IO Port Restriction (C3502)](containment/C3502.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Block Access to IO Port (C3502)](containment/C3502.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Lock User Account (C3601)](containment/C3601.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Remove User Permission (C3602)](containment/C3602.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Report Incident to External Entity (C4001)](eradication/C4001.md) | Eradication |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Remove Rogue Network Device (C4101)](eradication/C4101.md) | Eradication |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Delete Email Message (C4201)](eradication/C4201.md) | Eradication |  |  |  |  |  |  |  |  |  |  |  |  |  |
