@@ -1,0 +1,24 @@
+{
+    "id": "C1408",
+    "ref": "capability:preparation:establish-ability-to-block-process-by-metadata",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to block processes by their metadata. This includes implementing mechanisms to prevent specific processes from executing based on various metadata attributes such as process name, user, command line arguments, and other relevant information. It is essential for enhancing security by preventing unauthorized or malicious processes from running, thereby protecting the system from potential threats.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "process",
+    "friendly_name": "establish-ability-to-block-process-by-metadata",
+    "title": "Establish Ability to Block Processes by Metadata",
+    "unique_id": "f02265dd-66d3-441d-aaf7-449e8636e165",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

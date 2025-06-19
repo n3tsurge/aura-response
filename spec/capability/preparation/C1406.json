@@ -1,0 +1,24 @@
+{
+    "id": "C1406",
+    "ref": "capability:preparation:establish-ability-to-find-processes-by-content",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to find processes by their content patterns. This includes implementing mechanisms to analyze and identify specific content patterns within the processes running on a system. It is essential for system monitoring, incident response, and security assessments, providing visibility into the types of processes that may exhibit suspicious or malicious behavior based on their content.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "process",
+    "friendly_name": "establish-ability-to-find-processes-by-content",
+    "title": "Establish Ability to Find Processes by Content Pattern",
+    "unique_id": "afb578b3-d763-49b1-a910-4ab8ab0a89b2",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

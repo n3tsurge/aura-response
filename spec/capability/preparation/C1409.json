@@ -1,0 +1,24 @@
+{
+    "id": "C1409",
+    "ref": "capability:preparation:establish-ability-to-block-process-by-hash",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to block processes by their hash values. This includes implementing mechanisms to prevent specific processes from executing based on their unique hash signatures. It is essential for enhancing security by preventing unauthorized or malicious processes from running, thereby protecting the system from potential threats.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "process",
+    "friendly_name": "establish-ability-to-block-process-by-hash",
+    "title": "Establish Ability to Block Processes by Hash",
+    "unique_id": "e25ba119-83da-48d4-bfca-6738284c2ffc",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

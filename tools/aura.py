@@ -128,15 +128,15 @@ def main():
         output_file_path.parent.mkdir(parents=True, exist_ok=True)
 
         # Convert the schema to markdown
-        print(f"Converting {schema_file.name} to {output_file_path.name}")
-        markdown_content = convert_schema_to_markdown(schema_file)
-        markdown_file = schema_file.with_suffix('.md')
+        try:
+            markdown_content = convert_schema_to_markdown(schema_file)
+            markdown_file = schema_file.with_suffix('.md')
 
-        with open(output_file_path, 'w', encoding='utf-8') as md_file:
-            md_file.write(markdown_content)
-
-        print(f"Converted {schema_file.name} to {markdown_file.name}")
-
+            with open(output_file_path, 'w', encoding='utf-8') as md_file:
+                md_file.write(markdown_content)
+        except Exception as e:
+            print(f"Error converting {schema_file}: {e}")
+            continue
 
 if __name__ == "__main__":
     main()

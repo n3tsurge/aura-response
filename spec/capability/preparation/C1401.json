@@ -1,0 +1,24 @@
+{
+    "id": "C1401",
+    "ref": "capability:preparation:establish-ability-to-list-processes-executed",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to list processes that have been executed on a system. This includes implementing mechanisms to track and catalog all running and previously executed processes, ensuring that all process activity can be monitored and analyzed. It is essential for system monitoring, incident response, and security assessments, providing visibility into the operational state of systems and potential malicious activities.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "process",
+    "friendly_name": "establish-ability-to-list-processes-executed",
+    "title": "Establish Ability to List Processes Executed",
+    "unique_id": "59d153cd-a0db-4e02-a475-9908171d212a",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

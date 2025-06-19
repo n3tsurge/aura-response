@@ -1,0 +1,24 @@
+{
+    "id": "C1404",
+    "ref": "capability:preparation:establish-ability-to-find-processes-by-hash",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to find processes by their hash values. This includes implementing mechanisms to compute and store hash values for processes, enabling quick identification and verification of process integrity. It is essential for incident response, malware analysis, and system monitoring, providing a means to detect unauthorized or malicious processes based on their unique hash signatures.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "process",
+    "friendly_name": "establish-ability-to-find-processes-by-hash",
+    "title": "Establish Ability to Find Processes by Hash",
+    "unique_id": "02488ae3-820f-44de-96d3-7057d6694f76",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

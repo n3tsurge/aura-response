@@ -47,7 +47,9 @@
                 "type": "operational"
             }
         ],
-        "enrichment": [],
+        "enrichment": [
+            
+        ],
         "hunting": [],
         "fields": [],
         "automation": []

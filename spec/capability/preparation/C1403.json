@@ -1,0 +1,24 @@
+{
+    "id": "C1403",
+    "ref": "capability:preparation:establish-ability-to-find-processes-by-metadata",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to find processes by their metadata. This includes implementing mechanisms to search and filter processes based on various metadata attributes such as process name, user, command line arguments, and other relevant information. It is essential for incident response, system monitoring, and security assessments, providing visibility into process activities and enabling the identification of potentially malicious or unauthorized processes.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "process",
+    "friendly_name": "establish-ability-to-find-processes-by-metadata",
+    "title": "Establish Ability to Find Processes by Metadata",
+    "unique_id": "145f856a-df3b-4aa6-86a1-18cc64ba107d",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}
