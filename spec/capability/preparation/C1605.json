@@ -1,0 +1,24 @@
+{
+    "id": "C1605",
+    "ref": "capability:preparation:establish-ability-to-remove-user-account",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability ensures that the organization has the necessary processes and permissions in place to remove user accounts when needed. This is crucial for maintaining security and compliance, especially when users leave the organization or change roles.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "identity",
+    "friendly_name": "establish-ability-to-remove-user-account",
+    "title": "Establish Ability to Remove User Account",
+    "unique_id": "b59236d5-05cd-4dc6-83c7-2d5ab4d3fd3b",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

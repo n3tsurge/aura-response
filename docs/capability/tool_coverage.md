@@ -98,6 +98,12 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [Establish Ability to Remove Registry Key (C1509)](preparation/C1509.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Establish Ability to Remove Service (C1510)](preparation/C1510.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Establish Ability to Analyze Registry Key (C1512)](preparation/C1512.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish ability to Manage Identity Management System (C1601)](preparation/C1601.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Lock User Account (C1602)](preparation/C1602.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to List Authenticated Users (C1603)](preparation/C1603.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Revoke Auth Credentials (C1604)](preparation/C1604.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Remove User Account (C1605)](preparation/C1605.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to List User Accounts (C1606)](preparation/C1606.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [List Alert Victims (C2001)](identification/C2001.md) | Identification |  |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2001.md) |  |  |
 | [List Host Vulnerabilities (C2002)](identification/C2002.md) | Identification |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/rapid7-insightvm/C2002.md) | [:white_check_mark:](../tool/sentinelone/C2002.md) | [:white_check_mark:](../tool/wiz/C2002.md) |  |
 | [Place Compromised Accounts on Watchlist (C2003)](identification/C2003.md) | Identification |  |  |  |  |  |  |  |  |  |  |  |  |  |

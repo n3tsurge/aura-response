@@ -98,3 +98,9 @@ Preparation | Identification | Containment | Eradication | Recovery | Lessons-le
 | [Establish Ability to Remove Registry Key (C1509)](preparation/C1509.md) |  |  |  |  |  |  |
 | [Establish Ability to Remove Service (C1510)](preparation/C1510.md) |  |  |  |  |  |  |
 | [Establish Ability to Analyze Registry Key (C1512)](preparation/C1512.md) |  |  |  |  |  |  |
+| [Establish ability to Manage Identity Management System (C1601)](preparation/C1601.md) |  |  |  |  |  |  |
+| [Establish Ability to Lock User Account (C1602)](preparation/C1602.md) |  |  |  |  |  |  |
+| [Establish Ability to List Authenticated Users (C1603)](preparation/C1603.md) |  |  |  |  |  |  |
+| [Establish Ability to Revoke Auth Credentials (C1604)](preparation/C1604.md) |  |  |  |  |  |  |
+| [Establish Ability to Remove User Account (C1605)](preparation/C1605.md) |  |  |  |  |  |  |
+| [Establish Ability to List User Accounts (C1606)](preparation/C1606.md) |  |  |  |  |  |  |

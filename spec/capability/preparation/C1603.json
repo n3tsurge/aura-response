@@ -1,0 +1,24 @@
+{
+    "id": "C1603",
+    "ref": "capability:preparation:establish-ability-to-list-authenticated-users",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability establishes the ability to list authenticated users in the system. This is essential for managing user access and ensuring that only authorized users can perform actions within the system. It is a foundational capability that supports various security and operational tasks.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "identity",
+    "friendly_name": "establish-ability-to-list-authenticated-users",
+    "title": "Establish Ability to List Authenticated Users",
+    "unique_id": "82c69103-080d-4903-864b-21b4723f11ba",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}
