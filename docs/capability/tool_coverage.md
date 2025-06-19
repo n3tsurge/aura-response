@@ -44,6 +44,15 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [Establish Ability to Collect Data Transferred (C1124)](preparation/C1124.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Establish Ability to Identify Data Transferred (C1125)](preparation/C1125.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Establish Ability to Analyze User Agent (C1127)](preparation/C1127.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to List Firewall Rules (C1128)](preparation/C1128.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to List Users' Email Interaction (C1201)](preparation/C1201.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Analyze User Agent (C1202)](preparation/C1202.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Block Email Domain (C1203)](preparation/C1203.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Block Email Sender (C1204)](preparation/C1204.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Delete Email Message (C1205)](preparation/C1205.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Quarantine Email Message (C1206)](preparation/C1206.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Collect Email Messages (C1207)](preparation/C1207.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Analyze Email Addresses (C1208)](preparation/C1208.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [List Alert Victims (C2001)](identification/C2001.md) | Identification |  |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2001.md) |  |  |
 | [List Host Vulnerabilities (C2002)](identification/C2002.md) | Identification |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/rapid7-insightvm/C2002.md) | [:white_check_mark:](../tool/sentinelone/C2002.md) | [:white_check_mark:](../tool/wiz/C2002.md) |  |
 | [Place Compromised Accounts on Watchlist (C2003)](identification/C2003.md) | Identification |  |  |  |  |  |  |  |  |  |  |  |  |  |

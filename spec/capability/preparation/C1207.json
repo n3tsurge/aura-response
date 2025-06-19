@@ -1,0 +1,28 @@
+{
+    "id": "C1207",
+    "ref": "capability:preparation:establish-ability-to-collect-email-messages",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to collect email messages. This is crucial for maintaining email hygiene, ensuring that all relevant communications can be retrieved and analyzed when necessary. The capability includes implementing mechanisms to capture and store email messages, ensuring that these messages can be accessed for compliance, security investigations, or operational needs. It also involves maintaining an audit trail of collected messages to enhance the organization's security posture.",
+    "documentation": {
+        "requirements":[],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "email",
+    "friendly_name": "establish-ability-to-collect-email-messages",
+    "title": "Establish Ability to Collect Email Messages",
+    "unique_id": "b41a6ff6-9bb7-48c8-b6b8-4f5ca43b345f",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

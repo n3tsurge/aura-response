@@ -44,3 +44,12 @@ Preparation | Identification | Containment | Eradication | Recovery | Lessons-le
 | [Establish Ability to Collect Data Transferred (C1124)](preparation/C1124.md) |  |  |  |  |  |  |
 | [Establish Ability to Identify Data Transferred (C1125)](preparation/C1125.md) |  |  |  |  |  |  |
 | [Establish Ability to Analyze User Agent (C1127)](preparation/C1127.md) |  |  |  |  |  |  |
+| [Establish Ability to List Firewall Rules (C1128)](preparation/C1128.md) |  |  |  |  |  |  |
+| [Establish Ability to List Users' Email Interaction (C1201)](preparation/C1201.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze User Agent (C1202)](preparation/C1202.md) |  |  |  |  |  |  |
+| [Establish Ability to Block Email Domain (C1203)](preparation/C1203.md) |  |  |  |  |  |  |
+| [Establish Ability to Block Email Sender (C1204)](preparation/C1204.md) |  |  |  |  |  |  |
+| [Establish Ability to Delete Email Message (C1205)](preparation/C1205.md) |  |  |  |  |  |  |
+| [Establish Ability to Quarantine Email Message (C1206)](preparation/C1206.md) |  |  |  |  |  |  |
+| [Establish Ability to Collect Email Messages (C1207)](preparation/C1207.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze Email Addresses (C1208)](preparation/C1208.md) |  |  |  |  |  |  |

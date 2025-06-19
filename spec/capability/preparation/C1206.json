@@ -1,0 +1,28 @@
+{
+    "id": "C1206",
+    "ref": "capability:preparation:establish-ability-to-quarantine-email-message",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to quarantine email messages. This is crucial for isolating potentially harmful or suspicious emails to prevent them from reaching end users. The capability includes implementing mechanisms to identify, isolate, and manage emails that are deemed risky, ensuring that these quarantined messages can be reviewed and acted upon by security teams. This helps in mitigating threats such as phishing attacks, malware distribution, and other email-based risks while maintaining an audit trail for compliance and investigation purposes.",
+    "documentation": {
+        "requirements":[],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "email",
+    "friendly_name": "establish-ability-to-quarantine-email-message",
+    "title": "Establish Ability to Quarantine Email Message",
+    "unique_id": "d053bfc9-b119-4e2b-8bb0-fecaad8340e0",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

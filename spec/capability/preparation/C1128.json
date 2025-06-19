@@ -1,0 +1,58 @@
+{
+    "id": "C1128",
+    "ref": "capability:preparation:establish-ability-to-list-firewall-rules",
+    "author": "n3tsurge",
+    "created_on": "2025-06-19",
+    "description": "This capability involves establishing the ability to list firewall rules that are currently in place within a network. This is crucial for understanding the security posture of the network, ensuring that the firewall is configured correctly, and identifying any potential gaps or misconfigurations in the firewall rules. The capability includes implementing mechanisms to retrieve and display the current firewall rules, ensuring that they are up-to-date and aligned with organizational security policies.",
+    "documentation": {
+        "requirements":[
+            {
+                "id": "req-1",
+                "description": "Implement a mechanism to retrieve current firewall rules from the network devices.",
+                "type": "technical"
+            },
+            {
+                "id": "req-2",
+                "description": "Ensure that the retrieved firewall rules can be displayed in a user-friendly format.",
+                "type": "usability"
+            },
+            {
+                "id": "req-3",
+                "description": "Implement a mechanism to retrieve current firewall rules from endpoints or servers.",
+                "type": "technical"
+            }
+        ],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Integrate with existing security information and event management (SIEM) systems to log changes in firewall rules.",
+                "type": "integration"
+            }
+        ]
+    },
+    "category": "network",
+    "friendly_name": "establish-ability-to-list-firewall-rules",
+    "title": "Establish Ability to List Firewall Rules",
+    "unique_id": "61d110c1-8b0e-4353-98b8-45cbb2be6db2",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+        "incident-commander",
+        "scribe",
+        "incident-responder",
+        "security-analyst"
+    ],
+    "staff": [
+        "network-administrator",
+        "security-analyst",
+        "incident-responder",
+        "system-administrator"
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

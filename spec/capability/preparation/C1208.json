@@ -1,0 +1,28 @@
+{
+    "id": "C1208",
+    "ref": "capability:preparation:establish-ability-to-analyze-email-addresses",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to analyze email addresses. This is crucial for identifying potential threats, understanding communication patterns, and enhancing overall email security. The capability includes implementing systems that can parse, validate, and analyze email addresses to detect anomalies, phishing attempts, or other malicious activities. It also involves maintaining a database of known malicious email addresses and patterns to improve threat detection and response.",
+    "documentation": {
+        "requirements":[],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "email",
+    "friendly_name": "establish-ability-to-analyze-email-addresses",
+    "title": "Establish Ability to Analyze Email Addresses",
+    "unique_id": "446e491a-6645-43e0-865f-2ca488eca1c8",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

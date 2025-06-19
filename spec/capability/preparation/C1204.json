@@ -1,0 +1,28 @@
+{
+    "id": "C1204",
+    "ref": "capability:preparation:establish-ability-to-block-email-sender",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to block email senders. This is crucial for preventing phishing attacks, spam, and other malicious activities that can originate from specific email addresses. The capability includes implementing mechanisms to identify and block emails from specified senders, ensuring that these blocks are enforced across the organization's email systems, and maintaining an updated list of blocked senders to enhance security posture.",
+    "documentation": {
+        "requirements":[],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "email",
+    "friendly_name": "establish-ability-to-block-email-sender",
+    "title": "Establish Ability to Block Email Sender",
+    "unique_id": "27c7413d-59d6-4984-897c-ee21e43b29a4",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

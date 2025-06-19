@@ -1,0 +1,28 @@
+{
+    "id": "C1203",
+    "ref": "capability:preparation:establish-ability-to-block-email-domain",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to block email domains. This is crucial for preventing phishing attacks, spam, and other malicious activities that can originate from specific domains. The capability includes implementing mechanisms to identify and block emails from specified domains, ensuring that these blocks are enforced across the organization's email systems, and maintaining an updated list of blocked domains to enhance security posture.",
+    "documentation": {
+        "requirements":[],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "email",
+    "friendly_name": "establish-ability-to-block-email-domain",
+    "title": "Establish Ability to Block Email Domain",
+    "unique_id": "30f0eacc-c4a9-454d-9912-b25edead934f",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

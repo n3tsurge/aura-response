@@ -1,0 +1,28 @@
+{
+    "id": "C1202",
+    "ref": "capability:preparation:establish-ability-to-list-email-recipients",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to collect data that has been transferred across networks or systems. This includes implementing mechanisms to capture and store data transfers, ensuring that all transferred data can be retrieved and analyzed when necessary. It is essential for maintaining data integrity, compliance with regulations, and enhancing overall security posture by providing visibility into data movement within the organization.",
+    "documentation": {
+        "requirements":[],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "email",
+    "friendly_name": "establish-ability-to-list-email-recipients",
+    "title": "Establish Ability to Analyze User Agent",
+    "unique_id": "f3783a7e-6d79-4376-a43b-34cf6138a4c1",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}
