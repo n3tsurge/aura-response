@@ -1,0 +1,24 @@
+{
+    "id": "C1319",
+    "ref": "capability:preparation:establish-ability-to-analyze-macos-macho",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to analyze macOS Mach-O files. This includes implementing mechanisms to dissect, interpret, and analyze the structure and content of Mach-O files, which are the executable file format used in macOS and iOS operating systems. It is essential for malware analysis, software development, and security assessments, providing insights into the behavior and characteristics of macOS applications.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "establish-ability-to-analyze-macos-macho",
+    "title": "Establish Ability to Analyze macOS Mach-O",
+    "unique_id": "5423f21e-1f4d-4307-a2b2-e6a5338dadd7",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

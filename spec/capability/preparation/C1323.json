@@ -1,0 +1,24 @@
+{
+    "id": "C1323",
+    "ref": "capability:preparation:establish-ability-to-analyze-scripts",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to analyze scripts. This includes implementing mechanisms to dissect, interpret, and analyze the structure and content of various script files, such as shell scripts, Python scripts, and JavaScript files. It is essential for malware analysis, software development, and security assessments, providing insights into the behavior and characteristics of scripts used in different environments.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "establish-ability-to-analyze-scripts",
+    "title": "Establish Ability to Analyze Scripts",
+    "unique_id": "951bbc1c-9e29-478c-bc29-8c3315a6b9b0",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

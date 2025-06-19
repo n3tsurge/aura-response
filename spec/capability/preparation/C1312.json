@@ -1,0 +1,24 @@
+{
+    "id": "C1312",
+    "ref": "capability:preparation:establish-ability-to-quarantine-file-by-path",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to quarantine a file by its path within a system or network. This includes implementing mechanisms to isolate files based on their directory structure and file names, ensuring that potentially harmful files can be effectively contained and managed. It is essential for maintaining data integrity, preventing the spread of malware, and enhancing overall security posture by providing a controlled environment for suspicious files.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "establish-ability-to-quarantine-file-by-path",
+    "title": "Establish Ability to Quarantine File by Path",
+    "unique_id": "3549c357-6dc3-4ee5-a27f-883dbf8b2398",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

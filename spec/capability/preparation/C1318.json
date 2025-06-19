@@ -1,0 +1,24 @@
+{
+    "id": "C1318",
+    "ref": "capability:preparation:establish-ability-to-analyze-windows-pe",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to analyze Windows Portable Executable (PE) files. This includes implementing mechanisms to dissect, interpret, and analyze the structure and content of PE files, which are commonly used for executable files in Windows operating systems. It is essential for malware analysis, software development, and security assessments, providing insights into the behavior and characteristics of Windows applications.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "establish-ability-to-analyze-windows-pe",
+    "title": "Establish Ability to Analyze Windows PE",
+    "unique_id": "6e932dd3-6ab1-4016-aeab-9b45d69ada83",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

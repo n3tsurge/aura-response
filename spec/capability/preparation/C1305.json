@@ -1,0 +1,24 @@
+{
+    "id": "C1305",
+    "ref": "capability:preparation:establish-ability-to-list-files-timestomping",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to list files that have been timestomped within a system or network. Timestomping is a technique used by attackers to manipulate file timestamps to evade detection. This capability includes implementing mechanisms to track and identify files with altered timestamps, ensuring that all such files can be monitored and accounted for. It is essential for maintaining data integrity, compliance with regulations, and enhancing overall security posture by providing visibility into file activities within the organization.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "establish-ability-to-list-files-timestomping",
+    "title": "Establish Ability to List Files with Modified Timestamps",
+    "unique_id": "9257e8ff-7759-4aa3-8f63-dc348859c30d",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

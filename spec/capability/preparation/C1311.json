@@ -1,0 +1,24 @@
+{
+    "id": "C1311",
+    "ref": "capability:preparation:establish-ability-to-collect-file",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to collect files within a system or network. This includes implementing mechanisms to capture and store files, ensuring that all collected files can be retrieved and analyzed when necessary. It is essential for maintaining data integrity, compliance with regulations, and enhancing overall security posture by providing visibility into file activities within the organization.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "establish-ability-to-collect-file",
+    "title": "Establish Ability to Collect File",
+    "unique_id": "0403403d-61fc-4bf9-9f62-e1b6483abe94",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

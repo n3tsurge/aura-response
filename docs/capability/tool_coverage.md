@@ -53,6 +53,29 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [Establish Ability to Quarantine Email Message (C1206)](preparation/C1206.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Establish Ability to Collect Email Messages (C1207)](preparation/C1207.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Establish Ability to Analyze Email Addresses (C1208)](preparation/C1208.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to List Files Created (C1301)](preparation/C1301.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to List Files Modified (C1302)](preparation/C1302.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to List Files Deleted (C1303)](preparation/C1303.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to List Files Downloaded (C1304)](preparation/C1304.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to List Files with Modified Timestamps (C1305)](preparation/C1305.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Find File by Path (C1306)](preparation/C1306.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Find File by Metadata (C1307)](preparation/C1307.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Find File by Metadata (C1308)](preparation/C1308.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Find File by Format (C1309)](preparation/C1309.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Find File by Content Pattern (C1310)](preparation/C1310.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Collect File (C1311)](preparation/C1311.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Quarantine File by Path (C1312)](preparation/C1312.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Quarantine File by Hash (C1313)](preparation/C1313.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Quarantine File by Format (C1314)](preparation/C1314.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Quarantine File by Content Pattern (C1315)](preparation/C1315.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Remove File (C1316)](preparation/C1316.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Analyze File Hash (C1317)](preparation/C1317.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Analyze Windows PE (C1318)](preparation/C1318.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Analyze macOS Mach-O (C1319)](preparation/C1319.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Analyze Unix ELF (C1320)](preparation/C1320.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Analyze Microsoft Office File (C1321)](preparation/C1321.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Analyze PDF File (C1322)](preparation/C1322.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Analyze Scripts (C1323)](preparation/C1323.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [List Alert Victims (C2001)](identification/C2001.md) | Identification |  |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2001.md) |  |  |
 | [List Host Vulnerabilities (C2002)](identification/C2002.md) | Identification |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/rapid7-insightvm/C2002.md) | [:white_check_mark:](../tool/sentinelone/C2002.md) | [:white_check_mark:](../tool/wiz/C2002.md) |  |
 | [Place Compromised Accounts on Watchlist (C2003)](identification/C2003.md) | Identification |  |  |  |  |  |  |  |  |  |  |  |  |  |

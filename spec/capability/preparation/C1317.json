@@ -1,0 +1,24 @@
+{
+    "id": "C1317",
+    "ref": "capability:preparation:establish-ability-to-analyze-file-hash",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to analyze a file hash within a system or network. This includes implementing mechanisms to compute, verify, and analyze file hashes, ensuring that files can be uniquely identified and their integrity assessed based on their content. It is essential for maintaining data integrity, detecting malicious files, and enhancing overall security posture by providing a reliable method for file identification and verification.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "establish-ability-to-analyze-file-hash",
+    "title": "Establish Ability to Analyze File Hash",
+    "unique_id": "002fd773-03ff-4b6d-a51e-563a435ce5c4",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

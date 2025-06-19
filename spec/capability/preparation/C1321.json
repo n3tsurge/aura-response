@@ -1,0 +1,24 @@
+{
+    "id": "C1321",
+    "ref": "capability:preparation:establish-ability-to-analyze-msoffice-file",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to analyze Microsoft Office files. This includes implementing mechanisms to dissect, interpret, and analyze the structure and content of Office files such as Word documents, Excel spreadsheets, and PowerPoint presentations. It is essential for malware analysis, document forensics, and security assessments, providing insights into the behavior and characteristics of Office applications and their potential vulnerabilities.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "establish-ability-to-analyze-msoffice-file",
+    "title": "Establish Ability to Analyze Microsoft Office File",
+    "unique_id": "04145bfa-d2ac-41b9-a2a8-41aaf3b4a4d0",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

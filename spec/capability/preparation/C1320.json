@@ -1,0 +1,24 @@
+{
+    "id": "C1320",
+    "ref": "capability:preparation:establish-ability-to-analyze-unix-elf",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to analyze Unix Executable and Linkable Format (ELF) files. This includes implementing mechanisms to dissect, interpret, and analyze the structure and content of ELF files, which are commonly used for executable files in Unix-like operating systems. It is essential for malware analysis, software development, and security assessments, providing insights into the behavior and characteristics of Unix applications.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "establish-ability-to-analyze-unix-elf",
+    "title": "Establish Ability to Analyze Unix ELF",
+    "unique_id": "8c93a772-6982-4309-878a-eba88c648485",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

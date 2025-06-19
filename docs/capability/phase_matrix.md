@@ -53,3 +53,26 @@ Preparation | Identification | Containment | Eradication | Recovery | Lessons-le
 | [Establish Ability to Quarantine Email Message (C1206)](preparation/C1206.md) |  |  |  |  |  |  |
 | [Establish Ability to Collect Email Messages (C1207)](preparation/C1207.md) |  |  |  |  |  |  |
 | [Establish Ability to Analyze Email Addresses (C1208)](preparation/C1208.md) |  |  |  |  |  |  |
+| [Establish Ability to List Files Created (C1301)](preparation/C1301.md) |  |  |  |  |  |  |
+| [Establish Ability to List Files Modified (C1302)](preparation/C1302.md) |  |  |  |  |  |  |
+| [Establish Ability to List Files Deleted (C1303)](preparation/C1303.md) |  |  |  |  |  |  |
+| [Establish Ability to List Files Downloaded (C1304)](preparation/C1304.md) |  |  |  |  |  |  |
+| [Establish Ability to List Files with Modified Timestamps (C1305)](preparation/C1305.md) |  |  |  |  |  |  |
+| [Establish Ability to Find File by Path (C1306)](preparation/C1306.md) |  |  |  |  |  |  |
+| [Establish Ability to Find File by Metadata (C1307)](preparation/C1307.md) |  |  |  |  |  |  |
+| [Establish Ability to Find File by Metadata (C1308)](preparation/C1308.md) |  |  |  |  |  |  |
+| [Establish Ability to Find File by Format (C1309)](preparation/C1309.md) |  |  |  |  |  |  |
+| [Establish Ability to Find File by Content Pattern (C1310)](preparation/C1310.md) |  |  |  |  |  |  |
+| [Establish Ability to Collect File (C1311)](preparation/C1311.md) |  |  |  |  |  |  |
+| [Establish Ability to Quarantine File by Path (C1312)](preparation/C1312.md) |  |  |  |  |  |  |
+| [Establish Ability to Quarantine File by Hash (C1313)](preparation/C1313.md) |  |  |  |  |  |  |
+| [Establish Ability to Quarantine File by Format (C1314)](preparation/C1314.md) |  |  |  |  |  |  |
+| [Establish Ability to Quarantine File by Content Pattern (C1315)](preparation/C1315.md) |  |  |  |  |  |  |
+| [Establish Ability to Remove File (C1316)](preparation/C1316.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze File Hash (C1317)](preparation/C1317.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze Windows PE (C1318)](preparation/C1318.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze macOS Mach-O (C1319)](preparation/C1319.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze Unix ELF (C1320)](preparation/C1320.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze Microsoft Office File (C1321)](preparation/C1321.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze PDF File (C1322)](preparation/C1322.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze Scripts (C1323)](preparation/C1323.md) |  |  |  |  |  |  |

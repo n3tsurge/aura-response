@@ -1,0 +1,24 @@
+{
+    "id": "C1306",
+    "ref": "capability:preparation:establish-ability-to-find-file-by-path",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to find a file by its path within a system or network. This includes implementing mechanisms to locate files based on their directory structure and file names, ensuring that all files can be efficiently accessed and managed. It is essential for maintaining data integrity, facilitating quick access to necessary files, and enhancing overall operational efficiency by providing visibility into file locations within the organization.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "establish-ability-to-find-file-by-path",
+    "title": "Establish Ability to Find File by Path",
+    "unique_id": "66329a8e-3089-48c0-a6f7-8602349e71ca",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}
