@@ -1,0 +1,24 @@
+{
+    "id": "C1508",
+    "ref": "capability:preparation:establish-ability-list-services-deleted",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability ensures that the organization can list services that have been deleted, which is crucial for maintaining an accurate inventory and understanding the impact of service removals. This capability is essential for incident response and service management processes.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "configuration",
+    "friendly_name": "establish-ability-list-services-deleted",
+    "title": "Establish Ability to List Services Deleted",
+    "unique_id": "98ba9fd3-3fc5-4e92-a531-4797c3680449",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

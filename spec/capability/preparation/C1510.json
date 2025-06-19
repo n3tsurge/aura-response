@@ -1,0 +1,24 @@
+{
+    "id": "C1510",
+    "ref": "capability:preparation:establish-ability-remove-service",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability focuses on establishing the ability to remove a service from a system or network. It includes identifying the service, understanding its dependencies, and ensuring that there are processes in place to safely remove it without impacting other operations.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "configuration",
+    "friendly_name": "establish-ability-remove-service",
+    "title": "Establish Ability to Remove Service",
+    "unique_id": "2277b57a-401c-4618-86a3-0c1020ea8e8b",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

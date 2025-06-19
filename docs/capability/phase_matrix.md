@@ -87,3 +87,14 @@ Preparation | Identification | Containment | Eradication | Recovery | Lessons-le
 | [Establish Ability to Block Processes by Hash (C1409)](preparation/C1409.md) |  |  |  |  |  |  |
 | [Establish Ability to Block Processes by Format (C1410)](preparation/C1410.md) |  |  |  |  |  |  |
 | [Establish Ability to Block Processes by Content Pattern (C1411)](preparation/C1411.md) |  |  |  |  |  |  |
+| [Manage Remote Computer System Policies (C1501)](preparation/C1501.md) |  |  |  |  |  |  |
+| [Establish Ability to List Registry Keys Modified (C1502)](preparation/C1502.md) |  |  |  |  |  |  |
+| [Establish Ability to List Registry Keys Deleted (C1503)](preparation/C1503.md) |  |  |  |  |  |  |
+| [Establish Ability to List Registry Keys Accessed (C1504)](preparation/C1504.md) |  |  |  |  |  |  |
+| [Establish Ability to List Registry Keys Created (C1505)](preparation/C1505.md) |  |  |  |  |  |  |
+| [Establish Ability to List Services Created (C1506)](preparation/C1506.md) |  |  |  |  |  |  |
+| [Establish Ability to List Services Modified (C1507)](preparation/C1507.md) |  |  |  |  |  |  |
+| [Establish Ability to List Services Deleted (C1508)](preparation/C1508.md) |  |  |  |  |  |  |
+| [Establish Ability to Remove Registry Key (C1509)](preparation/C1509.md) |  |  |  |  |  |  |
+| [Establish Ability to Remove Service (C1510)](preparation/C1510.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze Registry Key (C1512)](preparation/C1512.md) |  |  |  |  |  |  |

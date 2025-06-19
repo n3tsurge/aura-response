@@ -87,6 +87,17 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [Establish Ability to Block Processes by Hash (C1409)](preparation/C1409.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Establish Ability to Block Processes by Format (C1410)](preparation/C1410.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Establish Ability to Block Processes by Content Pattern (C1411)](preparation/C1411.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Manage Remote Computer System Policies (C1501)](preparation/C1501.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to List Registry Keys Modified (C1502)](preparation/C1502.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to List Registry Keys Deleted (C1503)](preparation/C1503.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to List Registry Keys Accessed (C1504)](preparation/C1504.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to List Registry Keys Created (C1505)](preparation/C1505.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to List Services Created (C1506)](preparation/C1506.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to List Services Modified (C1507)](preparation/C1507.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to List Services Deleted (C1508)](preparation/C1508.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Remove Registry Key (C1509)](preparation/C1509.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Remove Service (C1510)](preparation/C1510.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Establish Ability to Analyze Registry Key (C1512)](preparation/C1512.md) | Preparation |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [List Alert Victims (C2001)](identification/C2001.md) | Identification |  |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2001.md) |  |  |
 | [List Host Vulnerabilities (C2002)](identification/C2002.md) | Identification |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/rapid7-insightvm/C2002.md) | [:white_check_mark:](../tool/sentinelone/C2002.md) | [:white_check_mark:](../tool/wiz/C2002.md) |  |
 | [Place Compromised Accounts on Watchlist (C2003)](identification/C2003.md) | Identification |  |  |  |  |  |  |  |  |  |  |  |  |  |

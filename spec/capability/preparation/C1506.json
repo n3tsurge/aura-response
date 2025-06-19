@@ -1,0 +1,24 @@
+{
+    "id": "C1506",
+    "ref": "capability:preparation:establish-ability-list-services-created",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability establishes the ability to list services created by the organization. It ensures that there is a systematic approach to track and manage services, which is essential for maintaining an effective service management process.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "configuration",
+    "friendly_name": "establish-ability-list-services-created",
+    "title": "Establish Ability to List Services Created",
+    "unique_id": "3516614c-fa44-45b6-87c1-541fb6c8ef87",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

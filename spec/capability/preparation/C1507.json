@@ -1,0 +1,24 @@
+{
+    "id": "C1507",
+    "ref": "capability:preparation:establish-ability-list-services-modified",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability focuses on establishing the ability to list services that have been modified within a system. It is essential for maintaining an up-to-date inventory of services and ensuring that any changes are tracked and managed effectively.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "configuration",
+    "friendly_name": "establish-ability-list-services-modified",
+    "title": "Establish Ability to List Services Modified",
+    "unique_id": "91aaf107-683b-4df3-b377-f3100c16b4ad",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}
