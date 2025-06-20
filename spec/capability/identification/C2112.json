@@ -1,0 +1,31 @@
+{
+    "id": "C2112",
+    "ref": "capability:identify:identify-transferred-data",
+    "author": "n3tsurge",
+    "created_on": "2025-06-20",
+    "description": "This capability involves identifying and analyzing data that has been transferred within a network. It is essential for monitoring data flow, ensuring compliance with data handling policies, and detecting unauthorized data transfers. This capability can be implemented through network monitoring tools, log analysis, or other methods to track and analyze data transfers within the network.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "identify-transferred-data",
+    "title": "Identify Transferred Data",
+    "unique_id": "1ce4371b-243a-4356-92cf-d383dd369d7a",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "commander",
+        "security-analyst",
+        "incident-responder",
+        "scribe"
+    ],
+    "staff": [
+        "incident-responder",
+        "security-analyst"
+    ],
+    "frameworks": {
+    }
+}

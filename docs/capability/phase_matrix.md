@@ -18,12 +18,12 @@ Preparation | Identification | Containment | Eradication | Recovery | Lessons-le
 | [Validate Analyst Toolset (C1012)](preparation/C1012.md) | [List Hosts Connected to Intranet (C2109)](identification/C2109.md) | [Block Data Transfer by Content Pattern (C3111)](containment/C3111.md) |  | [Unblock Blocked Process (C5401)](recovery/C5401.md) |  |  |
 | [Access Vulnerability Management System Logs (C1013)](preparation/C1013.md) | [List Data Transferred (C2110)](identification/C2110.md) | [Block Email Domain (C3201)](containment/C3201.md) |  | [Enable Disabled Service (C5501)](recovery/C5501.md) |  |  |
 | [Connect with Trusted Communities (C1014)](preparation/C1014.md) | [Collect Transferred Data (C2111)](identification/C2111.md) | [Block Email Sender (C3202)](containment/C3202.md) |  | [Unlock Locked User Account (C5601)](recovery/C5601.md) |  |  |
-| [Access External Flow Logs (C1101)](preparation/C1101.md) | [List Hosts Communicating with External Domain (C2113)](identification/C2113.md) | [Block Email Sender (C3203)](containment/C3203.md) |  |  |  |  |
-| [Access Internal Flow Logs (C1102)](preparation/C1102.md) | [List Registry Key Modifications (C2501)](identification/C2501.md) | [Quarantine File by Format (C3301)](containment/C3301.md) |  |  |  |  |
-| [Access Internal HTTP Logs (C1103)](preparation/C1103.md) |  | [Quarantine File by Hash (C3302)](containment/C3302.md) |  |  |  |  |
-| [Access External HTTP Logs (C1104)](preparation/C1104.md) |  | [Quarantine File by Path (C3303)](containment/C3303.md) |  |  |  |  |
-| [Access Internal DNS Logs (C1105)](preparation/C1105.md) |  | [Quarantine File by Content Pattern (C3304)](containment/C3304.md) |  |  |  |  |
-| [Access External DNS Logs (C1106)](preparation/C1106.md) |  | [Block Process by Path (C3401)](containment/C3401.md) |  |  |  |  |
+| [Access External Flow Logs (C1101)](preparation/C1101.md) | [Identify Transferred Data (C2112)](identification/C2112.md) | [Block Email Sender (C3203)](containment/C3203.md) |  |  |  |  |
+| [Access Internal Flow Logs (C1102)](preparation/C1102.md) | [List Hosts Communicating with External Domain (C2113)](identification/C2113.md) | [Quarantine File by Format (C3301)](containment/C3301.md) |  |  |  |  |
+| [Access Internal HTTP Logs (C1103)](preparation/C1103.md) | [List Hosts Communicating with External IP (C2114)](identification/C2114.md) | [Quarantine File by Hash (C3302)](containment/C3302.md) |  |  |  |  |
+| [Access External HTTP Logs (C1104)](preparation/C1104.md) | [List Hosts Communicating with External URL (C2115)](identification/C2115.md) | [Quarantine File by Path (C3303)](containment/C3303.md) |  |  |  |  |
+| [Access Internal DNS Logs (C1105)](preparation/C1105.md) | [Find Data Transferred by Content Pattern (C2116)](identification/C2116.md) | [Quarantine File by Content Pattern (C3304)](containment/C3304.md) |  |  |  |  |
+| [Access External DNS Logs (C1106)](preparation/C1106.md) | [List Registry Key Modifications (C2501)](identification/C2501.md) | [Block Process by Path (C3401)](containment/C3401.md) |  |  |  |  |
 | [Access VPN Logs (C1107)](preparation/C1107.md) |  | [Block Process by Metadata (C3402)](containment/C3402.md) |  |  |  |  |
 | [Access DHCP Logs (C1108)](preparation/C1108.md) |  | [Block Process by Hash (C3404)](containment/C3404.md) |  |  |  |  |
 | [Access Internal Packet Capture Data (C1109)](preparation/C1109.md) |  | [Block Process by Content Pattern (C3405)](containment/C3405.md) |  |  |  |  |

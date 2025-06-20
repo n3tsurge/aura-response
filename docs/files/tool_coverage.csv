@@ -113,7 +113,11 @@ List Hosts Connected to VPN (C2108),Identification,,,,,,,,,,,x,,
 List Hosts Connected to Intranet (C2109),Identification,,,,,,,,,,,x,,
 List Data Transferred (C2110),Identification,,,,,,,,,,,x,,
 Collect Transferred Data (C2111),Identification,,,,,,,,,,,,,
+Identify Transferred Data (C2112),Identification,,,,,,,,,,,,,
 List Hosts Communicating with External Domain (C2113),Identification,,,,,,,,,,,x,,x
+List Hosts Communicating with External IP (C2114),Identification,,,,,,,,,,,,,
+List Hosts Communicating with External URL (C2115),Identification,,,,,,,,,,,,,
+Find Data Transferred by Content Pattern (C2116),Identification,,,,,,,,,,,,,
 List Registry Key Modifications (C2501),Identification,,,,,,,,,,,x,,
 Patch Vulnerability (C3001),Containment,,,,,,,,,,,,,
 Block External IP Address (C3101),Containment,x,x,,,,,,x,,,x,,x

@@ -1,0 +1,31 @@
+{
+    "id": "C2115",
+    "ref": "capability:identify:list-hosts-communicating-with-external-url",
+    "author": "n3tsurge",
+    "created_on": "2025-06-20",
+    "description": "This capability allows security teams to identify hosts within the network that are communicating with a specified external URL. This is useful for detecting potential data exfiltration or unauthorized access to external resources.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "list-hosts-communicating-with-external-url",
+    "title": "List Hosts Communicating with External URL",
+    "unique_id": "cfdea14f-3e9f-4b07-9d69-4523acadd0a9",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "commander",
+        "security-analyst",
+        "incident-responder",
+        "scribe"
+    ],
+    "staff": [
+        "incident-responder",
+        "security-analyst"
+    ],
+    "frameworks": {
+    }
+}

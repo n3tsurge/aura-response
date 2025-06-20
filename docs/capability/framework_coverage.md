@@ -65,7 +65,11 @@ This matrix shows the coverage of capabilities across different frameworks by ph
 | [List Hosts Connected to Intranet (C2109)](identification/C2109.md) |  |  |  |
 | [List Data Transferred (C2110)](identification/C2110.md) |  |  |  |
 | [Collect Transferred Data (C2111)](identification/C2111.md) |  |  |  |
+| [Identify Transferred Data (C2112)](identification/C2112.md) |  |  |  |
 | [List Hosts Communicating with External Domain (C2113)](identification/C2113.md) |  |  |  |
+| [List Hosts Communicating with External IP (C2114)](identification/C2114.md) |  |  |  |
+| [List Hosts Communicating with External URL (C2115)](identification/C2115.md) |  |  |  |
+| [Find Data Transferred by Content Pattern (C2116)](identification/C2116.md) |  |  |  |
 | [List Registry Key Modifications (C2501)](identification/C2501.md) |  | A.5.27, A.8.7, A.8.9, A.5.32, A.8.16 | DE.CM-1, DE.CM-7, RS.AN-1, RS.AN-2 |
 
 ## Lessons-learned Phase

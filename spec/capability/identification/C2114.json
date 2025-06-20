@@ -1,0 +1,31 @@
+{
+    "id": "C2114",
+    "ref": "capability:identify:list-hosts-communicating-with-external-ip",
+    "author": "n3tsurge",
+    "created_on": "2025-06-20",
+    "description": "This capability involves identifying hosts within a network that are communicating with external IP addresses. It is essential for monitoring network traffic, detecting potential data exfiltration, and ensuring compliance with security policies. This capability can be implemented through network monitoring tools, log analysis, or other methods to track and analyze communication patterns with external IPs.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "list-hosts-communicating-with-external-ip",
+    "title": "List Hosts Communicating with External IP",
+    "unique_id": "35f7b5fa-5c27-4ff6-915e-6d8731735c59",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "commander",
+        "security-analyst",
+        "incident-responder",
+        "scribe"
+    ],
+    "staff": [
+        "incident-responder",
+        "security-analyst"
+    ],
+    "frameworks": {
+    }
+}

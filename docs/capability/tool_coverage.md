@@ -118,7 +118,11 @@ This matrix shows the coverage of capabilities across different tools. A CSV rep
 | [List Hosts Connected to Intranet (C2109)](identification/C2109.md) | Identification |  |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2109.md) |  |  |
 | [List Data Transferred (C2110)](identification/C2110.md) | Identification |  |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2110.md) |  |  |
 | [Collect Transferred Data (C2111)](identification/C2111.md) | Identification |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Identify Transferred Data (C2112)](identification/C2112.md) | Identification |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [List Hosts Communicating with External Domain (C2113)](identification/C2113.md) | Identification |  |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2113.md) |  | [:white_check_mark:](../tool/zscaler-zia/C2113.md) |
+| [List Hosts Communicating with External IP (C2114)](identification/C2114.md) | Identification |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [List Hosts Communicating with External URL (C2115)](identification/C2115.md) | Identification |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Find Data Transferred by Content Pattern (C2116)](identification/C2116.md) | Identification |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [List Registry Key Modifications (C2501)](identification/C2501.md) | Identification |  |  |  |  |  |  |  |  |  |  | [:white_check_mark:](../tool/sentinelone/C2501.md) |  |  |
 | [Patch Vulnerability (C3001)](containment/C3001.md) | Containment |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | [Block External IP Address (C3101)](containment/C3101.md) | Containment | [:white_check_mark:](../tool/cisco-fw/C3101.md) | [:white_check_mark:](../tool/guardicore/C3101.md) |  |  |  |  |  | [:white_check_mark:](../tool/palo-alto-fw/C3101.md) |  |  | [:white_check_mark:](../tool/sentinelone/C3101.md) |  | [:white_check_mark:](../tool/zscaler-zia/C3101.md) |
