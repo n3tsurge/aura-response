@@ -1,0 +1,24 @@
+{
+    "id": "C1308",
+    "ref": "capability:preparation:establish-ability-to-find-file-by-hash",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to find a file by its hash within a system or network. This includes implementing mechanisms to compute and verify file hashes, ensuring that files can be uniquely identified and verified based on their content. It is essential for maintaining data integrity, detecting duplicate files, and enhancing overall security posture by providing a reliable method for file identification and verification.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "establish-ability-to-find-file-by-hash",
+    "title": "Establish Ability to Find File by Metadata",
+    "unique_id": "2f7654fd-db41-4927-9da3-97416a00b448",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

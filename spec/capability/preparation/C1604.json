@@ -1,0 +1,24 @@
+{
+    "id": "C1604",
+    "ref": "capability:preparation:establish-ability-to-revoke-auth-credentials",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability ensures that the organization has the ability to revoke authentication credentials when necessary. This is crucial for maintaining security and access control, especially in cases of compromised accounts or when an employee leaves the organization.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "identity",
+    "friendly_name": "establish-ability-to-revoke-auth-credentials",
+    "title": "Establish Ability to Revoke Auth Credentials",
+    "unique_id": "ac724d3d-76f4-48c0-834e-10e7f216e8ce",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

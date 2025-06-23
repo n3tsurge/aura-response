@@ -1,0 +1,24 @@
+{
+    "id": "C1322",
+    "ref": "capability:preparation:establish-ability-to-analyze-pdf-file",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to analyze PDF files. This includes implementing mechanisms to dissect, interpret, and analyze the structure and content of PDF documents. It is essential for document forensics, malware analysis, and security assessments, providing insights into the behavior and characteristics of PDF files, which are widely used for sharing documents across different platforms.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "establish-ability-to-analyze-pdf-file",
+    "title": "Establish Ability to Analyze PDF File",
+    "unique_id": "37ecf428-6f2a-49b4-8248-1165978629fa",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

@@ -1,0 +1,30 @@
+{
+    "id": "C1502",
+    "ref": "capability:preparation:establish-ability-list-registry-keys-modified",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability establishes the ability to list registry keys that have been modified. This is crucial for monitoring changes in the system registry, which can indicate potential security incidents or unauthorized changes to system configurations.",
+    "documentation": {
+        "requirements": [
+            {
+                "id": "req-1",
+                "description": "Information about the registry key should include the key path, the value name, the data type, the value data and the previous value data if available.",
+                "type": "functional"
+            }
+        ],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "configuration",
+    "friendly_name": "establish-ability-list-registry-keys-modified",
+    "title": "Establish Ability to List Registry Keys Modified",
+    "unique_id": "94d5dbc4-a583-4cd4-89ae-6a4e595985d3",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

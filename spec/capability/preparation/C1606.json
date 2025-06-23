@@ -1,0 +1,24 @@
+{
+    "id": "C1606",
+    "ref": "capability:preparation:establish-ability-to-list-user-accounts",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability establishes the ability to list user accounts on a system. It is essential for managing user access and ensuring that only authorized users have access to the system. This capability can be used to verify the existence of user accounts, check for unauthorized accounts, and maintain an up-to-date list of users.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "identity",
+    "friendly_name": "establish-ability-to-list-user-accounts",
+    "title": "Establish Ability to List User Accounts",
+    "unique_id": "3befb06e-81bc-404f-abc3-854768a15495",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

@@ -1,0 +1,24 @@
+{
+    "id": "C1316",
+    "ref": "capability:preparation:establish-ability-to-remove-file",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to remove files within a system or network. This includes implementing mechanisms to delete files securely, ensuring that all traces of the files are removed and cannot be recovered. It is essential for maintaining data integrity, compliance with regulations, and enhancing overall security posture by providing a controlled method for file deletion.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "establish-ability-to-remove-file",
+    "title": "Establish Ability to Remove File",
+    "unique_id": "17d55ad6-87a8-49f3-83a6-a50eb65e4a7d",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

@@ -1,0 +1,24 @@
+{
+    "id": "C1314",
+    "ref": "capability:preparation:establish-ability-to-quarantine-file-by-format",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to quarantine a file by its format within a system or network. This includes implementing mechanisms to isolate files based on their format, ensuring that potentially harmful files can be effectively contained and managed. It is essential for maintaining data integrity, preventing the spread of malware, and enhancing overall security posture by providing a controlled environment for suspicious files.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "establish-ability-to-quarantine-file-by-format",
+    "title": "Establish Ability to Quarantine File by Format",
+    "unique_id": "6aa95a5a-f928-4bd6-be8a-548c1ffc3412",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

@@ -1,0 +1,24 @@
+{
+    "id": "C1315",
+    "ref": "capability:preparation:establish-ability-to-quarantine-file-by-pattern",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to quarantine a file by its content pattern within a system or network. This includes implementing mechanisms to isolate files based on specific patterns found within their content, ensuring that potentially harmful files can be effectively contained and managed. It is essential for maintaining data integrity, preventing the spread of malware, and enhancing overall security posture by providing a controlled environment for suspicious files.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "establish-ability-to-quarantine-file-by-pattern",
+    "title": "Establish Ability to Quarantine File by Content Pattern",
+    "unique_id": "a2fac99d-4932-465e-a1dd-82e6487d67b6",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

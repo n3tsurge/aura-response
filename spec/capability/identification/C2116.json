@@ -1,0 +1,31 @@
+{
+    "id": "C2116",
+    "ref": "capability:identify:find-data-transferred-by-content",
+    "author": "n3tsurge",
+    "created_on": "2025-06-20",
+    "description": "This capability focuses on identifying data that has been transferred based on its content. It is essential for understanding the nature of data movement within a network, especially in cases of potential data exfiltration or unauthorized access. By analyzing the content of transferred data, security teams can detect anomalies and respond to potential threats effectively.",
+    "documentation": {
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "find-data-transferred-by-content",
+    "title": "Find Data Transferred by Content Pattern",
+    "unique_id": "637d8a98-6051-4109-ac38-f177b8843e41",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "commander",
+        "security-analyst",
+        "incident-responder",
+        "scribe"
+    ],
+    "staff": [
+        "incident-responder",
+        "security-analyst"
+    ],
+    "frameworks": {
+    }
+}

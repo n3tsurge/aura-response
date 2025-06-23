@@ -1,0 +1,39 @@
+{
+    "id": "C1201",
+    "ref": "capability:preparation:establish-ability-to-list-users-email-interaction",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to list users' email interactions. This includes tracking the users that opened, replied to or forwarded suspicious emails. It is essential for monitoring user engagement with email communications, identifying potential security threats, and ensuring compliance with organizational policies regarding email usage. The capability includes implementing mechanisms to log and analyze email interactions, providing visibility into user behavior related to email communications.",
+    "documentation": {
+        "requirements":[
+            {
+                "id": "req-1",
+                "description": "Knowledge of the email systems and protocols used within the organization.",
+                "type": "knowledge"
+            },
+            {
+                "id": "req-2",
+                "description": "Implementation of email logging mechanisms to capture user interactions with emails.",
+                "type": "implementation"
+            }
+        ],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "email",
+    "friendly_name": "establish-ability-to-list-users-email-interaction",
+    "title": "Establish Ability to List Users' Email Interaction",
+    "unique_id": "33e0fd4e-0d86-4217-84e2-4574ea8e19ee",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

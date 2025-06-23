@@ -1,0 +1,28 @@
+{
+    "id": "C1205",
+    "ref": "capability:preparation:establish-ability-to-delete-email-message",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to delete email messages. This is crucial for maintaining email hygiene, ensuring that sensitive or irrelevant emails can be removed from the system, and preventing potential data breaches. The capability includes implementing mechanisms to identify and delete specific email messages, ensuring that these deletions are enforced across the organization's email systems, and maintaining an audit trail of deleted messages to enhance security posture.",
+    "documentation": {
+        "requirements":[],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "email",
+    "friendly_name": "establish-ability-to-delete-email-message",
+    "title": "Establish Ability to Delete Email Message",
+    "unique_id": "e040e419-3e10-4bd6-891c-5f010927540e",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

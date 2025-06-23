@@ -1,0 +1,24 @@
+{
+    "id": "C1505",
+    "ref": "capability:preparation:establish-ability-list-registry-keys-created",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability establishes the ability to list registry keys that have been created on a system. This is essential for monitoring changes to the registry, which can indicate potential security incidents or configuration changes.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "configuration",
+    "friendly_name": "establish-ability-list-registry-keys-created",
+    "title": "Establish Ability to List Registry Keys Created",
+    "unique_id": "7efecc62-12d6-41e2-90d2-0881721a764a",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

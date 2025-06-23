@@ -1,0 +1,24 @@
+{
+    "id": "C1602",
+    "ref": "capability:preparation:establish-ability-to-lock-user-account",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability ensures that the organization has the ability to lock user accounts when necessary, such as in response to suspicious activity or policy violations. This is crucial for maintaining security and preventing unauthorized access to systems and data.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "identity",
+    "friendly_name": "establish-ability-to-lock-user-account",
+    "title": "Establish Ability to Lock User Account",
+    "unique_id": "9814d029-fe2f-4bec-8128-4ae2afd133c0",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

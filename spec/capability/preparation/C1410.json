@@ -1,0 +1,24 @@
+{
+    "id": "C1410",
+    "ref": "capability:preparation:establish-ability-to-block-process-by-format",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to block processes by their format. This includes implementing mechanisms to prevent specific processes from executing based on their format, such as executable files, scripts, or other types of process formats. It is essential for enhancing security by preventing unauthorized or malicious processes from running, thereby protecting the system from potential threats.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "process",
+    "friendly_name": "establish-ability-to-block-process-by-format",
+    "title": "Establish Ability to Block Processes by Format",
+    "unique_id": "6ef8db0b-eb9a-46aa-a39a-d46bff78800e",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

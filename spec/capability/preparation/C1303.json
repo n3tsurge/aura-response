@@ -1,0 +1,24 @@
+{
+    "id": "C1303",
+    "ref": "capability:preparation:establish-ability-to-list-files-deleted",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to list files that have been deleted within a system or network. This includes implementing mechanisms to track file deletion events, ensuring that all deleted files can be monitored and accounted for. It is essential for maintaining data integrity, compliance with regulations, and enhancing overall security posture by providing visibility into file activities within the organization.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "establish-ability-to-list-files-deleted",
+    "title": "Establish Ability to List Files Deleted",
+    "unique_id": "ef4ec9fc-f4d6-4264-8255-d8b087b82b8a",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

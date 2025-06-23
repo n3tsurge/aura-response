@@ -1,0 +1,24 @@
+{
+    "id": "C1407",
+    "ref": "capability:preparation:establish-ability-to-block-process-by-path",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to block processes by their file path. This includes implementing mechanisms to prevent specific processes from executing based on their location in the file system. It is essential for enhancing security by preventing unauthorized or malicious processes from running, thereby protecting the system from potential threats.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "process",
+    "friendly_name": "establish-ability-to-block-process-by-path",
+    "title": "Establish Ability to Block Processes by Path",
+    "unique_id": "41086db0-317c-44af-b67f-2949a14a94d5",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

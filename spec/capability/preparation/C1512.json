@@ -1,0 +1,24 @@
+{
+    "id": "C1512",
+    "ref": "capability:preparation:establish-ability-analyze-registry-key",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability focuses on establishing the ability to analyze registry keys, which is crucial for understanding system configurations and detecting potential security issues. It involves setting up the necessary tools and processes to effectively monitor and analyze registry keys within a system.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "configuration",
+    "friendly_name": "establish-ability-analyze-registry-key",
+    "title": "Establish Ability to Analyze Registry Key",
+    "unique_id": "d5ac9927-5ea4-4d70-bed3-8d9b8c455c61",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

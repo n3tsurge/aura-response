@@ -303,7 +303,7 @@ class Capability(BaseComponent):
                     
                     
                     if key == "requirements":
-                        markdown_content += "For a tool or system to implement this capability, the following requirements should be considered:\n\n"
+                        markdown_content += "For a tool, system or staff perform this capability, the following requirements should be considered:\n\n"
                         markdown_content += "| Requirement ID | Description | Type |\n"
                         markdown_content += "| :--- | :--- | :--- |\n"
                         

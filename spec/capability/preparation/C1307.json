@@ -1,0 +1,24 @@
+{
+    "id": "C1307",
+    "ref": "capability:preparation:establish-ability-to-find-file-by-metadata",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to find a file by its metadata within a system or network. This includes implementing mechanisms to locate files based on their metadata attributes such as creation date, modification date, file size, and other relevant metadata fields. It is essential for maintaining data integrity, facilitating efficient file management, and enhancing overall operational efficiency by providing visibility into file characteristics and enabling quick access to necessary files within the organization.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "file",
+    "friendly_name": "establish-ability-to-find-file-by-metadata",
+    "title": "Establish Ability to Find File by Metadata",
+    "unique_id": "6c0d560b-4e9c-44b5-b985-ea5f63de6cd4",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

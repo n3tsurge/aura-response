@@ -1,0 +1,28 @@
+{
+    "id": "C1127",
+    "ref": "capability:preparation:establish-ability-to-analyze-user-agent",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability involves establishing the ability to collect data that has been transferred across networks or systems. This includes implementing mechanisms to capture and store data transfers, ensuring that all transferred data can be retrieved and analyzed when necessary. It is essential for maintaining data integrity, compliance with regulations, and enhancing overall security posture by providing visibility into data movement within the organization.",
+    "documentation": {
+        "requirements":[],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "network",
+    "friendly_name": "establish-ability-to-analyze-user-agent",
+    "title": "Establish Ability to Analyze User Agent",
+    "unique_id": "c4526668-d793-466a-866f-66add07d85f0",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [
+    ],
+    "staff": [
+    ],
+    "frameworks": {
+    },
+    "references": [
+    ]
+}

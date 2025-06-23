@@ -1,0 +1,24 @@
+{
+    "id": "C1504",
+    "ref": "capability:preparation:establish-ability-list-registry-keys-accessed",
+    "author": "n3tsurge",
+    "created_on": "2025-06-16",
+    "description": "This capability establishes the ability to list registry keys accessed by the adversary. It is essential for understanding which registry keys are being manipulated or accessed during an attack, providing insight into the adversary's actions and intentions.",
+    "documentation": {
+        "requirements": [],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [],
+        "automation": []
+    },
+    "category": "configuration",
+    "friendly_name": "establish-ability-list-registry-keys-accessed",
+    "title": "Establish Ability to List Registry Keys Accessed",
+    "unique_id": "59c2fce8-aa77-447c-bbb4-b6aa94453919",
+    "phase": "P0001",
+    "phase_friendly_name": "preparation",
+    "stakeholders": [],
+    "staff": [],
+    "frameworks": {},
+    "references": []
+}

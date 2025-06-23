@@ -18,12 +18,12 @@ Preparation | Identification | Containment | Eradication | Recovery | Lessons-le
 | [Validate Analyst Toolset (C1012)](preparation/C1012.md) | [List Hosts Connected to Intranet (C2109)](identification/C2109.md) | [Block Data Transfer by Content Pattern (C3111)](containment/C3111.md) |  | [Unblock Blocked Process (C5401)](recovery/C5401.md) |  |  |
 | [Access Vulnerability Management System Logs (C1013)](preparation/C1013.md) | [List Data Transferred (C2110)](identification/C2110.md) | [Block Email Domain (C3201)](containment/C3201.md) |  | [Enable Disabled Service (C5501)](recovery/C5501.md) |  |  |
 | [Connect with Trusted Communities (C1014)](preparation/C1014.md) | [Collect Transferred Data (C2111)](identification/C2111.md) | [Block Email Sender (C3202)](containment/C3202.md) |  | [Unlock Locked User Account (C5601)](recovery/C5601.md) |  |  |
-| [Access External Flow Logs (C1101)](preparation/C1101.md) | [List Hosts Communicating with External Domain (C2113)](identification/C2113.md) | [Block Email Sender (C3203)](containment/C3203.md) |  |  |  |  |
-| [Access Internal Flow Logs (C1102)](preparation/C1102.md) | [List Registry Key Modifications (C2501)](identification/C2501.md) | [Quarantine File by Format (C3301)](containment/C3301.md) |  |  |  |  |
-| [Access Internal HTTP Logs (C1103)](preparation/C1103.md) |  | [Quarantine File by Hash (C3302)](containment/C3302.md) |  |  |  |  |
-| [Access External HTTP Logs (C1104)](preparation/C1104.md) |  | [Quarantine File by Path (C3303)](containment/C3303.md) |  |  |  |  |
-| [Access Internal DNS Logs (C1105)](preparation/C1105.md) |  | [Quarantine File by Content Pattern (C3304)](containment/C3304.md) |  |  |  |  |
-| [Access External DNS Logs (C1106)](preparation/C1106.md) |  | [Block Process by Path (C3401)](containment/C3401.md) |  |  |  |  |
+| [Access External Flow Logs (C1101)](preparation/C1101.md) | [Identify Transferred Data (C2112)](identification/C2112.md) | [Block Email Sender (C3203)](containment/C3203.md) |  |  |  |  |
+| [Access Internal Flow Logs (C1102)](preparation/C1102.md) | [List Hosts Communicating with External Domain (C2113)](identification/C2113.md) | [Quarantine File by Format (C3301)](containment/C3301.md) |  |  |  |  |
+| [Access Internal HTTP Logs (C1103)](preparation/C1103.md) | [List Hosts Communicating with External IP (C2114)](identification/C2114.md) | [Quarantine File by Hash (C3302)](containment/C3302.md) |  |  |  |  |
+| [Access External HTTP Logs (C1104)](preparation/C1104.md) | [List Hosts Communicating with External URL (C2115)](identification/C2115.md) | [Quarantine File by Path (C3303)](containment/C3303.md) |  |  |  |  |
+| [Access Internal DNS Logs (C1105)](preparation/C1105.md) | [Find Data Transferred by Content Pattern (C2116)](identification/C2116.md) | [Quarantine File by Content Pattern (C3304)](containment/C3304.md) |  |  |  |  |
+| [Access External DNS Logs (C1106)](preparation/C1106.md) | [List Registry Key Modifications (C2501)](identification/C2501.md) | [Block Process by Path (C3401)](containment/C3401.md) |  |  |  |  |
 | [Access VPN Logs (C1107)](preparation/C1107.md) |  | [Block Process by Metadata (C3402)](containment/C3402.md) |  |  |  |  |
 | [Access DHCP Logs (C1108)](preparation/C1108.md) |  | [Block Process by Hash (C3404)](containment/C3404.md) |  |  |  |  |
 | [Access Internal Packet Capture Data (C1109)](preparation/C1109.md) |  | [Block Process by Content Pattern (C3405)](containment/C3405.md) |  |  |  |  |
@@ -42,3 +42,65 @@ Preparation | Identification | Containment | Eradication | Recovery | Lessons-le
 | [Establish Ability to Block Transferred Data by Content Pattern (C1122)](preparation/C1122.md) |  |  |  |  |  |  |
 | [Establish Ability to List Data Transferred (C1123)](preparation/C1123.md) |  |  |  |  |  |  |
 | [Establish Ability to Collect Data Transferred (C1124)](preparation/C1124.md) |  |  |  |  |  |  |
+| [Establish Ability to Identify Data Transferred (C1125)](preparation/C1125.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze User Agent (C1127)](preparation/C1127.md) |  |  |  |  |  |  |
+| [Establish Ability to List Firewall Rules (C1128)](preparation/C1128.md) |  |  |  |  |  |  |
+| [Establish Ability to List Users' Email Interaction (C1201)](preparation/C1201.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze User Agent (C1202)](preparation/C1202.md) |  |  |  |  |  |  |
+| [Establish Ability to Block Email Domain (C1203)](preparation/C1203.md) |  |  |  |  |  |  |
+| [Establish Ability to Block Email Sender (C1204)](preparation/C1204.md) |  |  |  |  |  |  |
+| [Establish Ability to Delete Email Message (C1205)](preparation/C1205.md) |  |  |  |  |  |  |
+| [Establish Ability to Quarantine Email Message (C1206)](preparation/C1206.md) |  |  |  |  |  |  |
+| [Establish Ability to Collect Email Messages (C1207)](preparation/C1207.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze Email Addresses (C1208)](preparation/C1208.md) |  |  |  |  |  |  |
+| [Establish Ability to List Files Created (C1301)](preparation/C1301.md) |  |  |  |  |  |  |
+| [Establish Ability to List Files Modified (C1302)](preparation/C1302.md) |  |  |  |  |  |  |
+| [Establish Ability to List Files Deleted (C1303)](preparation/C1303.md) |  |  |  |  |  |  |
+| [Establish Ability to List Files Downloaded (C1304)](preparation/C1304.md) |  |  |  |  |  |  |
+| [Establish Ability to List Files with Modified Timestamps (C1305)](preparation/C1305.md) |  |  |  |  |  |  |
+| [Establish Ability to Find File by Path (C1306)](preparation/C1306.md) |  |  |  |  |  |  |
+| [Establish Ability to Find File by Metadata (C1307)](preparation/C1307.md) |  |  |  |  |  |  |
+| [Establish Ability to Find File by Metadata (C1308)](preparation/C1308.md) |  |  |  |  |  |  |
+| [Establish Ability to Find File by Format (C1309)](preparation/C1309.md) |  |  |  |  |  |  |
+| [Establish Ability to Find File by Content Pattern (C1310)](preparation/C1310.md) |  |  |  |  |  |  |
+| [Establish Ability to Collect File (C1311)](preparation/C1311.md) |  |  |  |  |  |  |
+| [Establish Ability to Quarantine File by Path (C1312)](preparation/C1312.md) |  |  |  |  |  |  |
+| [Establish Ability to Quarantine File by Hash (C1313)](preparation/C1313.md) |  |  |  |  |  |  |
+| [Establish Ability to Quarantine File by Format (C1314)](preparation/C1314.md) |  |  |  |  |  |  |
+| [Establish Ability to Quarantine File by Content Pattern (C1315)](preparation/C1315.md) |  |  |  |  |  |  |
+| [Establish Ability to Remove File (C1316)](preparation/C1316.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze File Hash (C1317)](preparation/C1317.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze Windows PE (C1318)](preparation/C1318.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze macOS Mach-O (C1319)](preparation/C1319.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze Unix ELF (C1320)](preparation/C1320.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze Microsoft Office File (C1321)](preparation/C1321.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze PDF File (C1322)](preparation/C1322.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze Scripts (C1323)](preparation/C1323.md) |  |  |  |  |  |  |
+| [Establish Ability to List Processes Executed (C1401)](preparation/C1401.md) |  |  |  |  |  |  |
+| [Establish Ability to Find Processes by Path (C1402)](preparation/C1402.md) |  |  |  |  |  |  |
+| [Establish Ability to Find Processes by Metadata (C1403)](preparation/C1403.md) |  |  |  |  |  |  |
+| [Establish Ability to Find Processes by Hash (C1404)](preparation/C1404.md) |  |  |  |  |  |  |
+| [Establish Ability to Find Processes by Fromat (C1405)](preparation/C1405.md) |  |  |  |  |  |  |
+| [Establish Ability to Find Processes by Content Pattern (C1406)](preparation/C1406.md) |  |  |  |  |  |  |
+| [Establish Ability to Block Processes by Path (C1407)](preparation/C1407.md) |  |  |  |  |  |  |
+| [Establish Ability to Block Processes by Metadata (C1408)](preparation/C1408.md) |  |  |  |  |  |  |
+| [Establish Ability to Block Processes by Hash (C1409)](preparation/C1409.md) |  |  |  |  |  |  |
+| [Establish Ability to Block Processes by Format (C1410)](preparation/C1410.md) |  |  |  |  |  |  |
+| [Establish Ability to Block Processes by Content Pattern (C1411)](preparation/C1411.md) |  |  |  |  |  |  |
+| [Manage Remote Computer System Policies (C1501)](preparation/C1501.md) |  |  |  |  |  |  |
+| [Establish Ability to List Registry Keys Modified (C1502)](preparation/C1502.md) |  |  |  |  |  |  |
+| [Establish Ability to List Registry Keys Deleted (C1503)](preparation/C1503.md) |  |  |  |  |  |  |
+| [Establish Ability to List Registry Keys Accessed (C1504)](preparation/C1504.md) |  |  |  |  |  |  |
+| [Establish Ability to List Registry Keys Created (C1505)](preparation/C1505.md) |  |  |  |  |  |  |
+| [Establish Ability to List Services Created (C1506)](preparation/C1506.md) |  |  |  |  |  |  |
+| [Establish Ability to List Services Modified (C1507)](preparation/C1507.md) |  |  |  |  |  |  |
+| [Establish Ability to List Services Deleted (C1508)](preparation/C1508.md) |  |  |  |  |  |  |
+| [Establish Ability to Remove Registry Key (C1509)](preparation/C1509.md) |  |  |  |  |  |  |
+| [Establish Ability to Remove Service (C1510)](preparation/C1510.md) |  |  |  |  |  |  |
+| [Establish Ability to Analyze Registry Key (C1512)](preparation/C1512.md) |  |  |  |  |  |  |
+| [Establish ability to Manage Identity Management System (C1601)](preparation/C1601.md) |  |  |  |  |  |  |
+| [Establish Ability to Lock User Account (C1602)](preparation/C1602.md) |  |  |  |  |  |  |
+| [Establish Ability to List Authenticated Users (C1603)](preparation/C1603.md) |  |  |  |  |  |  |
+| [Establish Ability to Revoke Auth Credentials (C1604)](preparation/C1604.md) |  |  |  |  |  |  |
+| [Establish Ability to Remove User Account (C1605)](preparation/C1605.md) |  |  |  |  |  |  |
+| [Establish Ability to List User Accounts (C1606)](preparation/C1606.md) |  |  |  |  |  |  |
