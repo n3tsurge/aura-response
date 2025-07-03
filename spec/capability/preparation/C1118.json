@@ -5,10 +5,65 @@
     "created_on": "2025-06-16",
     "description": "This capability involves establishing the ability to block external ports that are deemed malicious or pose a threat to the organization's network. This includes configuring firewalls, intrusion prevention systems, and other security appliances to effectively block traffic on these ports. It is essential for preventing unauthorized access and mitigating potential attacks from external sources.",
     "documentation": {
-        "enrichment": [],
+        "requirements": [
+            {
+                "id": "C1118-REQ-1",
+                "description": "Network infrastructure that supports configurable firewall rules and port blocking capabilities.",
+                "type": "infrastructure"
+            },
+            {
+                "id": "C1118-REQ-2",
+                "description": "Knowledge of internal network topology and services to ensure legitimate traffic is not disrupted.",
+                "type": "knowledge"
+            }
+        ],
+        "enrichment": [
+            {
+                "title": "Port Usage Analysis",
+                "type": "list-item",
+                "description": "Analyze network traffic patterns to understand legitimate port usage within the internal network and identify anomalous port activity."
+            },
+            {
+                "title": "Service Identification",
+                "type": "list-item",
+                "description": "Map internal ports to specific services and applications to ensure that blocking rules don't disrupt legitimate business operations."
+            }
+        ],
         "hunting": [],
-        "fields": [],
-        "automation": []
+        "fields": [
+            {
+                "title": "Port Number",
+                "type": "list-item",
+                "description": "The specific port number that can be blocked for internal communication."
+            },
+            {
+                "title": "Protocol",
+                "type": "list-item",
+                "description": "The network protocol (TCP/UDP) associated with the port."
+            },
+            {
+                "title": "Service Name",
+                "type": "list-item",
+                "description": "The name of the service or application typically associated with the port."
+            },
+            {
+                "title": "Network Segment",
+                "type": "list-item",
+                "description": "The internal network segment or VLAN where the port blocking capability is applicable."
+            }
+        ],
+        "automation": [
+            {
+                "id": "C1118-AUT-1",
+                "description": "Automated systems that can dynamically block internal ports based on threat intelligence or anomaly detection.",
+                "type": "integration"
+            },
+            {
+                "id": "C1118-AUT-2",
+                "description": "Network security orchestration platforms to automatically deploy port blocking rules across multiple network devices.",
+                "type": "integration"
+            }
+        ]
     },
     "category": "network",
     "friendly_name": "establish-ability-to-block-internal-port",
@@ -17,10 +72,25 @@
     "phase": "P0001",
     "phase_friendly_name": "preparation",
     "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "network-administrator",
+        "system-administrator"
     ],
     "staff": [
+        "network-administrator",
+        "security-analyst",
+        "system-administrator"
     ],
     "frameworks": {
+        "F0002": [
+            "A.8.22",
+            "A.8.3"
+        ],
+        "F0003": [
+            "PR.AC-4",
+            "PR.PT-3"
+        ]
     },
     "references": [
     ]
