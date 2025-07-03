@@ -25,7 +25,7 @@ This matrix shows the coverage of capabilities across different frameworks by ph
 | [Lock User Account (C3601)](containment/C3601.md) |  |  |  |
 | [Block External URL (C3105)](containment/C3105.md) |  |  |  |
 | [Patch Vulnerability (C3001)](containment/C3001.md) |  |  |  |
-| [Block Process by Path (C3401)](containment/C3401.md) |  |  |  |
+| [Block Process by Path (C3401)](containment/C3401.md) | A.8.22 |  |  |
 | [Remove User Permission (C3602)](containment/C3602.md) |  |  |  |
 | [Block Email Sender (C3203)](containment/C3203.md) |  |  |  |
 | [Quarantine File by Path (C3303)](containment/C3303.md) |  |  |  |
@@ -69,7 +69,7 @@ This matrix shows the coverage of capabilities across different frameworks by ph
 | [Remove Registry Key (C4501)](eradication/C4501.md) |  |  |  |
 | [Remove Service (C4502)](eradication/C4502.md) |  |  |  |
 | [Delete Email Message (C4201)](eradication/C4201.md) |  |  |  |
-| [Remove Rogue Network Device (C4101)](eradication/C4101.md) |  |  |  |
+| [Remove Rogue Network Device (C4101)](eradication/C4101.md) | A.8.22, A.8.3 |  | PR.AC-1, DE.CM-7 |
 | [Remove File (C4301)](eradication/C4301.md) |  |  |  |
 
 ## Operations Phase
@@ -78,7 +78,7 @@ This matrix shows the coverage of capabilities across different frameworks by ph
 | :--- | :--- | :--- | :--- |
 | [Define Key Performance Indicators (KPIs) (C7001)](operations/C7001.md) |  |  |  |
 | [Maintain a Risk Register (C7002)](operations/C7002.md) |  |  |  |
-| [Maintain Leadership Reporting and Awareness (C7004)](operations/C7004.md) |  |  |  |
+| [Maintain Leadership Reporting and Awareness (C7004)](operations/C7004.md) | A.5.1, A.5.2 |  | RS.CO-3, RS.CO-4 |
 | [Maintain a Team Knowledge Base (C7003)](operations/C7003.md) |  |  |  |
 
 ## Lessons-learned Phase
@@ -184,7 +184,7 @@ This matrix shows the coverage of capabilities across different frameworks by ph
 | [Establish Ability to Block User Internal Communication (C1120)](preparation/C1120.md) |  |  |  |
 | [Access External Packet Capture Data (C1109)](preparation/C1109.md) |  |  |  |
 | [Establish Ability to Analyze Email Addresses (C1208)](preparation/C1208.md) |  |  |  |
-| [Establish Ability to Block Internal Ports (C1118)](preparation/C1118.md) |  |  |  |
+| [Establish Ability to Block Internal Ports (C1118)](preparation/C1118.md) | A.8.22, A.8.3 |  | PR.AC-4, PR.PT-3 |
 | [Establish Ability to Block External Domains (C1113)](preparation/C1113.md) |  |  |  |
 | [Establish Ability to List Services Created (C1506)](preparation/C1506.md) |  |  |  |
 | [Access Vulnerability Management System Logs (C1013)](preparation/C1013.md) | A.5.10, A.5.12, A.5.14, A.5.23, A.5.30, A.8.8 |  | ID.RA-1, ID.RA-2, ID.RA-5, PR.IP-12, PR.MA-1, DE.CM-8, RS.IM-1 |
