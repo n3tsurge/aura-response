@@ -318,13 +318,56 @@ class Capability(BaseComponent):
                         markdown_content += "| :--- | :--- | :--- |\n"
                         for item in doc_part:
                             markdown_content += f"| {self.id}-{item.id.upper()} | {item.description} | {item.type.capitalize() if item.type else 'N/A'} |\n"
+                    elif key in ["enrichment", "hunting"]:
+                        # These sections can use either Requirement or DocumentationElement structure
+                        # Check the first item to determine which structure is used
+                        if doc_part and hasattr(doc_part[0], 'id') and not hasattr(doc_part[0], 'title'):
+                            # Requirement structure with id, description, type
+                            markdown_content += f"| {key.title()} ID | Description | Type |\n"
+                            markdown_content += "| :--- | :--- | :--- |\n"
+                            for item in doc_part:
+                                markdown_content += f"| {self.id}-{item.id.upper()} | {item.description} | {item.type.capitalize() if item.type else 'N/A'} |\n"
+                        else:
+                            # DocumentationElement structure with title, type, description
+                            for item in doc_part:
+                                if hasattr(item, 'title'):
+                                    if item.type == "list-item":
+                                        markdown_content += f"- **{item.title}**: {item.description}\n"
+                                    else:
+                                        markdown_content += f"### {item.title}\n\n{item.description}\n\n"
+                                else:
+                                    # Fallback for malformed data
+                                    markdown_content += f"- {item.description}\n"
+                    elif key == "fields":
+                        # Fields section can have either structure - check first item
+                        if doc_part and hasattr(doc_part[0], 'id') and not hasattr(doc_part[0], 'title'):
+                            # Extended Requirement structure with id, name, description, type
+                            markdown_content += "| Field ID | Name | Description | Type |\n"
+                            markdown_content += "| :--- | :--- | :--- | :--- |\n"
+                            for item in doc_part:
+                                name = getattr(item, 'name', item.id)  # Fallback to id if no name
+                                markdown_content += f"| {item.id} | {name} | {item.description} | {item.type} |\n"
+                        else:
+                            # DocumentationElement structure with title, type, description
+                            markdown_content += "| Field | Description |\n"
+                            markdown_content += "| :--- | :--- |\n"
+                            for item in doc_part:
+                                if hasattr(item, 'title'):
+                                    markdown_content += f"| {item.title} | {item.description} |\n"
+                                else:
+                                    # Fallback for malformed data
+                                    markdown_content += f"| {getattr(item, 'name', 'Unknown')} | {item.description} |\n"
                     else:
+                        # These sections use DocumentationElement structure with title
                         for item in doc_part:
-                            
-                            if item.type == "list-item":
-                                markdown_content += f"- **{item.title}**: {item.description}\n"
+                            if hasattr(item, 'title'):
+                                if item.type == "list-item":
+                                    markdown_content += f"- **{item.title}**: {item.description}\n"
+                                else:
+                                    markdown_content += f"### {item.title}\n\n{item.description}\n\n"
                             else:
-                                markdown_content += f"### {item.title}\n\n{item.description}\n\n"
+                                # Fallback for items without title (shouldn't happen with proper schema)
+                                markdown_content += f"- {item.description}\n"
                     markdown_content += "\n"
 
         if self.references or self.mitre_defend:

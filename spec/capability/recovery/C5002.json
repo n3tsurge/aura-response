@@ -8,7 +8,24 @@
         "enrichment": [],
         "hunting": [],
         "fields": [],
-        "automation": []
+        "automation": [],
+        "requirements": [
+            {
+                "id": "C5002-REQ-1",
+                "description": "Verified clean state of systems and data before restoration.",
+                "type": "validation"
+            },
+            {
+                "id": "C5002-REQ-2",
+                "description": "Recovery procedures and backup systems available for restoration.",
+                "type": "system"
+            },
+            {
+                "id": "C5002-REQ-3",
+                "description": "Monitoring capabilities to detect any signs of threat persistence during recovery.",
+                "type": "monitoring"
+            }
+        ]
     },
     "category": "general",
     "friendly_name": "restore-data-from-backup",
@@ -17,12 +34,43 @@
     "phase": "P0005",
     "phase_friendly_name": "recovery",
     "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "incident-responder"
     ],
     "staff": [
+        "security-analyst",
+        "incident-responder"
     ],
     "frameworks": {
+        "F0003": [
+            "PR.DS-1",
+            "PR.DS-3",
+            "PR.IP-4",
+            "RC.RP-1"
+        ],
+        "F0002": [
+            "A.8.2.1",
+            "A.8.3.1",
+            "A.8.3.2",
+            "A.11.1.4"
+        ]
     },
     "references": [
-
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-34/rev-1/final",
+            "name": "NIST SP 800-34 Rev. 1: Contingency Planning Guide for Federal Information Systems"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/35317/",
+            "name": "SANS: Data Backup and Recovery Best Practices"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/Data%20Backup%20Options.pdf",
+            "name": "CISA Data Backup Options and Strategies"
+        }
     ]
 }

@@ -1,0 +1,131 @@
+{
+    "id": "C2204",
+    "ref": "capability:identify:verify-phishing-email",
+    "author": "n3tsurge",
+    "created_on": "2025-07-15",
+    "description": "This capability enables security analysts to confirm whether an email message is phishing through various analysis techniques including content analysis, sender verification, link analysis, and comparison with known phishing indicators. This verification is crucial for accurate incident classification and response prioritization.",
+    "documentation": {
+        "requirements": [
+            {
+                "id": "C2204-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2204-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2204-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            }
+        ],
+        "enrichment": [
+            {
+                "id": "enr-1",
+                "description": "Cross-reference with known phishing campaigns and threat actor tactics, techniques, and procedures (TTPs).",
+                "type": "intelligence"
+            },
+            {
+                "id": "enr-2",
+                "description": "Analyze sender reputation and domain registration information for legitimacy verification.",
+                "type": "reputation"
+            }
+        ],
+        "hunting": [
+            {
+                "id": "hunt-1",
+                "description": "Search for similar phishing emails across the organization using identified characteristics.",
+                "type": "pattern"
+            }
+        ],
+        "fields": [
+            {
+                "id": "field-1",
+                "name": "phishing_confidence",
+                "description": "Confidence level that the email is phishing (high, medium, low)",
+                "type": "string"
+            },
+            {
+                "id": "field-2",
+                "name": "phishing_indicators",
+                "description": "List of indicators that suggest phishing behavior",
+                "type": "array"
+            },
+            {
+                "id": "field-3",
+                "name": "verification_method",
+                "description": "Method used to verify phishing status (automated, manual, hybrid)",
+                "type": "string"
+            },
+            {
+                "id": "field-4",
+                "name": "phishing_type",
+                "description": "Type of phishing detected (credential harvesting, malware delivery, business email compromise)",
+                "type": "string"
+            }
+        ],
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automated phishing detection engines that analyze email content, links, and attachments.",
+                "type": "engine"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integration with threat intelligence platforms for real-time phishing indicator matching.",
+                "type": "integration"
+            }
+        ]
+    },
+    "category": "email",
+    "friendly_name": "verify-phishing-email",
+    "title": "Verify Phishing Email",
+    "unique_id": "86a160fd-a096-43f0-80f3-1b97a9fece6b",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst"
+    ],
+    "staff": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0003": [
+            "ID.RA-2",
+            "DE.AE-2",
+            "DE.CM-1"
+        ],
+        "F0002": [
+            "A.12.2.1",
+            "A.12.6.1",
+            "A.16.1.5"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final",
+            "name": "NIST SP 800-61 Rev. 2: Computer Security Incident Handling Guide"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36982/",
+            "name": "SANS: Phishing Detection and Analysis Techniques"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/techniques/T1566/",
+            "name": "MITRE ATT&CK: Phishing Analysis and Verification Methods"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_MS-ISAC_Ransomware%20Guide_S508C.pdf",
+            "name": "CISA Phishing Investigation and Verification Guide"
+        }
+    ]
+}

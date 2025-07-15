@@ -5,7 +5,18 @@
     "created_on": "2025-06-16",
     "description": "This capability involves establishing the ability to collect email messages. This is crucial for maintaining email hygiene, ensuring that all relevant communications can be retrieved and analyzed when necessary. The capability includes implementing mechanisms to capture and store email messages, ensuring that these messages can be accessed for compliance, security investigations, or operational needs. It also involves maintaining an audit trail of collected messages to enhance the organization's security posture.",
     "documentation": {
-        "requirements":[],
+        "requirements": [
+            {
+                "id": "C1207-REQ-1",
+                "description": "Staff must be trained and qualified to perform this capability effectively.",
+                "type": "staffing"
+            },
+            {
+                "id": "C1207-REQ-2",
+                "description": "Documented procedures and playbooks must be available for executing this capability.",
+                "type": "documentation"
+            }
+        ],
         "enrichment": [],
         "hunting": [],
         "fields": [],
@@ -18,11 +29,47 @@
     "phase": "P0001",
     "phase_friendly_name": "preparation",
     "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "scribe"
     ],
     "staff": [
+        "security-analyst"
     ],
     "frameworks": {
+        "F0003": [
+            "DE.CM-1",
+            "DE.CM-4",
+            "DE.AE-2",
+            "ID.RA-5"
+        ],
+        "F0002": [
+            "A.12.4.1",
+            "A.12.2.1",
+            "A.16.1.1",
+            "A.12.6.1"
+        ]
     },
     "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-137/final",
+            "name": "NIST SP 800-137: Information Security Continuous Monitoring (ISCM)"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36022/",
+            "name": "SANS: Continuous Security Monitoring Implementation"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/tactics/TA0007/",
+            "name": "MITRE ATT&CK: Discovery Tactics and Detection Strategies"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Insights_Implementing_a_Zero_Trust_Architecture.pdf",
+            "name": "CISA Zero Trust Architecture - Monitoring and Analytics"
+        }
     ]
 }

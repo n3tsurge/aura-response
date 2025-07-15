@@ -1,0 +1,131 @@
+{
+    "id": "C2203",
+    "ref": "capability:identify:list-email-recipients",
+    "author": "n3tsurge",
+    "created_on": "2025-07-15",
+    "description": "This capability enables security analysts to enumerate all recipients of specific email messages, providing visibility into the scope and distribution of potentially malicious emails. This is essential for understanding the blast radius of phishing campaigns and identifying all potentially affected users.",
+    "documentation": {
+        "requirements": [
+            {
+                "id": "C2203-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2203-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2203-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            }
+        ],
+        "enrichment": [
+            {
+                "id": "enr-1",
+                "description": "Cross-reference recipient lists with organizational directory to identify high-value targets.",
+                "type": "organizational"
+            },
+            {
+                "id": "enr-2",
+                "description": "Correlate recipient information with user activity logs for impact assessment.",
+                "type": "correlation"
+            }
+        ],
+        "hunting": [
+            {
+                "id": "hunt-1",
+                "description": "Identify patterns in recipient targeting across multiple suspicious email campaigns.",
+                "type": "pattern"
+            }
+        ],
+        "fields": [
+            {
+                "id": "field-1",
+                "name": "recipient_email",
+                "description": "Email address of each recipient",
+                "type": "string"
+            },
+            {
+                "id": "field-2",
+                "name": "recipient_type",
+                "description": "Type of recipient (TO, CC, BCC)",
+                "type": "string"
+            },
+            {
+                "id": "field-3",
+                "name": "delivery_status",
+                "description": "Email delivery status for each recipient",
+                "type": "string"
+            },
+            {
+                "id": "field-4",
+                "name": "delivery_timestamp",
+                "description": "Date and time when email was delivered to recipient",
+                "type": "datetime"
+            }
+        ],
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automated queries to extract recipient lists from email security platforms.",
+                "type": "query"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integration with identity management systems to enrich recipient data with organizational context.",
+                "type": "integration"
+            }
+        ]
+    },
+    "category": "email",
+    "friendly_name": "list-email-recipients",
+    "title": "List Email Recipients",
+    "unique_id": "abe8833d-be9d-4982-815a-accf6258ad03",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst"
+    ],
+    "staff": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0003": [
+            "ID.AM-5",
+            "ID.RA-1",
+            "DE.CM-1"
+        ],
+        "F0002": [
+            "A.12.2.1",
+            "A.12.6.1",
+            "A.16.1.7"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final",
+            "name": "NIST SP 800-61 Rev. 2: Computer Security Incident Handling Guide"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36982/",
+            "name": "SANS: Email Security and Phishing Investigation Techniques"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/techniques/T1566/",
+            "name": "MITRE ATT&CK: Phishing - Email Analysis and Detection"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/Federal_Government_Cybersecurity_Incident_and_Vulnerability_Response_Playbooks_508C.pdf",
+            "name": "CISA Federal Incident Response Playbook - Email Investigation"
+        }
+    ]
+}

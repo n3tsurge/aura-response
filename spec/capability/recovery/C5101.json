@@ -8,7 +8,29 @@
         "enrichment": [],
         "hunting": [],
         "fields": [],
-        "automation": []
+        "automation": [],
+        "requirements": [
+            {
+                "id": "C5101-REQ-1",
+                "description": "Verified clean state of systems and data before restoration.",
+                "type": "validation"
+            },
+            {
+                "id": "C5101-REQ-2",
+                "description": "Recovery procedures and backup systems available for restoration.",
+                "type": "system"
+            },
+            {
+                "id": "C5101-REQ-3",
+                "description": "Monitoring capabilities to detect any signs of threat persistence during recovery.",
+                "type": "monitoring"
+            },
+            {
+                "id": "C5101-REQ-4",
+                "description": "Network monitoring tools and access to network infrastructure for analysis and control.",
+                "type": "system"
+            }
+        ]
     },
     "category": "network",
     "friendly_name": "unblock-blocked-ip",
@@ -17,12 +39,43 @@
     "phase": "P0005",
     "phase_friendly_name": "recovery",
     "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "incident-responder"
     ],
     "staff": [
+        "security-analyst",
+        "incident-responder"
     ],
     "frameworks": {
+        "F0003": [
+            "PR.AC-4",
+            "PR.PT-4",
+            "DE.CM-1",
+            "RS.IM-1"
+        ],
+        "F0002": [
+            "A.13.1.1",
+            "A.13.1.2",
+            "A.16.1.5",
+            "A.12.4.1"
+        ]
     },
     "references": [
-
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/37532/",
+            "name": "IP Address Blocking and Threat Intelligence Integration"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-131a",
+            "name": "CISA Advisory: DarkSide Ransomware - IP Blocking Strategies"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/techniques/T1090/",
+            "name": "MITRE ATT&CK: Proxy - Connection Proxy Detection and Mitigation"
+        }
     ]
 }

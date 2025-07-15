@@ -8,7 +8,29 @@
         "enrichment": [],
         "hunting": [],
         "fields": [],
-        "automation": []
+        "automation": [],
+        "requirements": [
+            {
+                "id": "C2115-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2115-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2115-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            },
+            {
+                "id": "C2115-REQ-4",
+                "description": "Network monitoring tools and access to network infrastructure for analysis and control.",
+                "type": "system"
+            }
+        ]
     },
     "category": "network",
     "friendly_name": "list-hosts-communicating-with-external-url",
@@ -27,5 +49,33 @@
         "security-analyst"
     ],
     "frameworks": {
-    }
+        "F0003": [
+            "DE.AE-1",
+            "RS.IM-1",
+            "PR.IP-1"
+        ],
+        "F0002": [
+            "A.16.1.1",
+            "A.5.10",
+            "A.5.12",
+            "A.12.4.1"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final",
+            "name": "NIST SP 800-61 Rev. 2: Computer Security Incident Handling Guide"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/33901/",
+            "name": "SANS: Incident Response Methodology"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/",
+            "name": "MITRE ATT&CK Framework"
+        }
+    ]
 }

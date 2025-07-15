@@ -7,8 +7,76 @@
     "documentation": {
         "enrichment": [],
         "hunting": [],
-        "fields": [],
-        "automation": []
+        "fields": [
+            {
+                "title": "File Content",
+                "type": "list-item",
+                "description": "Raw content or payload of the transferred data"
+            },
+            {
+                "title": "File Path",
+                "type": "list-item",
+                "description": "Full path where the transferred data was stored"
+            },
+            {
+                "title": "File Metadata",
+                "type": "list-item",
+                "description": "Metadata associated with the transferred file"
+            },
+            {
+                "title": "Collection Timestamp",
+                "type": "list-item",
+                "description": "Date and time when the data was collected"
+            },
+            {
+                "title": "Data Integrity Hash",
+                "type": "list-item",
+                "description": "Hash to verify data integrity during collection"
+            },
+            {
+                "title": "Collection Method",
+                "type": "list-item",
+                "description": "Method used to collect the transferred data"
+            },
+            {
+                "title": "Evidence Chain ID",
+                "type": "list-item",
+                "description": "Chain of custody identifier for forensic purposes"
+            },
+            {
+                "title": "Compression Type",
+                "type": "list-item",
+                "description": "Type of compression applied to the collected data"
+            },
+            {
+                "title": "Encryption Status",
+                "type": "list-item",
+                "description": "Encryption status of the transferred data"
+            }
+        ],
+        "automation": [],
+        "requirements": [
+            {
+                "id": "C2111-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2111-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2111-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            },
+            {
+                "id": "C2111-REQ-4",
+                "description": "Network monitoring tools and access to network infrastructure for analysis and control.",
+                "type": "system"
+            }
+        ]
     },
     "category": "network",
     "friendly_name": "collect-transfered-data",
@@ -27,5 +95,39 @@
         "security-analyst"
     ],
     "frameworks": {
-    }
+        "F0003": [
+            "DE.CM-1",
+            "DE.AE-3",
+            "PR.PT-1",
+            "RS.AN-1"
+        ],
+        "F0002": [
+            "A.12.4.1",
+            "A.12.2.1",
+            "A.16.1.1",
+            "A.12.6.1"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-137/final",
+            "name": "NIST SP 800-137: Information Security Continuous Monitoring (ISCM)"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36022/",
+            "name": "SANS: Continuous Security Monitoring Implementation"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/tactics/TA0007/",
+            "name": "MITRE ATT&CK: Discovery Tactics and Detection Strategies"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Insights_Implementing_a_Zero_Trust_Architecture.pdf",
+            "name": "CISA Zero Trust Architecture - Monitoring and Analytics"
+        }
+    ]
 }

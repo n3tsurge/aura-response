@@ -1,27 +1,145 @@
 {
-    "id": "C3404",
-    "ref": "capability:contain:block-process-by-hash",
+    "id": "C3403",
+    "ref": "capability:contain:block-process-by-format",
     "author": "n3tsurge",
-    "created_on": "2025-06-16",
-    "description": "This capability involves blocking processes from executing based on their cryptographic hash values. This is a critical containment measure to prevent the execution of potentially malicious software that may have been identified during an incident. By blocking processes based on their hash, organizations can stop the spread of malware and protect their systems from further compromise. This can be implemented through endpoint security solutions, application control policies, or other security measures that monitor and restrict process execution.",
+    "created_on": "2024-12-20",
+    "description": "This capability involves blocking processes from executing based on their file format. This is a critical containment measure to prevent the execution of potentially malicious software that may have been identified during an incident. By blocking processes based on their format (e.g., executable files, scripts, dynamic libraries), organizations can stop the spread of malware and protect their systems from further compromise. This can be implemented through endpoint security solutions, application control policies, or other security measures that monitor and restrict process execution.",
     "documentation": {
-        "enrichment": [],
-        "hunting": [],
-        "fields": [],
-        "automation": []
+        "requirements": [
+            {
+                "id": "C3403-REQ-1",
+                "description": "Access to endpoint security solutions or application control systems that can implement process blocking rules based on file format.",
+                "type": "system"
+            },
+            {
+                "id": "C3403-REQ-2",
+                "description": "Knowledge of the specific file formats that need to be blocked, typically obtained from threat intelligence or incident analysis.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C3403-REQ-3",
+                "description": "Ability to identify and classify file formats accurately to avoid blocking legitimate processes.",
+                "type": "procedure"
+            },
+            {
+                "id": "C3403-REQ-4",
+                "description": "Monitoring capabilities to track the effectiveness of format-based blocking and identify potential bypass attempts.",
+                "type": "system"
+            }
+        ],
+        "enrichment": [
+            {
+                "id": "C3403-ENR-1",
+                "description": "File Format Analysis - Enhance format identification with detailed analysis of file headers, magic bytes, and internal structure to improve detection accuracy.",
+                "type": "analysis"
+            },
+            {
+                "id": "C3403-ENR-2",
+                "description": "Threat Intelligence Correlation - Correlate file formats with known malicious indicators from threat intelligence feeds to identify potentially harmful file types.",
+                "type": "intelligence"
+            }
+        ],
+        "hunting": [
+            {
+                "id": "C3403-HUN-1",
+                "description": "Format Masquerading Detection - Hunt for processes that may be masquerading as legitimate file formats by examining file headers and actual content.",
+                "type": "detection"
+            },
+            {
+                "id": "C3403-HUN-2",
+                "description": "Unusual Format Execution - Identify processes executing from unusual file formats or file types that are not typically executable on the system.",
+                "type": "behavioral"
+            }
+        ],
+        "fields": [
+            {
+                "id": "C3403-FLD-1",
+                "description": "File Format - The specific file format or type of the process being blocked (e.g., PE, ELF, script types).",
+                "type": "string"
+            },
+            {
+                "id": "C3403-FLD-2",
+                "description": "Process Path - The full file system path to the executable file being blocked.",
+                "type": "string"
+            },
+            {
+                "id": "C3403-FLD-3",
+                "description": "User Context - The user account under which the process attempted to execute.",
+                "type": "string"
+            },
+            {
+                "id": "C3403-FLD-4",
+                "description": "System Hostname - The hostname or identifier of the system where the process was blocked.",
+                "type": "string"
+            },
+            {
+                "id": "C3403-FLD-5",
+                "description": "Timestamp - The date and time when the process execution was blocked.",
+                "type": "datetime"
+            }
+        ],
+        "automation": [
+            {
+                "id": "C3403-AUT-1",
+                "description": "Automated rules to block processes based on predefined format patterns or indicators of compromise (IOCs).",
+                "type": "script"
+            },
+            {
+                "id": "C3403-AUT-2",
+                "description": "Integration with endpoint detection and response (EDR) solutions to automatically block processes based on format analysis and threat detection.",
+                "type": "integration"
+            }
+        ]
     },
     "category": "process",
-    "friendly_name": "block-process-by-hash",
-    "title": "Block Process by Hash",
-    "unique_id": "6fe1f074-6675-4910-ac39-03c6c013fdbc",
+    "friendly_name": "block-process-by-format",
+    "title": "Block Process by Format",
+    "unique_id": "171da54d-d885-4df9-b7fa-9286ba93c416",
     "phase": "P0003",
     "phase_friendly_name": "containment",
     "stakeholders": [
+        "incident-commander",
+        "security-analyst"
     ],
     "staff": [
+        "security-analyst",
+        "incident-responder"
     ],
     "frameworks": {
+        "F0003": [
+            "PR.AC-4",
+            "PR.PT-3",
+            "DE.CM-1",
+            "RS.IM-1"
+        ],
+        "F0002": [
+            "A.8.22",
+            "A.8.3",
+            "A.5.23",
+            "A.8.16"
+        ]
     },
     "references": [
-    ]
+        {
+            "type": "website",
+            "url": "https://d3fend.mitre.org/technique/d3f:ProcessTermination/",
+            "name": "MITRE D3FEND: Process Termination"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/techniques/T1204/",
+            "name": "MITRE ATT&CK: User Execution"
+        },
+        {
+            "type": "website",
+            "url": "https://www.nist.gov/cyberframework",
+            "name": "NIST Cybersecurity Framework"
+        },
+        {
+            "type": "website", 
+            "url": "https://www.iso.org/standard/82875.html",
+            "name": "ISO/IEC 27001:2022 Information Security Management"
+        }
+    ],
+    "mitre_defend": "d3f:ProcessTermination"
 }

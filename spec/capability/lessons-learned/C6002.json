@@ -8,7 +8,24 @@
         "enrichment": [],
         "hunting": [],
         "fields": [],
-        "automation": []
+        "automation": [],
+        "requirements": [
+            {
+                "id": "C6002-REQ-1",
+                "description": "Complete incident documentation and timeline for analysis.",
+                "type": "documentation"
+            },
+            {
+                "id": "C6002-REQ-2",
+                "description": "Participation from all relevant stakeholders and team members.",
+                "type": "staffing"
+            },
+            {
+                "id": "C6002-REQ-3",
+                "description": "Framework for capturing, documenting, and implementing lessons learned.",
+                "type": "process"
+            }
+        ]
     },
     "category": "general",
     "friendly_name": "conduct-lessons-learned-exercise",
@@ -19,14 +36,40 @@
     "stakeholders": [
         "incident-commander",
         "security-analyst",
-        "incident-responder"
+        "scribe"
     ],
     "staff": [
-        "scribe",
-        "incident-commander"
+        "security-analyst",
+        "scribe"
     ],
     "frameworks": {
+        "F0003": [
+            "DE.AE-1",
+            "RS.IM-1",
+            "PR.IP-1"
+        ],
+        "F0002": [
+            "A.16.1.1",
+            "A.5.10",
+            "A.5.12",
+            "A.12.4.1"
+        ]
     },
     "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final",
+            "name": "NIST SP 800-61 Rev. 2: Post-Incident Activity and Lessons Learned"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/34015/",
+            "name": "SANS: Incident Response Lessons Learned and Continuous Improvement"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_MS-ISAC_Incident%20Response%20After%20Action%20Report.pdf",
+            "name": "CISA Incident Response After Action Report Template"
+        }
     ]
 }

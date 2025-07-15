@@ -7,14 +7,19 @@
     "documentation": {
         "requirements": [
             {
-                "id": "req-1",
-                "description": "Access to the user management system or directory service where user permissions can be modified.",
-                "type": "access"
+                "id": "C3602-REQ-1",
+                "description": "Authority and access permissions to implement containment measures.",
+                "type": "authorization"
             },
             {
-                "id": "req-2",
-                "description": "Knowledge of the specific permissions that need to be removed from the user account.",
-                "type": "knowledge"
+                "id": "C3602-REQ-2",
+                "description": "Technical capability and tools to execute containment actions effectively.",
+                "type": "system"
+            },
+            {
+                "id": "C3602-REQ-3",
+                "description": "Procedures to validate containment effectiveness and monitor for bypass attempts.",
+                "type": "validation"
             }
         ],
         "enrichment": [],
@@ -52,8 +57,35 @@
         "incident-responder"
     ],
     "frameworks": {
+        "F0003": [
+            "PR.AC-1",
+            "PR.AC-6",
+            "PR.AC-7",
+            "ID.AM-3"
+        ],
+        "F0002": [
+            "A.9.1.1",
+            "A.9.1.2",
+            "A.9.2.1",
+            "A.9.4.1"
+        ]
     },
     "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-63/3/final",
+            "name": "NIST SP 800-63-3: Digital Identity Guidelines"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36287/",
+            "name": "SANS: Identity and Access Management Best Practices"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Insights_Implementing_a_Zero_Trust_Architecture.pdf",
+            "name": "CISA Zero Trust Architecture - Identity and Access Management"
+        }
     ],
     "mitre_defend": "d3f:UserAccountPermissions"
 }

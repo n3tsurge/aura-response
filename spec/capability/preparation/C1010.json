@@ -8,7 +8,19 @@
         "enrichment": [],
         "hunting": [],
         "fields": [],
-        "automation": []
+        "automation": [],
+        "requirements": [
+            {
+                "id": "C1010-REQ-1",
+                "description": "Staff must be trained and qualified to perform this capability effectively.",
+                "type": "staffing"
+            },
+            {
+                "id": "C1010-REQ-2",
+                "description": "Documented procedures and playbooks must be available for executing this capability.",
+                "type": "documentation"
+            }
+        ]
     },
     "category": "general",
     "friendly_name": "access-control-matrix",
@@ -17,11 +29,42 @@
     "phase": "P0001",
     "phase_friendly_name": "preparation",
     "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "scribe"
     ],
     "staff": [
+        "security-analyst"
     ],
     "frameworks": {
+        "F0003": [
+            "PR.AC-1",
+            "PR.AC-6",
+            "PR.AC-7",
+            "ID.AM-3"
+        ],
+        "F0002": [
+            "A.9.1.1",
+            "A.9.1.2",
+            "A.9.2.1",
+            "A.9.4.1"
+        ]
     },
     "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-63/3/final",
+            "name": "NIST SP 800-63-3: Digital Identity Guidelines"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36287/",
+            "name": "SANS: Identity and Access Management Best Practices"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Insights_Implementing_a_Zero_Trust_Architecture.pdf",
+            "name": "CISA Zero Trust Architecture - Identity and Access Management"
+        }
     ]
 }

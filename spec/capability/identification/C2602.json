@@ -1,0 +1,149 @@
+{
+    "id": "C2602",
+    "ref": "capability:identify:list-user-accounts",
+    "author": "n3tsurge",
+    "created_on": "2025-07-15",
+    "description": "This capability allows incident responders to enumerate and list all user accounts within the environment, including local accounts, domain accounts, service accounts, and disabled accounts. This enumeration is essential for understanding the scope of potential compromise and identifying unauthorized or suspicious accounts.",
+    "documentation": {
+        "requirements": [
+            {
+                "id": "C2602-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2602-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2602-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            }
+        ],
+        "enrichment": [
+            {
+                "id": "enr-1",
+                "description": "Cross-reference account lists with HR systems to identify orphaned or unauthorized accounts.",
+                "type": "validation"
+            },
+            {
+                "id": "enr-2",
+                "description": "Correlate account information with access patterns and privilege assignments.",
+                "type": "correlation"
+            }
+        ],
+        "hunting": [
+            {
+                "id": "hunt-1",
+                "description": "Hunt for accounts with suspicious naming patterns or unusual privilege assignments.",
+                "type": "anomaly"
+            }
+        ],
+        "fields": [
+            {
+                "id": "field-1",
+                "name": "username",
+                "description": "Username of the account",
+                "type": "string"
+            },
+            {
+                "id": "field-2",
+                "name": "account_type",
+                "description": "Type of account (user, service, computer, etc.)",
+                "type": "string"
+            },
+            {
+                "id": "field-3",
+                "name": "account_status",
+                "description": "Current status of the account (enabled, disabled, locked)",
+                "type": "string"
+            },
+            {
+                "id": "field-4",
+                "name": "creation_date",
+                "description": "Date when the account was created",
+                "type": "datetime"
+            },
+            {
+                "id": "field-5",
+                "name": "last_logon",
+                "description": "Date and time of last successful logon",
+                "type": "datetime"
+            },
+            {
+                "id": "field-6",
+                "name": "group_memberships",
+                "description": "List of groups the account belongs to",
+                "type": "array"
+            },
+            {
+                "id": "field-7",
+                "name": "privilege_level",
+                "description": "Privilege level of the account (standard, elevated, administrative)",
+                "type": "string"
+            }
+        ],
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automated account enumeration scripts and tools for comprehensive account discovery.",
+                "type": "enumeration"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integration with identity governance systems for continuous account monitoring.",
+                "type": "integration"
+            }
+        ]
+    },
+    "category": "identity",
+    "friendly_name": "list-user-accounts",
+    "title": "List User Accounts",
+    "unique_id": "755c449e-e09f-43f5-9881-2d5003cf473f",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst"
+    ],
+    "staff": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0003": [
+            "ID.AM-5",
+            "PR.AC-1",
+            "DE.CM-3"
+        ],
+        "F0002": [
+            "A.9.2.1",
+            "A.9.2.2",
+            "A.9.2.5"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-63/3/final",
+            "name": "NIST SP 800-63-3: Digital Identity Guidelines"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36287/",
+            "name": "SANS: Identity and Access Management Account Auditing"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/techniques/T1087/",
+            "name": "MITRE ATT&CK: Account Discovery Methods"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Insights_Implementing_a_Zero_Trust_Architecture.pdf",
+            "name": "CISA Zero Trust Architecture - Identity Management"
+        }
+    ]
+}

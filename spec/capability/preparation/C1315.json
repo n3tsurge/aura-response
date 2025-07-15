@@ -5,7 +5,23 @@
     "created_on": "2025-06-16",
     "description": "This capability involves establishing the ability to quarantine a file by its content pattern within a system or network. This includes implementing mechanisms to isolate files based on specific patterns found within their content, ensuring that potentially harmful files can be effectively contained and managed. It is essential for maintaining data integrity, preventing the spread of malware, and enhancing overall security posture by providing a controlled environment for suspicious files.",
     "documentation": {
-        "requirements": [],
+        "requirements": [
+            {
+                "id": "C1315-REQ-1",
+                "description": "Staff must be trained and qualified to perform this capability effectively.",
+                "type": "staffing"
+            },
+            {
+                "id": "C1315-REQ-2",
+                "description": "Documented procedures and playbooks must be available for executing this capability.",
+                "type": "documentation"
+            },
+            {
+                "id": "C1315-REQ-3",
+                "description": "File system access and forensic tools for file analysis and manipulation.",
+                "type": "system"
+            }
+        ],
         "enrichment": [],
         "hunting": [],
         "fields": [],
@@ -17,8 +33,43 @@
     "unique_id": "a2fac99d-4932-465e-a1dd-82e6487d67b6",
     "phase": "P0001",
     "phase_friendly_name": "preparation",
-    "stakeholders": [],
-    "staff": [],
-    "frameworks": {},
-    "references": []
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "scribe"
+    ],
+    "staff": [
+        "security-analyst"
+    ],
+    "frameworks": {
+        "F0003": [
+            "PR.AC-3",
+            "PR.PT-4",
+            "RS.IM-1",
+            "RS.IM-2"
+        ],
+        "F0002": [
+            "A.13.1.3",
+            "A.16.1.5",
+            "A.13.2.1",
+            "A.12.4.1"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36607/",
+            "name": "SANS: Network Isolation and Quarantine Procedures"
+        },
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final",
+            "name": "NIST SP 800-61 Rev. 2: Computer Security Incident Handling Guide"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf",
+            "name": "CISA: Defense in Depth - Network Segmentation and Isolation"
+        }
+    ]
 }

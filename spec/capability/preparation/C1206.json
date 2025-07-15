@@ -5,7 +5,18 @@
     "created_on": "2025-06-16",
     "description": "This capability involves establishing the ability to quarantine email messages. This is crucial for isolating potentially harmful or suspicious emails to prevent them from reaching end users. The capability includes implementing mechanisms to identify, isolate, and manage emails that are deemed risky, ensuring that these quarantined messages can be reviewed and acted upon by security teams. This helps in mitigating threats such as phishing attacks, malware distribution, and other email-based risks while maintaining an audit trail for compliance and investigation purposes.",
     "documentation": {
-        "requirements":[],
+        "requirements": [
+            {
+                "id": "C1206-REQ-1",
+                "description": "Staff must be trained and qualified to perform this capability effectively.",
+                "type": "staffing"
+            },
+            {
+                "id": "C1206-REQ-2",
+                "description": "Documented procedures and playbooks must be available for executing this capability.",
+                "type": "documentation"
+            }
+        ],
         "enrichment": [],
         "hunting": [],
         "fields": [],
@@ -18,11 +29,42 @@
     "phase": "P0001",
     "phase_friendly_name": "preparation",
     "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "scribe"
     ],
     "staff": [
+        "security-analyst"
     ],
     "frameworks": {
+        "F0003": [
+            "PR.AC-3",
+            "PR.PT-4",
+            "RS.IM-1",
+            "RS.IM-2"
+        ],
+        "F0002": [
+            "A.13.1.3",
+            "A.16.1.5",
+            "A.13.2.1",
+            "A.12.4.1"
+        ]
     },
     "references": [
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36607/",
+            "name": "SANS: Network Isolation and Quarantine Procedures"
+        },
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final",
+            "name": "NIST SP 800-61 Rev. 2: Computer Security Incident Handling Guide"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf",
+            "name": "CISA: Defense in Depth - Network Segmentation and Isolation"
+        }
     ]
 }

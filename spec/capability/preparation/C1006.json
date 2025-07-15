@@ -7,49 +7,17 @@
     "documentation": {
         "requirements": [
             {
-                "id": "req-1",
-                "description": "Enough storage capacity to retain logs for a specified period, typically 12 months or more, depending on regulatory requirements.",
-                "type": "functional"
+                "id": "C1006-REQ-1",
+                "description": "Staff must be trained and qualified to perform this capability effectively.",
+                "type": "staffing"
             },
             {
-                "id": "req-2",
-                "description": "Secure access controls to ensure that only authorized personnel can view or manage the logs.",
-                "type": "security"
-            },
-            {
-                "id": "req-3",
-                "description": "Mechanisms for log integrity verification, such as checksums or digital signatures, or a system that provides immutability of logs to prevent tampering.",
-                "type": "security"
-            },
-            {
-                "id": "req-4",
-                "description": "Easy retrieval and analysis of logs, including search capabilities and filtering options.",
-                "type": "functional"
-            },
-            {
-                "id": "req-5",
-                "description": "Analytic representation of logs via dashboards or reports to facilitate monitoring and incident response.",
-                "type": "functional"
-            },
-            {
-                "id": "req-6",
-                "description": "Compliance with relevant regulations and standards, such as GDPR, HIPAA, or PCI-DSS, regarding log management and retention.",
-                "type": "compliance"
-            },
-            {
-                "id": "req-7",
-                "description": "A common schema or format for logs to ensure consistency and ease of analysis across different source systems.",
-                "type": "functional"
-            },
-            {
-                "id": "req-8",
-                "description": "High availability and redundancy to ensure that logs are not lost in case of system failures.",
-                "type": "operational"
+                "id": "C1006-REQ-2",
+                "description": "Documented procedures and playbooks must be available for executing this capability.",
+                "type": "documentation"
             }
         ],
-        "enrichment": [
-            
-        ],
+        "enrichment": [],
         "hunting": [],
         "fields": [],
         "automation": []
@@ -61,11 +29,47 @@
     "phase": "P0001",
     "phase_friendly_name": "preparation",
     "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "scribe"
     ],
     "staff": [
+        "security-analyst"
     ],
     "frameworks": {
+        "F0003": [
+            "DE.CM-1",
+            "DE.AE-3",
+            "PR.PT-1",
+            "RS.AN-1"
+        ],
+        "F0002": [
+            "A.12.4.1",
+            "A.12.2.1",
+            "A.16.1.1",
+            "A.12.6.1"
+        ]
     },
     "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-137/final",
+            "name": "NIST SP 800-137: Information Security Continuous Monitoring (ISCM)"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36022/",
+            "name": "SANS: Continuous Security Monitoring Implementation"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/tactics/TA0007/",
+            "name": "MITRE ATT&CK: Discovery Tactics and Detection Strategies"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Insights_Implementing_a_Zero_Trust_Architecture.pdf",
+            "name": "CISA Zero Trust Architecture - Monitoring and Analytics"
+        }
     ]
 }

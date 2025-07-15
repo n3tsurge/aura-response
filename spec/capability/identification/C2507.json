@@ -1,0 +1,148 @@
+{
+    "id": "C2507",
+    "ref": "capability:identify:list-services-deleted",
+    "author": "n3tsurge",
+    "created_on": "2025-07-15",
+    "description": "This capability allows incident responders to identify Windows services that have been deleted or uninstalled during a specified timeframe. Service deletion can indicate cleanup activities by malware, evasion techniques, or attempts to remove evidence of persistence mechanisms after an attack.",
+    "documentation": {
+        "requirements": [
+            {
+                "id": "C2507-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2507-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2507-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            },
+            {
+                "id": "C2507-REQ-4",
+                "description": "Administrative access and configuration management tools for system modifications.",
+                "type": "system"
+            }
+        ],
+        "enrichment": [
+            {
+                "id": "enr-1",
+                "description": "Cross-reference deleted services with known legitimate services to identify potential security tool removal.",
+                "type": "validation"
+            },
+            {
+                "id": "enr-2",
+                "description": "Correlate service deletion events with other system cleanup or evasion activities.",
+                "type": "correlation"
+            }
+        ],
+        "hunting": [
+            {
+                "id": "hunt-1",
+                "description": "Hunt for patterns of service deletions that may indicate systematic cleanup by attackers.",
+                "type": "pattern"
+            }
+        ],
+        "fields": [
+            {
+                "id": "field-1",
+                "name": "service_name",
+                "description": "Name of the deleted service",
+                "type": "string"
+            },
+            {
+                "id": "field-2",
+                "name": "service_display_name",
+                "description": "Display name of the deleted service",
+                "type": "string"
+            },
+            {
+                "id": "field-3",
+                "name": "deletion_timestamp",
+                "description": "Date and time when the service was deleted",
+                "type": "datetime"
+            },
+            {
+                "id": "field-4",
+                "name": "executable_path",
+                "description": "Path to the service executable before deletion",
+                "type": "string"
+            },
+            {
+                "id": "field-5",
+                "name": "deletion_method",
+                "description": "Method used to delete the service (sc delete, registry manipulation, etc.)",
+                "type": "string"
+            },
+            {
+                "id": "field-6",
+                "name": "user_context",
+                "description": "User account that deleted the service",
+                "type": "string"
+            }
+        ],
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automated monitoring and alerting for service deletion events, especially for critical services.",
+                "type": "monitoring"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integration with backup and restore systems to enable service recovery if needed.",
+                "type": "integration"
+            }
+        ]
+    },
+    "category": "configuration",
+    "friendly_name": "list-services-deleted",
+    "title": "List Services Deleted",
+    "unique_id": "6c454bd4-fdb0-4681-9afc-459e318cf7cc",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst"
+    ],
+    "staff": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0003": [
+            "DE.CM-1",
+            "DE.CM-7",
+            "DE.AE-2"
+        ],
+        "F0002": [
+            "A.12.4.1",
+            "A.12.6.1",
+            "A.16.1.4"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-92/final",
+            "name": "NIST SP 800-92: Guide to Computer Security Log Management"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/32949/",
+            "name": "SANS: Windows Service Monitoring and Deletion Detection"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/techniques/T1562/",
+            "name": "MITRE ATT&CK: Impair Defenses - Service Deletion"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Hunt_and_Incident_Response_Program.pdf",
+            "name": "CISA Hunt and Incident Response Program - Evidence Preservation"
+        }
+    ]
+}
