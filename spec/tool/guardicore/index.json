@@ -3,6 +3,16 @@
     "ref": "tool:guardicore",
     "author": "n3tsurge",
     "capability": [
+        "C1103",
+        "C1109",
+        "C1113",
+        "C1117",
+        "C1119",
+        "C1120",
+        "C1127",
+        "C1301",
+        "C1302",
+        "C1317",
         "C3101",
         "C3102",
         "C3107",
@@ -14,9 +24,7 @@
     ],
     "created_on": "2025-06-03",
     "description": "Guardicore is a micro-segmentation and data center security solution that provides visibility and control over network traffic. It helps organizations to protect their critical assets by segmenting their networks, monitoring traffic patterns, and enforcing security policies. Guardicore's advanced threat detection capabilities enable rapid response to potential threats, ensuring that sensitive data remains secure while maintaining operational efficiency.",
-    "external_references": [
-       
-    ],
+    "external_references": [],
     "friendly_name": "guardicore",
     "title": "Guardicore",
     "unique_id": "42ef5640-3c63-49f5-9375-869b808fc88a"

@@ -3,6 +3,16 @@
     "ref": "tool:ms-purview",
     "author": "n3tsurge",
     "capability": [
+        "C1006",
+        "C1109",
+        "C1125",
+        "C1127",
+        "C1301",
+        "C1302",
+        "C1309",
+        "C1310",
+        "C1317",
+        "C1602"
     ],
     "category": [
         "cloud",
@@ -11,13 +21,10 @@
         "data loss prevention",
         "legal hold"
     ],
-    "mitre_attack_datasources": [
-    ],
+    "mitre_attack_datasources": [],
     "created_on": "2025-06-03",
     "description": "",
-    "external_references": [
-       
-    ],
+    "external_references": [],
     "friendly_name": "ms-purview",
     "title": "Microsoft Purview",
     "unique_id": "a205397f-19df-46cd-921c-9b740b86dcbe"

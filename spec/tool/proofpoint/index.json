@@ -3,9 +3,17 @@
     "ref": "tool:proofpoint",
     "author": "n3tsurge",
     "capability": [
-        "C5203",
+        "C1007",
+        "C1101",
+        "C1106",
+        "C1112",
+        "C1119",
+        "C1120",
+        "C1205",
+        "C1313",
+        "C5201",
         "C5202",
-        "C5201"
+        "C5203"
     ],
     "category": [
         "email security",
@@ -20,7 +28,6 @@
             "type": "website",
             "url": "https://www.proofpoint.com/"
         }
-       
     ],
     "friendly_name": "proofpoint",
     "title": "Proofpoint",

@@ -3,19 +3,31 @@
     "ref": "tool:ms-entra",
     "author": "n3tsurge",
     "capability": [
+        "C1007",
+        "C1101",
+        "C1103",
+        "C1109",
+        "C1112",
+        "C1113",
+        "C1117",
+        "C1119",
+        "C1120",
+        "C1127",
+        "C1301",
+        "C1302",
+        "C1310",
+        "C1501",
+        "C1602"
     ],
     "category": [
         "cloud",
         "identity and access management",
         "single sign-on"
     ],
-    "mitre_attack_datasources": [
-    ],
+    "mitre_attack_datasources": [],
     "created_on": "2025-06-03",
     "description": "",
-    "external_references": [
-       
-    ],
+    "external_references": [],
     "friendly_name": "ms-entra",
     "title": "Microsoft Entra",
     "unique_id": "a700b588-93dd-430f-885a-ffba1207e12a"

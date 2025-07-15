@@ -3,8 +3,16 @@
     "ref": "tool:rapid7-insightvm",
     "author": "n3tsurge",
     "capability": [
-        "C2002",
-        "C1013"
+        "C1007",
+        "C1013",
+        "C1101",
+        "C1103",
+        "C1109",
+        "C1125",
+        "C1128",
+        "C1309",
+        "C1310",
+        "C2002"
     ],
     "mitre_attack_datasources": [
         "Asset: Asset Inventory",

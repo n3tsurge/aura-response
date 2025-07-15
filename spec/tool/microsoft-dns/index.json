@@ -3,18 +3,25 @@
     "ref": "tool:ms-dns",
     "author": "n3tsurge",
     "capability": [
+        "C1105",
+        "C1106",
+        "C1113",
+        "C1114",
+        "C1203",
+        "C3103",
+        "C3104",
+        "C3201",
+        "C5102",
+        "C5201"
     ],
     "category": [
         "network",
         "log source"
     ],
-    "mitre_attack_datasources": [
-    ],
+    "mitre_attack_datasources": [],
     "created_on": "2025-06-03",
     "description": "",
-    "external_references": [
-       
-    ],
+    "external_references": [],
     "friendly_name": "ms-dns",
     "title": "Microsoft DNS",
     "unique_id": "3ce05eeb-aeba-4131-9b9a-8c58803f3254"
