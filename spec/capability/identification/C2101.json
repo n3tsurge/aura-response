@@ -21,5 +21,123 @@
         "security-analyst"
     ],
     "frameworks": {
+        "F0003": [
+            "DE.CM-1",
+            "DE.AE-3",
+            "PR.PT-1",
+            "RS.AN-1"
+        ],
+        "F0002": [
+            "A.12.4.1",
+            "A.12.2.1",
+            "A.16.1.1",
+            "A.12.6.1"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-137/final",
+            "name": "NIST SP 800-137: Information Security Continuous Monitoring (ISCM)"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36022/",
+            "name": "SANS: Continuous Security Monitoring Implementation"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/tactics/TA0007/",
+            "name": "MITRE ATT&CK: Discovery Tactics and Detection Strategies"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Insights_Implementing_a_Zero_Trust_Architecture.pdf",
+            "name": "CISA Zero Trust Architecture - Monitoring and Analytics"
+        }
+    ],
+    "documentation": {
+        "requirements": [
+            {
+                "id": "C2101-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2101-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2101-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            },
+            {
+                "id": "C2101-REQ-4",
+                "description": "Network monitoring tools and access to network infrastructure for analysis and control.",
+                "type": "system"
+            }
+        ],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [
+            {
+                "title": "Host IP Address",
+                "type": "list-item",
+                "description": "IP address of the host communicating with the internal domain"
+            },
+            {
+                "title": "Internal Domain Name",
+                "type": "list-item",
+                "description": "The internal domain being accessed"
+            },
+            {
+                "title": "Communication Timestamp",
+                "type": "list-item",
+                "description": "Date and time when the communication occurred"
+            },
+            {
+                "title": "Protocol Used",
+                "type": "list-item",
+                "description": "Network protocol used for communication (HTTP, HTTPS, SMB, etc.)"
+            },
+            {
+                "title": "Port Number",
+                "type": "list-item",
+                "description": "Port number used for the communication"
+            },
+            {
+                "title": "Host Name",
+                "type": "list-item",
+                "description": "DNS hostname of the communicating host"
+            },
+            {
+                "title": "User Context",
+                "type": "list-item",
+                "description": "User account associated with the communication"
+            },
+            {
+                "title": "Request Method",
+                "type": "list-item",
+                "description": "HTTP request method or communication type"
+            },
+            {
+                "title": "Response Code",
+                "type": "list-item",
+                "description": "Response code or status of the communication"
+            },
+            {
+                "title": "Data Volume",
+                "type": "list-item",
+                "description": "Amount of data transferred during the communication"
+            },
+            {
+                "title": "Session Duration",
+                "type": "list-item",
+                "description": "Duration of the communication session"
+            }
+        ],
+        "automation": []
     }
 }

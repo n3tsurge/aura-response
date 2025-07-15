@@ -7,19 +7,54 @@
     "documentation": {
         "requirements": [
             {
-                "id": "req-1",
-                "description": "Access to vulnerability management tools and patch management systems is required to identify and apply patches.",
-                "type": "system"
+                "id": "C3001-REQ-1",
+                "description": "Authority and access permissions to implement patching measures across all affected systems.",
+                "type": "authorization"
             },
             {
-                "id": "req-2",
-                "description": "Knowledge of the specific vulnerabilities that need to be patched, including CVE identifiers and associated patches.",
-                "type": "knowledge"
+                "id": "C3001-REQ-2",
+                "description": "Patch management system with wide operating system support (Windows, Linux, macOS, Unix variants).",
+                "type": "functional"
             },
             {
-                "id": "req-3",
-                "description": "Testing environment to validate patches before deployment to production systems.",
-                "type": "environment"
+                "id": "C3001-REQ-3",
+                "description": "Ability to patch third-party software and applications beyond operating system components.",
+                "type": "functional"
+            },
+            {
+                "id": "C3001-REQ-4",
+                "description": "Automated vulnerability scanning capability to identify systems requiring patches.",
+                "type": "functional"
+            },
+            {
+                "id": "C3001-REQ-5",
+                "description": "Staging and testing environment to validate patches before production deployment.",
+                "type": "functional"
+            },
+            {
+                "id": "C3001-REQ-6",
+                "description": "Rollback capability to revert patches if issues arise during or after deployment.",
+                "type": "functional"
+            },
+            {
+                "id": "C3001-REQ-7",
+                "description": "Scheduling and orchestration capability for coordinated patch deployment across enterprise environments.",
+                "type": "functional"
+            },
+            {
+                "id": "C3001-REQ-8",
+                "description": "Real-time patch status monitoring and reporting across all target systems.",
+                "type": "functional"
+            },
+            {
+                "id": "C3001-REQ-9",
+                "description": "Integration with vulnerability management systems and threat intelligence feeds.",
+                "type": "integration"
+            },
+            {
+                "id": "C3001-REQ-10",
+                "description": "Compliance tracking to ensure patches meet regulatory and organizational security standards.",
+                "type": "compliance"
             }
         ],
         "enrichment": [],
@@ -45,11 +80,46 @@
     "phase": "P0003",
     "phase_friendly_name": "containment",
     "stakeholders": [
+        "incident-commander",
+        "security-analyst"
     ],
     "staff": [
+        "security-analyst",
+        "incident-responder"
     ],
     "frameworks": {
+        "F0003": [
+            "PR.IP-12",
+            "PR.MA-1",
+            "ID.RA-1"
+        ],
+        "F0002": [
+            "A.12.6.1",
+            "A.8.2.3",
+            "A.5.37",
+            "A.16.1.5"
+        ]
     },
     "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-40/rev-4/final",
+            "name": "NIST SP 800-40 Rev. 4: Guide to Enterprise Patch Management Planning"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36537/",
+            "name": "SANS: Effective Patch Management Strategies"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/Patch%20Management%20Best%20Practices.pdf",
+            "name": "CISA Patch Management Best Practices"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/techniques/T1203/",
+            "name": "MITRE ATT&CK: Exploitation for Client Execution - Patch Management"
+        }
     ]
 }

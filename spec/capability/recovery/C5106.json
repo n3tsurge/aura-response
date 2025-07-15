@@ -1,0 +1,150 @@
+{
+    "id": "C5106",
+    "ref": "capability:recovery:unblock-blocked-user",
+    "author": "n3tsurge",
+    "created_on": "2024-12-20",
+    "description": "This capability involves restoring communication capabilities for users who were previously blocked during incident containment. This recovery action is essential to restore normal operations while ensuring the user account is secure and no longer compromised. It includes removing network blocks, communication restrictions, and access controls that were implemented as containment measures.",
+    "documentation": {
+        "requirements": [
+            {
+                "id": "C5106-REQ-1",
+                "description": "Access to network security tools, firewalls, or user management systems that can remove user communication blocks.",
+                "type": "system"
+            },
+            {
+                "id": "C5106-REQ-2",
+                "description": "Knowledge of which specific users were blocked and the scope of their restrictions during the incident containment phase.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C5106-REQ-3",
+                "description": "Verification procedures to ensure the user account is secure and no longer compromised before unblocking.",
+                "type": "procedure"
+            },
+            {
+                "id": "C5106-REQ-4",
+                "description": "Documentation of the original blocking actions to ensure complete and accurate restoration of user capabilities.",
+                "type": "documentation"
+            }
+        ],
+        "enrichment": [
+            {
+                "id": "C5106-ENR-1",
+                "description": "User Activity Analysis - Analyze user activity patterns and authentication logs to confirm the account is secure before unblocking.",
+                "type": "analysis"
+            },
+            {
+                "id": "C5106-ENR-2",
+                "description": "Network Traffic Validation - Monitor network traffic patterns to ensure unblocked users are not exhibiting suspicious communication behavior.",
+                "type": "monitoring"
+            }
+        ],
+        "hunting": [
+            {
+                "id": "C5106-HUN-1",
+                "description": "Residual Compromise Detection - Hunt for signs of residual compromise or persistent access mechanisms that may still affect the unblocked user.",
+                "type": "detection"
+            },
+            {
+                "id": "C5106-HUN-2",
+                "description": "Lateral Movement Monitoring - Monitor for potential lateral movement attempts from newly unblocked user accounts.",
+                "type": "behavioral"
+            }
+        ],
+        "fields": [
+            {
+                "id": "C5106-FLD-1",
+                "description": "User ID - The unique identifier of the user being unblocked.",
+                "type": "string"
+            },
+            {
+                "id": "C5106-FLD-2",
+                "description": "Block Type - The type of block being removed (network, communication, access control).",
+                "type": "string"
+            },
+            {
+                "id": "C5106-FLD-3",
+                "description": "Original Block Reason - The reason why the user was originally blocked during containment.",
+                "type": "string"
+            },
+            {
+                "id": "C5106-FLD-4",
+                "description": "Unblock Timestamp - The date and time when the user was unblocked.",
+                "type": "datetime"
+            },
+            {
+                "id": "C5106-FLD-5",
+                "description": "System Hostname - The hostname or identifier of the system where the unblock action was performed.",
+                "type": "string"
+            },
+            {
+                "id": "C5106-FLD-6",
+                "description": "Authorizing Personnel - The incident response team member who authorized the unblock action.",
+                "type": "string"
+            }
+        ],
+        "automation": [
+            {
+                "id": "C5106-AUT-1",
+                "description": "Automated scripts to systematically remove user blocks based on incident resolution status and security validation.",
+                "type": "script"
+            },
+            {
+                "id": "C5106-AUT-2",
+                "description": "Integration with identity management systems to automatically restore user communication capabilities upon incident closure.",
+                "type": "integration"
+            }
+        ]
+    },
+    "category": "identity",
+    "friendly_name": "unblock-blocked-user",
+    "title": "Unblock Blocked User",
+    "unique_id": "90877106-8e84-47dd-94d3-e29b0e3374e4",
+    "phase": "P0005",
+    "phase_friendly_name": "recovery",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst"
+    ],
+    "staff": [
+        "security-analyst",
+        "incident-responder",
+        "system-administrator"
+    ],
+    "frameworks": {
+        "F0003": [
+            "PR.AC-1",
+            "PR.AC-4",
+            "RS.RP-1",
+            "RC.RP-1"
+        ],
+        "F0002": [
+            "A.9.2.1",
+            "A.9.2.6",
+            "A.16.1.5",
+            "A.5.24"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://www.nist.gov/cyberframework",
+            "name": "NIST Cybersecurity Framework"
+        },
+        {
+            "type": "website",
+            "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf",
+            "name": "NIST SP 800-61 Rev. 2: Computer Security Incident Handling Guide"
+        },
+        {
+            "type": "website",
+            "url": "https://www.iso.org/standard/82875.html",
+            "name": "ISO/IEC 27001:2022 Information Security Management"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/33901/",
+            "name": "SANS: Incident Recovery and Business Continuity"
+        }
+    ]
+}

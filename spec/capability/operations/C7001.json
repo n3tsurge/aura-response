@@ -7,19 +7,14 @@
     "documentation": {
         "requirements": [
             {
-                "id":"req-1",
-                "description": "Define specific, measurable KPIs that align with organizational goals and incident response objectives.",
-                "type": "functional"
+                "id": "C7001-REQ-1",
+                "description": "Operational procedures and standards for consistent execution.",
+                "type": "process"
             },
             {
-                "id":"req-2",
-                "description": "Ensure that KPIs are regularly reviewed and updated based on incident response performance and changing organizational needs.",
-                "type": "functional"
-            },
-            {
-                "id":"req-3",
-                "description": "Implement a process for tracking and reporting on KPIs to relevant stakeholders.",
-                "type": "functional"
+                "id": "C7001-REQ-2",
+                "description": "Monitoring and metrics capabilities to track operational effectiveness.",
+                "type": "monitoring"
             }
         ],
         "enrichment": [],
@@ -45,12 +40,42 @@
     "phase": "P0007",
     "phase_friendly_name": "operations",
     "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "incident-responder"
     ],
     "staff": [
+        "security-analyst",
+        "incident-responder"
     ],
     "frameworks": {
+        "F0003": [
+            "DE.AE-1",
+            "RS.IM-1",
+            "PR.IP-1"
+        ],
+        "F0002": [
+            "A.16.1.1",
+            "A.5.10",
+            "A.5.12",
+            "A.12.4.1"
+        ]
     },
     "references": [
-
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final",
+            "name": "NIST SP 800-61 Rev. 2: Computer Security Incident Handling Guide"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/33901/",
+            "name": "SANS: Incident Response Methodology"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/",
+            "name": "MITRE ATT&CK Framework"
+        }
     ]
 }

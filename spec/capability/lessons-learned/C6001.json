@@ -8,7 +8,24 @@
         "enrichment": [],
         "hunting": [],
         "fields": [],
-        "automation": []
+        "automation": [],
+        "requirements": [
+            {
+                "id": "C6001-REQ-1",
+                "description": "Complete incident documentation and timeline for analysis.",
+                "type": "documentation"
+            },
+            {
+                "id": "C6001-REQ-2",
+                "description": "Participation from all relevant stakeholders and team members.",
+                "type": "staffing"
+            },
+            {
+                "id": "C6001-REQ-3",
+                "description": "Framework for capturing, documenting, and implementing lessons learned.",
+                "type": "process"
+            }
+        ]
     },
     "category": "general",
     "friendly_name": "develop-incident-report",
@@ -19,15 +36,41 @@
     "stakeholders": [
         "incident-commander",
         "security-analyst",
-        "incident-responder"
+        "scribe"
     ],
     "staff": [
-        "scribe",
-        "incident-commander"
+        "security-analyst",
+        "scribe"
     ],
     "frameworks": {
+        "F0003": [
+            "RS.CO-1",
+            "RS.CO-2",
+            "RS.CO-3",
+            "PR.IP-9"
+        ],
+        "F0002": [
+            "A.16.1.2",
+            "A.16.1.3",
+            "A.5.29",
+            "A.7.4"
+        ]
     },
     "references": [
-
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final",
+            "name": "NIST SP 800-61 Rev. 2: Incident Response Communications"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/33901/",
+            "name": "SANS: Incident Response Communication Strategies"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/Federal_Government_Cybersecurity_Incident_and_Vulnerability_Response_Playbooks_508C.pdf",
+            "name": "CISA Federal Incident Response Playbook - Communications"
+        }
     ]
 }

@@ -1,0 +1,136 @@
+{
+    "id": "C2502",
+    "ref": "capability:identify:list-registry-keys-deleted",
+    "author": "n3tsurge",
+    "created_on": "2025-07-15",
+    "description": "This capability allows incident responders to identify registry keys that have been deleted from Windows systems. Deleted registry keys can indicate evasion techniques, cleanup activities by malware, or attempts to hide persistence mechanisms. This analysis is crucial for understanding the full scope of system modifications during an incident.",
+    "documentation": {
+        "requirements": [
+            {
+                "id": "C2502-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2502-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2502-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            },
+            {
+                "id": "C2502-REQ-4",
+                "description": "Administrative access and configuration management tools for system modifications.",
+                "type": "system"
+            }
+        ],
+        "enrichment": [
+            {
+                "id": "enr-1",
+                "description": "Cross-reference deleted registry keys with known malware signatures and persistence techniques.",
+                "type": "intelligence"
+            },
+            {
+                "id": "enr-2",
+                "description": "Correlate registry deletion events with process execution and file system activity.",
+                "type": "correlation"
+            }
+        ],
+        "hunting": [
+            {
+                "id": "hunt-1",
+                "description": "Search for patterns of registry key deletions that indicate cleanup or evasion activities.",
+                "type": "behavioral"
+            }
+        ],
+        "fields": [
+            {
+                "id": "field-1",
+                "name": "registry_key_path",
+                "description": "Full path of the deleted registry key",
+                "type": "string"
+            },
+            {
+                "id": "field-2",
+                "name": "deletion_timestamp",
+                "description": "Date and time when the registry key was deleted",
+                "type": "datetime"
+            },
+            {
+                "id": "field-3",
+                "name": "process_name",
+                "description": "Name of the process that deleted the registry key",
+                "type": "string"
+            },
+            {
+                "id": "field-4",
+                "name": "user_context",
+                "description": "User account under which the deletion occurred",
+                "type": "string"
+            }
+        ],
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automated parsing of Windows Event Logs to extract registry deletion events.",
+                "type": "parser"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integration with SIEM systems for real-time alerting on suspicious registry deletions.",
+                "type": "integration"
+            }
+        ]
+    },
+    "category": "configuration",
+    "friendly_name": "list-registry-keys-deleted",
+    "title": "List Registry Keys Deleted",
+    "unique_id": "e5bbcb18-c751-42df-9aa9-336e5aee8678",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst"
+    ],
+    "staff": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0003": [
+            "DE.CM-1",
+            "DE.CM-7",
+            "DE.AE-2"
+        ],
+        "F0002": [
+            "A.12.4.1",
+            "A.12.6.1",
+            "A.16.1.4"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-92/final",
+            "name": "NIST SP 800-92: Guide to Computer Security Log Management"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/32949/",
+            "name": "SANS: Windows Registry Analysis for Incident Response"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/techniques/T1112/",
+            "name": "MITRE ATT&CK: Modify Registry - Detection and Analysis"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Hunt_and_Incident_Response_Program.pdf",
+            "name": "CISA Hunt and Incident Response Program - Registry Analysis"
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "id": "C2205",
+    "ref": "capability:identify:extract-email-observables",
+    "author": "n3tsurge",
+    "created_on": "2025-07-15",
+    "description": "This capability involves extracting indicators of compromise (IOCs) such as URLs, IP addresses, file hashes, domains, and other artifacts from email messages for threat intelligence and further analysis. This is critical for identifying malicious infrastructure and enabling proactive defense measures.",
+    "documentation": {
+        "requirements": [
+            {
+                "id": "C2205-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2205-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2205-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            }
+        ],
+        "enrichment": [
+            {
+                "id": "enr-1",
+                "description": "Cross-reference extracted IOCs with threat intelligence feeds for attribution and context.",
+                "type": "intelligence"
+            },
+            {
+                "id": "enr-2",
+                "description": "Correlate extracted observables with existing security events and alerts.",
+                "type": "correlation"
+            }
+        ],
+        "hunting": [
+            {
+                "id": "hunt-1",
+                "description": "Search for additional emails or network activity associated with extracted IOCs.",
+                "type": "pivoting"
+            }
+        ],
+        "fields": [
+            {
+                "id": "field-1",
+                "name": "observable_type",
+                "description": "Type of observable (URL, IP, domain, hash, etc.)",
+                "type": "string"
+            },
+            {
+                "id": "field-2",
+                "name": "observable_value",
+                "description": "The actual value of the extracted observable",
+                "type": "string"
+            },
+            {
+                "id": "field-3",
+                "name": "extraction_source",
+                "description": "Location within email where observable was found (header, body, attachment)",
+                "type": "string"
+            },
+            {
+                "id": "field-4",
+                "name": "confidence_level",
+                "description": "Confidence level of the extraction accuracy",
+                "type": "string"
+            }
+        ],
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automated parsing tools to extract IOCs from email content using regex and machine learning.",
+                "type": "tool"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integration with threat intelligence platforms for automatic IOC enrichment and sharing.",
+                "type": "integration"
+            }
+        ]
+    },
+    "category": "email",
+    "friendly_name": "extract-email-observables",
+    "title": "Extract Email Observables",
+    "unique_id": "9a757ff7-8f27-4f6a-b447-43d9a917995b",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst"
+    ],
+    "staff": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0003": [
+            "ID.RA-2",
+            "DE.AE-2",
+            "DE.CM-4"
+        ],
+        "F0002": [
+            "A.12.6.1",
+            "A.16.1.5",
+            "A.16.1.7"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final",
+            "name": "NIST SP 800-61 Rev. 2: Computer Security Incident Handling Guide"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/37382/",
+            "name": "SANS: Threat Intelligence and IOC Extraction Techniques"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/techniques/T1566/",
+            "name": "MITRE ATT&CK: Phishing - IOC Extraction and Analysis"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Hunt_and_Incident_Response_Program.pdf",
+            "name": "CISA Hunt and Incident Response Program - Threat Intelligence"
+        }
+    ]
+}

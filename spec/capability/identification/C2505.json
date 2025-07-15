@@ -1,0 +1,148 @@
+{
+    "id": "C2505",
+    "ref": "capability:identify:list-services-created",
+    "author": "n3tsurge",
+    "created_on": "2025-07-15",
+    "description": "This capability allows incident responders to identify newly created Windows services during a specified timeframe. Service creation is a common persistence mechanism used by malware and attackers to maintain access to compromised systems. Monitoring service creation helps detect unauthorized persistence mechanisms and malicious service installations.",
+    "documentation": {
+        "requirements": [
+            {
+                "id": "C2505-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2505-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2505-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            },
+            {
+                "id": "C2505-REQ-4",
+                "description": "Administrative access and configuration management tools for system modifications.",
+                "type": "system"
+            }
+        ],
+        "enrichment": [
+            {
+                "id": "enr-1",
+                "description": "Cross-reference new services with known malware service names and configurations.",
+                "type": "intelligence"
+            },
+            {
+                "id": "enr-2",
+                "description": "Correlate service creation with file system changes and process execution events.",
+                "type": "correlation"
+            }
+        ],
+        "hunting": [
+            {
+                "id": "hunt-1",
+                "description": "Hunt for services with suspicious names, paths, or execution characteristics.",
+                "type": "anomaly"
+            }
+        ],
+        "fields": [
+            {
+                "id": "field-1",
+                "name": "service_name",
+                "description": "Name of the newly created service",
+                "type": "string"
+            },
+            {
+                "id": "field-2",
+                "name": "service_display_name",
+                "description": "Display name of the service as shown in service management tools",
+                "type": "string"
+            },
+            {
+                "id": "field-3",
+                "name": "executable_path",
+                "description": "Full path to the service executable",
+                "type": "string"
+            },
+            {
+                "id": "field-4",
+                "name": "creation_timestamp",
+                "description": "Date and time when the service was created",
+                "type": "datetime"
+            },
+            {
+                "id": "field-5",
+                "name": "startup_type",
+                "description": "Service startup type (automatic, manual, disabled)",
+                "type": "string"
+            },
+            {
+                "id": "field-6",
+                "name": "user_context",
+                "description": "User account that created the service",
+                "type": "string"
+            }
+        ],
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automated monitoring and alerting for new service creation events.",
+                "type": "monitoring"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integration with endpoint detection systems for real-time service tracking.",
+                "type": "integration"
+            }
+        ]
+    },
+    "category": "configuration",
+    "friendly_name": "list-services-created",
+    "title": "List Services Created",
+    "unique_id": "17f60e82-a37b-44a1-9d0f-98b57a80c7a2",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst"
+    ],
+    "staff": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0003": [
+            "DE.CM-1",
+            "DE.CM-7",
+            "DE.AE-2"
+        ],
+        "F0002": [
+            "A.12.4.1",
+            "A.12.6.1",
+            "A.16.1.4"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-92/final",
+            "name": "NIST SP 800-92: Guide to Computer Security Log Management"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/32949/",
+            "name": "SANS: Windows Service Analysis for Incident Response"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/techniques/T1543/003/",
+            "name": "MITRE ATT&CK: Create or Modify System Process - Windows Service"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Hunt_and_Incident_Response_Program.pdf",
+            "name": "CISA Hunt and Incident Response Program - Service Monitoring"
+        }
+    ]
+}

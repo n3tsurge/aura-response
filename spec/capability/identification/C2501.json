@@ -9,18 +9,17 @@
     "created_on": "2025-06-03",
     "description": "This capability allows the incident responder and security analyst to list modifications made to registry keys. This is crucial for identifying unauthorized changes that may indicate malicious activity or system misconfiguration. The capability provides a means to track changes over time, aiding in forensic analysis and incident response.",
     "frameworks": {
-        "F0002": [
-            "A.5.27",
-            "A.8.7",
-            "A.8.9",
-            "A.5.32",
-            "A.8.16"
-        ],
         "F0003": [
             "DE.CM-1",
-            "DE.CM-7",
-            "RS.AN-1",
-            "RS.AN-2"
+            "DE.CM-4",
+            "DE.AE-2",
+            "ID.RA-5"
+        ],
+        "F0002": [
+            "A.12.4.1",
+            "A.12.2.1",
+            "A.16.1.1",
+            "A.12.6.1"
         ]
     },
     "category": "configuration",
@@ -34,5 +33,106 @@
         "scribe"
     ],
     "title": "List Registry Key Modifications",
-    "unique_id": "6f73ee41-a89e-4057-9d1e-c7c5da600c6d"
+    "unique_id": "6f73ee41-a89e-4057-9d1e-c7c5da600c6d",
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-137/final",
+            "name": "NIST SP 800-137: Information Security Continuous Monitoring (ISCM)"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36022/",
+            "name": "SANS: Continuous Security Monitoring Implementation"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/tactics/TA0007/",
+            "name": "MITRE ATT&CK: Discovery Tactics and Detection Strategies"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Insights_Implementing_a_Zero_Trust_Architecture.pdf",
+            "name": "CISA Zero Trust Architecture - Monitoring and Analytics"
+        }
+    ],
+    "documentation": {
+        "requirements": [
+            {
+                "id": "C2501-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2501-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2501-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            },
+            {
+                "id": "C2501-REQ-4",
+                "description": "Administrative access and configuration management tools for system modifications.",
+                "type": "system"
+            }
+        ],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [
+            {
+                "title": "Registry Key Path",
+                "type": "list-item",
+                "description": "Full path to the modified registry key"
+            },
+            {
+                "title": "Modification Timestamp",
+                "type": "list-item",
+                "description": "Date and time when the registry key was modified"
+            },
+            {
+                "title": "Modification Type",
+                "type": "list-item",
+                "description": "Type of modification (created, modified, deleted, renamed)"
+            },
+            {
+                "title": "Previous Value",
+                "type": "list-item",
+                "description": "Previous value of the registry key before modification"
+            },
+            {
+                "title": "New Value",
+                "type": "list-item",
+                "description": "New value of the registry key after modification"
+            },
+            {
+                "title": "Value Type",
+                "type": "list-item",
+                "description": "Data type of the registry value (REG_SZ, REG_DWORD, REG_BINARY, etc.)"
+            },
+            {
+                "title": "Process Name",
+                "type": "list-item",
+                "description": "Name of the process that modified the registry key"
+            },
+            {
+                "title": "Process ID",
+                "type": "list-item",
+                "description": "Process ID of the process that modified the registry key"
+            },
+            {
+                "title": "User Context",
+                "type": "list-item",
+                "description": "User account under which the modification was made"
+            },
+            {
+                "title": "Registry Hive",
+                "type": "list-item",
+                "description": "Registry hive containing the modified key (HKLM, HKCU, HKCR, etc.)"
+            }
+        ],
+        "automation": []
+    }
 }

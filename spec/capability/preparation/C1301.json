@@ -5,7 +5,23 @@
     "created_on": "2025-06-16",
     "description": "This capability involves establishing the ability to list files that have been created within a system or network. This includes implementing mechanisms to track file creation events, ensuring that all newly created files can be monitored and accounted for. It is essential for maintaining data integrity, compliance with regulations, and enhancing overall security posture by providing visibility into file activities within the organization.",
     "documentation": {
-        "requirements": [],
+        "requirements": [
+            {
+                "id": "C1301-REQ-1",
+                "description": "Staff must be trained and qualified to perform this capability effectively.",
+                "type": "staffing"
+            },
+            {
+                "id": "C1301-REQ-2",
+                "description": "Documented procedures and playbooks must be available for executing this capability.",
+                "type": "documentation"
+            },
+            {
+                "id": "C1301-REQ-3",
+                "description": "File system access and forensic tools for file analysis and manipulation.",
+                "type": "system"
+            }
+        ],
         "enrichment": [],
         "hunting": [],
         "fields": [],
@@ -17,8 +33,42 @@
     "unique_id": "015c86a2-270c-4dce-85f7-767bc1216a65",
     "phase": "P0001",
     "phase_friendly_name": "preparation",
-    "stakeholders": [],
-    "staff": [],
-    "frameworks": {},
-    "references": []
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "scribe"
+    ],
+    "staff": [
+        "security-analyst"
+    ],
+    "frameworks": {
+        "F0003": [
+            "DE.AE-1",
+            "RS.IM-1",
+            "PR.IP-1"
+        ],
+        "F0002": [
+            "A.16.1.1",
+            "A.5.10",
+            "A.5.12",
+            "A.12.4.1"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final",
+            "name": "NIST SP 800-61 Rev. 2: Incident Response Preparation"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/33901/",
+            "name": "SANS: Incident Response Team Development and Preparation"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/Federal_Government_Cybersecurity_Incident_and_Vulnerability_Response_Playbooks_508C.pdf",
+            "name": "CISA Federal Incident Response Playbook"
+        }
+    ]
 }

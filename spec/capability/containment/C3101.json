@@ -7,29 +7,80 @@
     "documentation": {
         "requirements": [
             {
-                "id": "req-1",
-                "description": "Access to network security tools such as firewalls or intrusion prevention systems to implement IP blocking.",
+                "id": "C3101-REQ-1",
+                "description": "Authority and access permissions to implement containment measures.",
+                "type": "authorization"
+            },
+            {
+                "id": "C3101-REQ-2",
+                "description": "Technical capability and tools to execute containment actions effectively.",
                 "type": "system"
             },
             {
-                "id": "req-2",
-                "description": "Knowledge of the specific external IP addresses that need to be blocked, which may come from threat intelligence feeds or incident reports.",
-                "type": "knowledge"
+                "id": "C3101-REQ-3",
+                "description": "Procedures to validate containment effectiveness and monitor for bypass attempts.",
+                "type": "validation"
             },
             {
-                "id": "req-3",
-                "description": "Procedures for verifying the legitimacy of the IP addresses before blocking to avoid false positives.",
-                "type": "procedure"
-            },
-            {
-                "id": "req-4",
-                "description": "Monitoring tools to track the effectiveness of the IP blocking and to identify any potential bypass attempts.",
+                "id": "C3101-REQ-4",
+                "description": "Network monitoring tools and access to network infrastructure for analysis and control.",
                 "type": "system"
             }
         ],
         "enrichment": [],
         "hunting": [],
-        "fields": [],
+        "fields": [
+            {
+                "title": "IP Address",
+                "type": "list-item",
+                "description": "The external IP address to be blocked"
+            },
+            {
+                "title": "Block Timestamp",
+                "type": "list-item",
+                "description": "Date and time when the IP address was blocked"
+            },
+            {
+                "title": "Threat Category",
+                "type": "list-item",
+                "description": "Category of threat associated with the IP address (malware, phishing, botnet, etc.)"
+            },
+            {
+                "title": "Threat Intelligence Source",
+                "type": "list-item",
+                "description": "Source that identified the IP as malicious (feed name, vendor, etc.)"
+            },
+            {
+                "title": "Block Method",
+                "type": "list-item",
+                "description": "Method used to block the IP (firewall rule, IPS, DNS sinkhole, etc.)"
+            },
+            {
+                "title": "Geographic Location",
+                "type": "list-item",
+                "description": "Geographic location of the blocked IP address"
+            },
+            {
+                "title": "ASN Information",
+                "type": "list-item",
+                "description": "Autonomous System Number and organization information"
+            },
+            {
+                "title": "Block Duration",
+                "type": "list-item",
+                "description": "Duration for which the IP address is blocked (permanent, temporary, time-based)"
+            },
+            {
+                "title": "Authorized By",
+                "type": "list-item",
+                "description": "Person or system that authorized the IP block"
+            },
+            {
+                "title": "Associated IOCs",
+                "type": "list-item",
+                "description": "Other indicators of compromise associated with this IP address"
+            }
+        ],
         "automation": [
             {
                 "id": "aut-1",
@@ -55,11 +106,42 @@
     "phase": "P0003",
     "phase_friendly_name": "containment",
     "stakeholders": [
+        "incident-commander",
+        "security-analyst"
     ],
     "staff": [
+        "security-analyst",
+        "incident-responder"
     ],
     "frameworks": {
+        "F0003": [
+            "PR.AC-4",
+            "PR.PT-4",
+            "DE.CM-1",
+            "RS.IM-1"
+        ],
+        "F0002": [
+            "A.13.1.1",
+            "A.13.1.2",
+            "A.16.1.5",
+            "A.12.4.1"
+        ]
     },
     "references": [
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/37532/",
+            "name": "IP Address Blocking and Threat Intelligence Integration"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-131a",
+            "name": "CISA Advisory: DarkSide Ransomware - IP Blocking Strategies"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/techniques/T1090/",
+            "name": "MITRE ATT&CK: Proxy - Connection Proxy Detection and Mitigation"
+        }
     ]
 }

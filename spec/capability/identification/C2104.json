@@ -23,8 +23,91 @@
             }
         ],
         "hunting": [],
-        "fields": [],
-        "automation": []
+        "fields": [
+            {
+                "title": "Domain Name",
+                "type": "list-item",
+                "description": "The domain name being analyzed"
+            },
+            {
+                "title": "Registrar Information",
+                "type": "list-item",
+                "description": "Domain registrar and registration details"
+            },
+            {
+                "title": "Registration Date",
+                "type": "list-item",
+                "description": "Date when the domain was first registered"
+            },
+            {
+                "title": "Expiration Date",
+                "type": "list-item",
+                "description": "Date when the domain registration expires"
+            },
+            {
+                "title": "Name Servers",
+                "type": "list-item",
+                "description": "Authoritative name servers for the domain"
+            },
+            {
+                "title": "A Records",
+                "type": "list-item",
+                "description": "IPv4 addresses associated with the domain"
+            },
+            {
+                "title": "AAAA Records",
+                "type": "list-item",
+                "description": "IPv6 addresses associated with the domain"
+            },
+            {
+                "title": "MX Records",
+                "type": "list-item",
+                "description": "Mail exchange servers for the domain"
+            },
+            {
+                "title": "TXT Records",
+                "type": "list-item",
+                "description": "Text records containing domain verification and policy information"
+            },
+            {
+                "title": "SSL Certificate Info",
+                "type": "list-item",
+                "description": "SSL/TLS certificate details and validity"
+            },
+            {
+                "title": "Domain Reputation Score",
+                "type": "list-item",
+                "description": "Security reputation score from threat intelligence feeds"
+            },
+            {
+                "title": "Subdomain Enumeration",
+                "type": "list-item",
+                "description": "List of discovered subdomains under the main domain"
+            }
+        ],
+        "automation": [],
+        "requirements": [
+            {
+                "id": "C2104-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2104-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2104-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            },
+            {
+                "id": "C2104-REQ-4",
+                "description": "Network monitoring tools and access to network infrastructure for analysis and control.",
+                "type": "system"
+            }
+        ]
     },
     "category": "network",
     "friendly_name": "analyze-domain-name",
@@ -43,5 +126,39 @@
         "security-analyst"
     ],
     "frameworks": {
-    }
+        "F0003": [
+            "DE.CM-1",
+            "DE.CM-4",
+            "DE.AE-2",
+            "ID.RA-5"
+        ],
+        "F0002": [
+            "A.12.4.1",
+            "A.12.2.1",
+            "A.16.1.1",
+            "A.12.6.1"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-137/final",
+            "name": "NIST SP 800-137: Information Security Continuous Monitoring (ISCM)"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36022/",
+            "name": "SANS: Continuous Security Monitoring Implementation"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/tactics/TA0007/",
+            "name": "MITRE ATT&CK: Discovery Tactics and Detection Strategies"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Insights_Implementing_a_Zero_Trust_Architecture.pdf",
+            "name": "CISA Zero Trust Architecture - Monitoring and Analytics"
+        }
+    ]
 }

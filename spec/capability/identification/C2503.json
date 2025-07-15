@@ -1,0 +1,142 @@
+{
+    "id": "C2503",
+    "ref": "capability:identify:list-registry-keys-accessed",
+    "author": "n3tsurge",
+    "created_on": "2025-07-15",
+    "description": "This capability enables incident responders to monitor and list registry keys that have been accessed during a specified timeframe. Registry access patterns can reveal reconnaissance activities, configuration enumeration, or attempts to gather system information by malware or unauthorized users.",
+    "documentation": {
+        "requirements": [
+            {
+                "id": "C2503-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2503-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2503-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            },
+            {
+                "id": "C2503-REQ-4",
+                "description": "Administrative access and configuration management tools for system modifications.",
+                "type": "system"
+            }
+        ],
+        "enrichment": [
+            {
+                "id": "enr-1",
+                "description": "Correlate registry access patterns with known malware behaviors and system reconnaissance techniques.",
+                "type": "behavioral"
+            },
+            {
+                "id": "enr-2",
+                "description": "Cross-reference registry access with process execution and network activity for comprehensive analysis.",
+                "type": "correlation"
+            }
+        ],
+        "hunting": [
+            {
+                "id": "hunt-1",
+                "description": "Hunt for unusual registry access patterns that may indicate lateral movement or privilege escalation attempts.",
+                "type": "anomaly"
+            }
+        ],
+        "fields": [
+            {
+                "id": "field-1",
+                "name": "registry_key_path",
+                "description": "Full path of the accessed registry key",
+                "type": "string"
+            },
+            {
+                "id": "field-2",
+                "name": "access_timestamp",
+                "description": "Date and time when the registry key was accessed",
+                "type": "datetime"
+            },
+            {
+                "id": "field-3",
+                "name": "access_type",
+                "description": "Type of access performed (read, enumerate, query)",
+                "type": "string"
+            },
+            {
+                "id": "field-4",
+                "name": "process_name",
+                "description": "Name of the process that accessed the registry key",
+                "type": "string"
+            },
+            {
+                "id": "field-5",
+                "name": "user_context",
+                "description": "User account under which the access occurred",
+                "type": "string"
+            }
+        ],
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automated analysis of registry access logs to identify suspicious patterns and anomalies.",
+                "type": "analysis"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integration with endpoint detection and response (EDR) systems for real-time registry monitoring.",
+                "type": "integration"
+            }
+        ]
+    },
+    "category": "configuration",
+    "friendly_name": "list-registry-keys-accessed",
+    "title": "List Registry Keys Accessed",
+    "unique_id": "01e64142-98ca-4c56-8673-0fe2fdcb8582",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst"
+    ],
+    "staff": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0003": [
+            "DE.CM-1",
+            "DE.CM-7",
+            "ID.AM-3"
+        ],
+        "F0002": [
+            "A.12.4.1",
+            "A.12.6.1",
+            "A.16.1.4"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-92/final",
+            "name": "NIST SP 800-92: Guide to Computer Security Log Management"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/32949/",
+            "name": "SANS: Windows Registry Monitoring and Analysis"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/techniques/T1012/",
+            "name": "MITRE ATT&CK: Query Registry - Detection Methods"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Hunt_and_Incident_Response_Program.pdf",
+            "name": "CISA Hunt and Incident Response Program - Registry Monitoring"
+        }
+    ]
+}

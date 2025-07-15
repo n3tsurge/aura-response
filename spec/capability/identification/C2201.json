@@ -1,0 +1,131 @@
+{
+    "id": "C2201",
+    "ref": "capability:identify:list-email-openers",
+    "author": "n3tsurge",
+    "created_on": "2025-07-15",
+    "description": "This capability allows security analysts to identify which users opened specific email messages, particularly useful during phishing investigations. It helps track the scope of a phishing campaign and identify potentially compromised users who may have interacted with malicious content.",
+    "documentation": {
+        "requirements": [
+            {
+                "id": "C2201-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2201-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2201-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            }
+        ],
+        "enrichment": [
+            {
+                "id": "enr-1",
+                "description": "Cross-reference user activity with authentication logs to determine access patterns.",
+                "type": "correlation"
+            },
+            {
+                "id": "enr-2",
+                "description": "Correlate email opening timestamps with other security events for timeline analysis.",
+                "type": "temporal"
+            }
+        ],
+        "hunting": [
+            {
+                "id": "hunt-1",
+                "description": "Search for patterns of users who consistently open suspicious emails.",
+                "type": "behavioral"
+            }
+        ],
+        "fields": [
+            {
+                "id": "field-1",
+                "name": "user_email",
+                "description": "Email address of the user who opened the message",
+                "type": "string"
+            },
+            {
+                "id": "field-2",
+                "name": "message_id",
+                "description": "Unique identifier of the email message",
+                "type": "string"
+            },
+            {
+                "id": "field-3",
+                "name": "open_timestamp",
+                "description": "Date and time when the email was opened",
+                "type": "datetime"
+            },
+            {
+                "id": "field-4",
+                "name": "client_info",
+                "description": "Email client or browser information used to open the email",
+                "type": "string"
+            }
+        ],
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automated queries to email security platforms to retrieve user interaction data.",
+                "type": "query"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integration with SIEM to correlate email opening events with other security alerts.",
+                "type": "integration"
+            }
+        ]
+    },
+    "category": "email",
+    "friendly_name": "list-email-openers",
+    "title": "List Email Openers",
+    "unique_id": "07e325de-1aeb-4847-b962-0960328b3b4d",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst"
+    ],
+    "staff": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0003": [
+            "ID.AM-5",
+            "ID.RA-1",
+            "DE.CM-1"
+        ],
+        "F0002": [
+            "A.12.2.1",
+            "A.12.6.1",
+            "A.16.1.7"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final",
+            "name": "NIST SP 800-61 Rev. 2: Computer Security Incident Handling Guide"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36982/",
+            "name": "SANS: Email Security and Phishing Investigation Techniques"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/techniques/T1566/",
+            "name": "MITRE ATT&CK: Phishing - Email Analysis and Detection"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_MS-ISAC_Ransomware%20Guide_S508C.pdf",
+            "name": "CISA Ransomware Guide - Email Investigation Procedures"
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "id": "C2601",
+    "ref": "capability:identify:list-authenticated-users",
+    "author": "n3tsurge",
+    "created_on": "2025-07-15",
+    "description": "This capability enables incident responders to identify and list users who have successfully authenticated to systems during a specified timeframe. This information is crucial for understanding user activity patterns, identifying potentially compromised accounts, and establishing timelines during incident investigations.",
+    "documentation": {
+        "requirements": [
+            {
+                "id": "C2601-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2601-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2601-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            }
+        ],
+        "enrichment": [
+            {
+                "id": "enr-1",
+                "description": "Cross-reference authentication events with user behavior analytics to identify anomalies.",
+                "type": "behavioral"
+            },
+            {
+                "id": "enr-2",
+                "description": "Correlate authentication data with network activity and resource access patterns.",
+                "type": "correlation"
+            }
+        ],
+        "hunting": [
+            {
+                "id": "hunt-1",
+                "description": "Hunt for unusual authentication patterns such as off-hours logins or geographic anomalies.",
+                "type": "anomaly"
+            }
+        ],
+        "fields": [
+            {
+                "id": "field-1",
+                "name": "username",
+                "description": "Username of the authenticated user",
+                "type": "string"
+            },
+            {
+                "id": "field-2",
+                "name": "authentication_timestamp",
+                "description": "Date and time when authentication occurred",
+                "type": "datetime"
+            },
+            {
+                "id": "field-3",
+                "name": "source_ip",
+                "description": "IP address from which the authentication originated",
+                "type": "string"
+            },
+            {
+                "id": "field-4",
+                "name": "target_system",
+                "description": "System or service that was accessed",
+                "type": "string"
+            },
+            {
+                "id": "field-5",
+                "name": "authentication_method",
+                "description": "Method used for authentication (password, certificate, MFA, etc.)",
+                "type": "string"
+            },
+            {
+                "id": "field-6",
+                "name": "session_duration",
+                "description": "Duration of the authenticated session",
+                "type": "string"
+            }
+        ],
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automated aggregation and correlation of authentication events from multiple sources.",
+                "type": "aggregation"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integration with user behavior analytics platforms for anomaly detection.",
+                "type": "integration"
+            }
+        ]
+    },
+    "category": "identity",
+    "friendly_name": "list-authenticated-users",
+    "title": "List Authenticated Users",
+    "unique_id": "92394d86-5032-44d7-8ae8-b67d1a29a86d",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst"
+    ],
+    "staff": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0003": [
+            "DE.CM-1",
+            "DE.CM-3",
+            "ID.AM-5"
+        ],
+        "F0002": [
+            "A.9.2.1",
+            "A.9.2.6",
+            "A.12.4.1"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-63/3/final",
+            "name": "NIST SP 800-63-3: Digital Identity Guidelines"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36287/",
+            "name": "SANS: Identity and Access Management Monitoring"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/techniques/T1078/",
+            "name": "MITRE ATT&CK: Valid Accounts - Authentication Analysis"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Insights_Implementing_a_Zero_Trust_Architecture.pdf",
+            "name": "CISA Zero Trust Architecture - Identity Monitoring"
+        }
+    ]
+}

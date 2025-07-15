@@ -1,0 +1,148 @@
+{
+    "id": "C2320",
+    "ref": "capability:identify:analyze-filenames",
+    "author": "n3tsurge",
+    "created_on": "2025-07-15",
+    "description": "This capability enables security analysts to analyze file naming patterns and characteristics to identify suspicious files, social engineering attempts, or files designed to evade detection. Filename analysis can reveal attempts to mimic legitimate files, use deceptive extensions, or employ naming conventions associated with malware campaigns.",
+    "documentation": {
+        "requirements": [
+            {
+                "id": "C2320-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2320-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2320-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            },
+            {
+                "id": "C2320-REQ-4",
+                "description": "File system access and forensic tools for file analysis and manipulation.",
+                "type": "system"
+            }
+        ],
+        "enrichment": [
+            {
+                "id": "enr-1",
+                "description": "Cross-reference suspicious filenames with threat intelligence and known malware campaigns.",
+                "type": "intelligence"
+            },
+            {
+                "id": "enr-2",
+                "description": "Correlate filename analysis with file content analysis and behavioral indicators.",
+                "type": "correlation"
+            }
+        ],
+        "hunting": [
+            {
+                "id": "hunt-1",
+                "description": "Hunt for files with deceptive double extensions or Unicode homograph attacks in filenames.",
+                "type": "deception"
+            }
+        ],
+        "fields": [
+            {
+                "id": "field-1",
+                "name": "filename",
+                "description": "Full filename being analyzed",
+                "type": "string"
+            },
+            {
+                "id": "field-2",
+                "name": "file_extension",
+                "description": "File extension or extensions identified",
+                "type": "string"
+            },
+            {
+                "id": "field-3",
+                "name": "suspicious_characteristics",
+                "description": "List of suspicious characteristics identified in the filename",
+                "type": "array"
+            },
+            {
+                "id": "field-4",
+                "name": "naming_pattern",
+                "description": "Identified naming pattern or convention",
+                "type": "string"
+            },
+            {
+                "id": "field-5",
+                "name": "unicode_analysis",
+                "description": "Analysis of Unicode characters and potential homograph attacks",
+                "type": "object"
+            },
+            {
+                "id": "field-6",
+                "name": "similarity_score",
+                "description": "Similarity score to known legitimate or malicious file naming patterns",
+                "type": "number"
+            }
+        ],
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automated filename pattern analysis using machine learning and statistical methods.",
+                "type": "analysis"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integration with threat intelligence platforms for real-time filename reputation checking.",
+                "type": "integration"
+            }
+        ]
+    },
+    "category": "file",
+    "friendly_name": "analyze-filenames",
+    "title": "Analyze Filenames",
+    "unique_id": "fc21342e-4103-4087-9293-8907d3dfe883",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst"
+    ],
+    "staff": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0003": [
+            "DE.AE-2",
+            "DE.CM-1",
+            "ID.RA-2"
+        ],
+        "F0002": [
+            "A.12.6.1",
+            "A.14.2.1",
+            "A.16.1.5"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final",
+            "name": "NIST SP 800-61 Rev. 2: Computer Security Incident Handling Guide"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/37382/",
+            "name": "SANS: Threat Hunting and File Analysis Techniques"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/techniques/T1036/",
+            "name": "MITRE ATT&CK: Masquerading - Filename Analysis"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Hunt_and_Incident_Response_Program.pdf",
+            "name": "CISA Hunt and Incident Response Program - File Analysis"
+        }
+    ]
+}

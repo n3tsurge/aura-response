@@ -1,0 +1,148 @@
+{
+    "id": "C2506",
+    "ref": "capability:identify:list-services-modified",
+    "author": "n3tsurge",
+    "created_on": "2025-07-15",
+    "description": "This capability enables incident responders to identify Windows services that have been modified during a specified timeframe. Service modifications can indicate malware attempting to hijack legitimate services, configuration changes for persistence, or attackers modifying service properties to evade detection.",
+    "documentation": {
+        "requirements": [
+            {
+                "id": "C2506-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2506-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2506-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            },
+            {
+                "id": "C2506-REQ-4",
+                "description": "Administrative access and configuration management tools for system modifications.",
+                "type": "system"
+            }
+        ],
+        "enrichment": [
+            {
+                "id": "enr-1",
+                "description": "Compare modified service configurations with known malware techniques and service hijacking methods.",
+                "type": "intelligence"
+            },
+            {
+                "id": "enr-2",
+                "description": "Correlate service modifications with user activity and system administration events.",
+                "type": "correlation"
+            }
+        ],
+        "hunting": [
+            {
+                "id": "hunt-1",
+                "description": "Hunt for services modified to point to unusual executables or suspicious command lines.",
+                "type": "anomaly"
+            }
+        ],
+        "fields": [
+            {
+                "id": "field-1",
+                "name": "service_name",
+                "description": "Name of the modified service",
+                "type": "string"
+            },
+            {
+                "id": "field-2",
+                "name": "modification_timestamp",
+                "description": "Date and time when the service was modified",
+                "type": "datetime"
+            },
+            {
+                "id": "field-3",
+                "name": "modified_properties",
+                "description": "List of service properties that were changed",
+                "type": "array"
+            },
+            {
+                "id": "field-4",
+                "name": "previous_value",
+                "description": "Previous value of the modified property",
+                "type": "string"
+            },
+            {
+                "id": "field-5",
+                "name": "new_value",
+                "description": "New value of the modified property",
+                "type": "string"
+            },
+            {
+                "id": "field-6",
+                "name": "user_context",
+                "description": "User account that modified the service",
+                "type": "string"
+            }
+        ],
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automated detection and alerting for unauthorized service modifications.",
+                "type": "monitoring"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integration with configuration management systems to track authorized vs. unauthorized changes.",
+                "type": "integration"
+            }
+        ]
+    },
+    "category": "configuration",
+    "friendly_name": "list-services-modified",
+    "title": "List Services Modified",
+    "unique_id": "3015735b-1166-4779-bf95-defb679e30c8",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst"
+    ],
+    "staff": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0003": [
+            "DE.CM-1",
+            "DE.CM-7",
+            "DE.AE-3"
+        ],
+        "F0002": [
+            "A.12.4.1",
+            "A.12.6.1",
+            "A.16.1.4"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-92/final",
+            "name": "NIST SP 800-92: Guide to Computer Security Log Management"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/32949/",
+            "name": "SANS: Windows Service Monitoring and Change Detection"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/techniques/T1543/003/",
+            "name": "MITRE ATT&CK: Create or Modify System Process - Service Modification"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Hunt_and_Incident_Response_Program.pdf",
+            "name": "CISA Hunt and Incident Response Program - Configuration Monitoring"
+        }
+    ]
+}

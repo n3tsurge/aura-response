@@ -7,8 +7,76 @@
     "documentation": {
         "enrichment": [],
         "hunting": [],
-        "fields": [],
-        "automation": []
+        "fields": [
+            {
+                "title": "Data Classification",
+                "type": "list-item",
+                "description": "Classification level of the identified data (confidential, sensitive, public)"
+            },
+            {
+                "title": "Data Type",
+                "type": "list-item",
+                "description": "Type of data identified (PII, financial, medical, intellectual property)"
+            },
+            {
+                "title": "File Path",
+                "type": "list-item",
+                "description": "Path to the file containing the identified data"
+            },
+            {
+                "title": "Data Patterns",
+                "type": "list-item",
+                "description": "Patterns or signatures that identified the sensitive data"
+            },
+            {
+                "title": "Confidence Score",
+                "type": "list-item",
+                "description": "Confidence level of the data identification (0-100)"
+            },
+            {
+                "title": "Regulatory Compliance",
+                "type": "list-item",
+                "description": "Regulatory frameworks applicable to the identified data (GDPR, HIPAA, PCI-DSS)"
+            },
+            {
+                "title": "Data Owner",
+                "type": "list-item",
+                "description": "Owner or responsible party for the identified data"
+            },
+            {
+                "title": "Identification Timestamp",
+                "type": "list-item",
+                "description": "Date and time when the data was identified"
+            },
+            {
+                "title": "Location Context",
+                "type": "list-item",
+                "description": "Context about where the data was found (database, file share, email)"
+            }
+        ],
+        "automation": [],
+        "requirements": [
+            {
+                "id": "C2112-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2112-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2112-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            },
+            {
+                "id": "C2112-REQ-4",
+                "description": "Network monitoring tools and access to network infrastructure for analysis and control.",
+                "type": "system"
+            }
+        ]
     },
     "category": "network",
     "friendly_name": "identify-transferred-data",
@@ -27,5 +95,39 @@
         "security-analyst"
     ],
     "frameworks": {
-    }
+        "F0003": [
+            "DE.CM-1",
+            "DE.AE-3",
+            "PR.PT-1",
+            "RS.AN-1"
+        ],
+        "F0002": [
+            "A.12.4.1",
+            "A.12.2.1",
+            "A.16.1.1",
+            "A.12.6.1"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-137/final",
+            "name": "NIST SP 800-137: Information Security Continuous Monitoring (ISCM)"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36022/",
+            "name": "SANS: Continuous Security Monitoring Implementation"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/tactics/TA0007/",
+            "name": "MITRE ATT&CK: Discovery Tactics and Detection Strategies"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Insights_Implementing_a_Zero_Trust_Architecture.pdf",
+            "name": "CISA Zero Trust Architecture - Monitoring and Analytics"
+        }
+    ]
 }

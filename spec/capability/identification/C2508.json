@@ -1,0 +1,142 @@
+{
+    "id": "C2508",
+    "ref": "capability:identify:analyze-registry-key",
+    "author": "n3tsurge",
+    "created_on": "2025-07-15",
+    "description": "This capability enables deep analysis of specific registry key content, values, metadata, and structure to identify malicious modifications, persistence mechanisms, or configuration changes. This analysis provides detailed insights into the purpose and impact of registry modifications discovered during incident response.",
+    "documentation": {
+        "requirements": [
+            {
+                "id": "C2508-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2508-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2508-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            },
+            {
+                "id": "C2508-REQ-4",
+                "description": "Administrative access and configuration management tools for system modifications.",
+                "type": "system"
+            }
+        ],
+        "enrichment": [
+            {
+                "id": "enr-1",
+                "description": "Compare registry key values with baseline configurations to identify unauthorized changes.",
+                "type": "baseline"
+            },
+            {
+                "id": "enr-2",
+                "description": "Cross-reference registry content with threat intelligence and known malware signatures.",
+                "type": "intelligence"
+            }
+        ],
+        "hunting": [
+            {
+                "id": "hunt-1",
+                "description": "Analyze registry keys for encoded content, suspicious values, or obfuscated data.",
+                "type": "content"
+            }
+        ],
+        "fields": [
+            {
+                "id": "field-1",
+                "name": "key_path",
+                "description": "Full path of the analyzed registry key",
+                "type": "string"
+            },
+            {
+                "id": "field-2",
+                "name": "key_values",
+                "description": "All values and data contained within the registry key",
+                "type": "object"
+            },
+            {
+                "id": "field-3",
+                "name": "last_modified",
+                "description": "Timestamp of when the registry key was last modified",
+                "type": "datetime"
+            },
+            {
+                "id": "field-4",
+                "name": "suspicious_indicators",
+                "description": "List of suspicious characteristics identified in the registry key",
+                "type": "array"
+            },
+            {
+                "id": "field-5",
+                "name": "decoded_content",
+                "description": "Any decoded or deobfuscated content found in the registry values",
+                "type": "string"
+            }
+        ],
+        "automation": [
+            {
+                "id": "aut-1",
+                "description": "Automated registry parsing and analysis tools to extract and decode registry content.",
+                "type": "parser"
+            },
+            {
+                "id": "aut-2",
+                "description": "Integration with malware analysis sandboxes for dynamic registry behavior analysis.",
+                "type": "integration"
+            }
+        ]
+    },
+    "category": "configuration",
+    "friendly_name": "analyze-registry-key",
+    "title": "Analyze Registry Key",
+    "unique_id": "4287a1d4-cdca-4e4c-a278-0ff3d5ace7e8",
+    "phase": "P0002",
+    "phase_friendly_name": "identification",
+    "stakeholders": [
+        "incident-commander",
+        "security-analyst"
+    ],
+    "staff": [
+        "security-analyst",
+        "incident-responder"
+    ],
+    "frameworks": {
+        "F0003": [
+            "DE.AE-2",
+            "DE.CM-4",
+            "RS.AN-3"
+        ],
+        "F0002": [
+            "A.12.6.1",
+            "A.16.1.4",
+            "A.16.1.5"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-86/final",
+            "name": "NIST SP 800-86: Guide to Integrating Forensic Techniques into Incident Response"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/33947/",
+            "name": "SANS: Digital Forensics and Registry Analysis Techniques"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/techniques/T1112/",
+            "name": "MITRE ATT&CK: Modify Registry - Analysis Methods"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Hunt_and_Incident_Response_Program.pdf",
+            "name": "CISA Hunt and Incident Response Program - Forensic Analysis"
+        }
+    ]
+}

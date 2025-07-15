@@ -8,7 +8,29 @@
         "enrichment": [],
         "hunting": [],
         "fields": [],
-        "automation": []
+        "automation": [],
+        "requirements": [
+            {
+                "id": "C3501-REQ-1",
+                "description": "Authority and access permissions to implement containment measures.",
+                "type": "authorization"
+            },
+            {
+                "id": "C3501-REQ-2",
+                "description": "Technical capability and tools to execute containment actions effectively.",
+                "type": "system"
+            },
+            {
+                "id": "C3501-REQ-3",
+                "description": "Procedures to validate containment effectiveness and monitor for bypass attempts.",
+                "type": "validation"
+            },
+            {
+                "id": "C3501-REQ-4",
+                "description": "Administrative access and configuration management tools for system modifications.",
+                "type": "system"
+            }
+        ]
     },
     "category": "configuration",
     "friendly_name": "disable-system-service",
@@ -17,11 +39,42 @@
     "phase": "P0003",
     "phase_friendly_name": "containment",
     "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "incident-responder"
     ],
     "staff": [
+        "security-analyst",
+        "incident-responder"
     ],
     "frameworks": {
+        "F0003": [
+            "DE.AE-1",
+            "RS.IM-1",
+            "PR.IP-1"
+        ],
+        "F0002": [
+            "A.16.1.1",
+            "A.5.10",
+            "A.5.12",
+            "A.12.4.1"
+        ]
     },
     "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final",
+            "name": "NIST SP 800-61 Rev. 2: Computer Security Incident Handling Guide"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/33901/",
+            "name": "SANS: Incident Response Methodology"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/",
+            "name": "MITRE ATT&CK Framework"
+        }
     ]
 }

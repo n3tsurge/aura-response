@@ -7,8 +7,71 @@
     "documentation": {
         "enrichment": [],
         "hunting": [],
-        "fields": [],
-        "automation": []
+        "fields": [
+            {
+                "title": "Host IP Address",
+                "type": "list-item",
+                "description": "IP address of the host connected to VPN"
+            },
+            {
+                "title": "VPN Connection Timestamp",
+                "type": "list-item",
+                "description": "Date and time when VPN connection was established"
+            },
+            {
+                "title": "VPN User Identity",
+                "type": "list-item",
+                "description": "Username or identity associated with the VPN connection"
+            },
+            {
+                "title": "VPN Server Endpoint",
+                "type": "list-item",
+                "description": "VPN server or gateway that the host connected to"
+            },
+            {
+                "title": "Connection Duration",
+                "type": "list-item",
+                "description": "Duration of the VPN connection session"
+            },
+            {
+                "title": "VPN Protocol",
+                "type": "list-item",
+                "description": "VPN protocol used (IPSec, SSL/TLS, WireGuard, etc.)"
+            },
+            {
+                "title": "Bytes Transferred",
+                "type": "list-item",
+                "description": "Amount of data transferred during the VPN session"
+            },
+            {
+                "title": "Geolocation Data",
+                "type": "list-item",
+                "description": "Geographic location information for the connection"
+            }
+        ],
+        "automation": [],
+        "requirements": [
+            {
+                "id": "C2108-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2108-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2108-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            },
+            {
+                "id": "C2108-REQ-4",
+                "description": "Network monitoring tools and access to network infrastructure for analysis and control.",
+                "type": "system"
+            }
+        ]
     },
     "category": "network",
     "friendly_name": "list-hosts-connected-to-vpn",
@@ -27,5 +90,39 @@
         "security-analyst"
     ],
     "frameworks": {
-    }
+        "F0003": [
+            "DE.CM-1",
+            "DE.AE-3",
+            "PR.PT-1",
+            "RS.AN-1"
+        ],
+        "F0002": [
+            "A.12.4.1",
+            "A.12.2.1",
+            "A.16.1.1",
+            "A.12.6.1"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-137/final",
+            "name": "NIST SP 800-137: Information Security Continuous Monitoring (ISCM)"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36022/",
+            "name": "SANS: Continuous Security Monitoring Implementation"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/tactics/TA0007/",
+            "name": "MITRE ATT&CK: Discovery Tactics and Detection Strategies"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Insights_Implementing_a_Zero_Trust_Architecture.pdf",
+            "name": "CISA Zero Trust Architecture - Monitoring and Analytics"
+        }
+    ]
 }

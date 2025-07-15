@@ -21,5 +21,123 @@
         "security-analyst"
     ],
     "frameworks": {
+        "F0003": [
+            "DE.CM-1",
+            "DE.AE-3",
+            "PR.PT-1",
+            "RS.AN-1"
+        ],
+        "F0002": [
+            "A.12.4.1",
+            "A.12.2.1",
+            "A.16.1.1",
+            "A.12.6.1"
+        ]
+    },
+    "references": [
+        {
+            "type": "website",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-137/final",
+            "name": "NIST SP 800-137: Information Security Continuous Monitoring (ISCM)"
+        },
+        {
+            "type": "website",
+            "url": "https://www.sans.org/white-papers/36022/",
+            "name": "SANS: Continuous Security Monitoring Implementation"
+        },
+        {
+            "type": "website",
+            "url": "https://attack.mitre.org/tactics/TA0007/",
+            "name": "MITRE ATT&CK: Discovery Tactics and Detection Strategies"
+        },
+        {
+            "type": "website",
+            "url": "https://www.cisa.gov/sites/default/files/publications/CISA_Insights_Implementing_a_Zero_Trust_Architecture.pdf",
+            "name": "CISA Zero Trust Architecture - Monitoring and Analytics"
+        }
+    ],
+    "documentation": {
+        "requirements": [
+            {
+                "id": "C2103-REQ-1",
+                "description": "Access to relevant logging systems and data sources required for analysis.",
+                "type": "system"
+            },
+            {
+                "id": "C2103-REQ-2",
+                "description": "Knowledge of indicators, patterns, and techniques relevant to this identification capability.",
+                "type": "knowledge"
+            },
+            {
+                "id": "C2103-REQ-3",
+                "description": "Tools and systems capable of collecting, processing, and analyzing relevant data.",
+                "type": "system"
+            }
+        ],
+        "enrichment": [],
+        "hunting": [],
+        "fields": [
+            {
+                "title": "Host IP Address",
+                "type": "list-item",
+                "description": "IP address of the host accessing the internal URL"
+            },
+            {
+                "title": "Internal URL",
+                "type": "list-item",
+                "description": "The internal URL being accessed"
+            },
+            {
+                "title": "Access Timestamp",
+                "type": "list-item",
+                "description": "Date and time when the URL was accessed"
+            },
+            {
+                "title": "HTTP Method",
+                "type": "list-item",
+                "description": "HTTP method used (GET, POST, PUT, DELETE, etc.)"
+            },
+            {
+                "title": "Response Status Code",
+                "type": "list-item",
+                "description": "HTTP response status code"
+            },
+            {
+                "title": "User Agent",
+                "type": "list-item",
+                "description": "User agent string from the request"
+            },
+            {
+                "title": "Referrer",
+                "type": "list-item",
+                "description": "HTTP referrer header value"
+            },
+            {
+                "title": "Host Name",
+                "type": "list-item",
+                "description": "DNS hostname of the accessing host"
+            },
+            {
+                "title": "User Context",
+                "type": "list-item",
+                "description": "User account associated with the request"
+            },
+            {
+                "title": "Request Size",
+                "type": "list-item",
+                "description": "Size of the HTTP request in bytes"
+            },
+            {
+                "title": "Response Size",
+                "type": "list-item",
+                "description": "Size of the HTTP response in bytes"
+            },
+            {
+                "title": "Session ID",
+                "type": "list-item",
+                "description": "Session identifier if applicable"
+            }
+        ],
+        "automation": []
     }
 }
