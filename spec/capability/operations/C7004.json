@@ -5,10 +5,75 @@
     "created_on": "2025-06-16",
     "description": "This capability involves maintaining regular reporting and awareness for leadership regarding the status of security operations and incident response activities. This includes providing updates on ongoing incidents, metrics on response times, and overall security posture. Effective leadership reporting is crucial for ensuring that decision-makers are informed about the security landscape and can allocate resources appropriately.",
     "documentation": {
-        "enrichment": [],
+        "requirements": [
+            {
+                "id": "C7004-REQ-1",
+                "description": "Access to security operations metrics and incident management systems to compile accurate reports.",
+                "type": "system"
+            },
+            {
+                "id": "C7004-REQ-2",
+                "description": "Understanding of business objectives and risk tolerance to provide relevant leadership context.",
+                "type": "knowledge"
+            }
+        ],
+        "enrichment": [
+            {
+                "title": "Business Impact Assessment",
+                "type": "list-item",
+                "description": "Enrich incident reports with business impact assessments to help leadership understand the potential financial and operational consequences."
+            },
+            {
+                "title": "Risk Context",
+                "type": "list-item",
+                "description": "Provide additional context on the risk landscape and threat environment to help leadership make informed decisions."
+            }
+        ],
         "hunting": [],
-        "fields": [],
-        "automation": []
+        "fields": [
+            {
+                "title": "Report Type",
+                "type": "list-item",
+                "description": "The type of report being generated (e.g., incident summary, weekly metrics, monthly dashboard)."
+            },
+            {
+                "title": "Incident Status",
+                "type": "list-item",
+                "description": "Current status of ongoing security incidents and their resolution progress."
+            },
+            {
+                "title": "Key Metrics",
+                "type": "list-item",
+                "description": "Security operations metrics such as mean time to detection (MTTD), mean time to response (MTTR), and incident volume."
+            },
+            {
+                "title": "Risk Level",
+                "type": "list-item",
+                "description": "Overall risk assessment and security posture rating for the organization."
+            },
+            {
+                "title": "Resource Utilization",
+                "type": "list-item",
+                "description": "Information about security team resource allocation and capacity utilization."
+            },
+            {
+                "title": "Recommendations",
+                "type": "list-item",
+                "description": "Strategic recommendations for improving security posture or addressing identified gaps."
+            }
+        ],
+        "automation": [
+            {
+                "id": "C7004-AUT-1",
+                "description": "Automated systems to generate regular leadership reports from security operations data and metrics.",
+                "type": "integration"
+            },
+            {
+                "id": "C7004-AUT-2",
+                "description": "Integration with business intelligence and dashboard platforms to provide real-time visibility into security operations status.",
+                "type": "integration"
+            }
+        ]
     },
     "category": "general",
     "friendly_name": "leadership-reporting",
@@ -17,10 +82,25 @@
     "phase": "P0007",
     "phase_friendly_name": "operations",
     "stakeholders": [
+        "incident-commander",
+        "executive-leadership",
+        "security-manager",
+        "ciso"
     ],
     "staff": [
+        "security-analyst",
+        "incident-commander",
+        "security-manager"
     ],
     "frameworks": {
+        "F0002": [
+            "A.5.1",
+            "A.5.2"
+        ],
+        "F0003": [
+            "RS.CO-3",
+            "RS.CO-4"
+        ]
     },
     "references": [
     ]
