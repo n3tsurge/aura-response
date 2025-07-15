@@ -5,10 +5,81 @@
     "created_on": "2025-06-16",
     "description": "This capability involves blocking processes from executing based on their file path. This is a critical containment measure to prevent the execution of potentially malicious software that may have been identified during an incident. By blocking specific paths, organizations can stop the spread of malware and protect their systems from further compromise. This can be implemented through endpoint security solutions, application control policies, or other security measures that monitor and restrict process execution.",
     "documentation": {
-        "enrichment": [],
-        "hunting": [],
-        "fields": [],
-        "automation": []
+        "requirements": [
+            {
+                "id": "C3401-REQ-1",
+                "description": "Access to endpoint security solutions or application control systems that can implement process blocking rules.",
+                "type": "system"
+            },
+            {
+                "id": "C3401-REQ-2", 
+                "description": "Knowledge of the specific file paths that need to be blocked, typically obtained from threat intelligence or incident analysis.",
+                "type": "knowledge"
+            }
+        ],
+        "enrichment": [
+            {
+                "title": "Process Metadata",
+                "type": "list-item",
+                "description": "Enrich process information with metadata such as digital signatures, file version, and publisher information to better understand the nature of the process."
+            },
+            {
+                "title": "Threat Intelligence",
+                "type": "list-item",
+                "description": "Correlate process paths with known malicious indicators from threat intelligence feeds to identify potentially harmful executables."
+            }
+        ],
+        "hunting": [
+            {
+                "title": "Suspicious Process Execution",
+                "type": "list-item",
+                "description": "Hunt for processes executing from unusual or suspicious paths such as temporary directories, user profile folders, or system directories where legitimate processes typically don't reside."
+            },
+            {
+                "title": "Process Masquerading",
+                "type": "list-item",
+                "description": "Identify processes that may be masquerading as legitimate system processes by examining their execution paths and comparing them to known legitimate locations."
+            }
+        ],
+        "fields": [
+            {
+                "title": "Process Path",
+                "type": "list-item",
+                "description": "The full file system path to the executable file being blocked."
+            },
+            {
+                "title": "Process Name",
+                "type": "list-item",
+                "description": "The name of the executable file or process being blocked."
+            },
+            {
+                "title": "User Context",
+                "type": "list-item",
+                "description": "The user account under which the process attempted to execute."
+            },
+            {
+                "title": "System Hostname",
+                "type": "list-item",
+                "description": "The hostname or identifier of the system where the process was blocked."
+            },
+            {
+                "title": "Timestamp",
+                "type": "list-item",
+                "description": "The date and time when the process execution was blocked."
+            }
+        ],
+        "automation": [
+            {
+                "id": "C3401-AUT-1",
+                "description": "Automated rules to block processes based on predefined path patterns or indicators of compromise (IOCs).",
+                "type": "script"
+            },
+            {
+                "id": "C3401-AUT-2",
+                "description": "Integration with endpoint detection and response (EDR) solutions to automatically block processes based on threat detection and analysis.",
+                "type": "integration"
+            }
+        ]
     },
     "category": "process",
     "friendly_name": "block-process-by-path",
@@ -17,11 +88,22 @@
     "phase": "P0003",
     "phase_friendly_name": "containment",
     "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "incident-responder",
+        "system-administrator"
     ],
     "staff": [
+        "security-analyst",
+        "incident-responder",
+        "system-administrator"
     ],
     "frameworks": {
+        "F0002": [
+            "A.8.22"
+        ]
     },
     "references": [
-    ]
+    ],
+    "mitre_defend": "d3f:ProcessTermination"
 }

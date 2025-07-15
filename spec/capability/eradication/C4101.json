@@ -5,10 +5,81 @@
     "created_on": "2025-06-03",
     "description": "This capability outlines the process of removing a rogue network device from the network. It includes steps for identifying the rogue device, isolating it from the network, and ensuring that it is securely removed to prevent any potential security threats. This capability is essential for maintaining network integrity and security during incident response.",
     "documentation": {
-        "enrichment": [],
-        "hunting": [],
-        "fields": [],
-        "automation": []
+        "requirements": [
+            {
+                "id": "C4101-REQ-1",
+                "description": "Access to network infrastructure tools and administrative privileges to physically or logically remove network devices.",
+                "type": "system"
+            },
+            {
+                "id": "C4101-REQ-2",
+                "description": "Network topology knowledge and device identification procedures to locate and verify rogue devices.",
+                "type": "knowledge"
+            }
+        ],
+        "enrichment": [
+            {
+                "title": "Device Fingerprinting",
+                "type": "list-item",
+                "description": "Collect device fingerprints including MAC addresses, manufacturer information, and device capabilities to better understand the rogue device."
+            },
+            {
+                "title": "Network Traffic Analysis",
+                "type": "list-item",
+                "description": "Analyze network traffic patterns associated with the rogue device to understand its behavior and potential impact."
+            }
+        ],
+        "hunting": [
+            {
+                "title": "Unauthorized Device Detection",
+                "type": "list-item",
+                "description": "Hunt for additional unauthorized or rogue devices that may have been deployed in the network environment."
+            },
+            {
+                "title": "Network Access Point Reconnaissance",
+                "type": "list-item",
+                "description": "Search for unauthorized wireless access points or network taps that could compromise network security."
+            }
+        ],
+        "fields": [
+            {
+                "title": "Device MAC Address",
+                "type": "list-item",
+                "description": "The unique MAC address of the rogue network device being removed."
+            },
+            {
+                "title": "Device Type",
+                "type": "list-item",
+                "description": "The type of rogue device (e.g., wireless access point, network switch, router, USB device)."
+            },
+            {
+                "title": "Location",
+                "type": "list-item",
+                "description": "The physical or logical location where the rogue device was discovered."
+            },
+            {
+                "title": "Network Segment",
+                "type": "list-item",
+                "description": "The network segment or VLAN where the rogue device was connected."
+            },
+            {
+                "title": "Discovery Method",
+                "type": "list-item",
+                "description": "The method by which the rogue device was discovered (e.g., network scan, physical inspection, traffic analysis)."
+            }
+        ],
+        "automation": [
+            {
+                "id": "C4101-AUT-1",
+                "description": "Automated network access control (NAC) systems to automatically quarantine or isolate rogue devices upon detection.",
+                "type": "integration"
+            },
+            {
+                "id": "C4101-AUT-2",
+                "description": "Network monitoring tools with automated alerts for unauthorized device detection and removal workflows.",
+                "type": "tool"
+            }
+        ]
     },
     "category": "network",
     "friendly_name": "remove-rogue-network-device",
@@ -17,12 +88,26 @@
     "phase": "P0004",
     "phase_friendly_name": "eradication",
     "stakeholders": [
+        "incident-commander",
+        "security-analyst",
+        "network-administrator",
+        "incident-responder"
     ],
     "staff": [
+        "network-administrator",
+        "security-analyst",
+        "incident-responder"
     ],
     "frameworks": {
+        "F0002": [
+            "A.8.22",
+            "A.8.3"
+        ],
+        "F0003": [
+            "PR.AC-1",
+            "DE.CM-7"
+        ]
     },
     "references": [
-
     ]
 }
