@@ -1,0 +1,47 @@
+{
+    "id": "P0002",
+    "ref": "playbook:ddos-dos-response",
+    "author": "copilot",
+    "capability": [
+        "C1101",
+        "C1102",
+        "C2101",
+        "C3101",
+        "C3102",
+        "C3107"
+    ],
+    "category": [
+        "ddos",
+        "dos",
+        "network security",
+        "incident response",
+        "service availability"
+    ],
+    "created_on": "2024-09-26",
+    "description": "This playbook outlines the steps to respond to Denial of Service (DoS) and Distributed Denial of Service (DDoS) attacks. It covers the different types of DoS attacks including volumetric network bandwidth attacks, resource exhaustion attacks, and protocol-based attacks. The playbook includes identification, containment, eradication, and recovery procedures to restore service availability and mitigate the impact of DoS attacks on the organization.\n\n## DoS Attack Types\n\n### Volumetric Attacks (Network Layer)\n- **UDP Floods**: Overwhelming target with UDP packets\n- **ICMP Floods**: Flooding with ICMP requests\n- **TCP SYN Floods**: Exhausting connection resources\n- **Amplification Attacks**: Using third-party services to amplify attack traffic\n\n### Protocol Attacks (Transport Layer)\n- **TCP State Exhaustion**: Consuming connection state tables\n- **Fragmented Packet Attacks**: Exploiting packet reassembly processes\n- **Slowloris**: Keeping connections open to exhaust server resources\n\n### Application Layer Attacks (Layer 7)\n- **HTTP Floods**: Overwhelming web servers with HTTP requests\n- **DNS Query Floods**: Targeting DNS infrastructure\n- **Application-specific attacks**: Targeting specific application vulnerabilities\n\n## Workflow\n\n### Identification\n\nAfter initial report of service degradation or unavailability, the following actions should be taken to qualify and quantify the scope of the DoS attack.\n\n1. **Monitor Network Traffic Patterns**\n   - Access external and internal flow logs to identify abnormal traffic volumes\n   - Analyze traffic sources, destinations, and protocols\n   - Identify top source IP addresses and geographic origins\n\n2. **Assess Service Impact**\n   - Determine which services are affected and their criticality\n   - Measure performance degradation and resource utilization\n   - Identify if attack is volumetric, protocol-based, or application-layer\n\n3. **Collect Attack Artifacts**\n   - Gather source IP addresses involved in the attack\n   - Identify attack patterns, packet types, and protocols used\n   - Document attack vectors and methods employed\n   - Collect evidence of amplification sources if applicable\n\n4. **Analyze Attack Infrastructure**\n   - Determine if attack is distributed (DDoS) or single-source (DoS)\n   - Identify botnet indicators or coordinated attack patterns\n   - Assess attack sophistication and likely attribution\n\n5. **Quantify Attack Scale**\n   - Measure attack traffic volume (requests per second, bandwidth consumed)\n   - Determine attack duration and patterns\n   - Assess whether attack exceeds organizational mitigation capacity\n\n### Containment\n\n1. **Implement Immediate Traffic Controls**\n   - Block external IP addresses identified as attack sources\n   - Block internal IP addresses if they are participating in the attack\n   - Implement rate limiting on affected services and protocols\n\n2. **Apply Network-Level Protections**\n   - Block port-based external communication for attack vectors\n   - Implement geographic IP blocking if attack originates from specific regions\n   - Configure upstream provider filtering if available\n\n3. **Enable Application-Level Defenses**\n   - Activate web application firewall (WAF) protections\n   - Implement challenge-response mechanisms (CAPTCHA)\n   - Enable connection throttling and request queuing\n\n4. **Scale Infrastructure Resources**\n   - Activate auto-scaling for cloud-based services\n   - Implement load balancing and traffic distribution\n   - Engage content delivery network (CDN) services for traffic absorption\n\n5. **Coordinate with Service Providers**\n   - Contact Internet Service Provider (ISP) for upstream filtering\n   - Engage DDoS mitigation service providers if available\n   - Coordinate with hosting providers for additional protections\n\n### Eradication\n\n1. **Remove Persistent Attack Sources**\n   - Maintain blocking of confirmed malicious IP addresses\n   - Update firewall rules to prevent future attacks from same sources\n   - Clean compromised internal systems participating in the attack\n\n2. **Patch Vulnerabilities**\n   - Address any application vulnerabilities exploited during the attack\n   - Update network device configurations to prevent similar attacks\n   - Implement additional monitoring for early detection\n\n3. **Strengthen Defenses**\n   - Deploy additional DDoS protection mechanisms\n   - Configure automated response rules for similar attack patterns\n   - Update incident response procedures based on lessons learned\n\n### Recovery\n\n1. **Restore Service Operations**\n   - Gradually remove traffic restrictions once attack subsides\n   - Monitor service performance and availability during recovery\n   - Verify all critical services are functioning normally\n\n2. **Unblock Legitimate Traffic**\n   - Remove blocks on IP addresses confirmed as legitimate\n   - Lift geographic restrictions if they were implemented\n   - Restore normal connection limits and rate controls\n\n3. **Validate System Integrity**\n   - Confirm no systems were compromised during the attack\n   - Verify data integrity and system configurations\n   - Test disaster recovery and backup systems if they were activated\n\n4. **Resume Normal Operations**\n   - Return to standard monitoring and alerting configurations\n   - Communicate service restoration to stakeholders\n   - Document any permanent changes made to infrastructure\n\n### Lessons Learned\n\n1. **Analyze Attack Effectiveness**\n   - Evaluate which mitigation techniques were most effective\n   - Identify gaps in detection and response capabilities\n   - Document attack timeline and organizational response\n\n2. **Improve Preparedness**\n   - Update DDoS response procedures based on experience\n   - Enhance monitoring and alerting for similar attack patterns\n   - Consider additional DDoS protection investments\n\n3. **Strengthen Resilience**\n   - Implement architectural changes to improve attack resistance\n   - Develop relationships with DDoS mitigation service providers\n   - Enhance staff training for DDoS incident response\n\n4. **Update Threat Intelligence**\n   - Share attack indicators with relevant information sharing communities\n   - Update threat intelligence feeds with new attack patterns\n   - Document attacker tactics, techniques, and procedures (TTPs)",
+    "external_references": [
+        {
+            "name": "NIST SP 800-61 Rev. 2: Computer Security Incident Handling Guide",
+            "type": "documentation",
+            "url": "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final"
+        },
+        {
+            "name": "CISA DDoS Quick Guide",
+            "type": "documentation", 
+            "url": "https://www.cisa.gov/sites/default/files/publications/DDoS%20Quick%20Guide.pdf"
+        },
+        {
+            "name": "SANS DDoS Mitigation Strategies",
+            "type": "documentation",
+            "url": "https://www.sans.org/white-papers/35817/"
+        },
+        {
+            "name": "AWS DDoS Response Team Guide",
+            "type": "training",
+            "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/welcome.html"
+        }
+    ],
+    "friendly_name": "ddos-dos-response",
+    "title": "Denial of Service (DDoS/DoS) Response",
+    "unique_id": "f7a8b9c2-3d4e-5f6a-7b8c-9d0e1f2a3b4c"
+}
